@@ -57,6 +57,7 @@ int core0_main(void)
        INS_Display();
        menu();
        66;
+       666;
         // 此处编写需要循环执行的代码
         // 此处编写需要循环执行的代码
         

@@ -144,7 +144,18 @@ git config --global --unset https.proxy
 # 测试 GitHub 远程连接是否正常
 git ls-remote origin
 
+# 从云端拉取最新代码（推荐，保留本地历史）
+git fetch origin
+git switch main
+git pull --ff-only origin main
+
+# 只查看云端是否有新提交，不合并
+git fetch origin
+git lg
+
 # 注意：命令中的 main、fix/mag_yaw 只是示例，输入时不要写尖括号 < >
+# 注意：如果本地已经改了很多文件，先 git st 看状态，再决定是否 pull
+# 注意：不要随便用 git reset --hard origin/main 覆盖本地代码，除非你明确知道会丢失本地修改
 
 
 ================================================================
@@ -165,6 +176,12 @@ git st
 git add .
 git commit -m "feat: 描述本次修改"
 git push -u origin main
+
+# 从云端同步代码回来: 检查状态 -> 拉取远程 main
+git st
+git fetch origin
+git switch main
+git pull --ff-only origin main
 
 # 新功能开发流程: 切分支 -> 修改 -> 提交 -> 推送
 git switch -c feat/my_change
