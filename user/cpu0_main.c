@@ -54,10 +54,10 @@ int core0_main(void)
     while (TRUE)
     {
         InterruptTasks_Poll();
-//        INS_Display();
+       INS_Display();
         // 此处编写需要循环执行的代码
         // 此处编写需要循环执行的代码
-
+        
     }
 }
 
