@@ -1,0 +1,106 @@
+================================================================
+  Python 命令速查 (smart_car_race 环境)
+  所有命令必须在 conda activate smart_car_race 后执行
+================================================================
+
+【1】串口数据采集 (serial_reader.py)
+----------------------------------------------------------------
+# 实时监控 COM24 (默认)
+python scripts\serial_reader.py
+
+# 指定端口
+python scripts\serial_reader.py -p COM24
+
+# 定时采集 60 秒
+python scripts\serial_reader.py -t 60
+
+# 保存日志到 data/ 目录
+python scripts\serial_reader.py -t 60 --save
+
+# 指定输出文件
+python scripts\serial_reader.py -t 60 --save -o data\my_test.txt
+
+# 列出可用串口
+python scripts\serial_reader.py --list
+
+# 读取 1000 行后停止
+python scripts\serial_reader.py -n 1000
+
+
+【2】静态漂移分析 (analyze_drift.py)
+----------------------------------------------------------------
+# 分析默认文件 (baseline_01.txt)
+python scripts\analyze_drift.py
+
+# 分析指定文件
+python scripts\analyze_drift.py data\static_drift_test.txt
+
+
+【3】动态收敛分析 (analyze_dynamic.py)
+----------------------------------------------------------------
+# 分析默认文件 (dynamic_p2_rotation.txt)
+python scripts\analyze_dynamic.py
+
+# 分析指定文件
+python scripts\analyze_dynamic.py data\dynamic_test_phase1_static.txt
+
+
+【4】磁力计校准可视化 (mag_calibration\plotter.py)
+----------------------------------------------------------------
+# 启动磁力计校准 GUI (默认 COM24)
+python mag_calibration\plotter.py
+
+# 指定串口
+python mag_calibration\plotter.py --port COM24
+
+# 指定波特率
+python mag_calibration\plotter.py --baud 115200
+
+# 指定输出校准参数文件
+python mag_calibration\plotter.py --output mag_calibration\calibration_params.h
+
+
+【5】实时轨迹可视化 (trajectory_viewer.py)
+----------------------------------------------------------------
+# 启动轨迹可视化 (INS COM24 + RTK COM33)
+python scripts\trajectory_viewer.py
+
+
+【6】自动编译烧录测试 (ai_tuner.py)
+----------------------------------------------------------------
+# 自动编译+烧录+采集数据
+python scripts\ai_tuner.py
+
+# 指定采集时间 (秒)
+python scripts\ai_tuner.py -t 30
+
+# 指定输出文件
+python scripts\ai_tuner.py -o data\auto_test.txt
+
+
+【7】文件同步 (sync.py)
+----------------------------------------------------------------
+# 预览差异 (Dry Run)
+python tools\sync.py
+
+# 实际同步 Trae -> ADS
+python tools\sync.py --force
+
+
+================================================================
+  常用组合命令
+================================================================
+
+# 完整测试流程: 同步 -> 编译烧录 -> 采集数据
+python tools\sync.py --force
+tools\headless_build.bat --flash-only
+python scripts\serial_reader.py -t 60 --save
+
+# 磁力计校准流程: 烧录 -> 启动校准 GUI -> 绕8字旋转 -> 导出参数
+tools\headless_build.bat --flash-only
+python mag_calibration\plotter.py
+
+# 静态漂移测试: 烧录 -> 采集60秒 -> 分析
+tools\headless_build.bat --flash-only
+python scripts\serial_reader.py -t 60 --save -o data\drift_test.txt
+python scripts\analyze_drift.py data\drift_test.txt

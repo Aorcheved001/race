@@ -1,0 +1,36 @@
+#include <Adafruit_MPU6050.h>
+#include <Adafruit_Sensor.h>
+#include <Wire.h>
+#include <QMC5883LCompass.h>
+
+int x, y, z;
+Adafruit_MPU6050 mpu;
+QMC5883LCompass compass;
+
+void setup() {
+  Serial.begin(115200);
+  
+  // ?????MPU6050
+  mpu.begin();
+  // ????I2C Bypass????????Arduino??????MPU6050??I2C??????????????QMC5883L
+  mpu.setI2CBypass(true);
+  
+  // ???????????
+  compass.init();
+}
+
+void loop() {
+  compass.read();
+  x = compass.getX();
+  y = compass.getY();
+  z = compass.getZ();
+  
+  // ??CSV????????X,Y,Z
+  Serial.print(x);
+  Serial.print(',');
+  Serial.print(y);
+  Serial.print(',');
+  Serial.println(z);
+  
+  delay(100); // 10Hz ??????
+}

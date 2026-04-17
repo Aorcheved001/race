@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "build_ads": {
+      "command": "cmd",
+      "args": ["/c", "tools/build_ads.bat"],
+      "tools": [
+        {
+          "name": "build_ads",
+          "description": "使用ADS完整编译当前AURIX项目",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        }
+      ]
+    },
+    "flash_ads": {
+      "command": "cmd",
+      "args": ["/c", "tools/flash_ads.bat"],
+      "tools": [
+        {
+          "name": "flash_ads",
+          "description": "将编译好的固件烧录到TC377开发板",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        }
+      ]
+    }
+  }
+}
