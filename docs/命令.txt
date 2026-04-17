@@ -87,6 +87,66 @@ python tools\sync.py
 python tools\sync.py --force
 
 
+【8】Git 常用命令
+----------------------------------------------------------------
+# 查看当前状态（推荐）
+git st
+
+# 查看完整状态（原生命令）
+git status
+
+
+# 查看最近一次提交详情
+git last
+
+# 查看本地分支与跟踪关系
+git br
+
+# 切换到 main 分支
+git switch main
+
+# 新建并切换到功能分支
+git switch -c fix/mag_yaw
+
+# 暂存全部修改
+git add .
+
+# 暂存指定文件
+git add code\ins\imu660.c
+
+# 取消暂存指定文件
+git unstage code\ins\imu660.c
+
+# 提交当前修改
+git commit -m "fix: 修正磁力计离线校准算法"
+
+# 将本地提交推送到远程 main
+git push -u origin main
+
+# 查看远程仓库地址
+git remote -v
+
+# 重新设置远程仓库地址
+git remote set-url origin https://github.com/Aorcheved001/race.git
+
+# 查看 Git 当前代理
+git config --global --get http.proxy
+git config --global --get https.proxy
+
+# 为 Git 配置 Clash 代理（当前环境推送 GitHub 常用）
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+# 取消 Git 代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+# 测试 GitHub 远程连接是否正常
+git ls-remote origin
+
+# 注意：命令中的 main、fix/mag_yaw 只是示例，输入时不要写尖括号 < >
+
+
 ================================================================
   常用组合命令
 ================================================================
@@ -99,6 +159,24 @@ python scripts\serial_reader.py -t 60 --save
 # 磁力计校准流程: 烧录 -> 启动校准 GUI -> 绕8字旋转 -> 导出参数
 tools\headless_build.bat --flash-only
 python mag_calibration\plotter.py
+
+# 代码修改并上传 GitHub: 查看 -> 暂存 -> 提交 -> 推送
+git st
+git add .
+git commit -m "feat: 描述本次修改"
+git push -u origin main
+
+# 新功能开发流程: 切分支 -> 修改 -> 提交 -> 推送
+git switch -c feat/my_change
+git add .
+git commit -m "feat: 新功能说明"
+git push
+
+# GitHub 推送失败（当前环境常用修复）: 打开 Clash -> 配代理 -> 测试远程 -> 推送
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+git ls-remote origin
+git push -u origin main
 
 # 静态漂移测试: 烧录 -> 采集60秒 -> 分析
 tools\headless_build.bat --flash-only
