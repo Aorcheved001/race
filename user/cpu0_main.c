@@ -56,6 +56,7 @@ int core0_main(void)
         InterruptTasks_Poll();
        INS_Display();
        menu();
+       66;
         // 此处编写需要循环执行的代码
         // 此处编写需要循环执行的代码
         
