@@ -1,53 +1,53 @@
 /*
  * Ins.c
- * INS姿态融合模块
+ * INS 核心状态估计与航向融合
  */
 
 #include "zf_common_headfile.h"
 
- //-------------------------------------------内部结构体------------------------------------------------------------
+//-------------------------------------------内部状态结构------------------------------------------------------------
 typedef struct
 {
-    float roll;                                                          // 横滚角估计值
-    float pitch;                                                         // 俯仰角估计值
-    float yaw_gyro;                                                      // 陀螺仪积分得到的yaw角
+    float roll;                                                          // 六轴姿态解算 roll
+    float pitch;                                                         // 六轴姿态解算 pitch
+    float yaw_gyro;                                                      // 纯陀螺积分得到的 yaw
     float Xk_[3];                                                        // 预测状态
     float Xk[3];                                                         // 当前状态
-    float Uk[3];                                                         // 控制输入
-    float Zk[3];                                                         // 观测输入
-    float Pk[3];                                                         // 当前估计协方差
+    float Uk[3];                                                         // 状态输入
+    float Zk[3];                                                         // 测量量
+    float Pk[3];                                                         // 当前协方差
     float Pk_[3];                                                        // 预测协方差
     float K[3];                                                          // 卡尔曼增益
-    float Q[3];                                                          // 过程噪声协方差
-    float R[3];                                                          // 测量噪声协方差
+    float Q[3];                                                          // 过程噪声
+    float R[3];                                                          // 测量噪声
     float T;                                                             // 采样周期
-    float ax_linear;                                                     // 去重力后的X轴线性加速度
-    float ay_linear;                                                     // 去重力后的Y轴线性加速度
-    float az_linear;                                                     // 去重力后的Z轴线性加速度
+    float ax_linear;                                                     // 去重力后的 X 向线加速度
+    float ay_linear;                                                     // 去重力后的 Y 向线加速度
+    float az_linear;                                                     // 去重力后的 Z 向线加速度
 } INS_Kalman6Axis;
 
- //-------------------------------------------模块静态变量------------------------------------------------------------
-static INS_State s_state = {0};                                          // INS状态
-static INS_Config s_config = {0};                                        // INS配置参数
-static INS_Kalman6Axis s_kalman_6axis = {0};                             // 六轴卡尔曼状态
-static YawEKF2State s_yaw_ekf = {0};                                     // 航向EKF状态
-static float s_pos_x = 0.0f;                                             // 积分位置X
-static float s_pos_y = 0.0f;                                             // 积分位置Y
+//-------------------------------------------模块静态变量------------------------------------------------------------
+static INS_State s_state = {0};                                          // INS 当前状态
+static INS_Config s_config = {0};                                        // INS 配置参数
+static INS_Kalman6Axis s_kalman_6axis = {0};                             // 六轴姿态解算器
+static YawEKF2State s_yaw_ekf = {0};                                     // 航向 EKF 状态
+static float s_pos_x = 0.0f;                                             // 累计位置 X
+static float s_pos_y = 0.0f;                                             // 累计位置 Y
 static uint8_t s_initialized = 0u;                                       // 初始化标志
 
-// 相对磁航向所需变量
-static float s_initial_mag_yaw = 0.0f;                                   // 初始磁力计绝对航向
-static uint8_t s_mag_initial_yaw_captured = 0u;                          // 是否已捕获初始磁航向
-static float s_mag_yaw_raw = 0.0f;                                       // 原始绝对磁航向
-static float s_mag_yaw_rel = 0.0f;                                       // 计算出的相对磁航向
-static float s_mag_yaw_rel_filtered = 0.0f;                              // 低通滤波后的相对磁航向
+// 磁航向相对零点
+static float s_initial_mag_yaw = 0.0f;                                   // 初始磁航向零点
+static uint8_t s_mag_initial_yaw_captured = 0u;                          // 初始磁航向是否已记录
+static float s_mag_yaw_raw = 0.0f;                                       // 倾斜补偿后的原始磁航向
+static float s_mag_yaw_rel = 0.0f;                                       // 相对初始方向的磁航向
+static float s_mag_yaw_rel_filtered = 0.0f;                              // 相对磁航向低通输出
 
- //-------------------------------------------内部函数------------------------------------------------------------
+//-------------------------------------------内部工具函数------------------------------------------------------------
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      将角度归一化到 [-PI, PI]
- ////  @param      angle       输入角度
- ////  @return     归一化后的角度
+////  @brief      将角度归一化到 [-PI, PI]
+////  @param      angle       输入角度
+////  @return     归一化后的角度
  ////-------------------------------------------------------------------------------------------------------------------
 static float normalize_angle_rad(float angle)
 {
@@ -57,37 +57,78 @@ static float normalize_angle_rad(float angle)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      初始化默认配置参数
+////  @brief      计算倾斜补偿后的磁航向
+////  @param      mag_x       磁力计 X 轴
+////  @param      mag_y       磁力计 Y 轴
+////  @param      mag_z       磁力计 Z 轴
+////  @param      roll        参与补偿的 roll
+////  @param      pitch       参与补偿的 pitch
+////  @return     float       倾斜补偿后的磁航向
+////  @note       使用当前姿态把磁场投影回水平面后再计算 yaw
+ ////-------------------------------------------------------------------------------------------------------------------
+static float compute_tilt_compensated_mag_yaw(float mag_x, float mag_y, float mag_z, float roll, float pitch)
+{
+    float sin_roll = sinf(roll);
+    float cos_roll = cosf(roll);
+    float sin_pitch = sinf(pitch);
+    float cos_pitch = cosf(pitch);
+    float mag_x_horizontal = 0.0f;
+    float mag_y_horizontal = 0.0f;
+
+    mag_x_horizontal = mag_x * cos_pitch + mag_z * sin_pitch;
+    mag_y_horizontal = mag_x * sin_roll * sin_pitch + mag_y * cos_roll - mag_z * sin_roll * cos_pitch;
+
+    return normalize_angle_rad(-atan2f(mag_y_horizontal, mag_x_horizontal));
+}
+
+static void map_body_attitude_for_mag_compensation(float solver_roll,
+                                                   float solver_pitch,
+                                                   float *body_roll,
+                                                   float *body_pitch)
+{
+    if(body_roll != NULL)
+    {
+        *body_roll = -solver_pitch;
+    }
+
+    if(body_pitch != NULL)
+    {
+        *body_pitch = solver_roll;
+    }
+}
+
+////-------------------------------------------------------------------------------------------------------------------
+////  @brief      初始化 INS 配置参数
  ////  @param      void
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void Init_config(void)
 {
-    s_config.kalman_6axis_q = 0.001f;                                    // 六轴卡尔曼过程噪声
-    s_config.kalman_6axis_r = 0.1f;                                      // 六轴卡尔曼测量噪声
+    s_config.kalman_6axis_q = 0.001f;                                    // 六轴姿态过程噪声
+    s_config.kalman_6axis_r = 0.1f;                                      // 六轴姿态测量噪声
     s_config.kalman_6axis_T = 0.004f;                                    // 4ms 采样周期
 
-    // Round2 tuning: 略微提高过程噪声，允许旋转扰动后bias更快重收敛
-    s_config.Q_yaw = 5e-5f;                                              // EKF yaw过程噪声方差(N_psi) [R1:2e-5]
+    // Round2 调参：适度提高 yaw 过程噪声，让静止时更容易吸收陀螺零偏
+    s_config.Q_yaw = 5e-5f;                                              // EKF yaw 过程噪声 N_psi [R1:2e-5]
 
-    // Round1 tuning: 略微增大观测噪声，抑制磁力计毛刺(293度跳变)
-    s_config.R_mag = 5e-4f;                                              // EKF 磁力计观测噪声方差 [was 0.001]
+    // Round1 调参：适度提高磁观测信任度，改善相对航向收敛速度
+    s_config.R_mag = 5e-4f;                                              // EKF 磁观测噪声 [was 0.001]
 
     s_config.wheelbase = INS_WHEELBASE_M;                                // 轴距
-    s_config.tick_to_meter_left = -0.00002204f;                          // 左轮编码器米制系数
-    s_config.tick_to_meter_right = -0.00002204f;                         // 右轮编码器米制系数
-    s_config.zupt_speed_threshold = 0.05f;                               // 零速速度阈值
-    s_config.zupt_gyro_threshold = 0.05f;                                // 零速角速度阈值
+    s_config.tick_to_meter_left = -0.00002204f;                          // 左轮编码器脉冲转距离
+    s_config.tick_to_meter_right = -0.00002204f;                         // 右轮编码器脉冲转距离
+    s_config.zupt_speed_threshold = 0.05f;                               // 静止速度阈值
+    s_config.zupt_gyro_threshold = 0.05f;                                // 静止角速度阈值
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      初始化六轴卡尔曼滤波器
+////  @brief      初始化六轴姿态解算器
  ////  @param      void
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void ins_kalman_6axis_init(void)
 {
-    memset(&s_kalman_6axis, 0, sizeof(s_kalman_6axis));                  // 清空六轴卡尔曼状态
+    memset(&s_kalman_6axis, 0, sizeof(s_kalman_6axis));                  // 清空解算状态
     s_kalman_6axis.Q[0] = s_config.kalman_6axis_q;
     s_kalman_6axis.Q[1] = s_config.kalman_6axis_q;
     s_kalman_6axis.Q[2] = s_config.kalman_6axis_q;
@@ -101,15 +142,15 @@ static void ins_kalman_6axis_init(void)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      重置六轴卡尔曼姿态
- ////  @param      roll        初始 roll
- ////  @param      pitch       初始 pitch
- ////  @param      yaw         初始 yaw
+////  @brief      重置六轴姿态解算器
+////  @param      roll        初始 roll
+////  @param      pitch       初始 pitch
+////  @param      yaw         初始 yaw
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void ins_kalman_6axis_reset(float roll, float pitch, float yaw)
 {
-    ins_kalman_6axis_init();                                             // 先重新初始化滤波器
+    ins_kalman_6axis_init();                                             // 重新初始化滤波器
     s_kalman_6axis.roll = roll;
     s_kalman_6axis.pitch = pitch;
     s_kalman_6axis.yaw_gyro = normalize_angle_rad(yaw);
@@ -122,14 +163,14 @@ static void ins_kalman_6axis_reset(float roll, float pitch, float yaw)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      六轴卡尔曼姿态更新
- ////  @param      gyro_x      陀螺仪X轴角速度(rad/s)
- ////  @param      gyro_y      陀螺仪Y轴角速度(rad/s)
- ////  @param      gyro_z      陀螺仪Z轴角速度(rad/s)
- ////  @param      acc_x       加速度计X轴加速度
- ////  @param      acc_y       加速度计Y轴加速度
- ////  @param      acc_z       加速度计Z轴加速度
- ////  @return     float       更新后的yaw角
+////  @brief      更新六轴姿态解算器
+////  @param      gyro_x      陀螺仪 X 轴角速度(rad/s)
+////  @param      gyro_y      陀螺仪 Y 轴角速度(rad/s)
+////  @param      gyro_z      陀螺仪 Z 轴角速度(rad/s)
+////  @param      acc_x       加速度计 X 轴
+////  @param      acc_y       加速度计 Y 轴
+////  @param      acc_z       加速度计 Z 轴
+////  @return     float       更新后的纯陀螺 yaw
  ////-------------------------------------------------------------------------------------------------------------------
 static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
                                      float acc_x, float acc_y, float acc_z)
@@ -140,7 +181,7 @@ static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
 
     if(fabsf(cos_pitch) < 1e-6f)
     {
-            cos_pitch = (cos_pitch >= 0.0f) ? 1e-6f : -1e-6f;                // 防止除零
+            cos_pitch = (cos_pitch >= 0.0f) ? 1e-6f : -1e-6f;                // 避免除零
     }
 
     s_kalman_6axis.Uk[0] = gyro_x + sinf(roll) * tanf(pitch) * gyro_y +
@@ -159,7 +200,7 @@ static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
 
     s_kalman_6axis.K[0] = s_kalman_6axis.Pk_[0] / (s_kalman_6axis.Pk_[0] + s_kalman_6axis.R[0]);
     s_kalman_6axis.K[1] = s_kalman_6axis.Pk_[1] / (s_kalman_6axis.Pk_[1] + s_kalman_6axis.R[1]);
-    s_kalman_6axis.K[2] = 0.0f;                                          // yaw 不使用加速度修正
+    s_kalman_6axis.K[2] = 0.0f;                                          // yaw 不使用加速度观测修正
 
     {
         float acc_yz_norm = sqrtf(acc_y * acc_y + acc_z * acc_z);
@@ -168,8 +209,8 @@ static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
             acc_yz_norm = 1e-6f;
         }
 
-        s_kalman_6axis.Zk[0] = atan2f(acc_y, acc_z);                     // 由加速度计算 roll
-        s_kalman_6axis.Zk[1] = -atan2f(acc_x, acc_yz_norm);              // 由加速度计算 pitch
+        s_kalman_6axis.Zk[0] = atan2f(acc_y, acc_z);                     // 加速度测得的 roll
+        s_kalman_6axis.Zk[1] = -atan2f(acc_x, acc_yz_norm);              // 加速度测得的 pitch
         s_kalman_6axis.Zk[2] = 0.0f;
     }
 
@@ -177,7 +218,7 @@ static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
                            s_kalman_6axis.K[0] * s_kalman_6axis.Zk[0];
     s_kalman_6axis.Xk[1] = (1.0f - s_kalman_6axis.K[1]) * s_kalman_6axis.Xk_[1] +
                            s_kalman_6axis.K[1] * s_kalman_6axis.Zk[1];
-    s_kalman_6axis.Xk[2] = normalize_angle_rad(s_kalman_6axis.Xk_[2]);   // yaw 仅做归一化
+    s_kalman_6axis.Xk[2] = normalize_angle_rad(s_kalman_6axis.Xk_[2]);   // yaw 单独归一化
 
     s_kalman_6axis.Pk[0] = (1.0f - s_kalman_6axis.K[0]) * s_kalman_6axis.Pk_[0];
     s_kalman_6axis.Pk[1] = (1.0f - s_kalman_6axis.K[1]) * s_kalman_6axis.Pk_[1];
@@ -192,7 +233,7 @@ static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
         float cos_roll = cosf(s_kalman_6axis.roll);
         float sin_pitch = sinf(s_kalman_6axis.pitch);
         float cos_pitch_now = cosf(s_kalman_6axis.pitch);
-        float gravity_x = -9.80665f * sin_pitch;                         // 重力在机体系中的X分量
+        float gravity_x = -9.80665f * sin_pitch;                         // 当前姿态下重力在 X 轴分量
         float gravity_y = 9.80665f * sin_roll * cos_pitch_now;
         float gravity_z = 9.80665f * cos_roll * cos_pitch_now;
 
@@ -205,7 +246,7 @@ static float ins_kalman_6axis_update(float gyro_x, float gyro_y, float gyro_z,
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      初始化两状态航向EKF
+////  @brief      初始化航向 EKF
  ////  @param      void
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
@@ -213,18 +254,18 @@ static void yaw_ekf2_init(void)
 {
     memset(&s_yaw_ekf, 0, sizeof(YawEKF2State));
     s_yaw_ekf.N_psi = s_config.Q_yaw;
-    // Round2 tuning: 大幅提高静止bias噪声，解决旋转后漂移问题
-    // 旋转扰动了内部bias估计，停稳后需要快速重收敛
-    s_yaw_ekf.N_b = 5e-7f;                // 动态时的bias过程噪声方差
-    s_yaw_ekf.N_b_frozen = 5e-9f;       // 静止时的bias过程噪声方差 [R1:1e-10, orig:1e-12]
+    // Round2 调参：静止时允许 bias 慢速收敛，运动时尽量冻结 bias
+    // 这样能抑制静态漂移，同时避免转动过程把真实角速度误吸收到 bias
+    s_yaw_ekf.N_b = 5e-7f;                // 静止时 bias 过程噪声
+    s_yaw_ekf.N_b_frozen = 5e-9f;         // 运动时 bias 过程噪声 [R1:1e-10, orig:1e-12]
     s_yaw_ekf.R = s_config.R_mag;
-    s_yaw_ekf.P[0][0] = 0.01f;           // 初始角度协方差不能太大，否则会被一开始的错误观测带偏
-    s_yaw_ekf.P[1][1] = 0.001f;          // 初始零偏协方差
+    s_yaw_ekf.P[0][0] = 0.01f;            // 初始 yaw 方差，允许较快吸收首批磁观测
+    s_yaw_ekf.P[1][1] = 0.001f;           // 初始 bias 方差
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      重置两状态航向EKF
- ////  @param      initial_yaw 初始航向角
+////  @brief      重置航向 EKF
+////  @param      initial_yaw 初始航向
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void yaw_ekf2_reset(float initial_yaw)
@@ -235,10 +276,10 @@ static void yaw_ekf2_reset(float initial_yaw)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      两状态航向EKF预测
- ////  @param      gyro_z      陀螺仪Z轴角速度
- ////  @param      dt          时间步长
- ////  @param      is_stationary 是否静止
+////  @brief      航向 EKF 预测
+////  @param      gyro_z      陀螺仪 Z 轴角速度
+////  @param      dt          采样周期
+////  @param      is_stationary 是否静止
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void yaw_ekf2_predict(float gyro_z, float dt, uint8_t is_stationary)
@@ -247,10 +288,10 @@ static void yaw_ekf2_predict(float gyro_z, float dt, uint8_t is_stationary)
     s_yaw_ekf.x[0] = normalize_angle_rad(s_yaw_ekf.x[0]);
     s_yaw_ekf.yaw_predict = s_yaw_ekf.x[0];
 
-    // 根据静止状态切换 N_b，运动时尽量冻结 bias
+    // 静止时放大 N_b，让滤波器更容易收敛陀螺 bias
     float Nb = is_stationary ? s_yaw_ekf.N_b : s_yaw_ekf.N_b_frozen;
 
-    // 连续时间过程噪声离散化，得到本次预测使用的 Q
+    // 按连续白噪声模型离散化过程噪声 Q
     float q00 = s_yaw_ekf.N_psi * dt + Nb * dt * dt * dt / 3.0f;
     float q01 = -Nb * dt * dt / 2.0f;
     float q11 = Nb * dt;
@@ -266,8 +307,8 @@ static void yaw_ekf2_predict(float gyro_z, float dt, uint8_t is_stationary)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      两状态航向EKF观测更新
- ////  @param      mag_yaw     磁力计航向观测值
+////  @brief      航向 EKF 观测更新
+////  @param      mag_yaw     磁航向观测值
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void yaw_ekf2_update(float mag_yaw)
@@ -278,25 +319,25 @@ static void yaw_ekf2_update(float mag_yaw)
     float K0 = s_yaw_ekf.P[0][0] / S;
     float K1 = s_yaw_ekf.P[1][0] / S;
 
-    // Round1 tuning: 收紧异常残差抑制，磁力计毛刺不应超过3度 [was 10度/0.174rad]
+    // Round1 调参：限制单次创新量，避免磁干扰导致跳变 [was 10deg/0.174rad]
     float max_innovation = 0.052f;    // 3 degrees
     if (y_tilde > max_innovation) y_tilde = max_innovation;
     if (y_tilde < -max_innovation) y_tilde = -max_innovation;
 
-    // Round1 tuning: 放宽K1限制，允许更快的bias修正速度 [was 0.05]
-    // 静止时bias应该快速收敛到真实零偏值
+    // Round1 调参：限制 K1，避免一次磁观测把 bias 拉偏 [was 0.05]
+    // 这样可以减少短时磁干扰带来的 bias 污染
     if (K1 > 0.15f) K1 = 0.15f;
     if (K1 < -0.15f) K1 = -0.15f;
 
     s_yaw_ekf.x[0] = normalize_angle_rad(s_yaw_ekf.x[0] + K0 * y_tilde);
     s_yaw_ekf.x[1] += K1 * y_tilde;
 
-    // 限制零偏绝对值大小 (防飞车保护：假设陀螺仪零偏不可能超过 10 deg/s)
+    // 对 bias 做限幅，避免滤波器发散到不合理范围（这里限制为 10 deg/s）
     float max_bias = 10.0f * INS_PI / 180.0f;
     if (s_yaw_ekf.x[1] > max_bias) s_yaw_ekf.x[1] = max_bias;
     if (s_yaw_ekf.x[1] < -max_bias) s_yaw_ekf.x[1] = -max_bias;
 
-    // 更新协方差矩阵并保持对称
+    // 先保存旧的协方差交叉项
     float p01_old = s_yaw_ekf.P[0][1];
 
     s_yaw_ekf.P[0][0] = (1.0f - K0) * s_yaw_ekf.P[0][0];
@@ -304,17 +345,17 @@ static void yaw_ekf2_update(float mag_yaw)
     s_yaw_ekf.P[1][0] = s_yaw_ekf.P[0][1];                 // 保持对称
     s_yaw_ekf.P[1][1] = s_yaw_ekf.P[1][1] - K1 * p01_old;  // 更新 P11
 
-    // 对协方差做下限保护并再次保持对称
+    // 防止数值误差导致协方差退化成负数
     if (s_yaw_ekf.P[0][0] < 1e-8f) s_yaw_ekf.P[0][0] = 1e-8f;
     if (s_yaw_ekf.P[1][1] < 1e-8f) s_yaw_ekf.P[1][1] = 1e-8f;
     s_yaw_ekf.P[0][1] = s_yaw_ekf.P[1][0];  // 保持对称
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      根据编码器更新位置
- ////  @param      yaw         当前航向角
- ////  @param      tick_left   左轮编码器增量
- ////  @param      tick_right  右轮编码器增量
+////  @brief      根据编码器更新位置
+////  @param      yaw         当前航向
+////  @param      tick_left   左轮编码器增量
+////  @param      tick_right  右轮编码器增量
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 static void ins_position_update(float yaw, int16_t tick_left, int16_t tick_right)
@@ -322,14 +363,14 @@ static void ins_position_update(float yaw, int16_t tick_left, int16_t tick_right
     float dist_left = (float)tick_left * s_config.tick_to_meter_left;    // 左轮位移
     float dist_right = (float)tick_right * s_config.tick_to_meter_right; // 右轮位移
     float dist_center = 0.5f * (dist_left + dist_right);                 // 车体中心位移
-    s_pos_x += dist_center * cosf(yaw);                                  // 更新X坐标
-    s_pos_y += dist_center * sinf(yaw);                                  // 更新Y坐标
+    s_pos_x += dist_center * cosf(yaw);                                  // 更新 X 位置
+    s_pos_y += dist_center * sinf(yaw);                                  // 更新 Y 位置
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      判断当前是否静止
- ////  @param      input       INS输入数据
- ////  @return     uint8_t     1-静止 0-运动
+////  @brief      判断当前是否静止
+////  @param      input       INS 输入数据
+////  @return     uint8_t     1-静止 0-运动
  ////-------------------------------------------------------------------------------------------------------------------
 static uint8_t ins_is_stationary(const INS_Input *input)
 {
@@ -347,34 +388,34 @@ static uint8_t ins_is_stationary(const INS_Input *input)
     return 0u;
 }
 
- //-------------------------------------------对外接口------------------------------------------------------------
+//-------------------------------------------对外接口------------------------------------------------------------
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      初始化INS系统
+////  @brief      初始化 INS 模块
  ////  @param      void
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 void Ins_init(void)
 {
     Init_config();                                                       // 初始化默认配置
-    ins_kalman_6axis_init();                                             // 初始化六轴卡尔曼
-    yaw_ekf2_init();                                                     // 初始化航向EKF
+    ins_kalman_6axis_init();                                             // 初始化六轴姿态解算器
+    yaw_ekf2_init();                                                     // 初始化航向 EKF
     s_state.x = 0.0f;
     s_state.y = 0.0f;
     s_state.yaw = 0.0f;
     s_pos_x = 0.0f;
     s_pos_y = 0.0f;
 
-    s_mag_initial_yaw_captured = 0u;                                     // 复位磁力计初始朝向捕获标志
+    s_mag_initial_yaw_captured = 0u;                                     // 清除磁航向零点记录
 
     s_initialized = 1u;
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      重置INS状态
- ////  @param      x           初始X坐标
- ////  @param      y           初始Y坐标
- ////  @param      theta       初始航向角
+////  @brief      重置 INS 状态
+////  @param      x           初始 X 位置
+////  @param      y           初始 Y 位置
+////  @param      theta       初始航向
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 void Ins_reset(float x, float y, float theta)
@@ -389,8 +430,8 @@ void Ins_reset(float x, float y, float theta)
     s_pos_x = x;
     s_pos_y = y;
 
-    // 当重置位置和角度时，复位捕获标志
-    // 这样下次收到有效的磁力计数据时，会自动与当前重置的角度对齐
+    // 每次 reset 都重新捕获磁航向零点
+    // 这样相对磁航向会以当前朝向为新的参考方向
     s_mag_initial_yaw_captured = 0u;
 
     ins_kalman_6axis_reset(0.0f, 0.0f, normalized_theta);
@@ -398,8 +439,8 @@ void Ins_reset(float x, float y, float theta)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      设置INS配置参数
- ////  @param      config      配置结构体指针
+////  @brief      更新 INS 配置参数
+////  @param      config      新的配置参数
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 void Ins_set_config(const INS_Config *config)
@@ -443,9 +484,9 @@ void Ins_set_config(const INS_Config *config)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      更新INS状态
- ////  @param      input       INS输入数据指针
- ////  @param      dt_s        本次更新周期
+////  @brief      更新 INS 状态
+////  @param      input       INS 输入数据
+////  @param      dt_s        当前采样周期
  ////  @return     void
  ////-------------------------------------------------------------------------------------------------------------------
 void Ins_update(const INS_Input *input, float dt_s)
@@ -464,7 +505,7 @@ void Ins_update(const INS_Input *input, float dt_s)
         return;
     }
 
-    s_kalman_6axis.T = dt_s;                                             // 同步六轴卡尔曼采样周期
+    s_kalman_6axis.T = dt_s;                                             // 使用实时采样周期更新六轴解算器
 
     yaw_gyro = ins_kalman_6axis_update(imu660.data_Ripen.gyro_x,
                                        imu660.data_Ripen.gyro_y,
@@ -478,35 +519,46 @@ void Ins_update(const INS_Input *input, float dt_s)
 
     if(input->mag_valid)
     {
-        // 注意：根据硬件贴片方向，磁力计的偏航角计算可能与陀螺仪积分的旋向相反。
-        // 如果陀螺仪左转是正角，而磁力计左转读数变小，则需要在这里加上负号统一坐标系。
-        s_mag_yaw_raw = normalize_angle_rad(-atan2f(imu660.data_Ripen.mag_y, imu660.data_Ripen.mag_x));
+        float body_roll_for_mag = 0.0f;
+        float body_pitch_for_mag = 0.0f;
 
-        // 捕获上电（或reset后）的初始磁力计航向
+        map_body_attitude_for_mag_compensation(s_kalman_6axis.roll,
+                                               s_kalman_6axis.pitch,
+                                               &body_roll_for_mag,
+                                               &body_pitch_for_mag);
+
+        // 先将解算姿态映射到车身坐标，再参与磁航向倾斜补偿
+        s_mag_yaw_raw = compute_tilt_compensated_mag_yaw(imu660.data_Ripen.mag_x,
+                                                         imu660.data_Ripen.mag_y,
+                                                         imu660.data_Ripen.mag_z,
+                                                         body_roll_for_mag,
+                                                         body_pitch_for_mag);
+
+        // 首次进入或 reset 后重新记录当前磁航向零点
         if (!s_mag_initial_yaw_captured)
         {
-            // 我们希望此时的相对磁航向 (mag_yaw_rel) 完全等于当前 EKF 已经积分出的航向 (s_yaw_ekf.x[0])
-            // 这样就不会因为在没有磁力计数据期间的旋转而产生跳变
+            // 让相对磁航向在初始化瞬间与 EKF 当前航向保持一致
+            // 这样切入磁观测时不会因为零点不一致而产生突跳
             // mag_yaw_rel = raw - initial = current_ekf_yaw
             // => initial = raw - current_ekf_yaw
             s_initial_mag_yaw = normalize_angle_rad(s_mag_yaw_raw - s_yaw_ekf.x[0]);
             s_mag_initial_yaw_captured = 1u;
-            s_mag_yaw_rel_filtered = s_yaw_ekf.x[0]; // 同步初始化滤波器历史值
+            s_mag_yaw_rel_filtered = s_yaw_ekf.x[0]; // 低通输出与 EKF 航向对齐
         }
 
-        // 计算相对磁航向
+        // 计算相对初始方向的磁航向
         s_mag_yaw_rel = normalize_angle_rad(s_mag_yaw_raw - s_initial_mag_yaw);
 
-        // 简单的一阶低通滤波 (Alpha = 0.3) 平滑磁力计高频噪声
-        // 将Alpha从0.1提高到0.3，减少滤波延迟，提升系统响应速度
+        // 对相对磁航向做一次低通滤波 (Alpha = 0.3)，兼顾响应和稳定性
+        // Alpha 从 0.1 提到 0.3 后，转向响应更快，抖动仍可接受
         float diff = normalize_angle_rad(s_mag_yaw_rel - s_mag_yaw_rel_filtered);
         s_mag_yaw_rel_filtered = normalize_angle_rad(s_mag_yaw_rel_filtered + 0.3f * diff);
 
-        // EKF 观测更新，使用低通滤波后的相对磁航向
+        // 用滤波后的相对磁航向修正 EKF
         yaw_ekf2_update(s_mag_yaw_rel_filtered);
     }
 
-    s_state.yaw = normalize_angle_rad(s_yaw_ekf.x[0]);                   // 使用EKF输出作为最终yaw
+    s_state.yaw = normalize_angle_rad(s_yaw_ekf.x[0]);                   // 以 EKF 输出作为最终 yaw
     enc_state = encoder_layer_get_state();
     if(enc_state != NULL)
     {
@@ -524,7 +576,7 @@ void Ins_update(const INS_Input *input, float dt_s)
         s_state.y = s_pos_y;
     }
 
-    (void)input->omega_rad_s;                                            // 当前版本未使用该输入
+    (void)input->omega_rad_s;                                            // 当前版本未使用车辆模型角速度
     (void)input->mag_yaw_rad;
     (void)s_config.Q_yaw;
     (void)s_config.R_mag;
@@ -532,7 +584,7 @@ void Ins_update(const INS_Input *input, float dt_s)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      获取当前INS状态
+////  @brief      获取当前 INS 状态
  ////  @param      void
  ////  @return     const INS_State*
  ////-------------------------------------------------------------------------------------------------------------------
@@ -542,18 +594,43 @@ const INS_State* Ins_get_state(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  @brief      获取各层yaw值
-//  @param      yaw_gyro     陀螺仪预测yaw（输出）
-//  @param      yaw_mag_raw  原始绝对磁航向（输出）
-//  @param      yaw_mag_rel  计算出的相对磁航向（输出）
-//  @param      yaw_ekf      EKF最终融合yaw（输出）
+//  @brief      获取当前姿态角
+//  @param      roll         输出当前 roll 指针
+//  @param      pitch        输出当前 pitch 指针
+//  @param      yaw          输出当前 yaw 指针
+//  @return     void
+//-------------------------------------------------------------------------------------------------------------------
+void Ins_get_attitude(float *roll, float *pitch, float *yaw)
+{
+    if(roll != NULL)
+    {
+        *roll = s_kalman_6axis.roll;
+    }
+
+    if(pitch != NULL)
+    {
+        *pitch = s_kalman_6axis.pitch;
+    }
+
+    if(yaw != NULL)
+    {
+        *yaw = s_state.yaw;
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  @brief      获取各层 yaw 数据
+//  @param      yaw_gyro     纯陀螺积分得到的 yaw
+//  @param      yaw_mag_raw  倾斜补偿后的原始磁航向
+//  @param      yaw_mag_rel  低通后的相对磁航向
+//  @param      yaw_ekf      EKF 融合后的最终 yaw
 //  @return     void
 //-------------------------------------------------------------------------------------------------------------------
 void Ins_get_yaw_layers(float *yaw_gyro, float *yaw_mag_raw, float *yaw_mag_rel, float *yaw_ekf)
 {
     if(yaw_gyro != NULL)
     {
-        // 返回6轴卡尔曼算出来的陀螺仪积分yaw，而不是EKF里的预测值
+        // 返回六轴姿态解算器内部维护的纯陀螺 yaw，便于和 EKF 对比
         *yaw_gyro = s_kalman_6axis.yaw_gyro;
     }
     if(yaw_mag_raw != NULL)
@@ -562,7 +639,7 @@ void Ins_get_yaw_layers(float *yaw_gyro, float *yaw_mag_raw, float *yaw_mag_rel,
     }
     if(yaw_mag_rel != NULL)
     {
-        // 返回滤波后的磁力计相对航向，方便上位机观察平滑效果
+        // 对外统一输出低通后的相对磁航向，避免原始磁角抖动过大
         *yaw_mag_rel = s_mag_yaw_rel_filtered;
     }
     if(yaw_ekf != NULL)
@@ -572,10 +649,35 @@ void Ins_get_yaw_layers(float *yaw_gyro, float *yaw_mag_raw, float *yaw_mag_rel,
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  @brief      相对磁航向单元测试与回归测试
+//  @brief      获取当前用于姿态补偿的磁力计三轴
+//  @param      mag_x        X 轴磁力计
+//  @param      mag_y        Y 轴磁力计
+//  @param      mag_z        Z 轴磁力计
+//  @return     void
+//-------------------------------------------------------------------------------------------------------------------
+void Ins_get_mag_vector(float *mag_x, float *mag_y, float *mag_z)
+{
+    if(mag_x != NULL)
+    {
+        *mag_x = imu660.data_Ripen.mag_x;
+    }
+
+    if(mag_y != NULL)
+    {
+        *mag_y = imu660.data_Ripen.mag_y;
+    }
+
+    if(mag_z != NULL)
+    {
+        *mag_z = imu660.data_Ripen.mag_z;
+    }
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  @brief      测试相对磁航向流程
 //  @param      void
 //  @return     void
-//  @note       验证四个初始朝向（0, 90, 180, 270度），确认上电后的磁航向和EKF是否稳定在 0度
+//  @note       依次模拟 0、90、180、270 度输入，检查相对磁航向与 EKF 输出是否正确
 //-------------------------------------------------------------------------------------------------------------------
 void Ins_test_relative_mag(void)
 {
@@ -584,20 +686,20 @@ void Ins_test_relative_mag(void)
     dummy_input.mag_valid = 1;
     float dt = 0.004f; // 4ms
 
-    printf("\n=== 相对磁航向 单元测试开始 ===\n");
+    printf("\n=== 开始测试相对磁航向 ===\n");
     for(int i = 0; i < 4; i++)
     {
         float init_angle_rad = test_angles_deg[i] * INS_PI / 180.0f;
 
-        // 模拟上电
+        // 重新初始化模块
         Ins_init();
 
-        // 我们模拟磁力计在当前方向上的绝对输出
-        // mag_yaw = atan2(y, x), 所以 y = sin(angle), x = cos(angle)
+        // 构造水平面上的理想磁场方向
+        // mag_yaw = atan2(y, x)，因此 y = sin(angle)，x = cos(angle)
         imu660.data_Ripen.mag_x = cosf(init_angle_rad);
         imu660.data_Ripen.mag_y = sinf(init_angle_rad);
 
-        // 陀螺仪和加速度计处于静止状态
+        // 构造静止状态输入
         imu660.data_Ripen.gyro_x = 0;
         imu660.data_Ripen.gyro_y = 0;
         dummy_input.gyro_z_rad_s = 0;
@@ -608,8 +710,8 @@ void Ins_test_relative_mag(void)
         dummy_input.v_mps = 0;
         dummy_input.omega_rad_s = 0;
 
-        // 连续运行EKF一段时间，让它收敛
-        for(int step = 0; step < 500; step++) // 运行2秒
+        // 连续更新足够长时间，让 EKF 和低通滤波收敛
+        for(int step = 0; step < 500; step++) // 约 2 秒
         {
             Ins_update(&dummy_input, dt);
         }
@@ -618,18 +720,18 @@ void Ins_test_relative_mag(void)
         Ins_get_yaw_layers(&yaw_gyro, &yaw_mag_raw, &yaw_mag_rel, &yaw_ekf);
 
         float err_deg = fabsf(yaw_ekf * 180.0f / INS_PI);
-        if(err_deg > 180.0f) err_deg = 360.0f - err_deg; // 角度误差
+        if(err_deg > 180.0f) err_deg = 360.0f - err_deg; // 取最小夹角误差
 
-        printf("测试用例 %d: 初始物理朝向 = %.1f deg\n", i+1, test_angles_deg[i]);
+        printf("测试角度 %d: 期望相对航向 = %.1f deg\n", i+1, test_angles_deg[i]);
         printf("  原始磁航向 = %.2f deg\n", yaw_mag_raw * 180.0f / INS_PI);
         printf("  相对磁航向 = %.2f deg\n", yaw_mag_rel * 180.0f / INS_PI);
-        printf("  EKF最终Yaw = %.2f deg (误差: %.2f deg)\n", yaw_ekf * 180.0f / INS_PI, err_deg);
+        printf("  EKF 输出 Yaw = %.2f deg (误差: %.2f deg)\n", yaw_ekf * 180.0f / INS_PI, err_deg);
 
         if(err_deg < 0.5f) {
-            printf("  -> [通过] 误差小于0.5度\n");
+            printf("  -> [通过] 误差小于 0.5 度\n");
         } else {
-            printf("  -> [失败] 误差过大!\n");
+            printf("  -> [失败] 误差过大\n");
         }
     }
-    printf("=== 相对磁航向 单元测试结束 ===\n\n");
+    printf("=== 相对磁航向测试结束 ===\n\n");
 }

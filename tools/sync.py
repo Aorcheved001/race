@@ -19,10 +19,10 @@ from datetime import datetime
 SRC_DIR = r"D:\race\save\4.10\new_ins"
 DST_DIR = r"E:\Aorcheved_01\new_ins"
 
-SYNC_DIRS = ["code", "user", "libraries"]
+SYNC_DIRS = ["code", "user", "libraries", "scripts", "docs"]
 SYNC_ROOT_FILES = [".cproject", ".project", "Lcf_Tasking_Tricore_Tc.lsl"]
 
-EXTENSIONS = {".c", ".h"}
+EXTENSIONS = {".c", ".h", ".py", ".md", ".txt"}
 
 
 def get_file_size(path):

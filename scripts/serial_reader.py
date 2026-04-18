@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Serial Reader - AURIX TC377 Wireless UART Monitor
-COM24 Wireless UART - 115200bps - Data logging
+COM36 Wireless UART - 115200bps - Data logging
 
 Usage:
-    python serial_reader.py              # Default COM24:115200
-    python serial_reader.py --port COM24 # Specify port
+    python serial_reader.py              # Default COM36:115200
+    python serial_reader.py --port COM36 # Specify port
     python serial_reader.py --save       # Save to log file
 """
 
@@ -199,8 +199,8 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python serial_reader.py                  # Default COM24:115200
-  python serial_reader.py --port COM24     # Specify port
+  python serial_reader.py                  # Default COM36:115200
+  python serial_reader.py --port COM36     # Specify port
   python serial_reader.py --baud 9600      # Custom baud rate
   python serial_reader.py --list           # List available ports
   python serial_reader.py --save           # Save to log file
@@ -210,8 +210,8 @@ Examples:
     )
 
     parser.add_argument(
-        "--port", "-p", default="COM24",
-        help="Serial port (default: COM24)",
+        "--port", "-p", default="COM36",
+        help="Serial port (default: COM36)",
     )
     parser.add_argument(
         "--baud", "-b", type=int, default=115200,

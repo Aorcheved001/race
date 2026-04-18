@@ -69,7 +69,9 @@ void Ins_set_config(const INS_Config *config);                           // 设置
 void Ins_update(const INS_Input *input, float dt_s);                     // 更新INS状态
 
 const INS_State* Ins_get_state(void);                                    // 获取当前INS状态
+void Ins_get_attitude(float *roll, float *pitch, float *yaw);            // 获取当前姿态角（弧度）
 void Ins_get_yaw_layers(float *yaw_gyro, float *yaw_mag_raw, float *yaw_mag_rel, float *yaw_ekf); // 获取各层yaw值
+void Ins_get_mag_vector(float *mag_x, float *mag_y, float *mag_z);       // 获取当前用于姿态补偿的磁力计三轴
 
 // 单元测试
 void Ins_test_relative_mag(void);
