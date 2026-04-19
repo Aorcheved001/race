@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Source Sync Tool v1
-Sync source files from Trae workspace (D:) -> ADS workspace (E:)
+Sync source files from VSCode workspace (D:) -> ADS workspace (E:)
 
 Usage:
     python sync.py                  # Dry-run preview
@@ -16,7 +16,7 @@ import shutil
 import argparse
 from datetime import datetime
 
-SRC_DIR = r"D:\race\save\4.10\new_ins"
+SRC_DIR = r"D:\race\save\4.10 - vs\new_ins"
 DST_DIR = r"E:\Aorcheved_01\new_ins"
 
 SYNC_DIRS = ["code", "user", "libraries", "scripts", "docs"]

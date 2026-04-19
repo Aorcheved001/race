@@ -3,10 +3,10 @@ setlocal enabledelayedexpansion
 chcp 65001 >nul
 REM ========================================
 REM Source Sync Script v2
-REM D:\race (Trae workspace) -> E:\ADS (build workspace)
+REM D:\race (VSCode workspace) -> E:\ADS (build workspace)
 REM ========================================
 
-set "SRC_DIR=D:\race\save\4.10\new_ins"
+set "SRC_DIR=D:\race\save\4.10 - vs\new_ins"
 set "DST_DIR=E:\Aorcheved_01\new_ins"
 
 set DRY_RUN=0
@@ -29,7 +29,7 @@ goto parse_args
 :end_parse
 
 echo ========================================
-echo Source Sync: Trae -^> ADS v2
+echo Source Sync: VSCode -^> ADS v2
 echo ========================================
 echo Source : %SRC_DIR%
 echo Target : %DST_DIR%

@@ -8,12 +8,12 @@ REM ========================================
 set ADS_DIR=E:\Aorcheved_01\AURIX-Studio-1.10.2
 set PROJECT_DIR=E:\Aorcheved_01\new_ins
 set BUILD_DIR=%PROJECT_DIR%\Debug
-set TRAE_DIR=D:\race\save\4.10\new_ins
+set VSCODE_DIR=D:\race\save\4.10 - vs\new_ins
 
 set MAKE_EXE=%ADS_DIR%\tools\make\make.exe
 set TOOLCHAIN_BIN=%ADS_DIR%\tools\Compilers\Tasking_1.1r8\ctc\bin
 set FLASHER_EXE=%ADS_DIR%\tools\AurixFlasherSoftwareTool_v1.0.8\AurixFlasher.exe
-set SYNC_PY=%TRAE_DIR%\tools\sync.py
+set SYNC_PY=%VSCODE_DIR%\tools\sync.py
 
 set ELF_FILE=%BUILD_DIR%\new_ins.elf
 set HEX_FILE=%BUILD_DIR%\new_ins.hex
@@ -47,7 +47,7 @@ echo ========================================
 echo AURIX Studio Build ^& Flash v9
 echo ========================================
 echo ADS Dir : %ADS_DIR%
-echo Trae   : %TRAE_DIR%
+echo VSCode : %VSCODE_DIR%
 echo Project: %PROJECT_DIR%
 echo Build  : %BUILD_DIR%
 
@@ -68,7 +68,7 @@ REM SYNC PHASE (optional)
 REM ================================
 if %DO_SYNC% equ 1 (
     if exist "%SYNC_PY%" (
-        echo [INFO] === Syncing Trae -^> ADS ===
+        echo [INFO] === Syncing VSCode -^> ADS ===
         python "%SYNC_PY%" --force
         echo.
     ) else (

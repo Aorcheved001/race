@@ -93,7 +93,12 @@ def evaluate_calibration_quality(x, y, z, hard_iron, soft_iron, field_strength):
     return max(0.0, score), residual
 
 def main():
-    filepath = r'd:\race\save\4.10\new_ins\data\serial_log_COM10_20260415_221021.txt'
+    # 获取脚本所在目录，构建相对路径
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+    DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
+    
+    filepath = os.path.join(DATA_DIR, 'serial_log_COM10_20260415_221021.txt')
     
     xs, ys, zs = [], [], []
     with open(filepath, 'r') as f:
@@ -172,7 +177,7 @@ def main():
     axs[1, 2].axis('equal')
     
     plt.tight_layout()
-    plot_path = r'd:\race\save\4.10\new_ins\data\calibration_analysis_20260415.png'
+    plot_path = os.path.join(DATA_DIR, 'calibration_analysis_20260415.png')
     plt.savefig(plot_path)
     print(f"Plot saved to {plot_path}")
 

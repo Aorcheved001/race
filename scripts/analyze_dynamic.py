@@ -1,8 +1,14 @@
 # -*- coding: utf-8 -*-
 import re
 import sys
+import os
 
-logfile = r'd:\race\save\4.10\new_ins\dynamic_p2_rotation.txt'
+# 获取脚本所在目录，构建相对路径
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
+
+logfile = os.path.join(DATA_DIR, 'dynamic_p2_rotation.txt')
 if len(sys.argv) > 1:
     logfile = sys.argv[1]
 

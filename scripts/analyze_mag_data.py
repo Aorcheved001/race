@@ -1,12 +1,18 @@
 # -*- coding: utf-8 -*-
 import re
 import sys
+import os
 import numpy as np
+
+# 获取脚本所在目录，构建相对路径
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
 
 if len(sys.argv) > 1:
     logfile = sys.argv[1]
 else:
-    logfile = r'd:\race\save\4.10\new_ins\serial_log_COM24_20260414_143752.txt'
+    logfile = os.path.join(DATA_DIR, 'serial_log_COM24_20260414_143752.txt')
 lines = open(logfile, 'r', encoding='utf-8').readlines()
 data = []
 for line in lines:
