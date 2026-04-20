@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py *)",
+      "Bash(python scripts/analyze_mag_data.py data/serial_log_COM10_20260415_221021.txt)",
+      "Bash(where python *)",
+      "Bash(python scripts/verify_calib.py serial_log_COM14_20260416_211629.txt)",
+      "Bash(cmd /c \"cd /d d:\\\\race\\\\save\\\\4.10\\\\new_ins && python -c \\\\\"print\\('test'\\)\\\\\"\")",
+      "Bash(powershell -Command \"cd d:/race/save/4.10/new_ins; python scripts/verify_calib.py serial_log_COM14_20260416_211629.txt\")"
+    ]
+  }
+}

@@ -82,6 +82,7 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
@@ -147,6 +148,73 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_BlackmanHa
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Crc.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Crc.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Crc.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Crc.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_BitReverseTable.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_BitReverseTable.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_BitReverseTable.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_BitReverseTable.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_TwiddleTable.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_TwiddleTable.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_TwiddleTable.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_TwiddleTable.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32_Table.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32_Table.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32_Table.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32_Table.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLSincosF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLSincosF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLSincosF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLSincosF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32_Table.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32_Table.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32_Table.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32_Table.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_BlackmanHarrisTable.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_BlackmanHarrisTable.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_BlackmanHarrisTable.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_BlackmanHarrisTable.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

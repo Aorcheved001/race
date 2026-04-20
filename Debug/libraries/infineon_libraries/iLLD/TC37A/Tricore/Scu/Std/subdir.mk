@@ -34,6 +34,7 @@ libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuCcu.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuCcu.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuCcu.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuCcu.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
@@ -51,6 +52,25 @@ libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuRcu.o: libraries/i
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuCcu.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuCcu.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuEru.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuEru.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuEru.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuEru.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuLbist.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuLbist.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuLbist.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuLbist.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuRcu.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuRcu.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuRcu.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuRcu.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.c libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fE:/Aorcheved_01/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.src libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

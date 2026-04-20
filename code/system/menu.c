@@ -1,5 +1,6 @@
 /*
  * menu.c
+<<<<<<< HEAD
  * ï¿½Ëµï¿½ï¿½ï¿½Ê¾ÏµÍ³
  *
  * Created on: 2024ï¿½ï¿½6ï¿½ï¿½6ï¿½ï¿½
@@ -29,6 +30,36 @@ int key_detect(key_index_enum key_n, key_state_enum state)
     static uint8 long_press_flag[KEY_NUMBER] = {0};                       // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
 
     key_state_enum current_state = key_get_state(key_n);                  // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½×´Ì¬
+=======
+ * ²Ëµ¥ÏÔÊ¾ÏµÍ³
+ *
+ * Created on: 2024Äê6ÔÂ6ÈÕ
+ * Author: LateRain
+ * Modified: 2025Äê11ÔÂ22ÈÕ
+ */
+
+ //-------------------------------------------Í·ÎÄ¼þÇø------------------------------------------------------------
+#include "zf_common_headfile.h"
+
+ //-------------------------------------------È«¾Ö±äÁ¿¶¨ÒåÇø-----------------------------------------------------------
+static int8 page = 1;                                                     // µ±Ç°ÏÔÊ¾Ò³Ãæ
+
+#define MAX_PAGE 8                                                        // ×î´óÒ³ÃæÊý
+
+ //-------------------------------------------º¯ÊýÉùÃ÷Çø------------------------------------------------------------
+////-------------------------------------------------------------------------------------------------------------------
+ ////  @brief      ¼ì²â°´¼ü×´Ì¬
+ ////  @param      key_n       °´¼üË÷Òý
+ ////  @param      state       °´¼ü×´Ì¬ (¶Ì°´/³¤°´)
+ ////  @return     int8        1±íÊ¾¼ì²âµ½¶ÔÓ¦×´Ì¬£¬0±íÊ¾Î´¼ì²âµ½
+ ////  @note       ´¦Àí°´¼üµÄ¶Ì°´ºÍ³¤°´¼ì²â
+ ////-------------------------------------------------------------------------------------------------------------------
+int key_detect(key_index_enum key_n, key_state_enum state)
+{
+    static uint8 long_press_flag[KEY_NUMBER] = {0};                       // ³¤°´±êÖ¾Êý×é
+
+    key_state_enum current_state = key_get_state(key_n);                  // »ñÈ¡µ±Ç°°´¼ü×´Ì¬
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 
     if(state == KEY_LONG_PRESS)
     {
@@ -59,10 +90,17 @@ int key_detect(key_index_enum key_n, key_state_enum state)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
  ////  @brief      ï¿½Ëµï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  ////  @param      void
  ////  @return     void
  ////  @note       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ê¾
+=======
+ ////  @brief      ²Ëµ¥ÏÔÊ¾Ö÷º¯Êý
+ ////  @param      void
+ ////  @return     void
+ ////  @note       ´¦Àí°´¼üÉ¨ÃèºÍÒ³ÃæÏÔÊ¾
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
  ////-------------------------------------------------------------------------------------------------------------------
 void menu(void)
 {
@@ -72,17 +110,29 @@ void menu(void)
         key_scanner();
     }
 
+<<<<<<< HEAD
     const INS_State* ins_state = Ins_get_state();                         // ï¿½ï¿½È¡INS×´Ì¬
+=======
+    const INS_State* ins_state = Ins_get_state();                         // »ñÈ¡INS×´Ì¬
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 
     if(key_detect(KEY_3, KEY_SHORT_PRESS))
     {
         ips200_clear();
+<<<<<<< HEAD
         if(++page > MAX_PAGE) page = 0;                                   // ï¿½ï¿½Ò»Ò³
+=======
+        if(++page > MAX_PAGE) page = 0;                                   // ÏÂÒ»Ò³
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
     }
     if(key_detect(KEY_1, KEY_SHORT_PRESS))
     {
         ips200_clear();
+<<<<<<< HEAD
         if(--page < 0) page = MAX_PAGE;                                   // ï¿½ï¿½Ò»Ò³
+=======
+        if(--page < 0) page = MAX_PAGE;                                   // ÉÏÒ»Ò³
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
     }
 
     switch(page)
@@ -218,10 +268,13 @@ void menu(void)
             ips200_show_string(20, 6 * 16, "v3.0 Active");
             break;
 
+<<<<<<< HEAD
         case 9:
             steering_test_page();
             break;
 
+=======
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
         default:
             page = 0;
             break;

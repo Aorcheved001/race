@@ -13,7 +13,11 @@
 // ================= 用户配置区 =================
 // 请根据实际硬件连接修改此处
 #define SERVO_PIN             ATOM1_CH1_P33_9   // 舵机引脚
+<<<<<<< HEAD
 #define SERVO_FREQ            50                // 舵机频率 (50Hz - 300Hz)
+=======
+#define SERVO_FREQ            100                // 舵机频率 (50Hz - 300Hz)
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 #define SERVO_ANGLE_MIN       75.0f             // 软件限制的最小角度
 #define SERVO_ANGLE_MAX       105.0f            // 软件限制的最大角度
 // =============================================

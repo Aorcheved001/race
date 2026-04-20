@@ -1,6 +1,7 @@
 /*
  * PID.c
  *
+<<<<<<< HEAD
  *  é“¾å¼çº§è” PID æŽ§åˆ¶å±‚
  *  æ”¯æŒï¼šä½ç½®çŽ¯ + é€Ÿåº¦çŽ¯ + è§’é€Ÿåº¦çŽ¯ ä¸‰çº§çº§è”
  *
@@ -43,10 +44,17 @@
  */
 
 //-------------------------------------------å¤´æ–‡ä»¶å¼•å…¥------------------------------------------------------------
+=======
+ *  Created on: 2026-03-24
+ *      Author: Daydreamer
+ */
+//-------------------------------------------Í·ÎÄ¼þÉùÃ÷Çø------------------------------------------------------------
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 #include "zf_common_headfile.h"
 #include "PID.h"
 #include "motor.h"
 
+<<<<<<< HEAD
 //-------------------------------------------å®å®šä¹‰------------------------------------------------------------
 
 /* å…¼å®¹æŽ¥å£ä¼°ç®—yaw_rateæ—¶ä½¿ç”¨çš„è½®è·ï¼ˆmï¼‰ */
@@ -78,16 +86,66 @@ static float pid_step(PID_INFO *pid_info, const float *param, float error, float
 // è¿”å›žå‚æ•°     void
 // ä½¿ç”¨ç¤ºä¾‹     pid_para_init(&pid_info);
 // å¤‡æ³¨ä¿¡æ¯     æ¸…é›¶æ‰€æœ‰è¯¯å·®å’Œç´¯ç§¯åŽ†å²å€¼
+=======
+//-------------------------------------------±äÁ¿¶¨ÒåÇø------------------------------------------------------------
+WHEEL_PID_LAYER g_wheel_pid;                                         // ºóÂÖËÙ¶ÈPIDÈ«¾Ö¶ÔÏó
+
+//-------------------------------------------ÄÚ²¿º¯Êý¶¨ÒåÇø------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ËÙ¶È»·PID¼ÆËã
+//  ²ÎÊýËµÃ÷     pid_info      PID ×´Ì¬½á¹¹Ìå
+//  ²ÎÊýËµÃ÷     pid_param     ²ÎÊýÊý×é [Kp, Ki, Kd, I_limit]
+//  ²ÎÊýËµÃ÷     target        Ä¿±êËÙ¶È
+//  ²ÎÊýËµÃ÷     current       µ±Ç°ËÙ¶È
+//  ²ÎÊýËµÃ÷     dt_s          ²ÉÑùÖÜÆÚ£¨s£©
+//  ·µ»Ø²ÎÊý     float         PWMÊä³ö
+//-------------------------------------------------------------------------------------------------------------------
+static float pid_speed_step(PID_INFO *pid_info,
+                            const float *pid_param,
+                            float target,
+                            float current,
+                            float dt_s)
+{
+    if (!pid_info || !pid_param) return 0.0f;
+    if (dt_s <= 1e-6f) dt_s = 0.004f;
+
+    pid_info->iError = target - current;                             // µ±Ç°Îó²î e(k)
+
+    pid_info->SumError += pid_info->iError * dt_s;                   // »ý·ÖÏîÀÛ¼Ó
+    if (pid_param[3] > 0.0f)
+    {
+        pid_info->SumError = func_limit(pid_info->SumError, pid_param[3]); // »ý·ÖÏÞ·ù
+    }
+
+    float diff = (pid_info->iError - pid_info->LastError) / dt_s;    // Î¢·ÖÏî
+
+    float out = pid_param[0] * pid_info->iError                      // P
+              + pid_param[1] * pid_info->SumError                    // I
+              + pid_param[2] * diff;                                 // D
+
+    pid_info->LastError = pid_info->iError;                          // ±£´æÎó²îÓÃÓÚÏÂ´ÎÎ¢·Ö
+    return out;
+}
+
+//-------------------------------------------¶ÔÍâº¯Êý¶¨ÒåÇø------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ÇåÁã PID ²ÎÊý½á¹¹Ìå
+//  ²ÎÊýËµÃ÷     pid_info  PID ×´Ì¬½á¹¹ÌåÖ¸Õë
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 //-------------------------------------------------------------------------------------------------------------------
 void pid_para_init(PID_INFO *pid_info)
 {
     if (!pid_info) return;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
     pid_info->iError = 0.0f;
     pid_info->LastError = 0.0f;
     pid_info->SumError = 0.0f;
 }
 
+<<<<<<< HEAD
 
 //-------------------------------------------------------------------------------------------------------------------
 // å‡½æ•°åç§°     æ ‡å‡†PIDä¸€æ­¥è®¡ç®—
@@ -315,10 +373,79 @@ void wheel_pid_set_speed_param(float kp, float ki, float kd, float i_limit)
 // è¿”å›žå‚æ•°     void
 // ä½¿ç”¨ç¤ºä¾‹     wheel_pid_set_position_param(10.0f, 0.0f, 0.4f, 2.5f);
 // å¤‡æ³¨ä¿¡æ¯     æ”¯æŒå®žæ—¶è°ƒæ•´ä½ç½®çŽ¯PID
+=======
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ºóÂÖËÙ¶ÈPID³õÊ¼»¯
+//  ²ÎÊýËµÃ÷     ÎÞ
+//  ±¸×¢ÐÅÏ¢     ½öËÙ¶È»·£¬ÓÃÓÚ×ÝÏò¿ØÖÆ
+//-------------------------------------------------------------------------------------------------------------------
+void wheel_pid_init(void)
+{
+    memset(&g_wheel_pid, 0, sizeof(g_wheel_pid));
+
+    pid_para_init(&g_wheel_pid.pid_spd);                             // ËÙ¶È»·×´Ì¬ÇåÁã
+
+    g_wheel_pid.speed_param[0] = 10.0f;                             // ËÙ¶È»· Kp£¨Êä³öPWM£©
+    g_wheel_pid.speed_param[1] = 40.0f;                              // ËÙ¶È»· Ki
+    g_wheel_pid.speed_param[2] = 0.0f;                               // ËÙ¶È»· Kd
+    g_wheel_pid.speed_param[3] = 2.0f;                               // ËÙ¶È»·»ý·ÖÏÞ·ù£¨m/s¡¤s£©
+
+    g_wheel_pid.target_speed_mps = 0.0f;                             // Ä¿±êËÙ¶È
+    g_wheel_pid.speed_limit = 2.0f;                                  // ËÙ¶ÈÏÞ·ù 2 m/s
+    g_wheel_pid.out_pwm = 0.0f;                                      // Êä³öPWM
+
+    g_wheel_pid.enable_output = 0u;                                  // Ä¬ÈÏ²»ÏÂ·¢µç»úÊä³ö
+    g_wheel_pid.initialized = 1u;                                    // ³õÊ¼»¯Íê³É
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ÉèÖÃ PID Êä³öÊ¹ÄÜ
+//  ²ÎÊýËµÃ÷     enable_output 1=Êä³öPWMµ½µç»ú 0=²»Êä³ö
+//-------------------------------------------------------------------------------------------------------------------
+void wheel_pid_enable(uint8 enable_output)
+{
+    if (!g_wheel_pid.initialized) wheel_pid_init();
+
+    if (enable_output && !g_wheel_pid.enable_output)
+    {
+        pid_para_init(&g_wheel_pid.pid_spd);
+    }
+
+    g_wheel_pid.enable_output = enable_output ? 1u : 0u;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ÉèÖÃºóÂÖÖÐÐÄÎ»ÖÃÄ¿±ê
+//  ²ÎÊýËµÃ÷     target_pos_m Ä¿±êÎ»ÖÃ£¨m£©
+//  ±¸×¢ÐÅÏ¢     ±£Áô½Ó¿Ú¼æÈÝÐÔ£¬Êµ¼Ê²»Ê¹ÓÃÎ»ÖÃ¿ØÖÆ
+//-------------------------------------------------------------------------------------------------------------------
+void wheel_pid_set_target_pos(float target_pos_m)
+{
+    if (!g_wheel_pid.initialized) wheel_pid_init();
+    (void)target_pos_m;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ÉèÖÃºóÂÖÖÐÐÄËÙ¶ÈÄ¿±ê
+//  ²ÎÊýËµÃ÷     target_speed_mps Ä¿±êËÙ¶È
+//-------------------------------------------------------------------------------------------------------------------
+void wheel_pid_set_target_speed(float target_speed_mps)
+{
+    if (!g_wheel_pid.initialized) wheel_pid_init();
+
+    g_wheel_pid.target_speed_mps = func_limit(target_speed_mps, g_wheel_pid.speed_limit);
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ÉèÖÃÎ»ÖÃ»·²ÎÊý
+//  ²ÎÊýËµÃ÷     kp, ki, kd, i_limit
+//  ±¸×¢ÐÅÏ¢     ±£Áô½Ó¿Ú¼æÈÝÐÔ£¬Êµ¼Ê²»Ê¹ÓÃÎ»ÖÃ¿ØÖÆ
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 //-------------------------------------------------------------------------------------------------------------------
 void wheel_pid_set_position_param(float kp, float ki, float kd, float i_limit)
 {
     if (!g_wheel_pid.initialized) wheel_pid_init();
+<<<<<<< HEAD
     g_wheel_pid.position_param[PID_PARAM_KP] = kp;
     g_wheel_pid.position_param[PID_PARAM_KI] = ki;
     g_wheel_pid.position_param[PID_PARAM_KD] = kd;
@@ -390,11 +517,38 @@ void wheel_pid_set_yaw_rate_ref_limit_rps(float abs_max_rps)
 //              æ”¯æŒï¼šä½ç½®+é€Ÿåº¦+è§’é€Ÿåº¦ä¸²çº§ã€é€Ÿåº¦+è§’é€Ÿåº¦ã€ä»…é€Ÿåº¦ã€ä»…è§’é€Ÿåº¦
 //-------------------------------------------------------------------------------------------------------------------
 void wheel_pid_update_cascade(const EncoderLayerState *enc, float yaw_rps, float dt_s)
+=======
+    (void)kp; (void)ki; (void)kd; (void)i_limit;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ÉèÖÃËÙ¶È»·²ÎÊý
+//  ²ÎÊýËµÃ÷     kp, ki, kd, i_limit
+//-------------------------------------------------------------------------------------------------------------------
+void wheel_pid_set_speed_param(float kp, float ki, float kd, float i_limit)
+{
+    if (!g_wheel_pid.initialized) wheel_pid_init();
+
+    g_wheel_pid.speed_param[0] = kp;
+    g_wheel_pid.speed_param[1] = ki;
+    g_wheel_pid.speed_param[2] = kd;
+    g_wheel_pid.speed_param[3] = i_limit;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//  º¯Êý¼ò½é     ËÙ¶ÈPIDÖÜÆÚ¸üÐÂ
+//  ²ÎÊýËµÃ÷     enc   ±àÂëÆ÷²ã×´Ì¬
+//  ²ÎÊýËµÃ÷     dt_s  ÖÜÆÚÊ±¼ä
+//  ±¸×¢ÐÅÏ¢     ½öËÙ¶È»·£¬ÓÃÓÚ×ÝÏò¿ØÖÆ¡£ºáÏò¿ØÖÆÓÉPure Pursuit¸ºÔð¡£
+//-------------------------------------------------------------------------------------------------------------------
+void wheel_pid_update(const EncoderLayerState *enc, float dt_s)
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 {
     if (!enc) return;
     if (!g_wheel_pid.initialized) wheel_pid_init();
     if (dt_s <= 1e-6f) dt_s = 0.004f;
 
+<<<<<<< HEAD
     const uint8 pos_on = g_wheel_pid.enable_position_loop;
     const uint8 spd_on = g_wheel_pid.enable_speed_loop;
     const uint8 yaw_on = g_wheel_pid.enable_yaw_rate_loop;
@@ -568,3 +722,22 @@ void wheel_pid_update(const EncoderLayerState *enc, float dt_s)
 
     wheel_pid_update_cascade(enc, estimated_yaw, dt_s);
 }
+=======
+    float current_speed_mps = enc->speed_average_mps;
+
+    float spd_out = pid_speed_step(&g_wheel_pid.pid_spd,
+                                   g_wheel_pid.speed_param,
+                                   g_wheel_pid.target_speed_mps,
+                                   current_speed_mps,
+                                   dt_s);
+
+    spd_out = func_limit(spd_out, 2000.0f);
+    g_wheel_pid.out_pwm = spd_out;
+
+    if (g_wheel_pid.enable_output)
+    {
+        motor_control(motor_LB, (int16)spd_out);
+        motor_control(motor_RB, (int16)spd_out);
+    }
+}
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e

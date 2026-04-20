@@ -1,6 +1,7 @@
 /*
  * PID.h
  *
+<<<<<<< HEAD
  *  é“¾å¼çº§è” PID æŽ§åˆ¶å±‚
  *  æ”¯æŒï¼šä½ç½®çŽ¯ + é€Ÿåº¦çŽ¯ + è§’é€Ÿåº¦çŽ¯ ä¸‰çº§çº§è”
  *
@@ -228,3 +229,59 @@
  void wheel_pid_update_cascade(const EncoderLayerState *enc, float yaw_rps, float dt_s);
 
 #endif /* CODE_CONTROL_PID_H_ */
+=======
+ *  Created on: 2026-03-24
+ *      Author: Daydreamer
+ */
+#ifndef _FLY_MOTOR_PID_h
+#define _FLY_MOTOR_PID_h
+
+//-------------------------------------------Í·ÎÄ¼þÉùÃ÷Çø------------------------------------------------------------
+#include "zf_common_headfile.h"
+
+//-------------------------------------------½á¹¹Ìå¶¨ÒåÇø------------------------------------------------------------
+typedef struct
+{
+    float iError;                          // µ±Ç°Îó²î e(k)
+    float LastError;                       // ÉÏÒ»ÅÄÎó²î e(k-1)
+    float SumError;                        // Îó²î»ý·Ö ¦²e
+} PID_INFO;
+
+typedef struct
+{
+    PID_INFO pid_spd;                      // ËÙ¶È»· PID ×´Ì¬
+
+    float speed_param[4];                  // ËÙ¶È»·²ÎÊý£º[0]=Kp [1]=Ki [2]=Kd [3]=»ý·ÖÏÞ·ù
+
+    float target_speed_mps;                // Ä¿±êËÙ¶È
+
+    float speed_limit;                     // ËÙ¶ÈÏÞ·ù
+
+    float out_pwm;                         // ×îÖÕÊä³ö PWM£¨×óÓÒºóÂÖÍ¬Öµ£©
+
+    uint8 enable_output;                   // Êä³öÊ¹ÄÜ£º1=ÏÂ·¢µç»úPWM£¬0=²»ÏÂ·¢
+    uint8 initialized;                     // Ä£¿é³õÊ¼»¯±êÖ¾£º1=ÒÑ³õÊ¼»¯
+} WHEEL_PID_LAYER;
+
+//-------------------------------------------±äÁ¿ÉùÃ÷Çø------------------------------------------------------------
+extern WHEEL_PID_LAYER g_wheel_pid;
+
+//-------------------------------------------º¯ÊýÉùÃ÷Çø------------------------------------------------------------
+void pid_para_init(PID_INFO *pid_info);                     // ÇåÁã PID ÄÚ²¿×´Ì¬
+
+void wheel_pid_init(void);                                  // ³õÊ¼»¯ËÙ¶ÈPID
+
+void wheel_pid_enable(uint8 enable_output);                 // ÉèÖÃÊä³öÊ¹ÄÜ
+
+void wheel_pid_set_target_pos(float target_pos_m);          // ±£Áô½Ó¿Ú¼æÈÝÐÔ
+
+void wheel_pid_set_target_speed(float target_speed_mps);    // ÉèÖÃÄ¿±êËÙ¶È
+
+void wheel_pid_set_position_param(float kp, float ki, float kd, float i_limit); // ±£Áô½Ó¿Ú¼æÈÝÐÔ
+
+void wheel_pid_set_speed_param(float kp, float ki, float kd, float i_limit);    // ÉèÖÃËÙ¶È»·²ÎÊý
+
+void wheel_pid_update(const EncoderLayerState *enc, float dt_s);                 // ËÙ¶ÈPIDÖÜÆÚ¸üÐÂ
+
+#endif
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e

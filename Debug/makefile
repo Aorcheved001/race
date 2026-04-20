@@ -98,7 +98,11 @@ main-build: new_ins.elf secondary-outputs
 new_ins.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: TASKING Linker'
+<<<<<<< HEAD
 	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy "C:\Users\A\AURIX-v1.10.2-workspace\new_ins\libraries\zf_device\zf_device_config.a" -Wl--map-file="new_ins.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lcs_fpu -lfp_fpu -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc37x -o"new_ins.elf" -Wl-o"new_ins.hex:IHEX" $(OBJS)
+=======
+	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy "E:\Aorcheved_01\new_ins\libraries\zf_device\zf_device_config.a" -Wl--map-file="new_ins.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lcs_fpu -lfp_fpu -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc37x -o"new_ins.elf" -Wl-o"new_ins.hex:IHEX" $(OBJS)
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 	@echo 'Finished building target: $@'
 	@echo ' '
 

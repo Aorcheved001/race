@@ -2,6 +2,7 @@ IfxScuWdt.o :	../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuW
 ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Scu/Std/IfxScuWdt.c :
 IfxScuWdt.o :	..\libraries\infineon_libraries\iLLD\TC37A\Tricore\Scu\Std\IfxScuWdt.h
 ..\libraries\infineon_libraries\iLLD\TC37A\Tricore\Scu\Std\IfxScuWdt.h :
+<<<<<<< HEAD
 IfxScuWdt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxScu_cfg.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxScu_cfg.h" :
 IfxScuWdt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
@@ -102,3 +103,105 @@ IfxScuWdt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infine
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_reg.h" :
 IfxScuWdt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_regdef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_regdef.h" :
+=======
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxScu_cfg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxScu_cfg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\zf_common\zf_common_clock.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\zf_common\zf_common_clock.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdio.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdarg.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdint.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\string.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\ifx_types.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\ifx_types.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+IfxScuWdt.o :	"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"E:\Aorcheved_01\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Platform_Types.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Platform_Types.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxScu_bf.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxScu_bf.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxScu_reg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxScu_reg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxScu_regdef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxScu_regdef.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\Ifx_TypesReg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\Ifx_TypesReg.h" :
+IfxScuWdt.o :	..\libraries\infineon_libraries\iLLD\TC37A\Tricore\Scu\Std\IfxScuWdt.asm.h
+..\libraries\infineon_libraries\iLLD\TC37A\Tricore\Scu\Std\IfxScuWdt.asm.h :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxCpu_cfg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxCpu_cfg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_reg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_reg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_regdef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_regdef.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSrc_reg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSrc_reg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSrc_regdef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSrc_regdef.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxStm_reg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxStm_reg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxStm_regdef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxStm_regdef.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Service\\CpuGeneric\_Utilities\Ifx_Assert.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuWdt.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuWdt.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuCcu.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuCcu.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_PinMap\IfxScu_PinMap.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_PinMap\IfxScu_PinMap.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Port\Std\IfxPort.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Port\Std\IfxPort.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxPort_cfg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxPort_cfg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxPort_reg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxPort_reg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxPort_regdef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxPort_regdef.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_reg.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_reg.h" :
+IfxScuWdt.o :	"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_regdef.h"
+"E:\\Aorcheved_01\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxSmu_regdef.h" :
+>>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
