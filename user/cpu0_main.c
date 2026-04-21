@@ -47,7 +47,7 @@ int core0_main(void)
     clock_init();                   // 获取时钟频率<务必保留>
     debug_init();                   // 初始化默认调试串口
     // 此处编写用户代码 例如外设初始化代码等
-    Init_All();
+    //Init_All();
     pit_ms_init(CCU60_CH0, 2);
 
     // 按键扫描10ms
@@ -55,6 +55,9 @@ int core0_main(void)
     //ips200_set_font(IPS200_8X16_FONT);
     speech_uart_init();
     motor_init();
+    //pwm_init(MOTOR1_PWM_PIN1, 10000, 0);                                    // 初始化 MOTOR2 的 PWM 通道1，频率 17kHz，初始占空比 0
+    //pwm_init(MOTOR1_PWM_PIN2, 10000, 0);
+    //gpio_init(P33_9, GPO, 1, GPO_PUSH_PULL);
     ips200_init(IPS200_TYPE_SPI);
    // absolute_encoder_init();
     //gpio_set_level(P33_9,1);
@@ -62,8 +65,8 @@ int core0_main(void)
     cpu_wait_event_ready();         // 等待所有核心初始化完毕
     while (TRUE)
     {
-        my_motor_control(motor_LB, MOTOR_DIR_FORWARD, 80);
-        my_motor_control(motor_RB, MOTOR_DIR_FORWARD, 80);
+//        motor_control(motor_LB, MOTOR_DIR_FORWARD, 80);
+//        motor_control(motor_RB, MOTOR_DIR_FORWARD, 80);
 //        ips200_show_int (0, 0, a, 1);
 //        uart_write_byte(UART_4, 0xA5);
 //        if(key_detect(KEY_1, KEY_SHORT_PRESS))
@@ -95,6 +98,11 @@ int core0_main(void)
 //            pwm_set_duty(MOTOR1_PWM_PIN1, 5000);      // P33.9 S1 PWM
 //            pwm_set_duty(MOTOR1_PWM_PIN2, 0);
 //        }
+//        //motor_control(motor_LB, MOTOR_DIR_BRAKE, 10);
+//        //pwm_set_duty(MOTOR1_PWM_PIN1, 5000);
+//        //pwm_set_duty(MOTOR1_PWM_PIN2, 0);
+//        //pwm_set_duty (MOTOR1_PWM_PIN2, 5000);
+//        //motor_control(motor_LB, 5000);
 //
 //        if(a == 0)
 //            motor_control(motor_LB, MOTOR_DIR_FORWARD, 0);
@@ -107,9 +115,9 @@ int core0_main(void)
         // 此处编写需要循环执行的代码
         InterruptTasks_Poll();
 
-        menu_first();
+//        menu_first();
 //        //task2();
-        task();
+//        task();
         //dot_matrix_screen_set_brightness(5000);
         //dot_matrix_screen_show_string("120");   //120双闪灯
         //dot_matrix_screen_show_string("134");   //134左转向灯
@@ -120,7 +128,6 @@ int core0_main(void)
 
 
         // 此处编写需要循环执行的代码
-
 
     }
 }
