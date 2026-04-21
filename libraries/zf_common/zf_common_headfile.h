@@ -132,10 +132,7 @@
 #include "yaokong.h"
 #include "track.h"
 #include "ins_new_264.h"
-<<<<<<< HEAD
 #include "steering_control.h"
-=======
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 //=====================================================”√ªß≤„=======================================================
 #endif
 

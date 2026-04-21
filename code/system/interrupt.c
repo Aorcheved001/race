@@ -2,36 +2,19 @@
  * interrupt.c
  */
 
-<<<<<<< HEAD
- //-------------------------------------------Í·ÎÄ¼şÇø------------------------------------------------------------
+//-------------------------------------------å¤´æ–‡ä»¶å¼•ç”¨------------------------------------------------------------
 #include "zf_common_headfile.h"
 
- //-------------------------------------------ÄÚ²¿±äÁ¿Çø------------------------------------------------------------
-static volatile uint16 s_pending_1ms = 0;                                 // 1msÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_2ms = 0;                                 // 2msÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_4ms = 0;                                 // 4msÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_8ms = 0;                                 // 8msÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_16ms = 0;                                // 16msÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_40ms = 0;                                // 40msÈÎÎñ¹ÒÆğ¼ÆÊı
+//-------------------------------------------å†…éƒ¨å˜é‡å®šä¹‰------------------------------------------------------------
+static volatile uint16 s_pending_1ms = 0;                                 // 1ms ä»»åŠ¡è®¡æ•°å™¨
+static volatile uint16 s_pending_2ms = 0;                                 // 2ms ä»»åŠ¡è®¡æ•°å™¨
+static volatile uint16 s_pending_4ms = 0;                                 // 4ms ä»»åŠ¡è®¡æ•°å™¨
+static volatile uint16 s_pending_8ms = 0;                                 // 8ms ä»»åŠ¡è®¡æ•°å™¨
+static volatile uint16 s_pending_16ms = 0;                                // 16ms ä»»åŠ¡è®¡æ•°å™¨
+static volatile uint16 s_pending_40ms = 0;                                // 40ms ä»»åŠ¡è®¡æ•°å™¨
 
-volatile uint8 g_key_scan_flag = 0;                                       // °´¼üÉ¨Ãè±êÖ¾
-static INS_Input s_ins_input = {0};                                       // INSÊäÈëÊı¾İ½á¹¹Ìå
-
- //-------------------------------------------º¯ÊıÉùÃ÷Çø------------------------------------------------------------
-=======
-//-------------------------------------------Í·ÎÄ¼ş------------------------------------------------------------
-#include "zf_common_headfile.h"
-
-//-------------------------------------------ÈÎÎñµ÷¶È×´Ì¬------------------------------------------------------------
-static volatile uint16 s_pending_1ms = 0;                                 // 1ms ÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_2ms = 0;                                 // 2ms ÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_4ms = 0;                                 // 4ms ÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_8ms = 0;                                 // 8ms ÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_16ms = 0;                                // 16ms ÈÎÎñ¹ÒÆğ¼ÆÊı
-static volatile uint16 s_pending_40ms = 0;                                // 40ms ÈÎÎñ¹ÒÆğ¼ÆÊı
-
-volatile uint8 g_key_scan_flag = 0;                                       // °´¼üÉ¨Ãè±êÖ¾
-static INS_Input s_ins_input = {0};                                       // INS ÊäÈë»º´æ
+volatile uint8 g_key_scan_flag = 0;                                       // æŒ‰é”®æ‰«ææ ‡å¿—
+static INS_Input s_ins_input = {0};                                       // INS è¾“å…¥ç¼“å­˜
 static float s_roll_zero_offset_deg = 0.0f;
 static float s_pitch_zero_offset_deg = 0.0f;
 static float s_roll_zero_sum_deg = 0.0f;
@@ -39,8 +22,7 @@ static float s_pitch_zero_sum_deg = 0.0f;
 static uint16 s_attitude_zero_sample_count = 0u;
 static uint8 s_attitude_zero_ready = 0u;
 
-//-------------------------------------------±¾µØ¹¤¾ßº¯Êı------------------------------------------------------------
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+//-------------------------------------------å†…éƒ¨å·¥å…·å‡½æ•°------------------------------------------------------------
 static float normalize_angle_rad_local(float angle)
 {
     while (angle > INS_PI) angle -= 2.0f * INS_PI;
@@ -48,8 +30,6 @@ static float normalize_angle_rad_local(float angle)
     return angle;
 }
 
-<<<<<<< HEAD
-=======
 static void update_attitude_zero_offset(float roll_deg, float pitch_deg)
 {
     const uint16 required_samples = 50u;
@@ -71,7 +51,6 @@ static void update_attitude_zero_offset(float roll_deg, float pitch_deg)
     }
 }
 
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 static uint8 get_mag_yaw_measurement(float *yaw_rad)
 {
     float mag_x = imu660.data_Ripen.mag_x;
@@ -99,87 +78,47 @@ void Interrupt_16ms(void) { if (s_pending_16ms < 500u) s_pending_16ms++; }
 void Interrupt_40ms(void) { if (s_pending_40ms < 500u) s_pending_40ms++; }
 
 ////-------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
- ////  @brief      4msÖÜÆÚÈÎÎñ
- ////  @param      void
- ////  @return     void
- ////  @note       Ö´ĞĞIMUÊı¾İ´¦Àí¡¢±àÂëÆ÷¸üĞÂ¡¢PID¿ØÖÆ¡¢INS¸üĞÂ¡¢¹ì¼£´¦Àí
- ////-------------------------------------------------------------------------------------------------------------------
-static void run_4ms_tasks(void)
-{
-    date_handle(&imu_date);                                               // IMUÊı¾İ´¦Àí
-    encoder_layer_update();                                               // ±àÂëÆ÷²ã¸üĞÂ
-
-    const EncoderLayerState* enc = encoder_layer_get_state();             // »ñÈ¡±àÂëÆ÷×´Ì¬
-    wheel_pid_update(enc, 0.004f);                                        // ÂÖËÙPID¸üĞÂ
-
-    s_ins_input.v_mps = enc->speed_average_mps;                           // ÉèÖÃINSÊäÈëËÙ¶È
-    s_ins_input.gyro_z_rad_s = imu660.data_Ripen.gyro_z;                  // ÉèÖÃINSÊäÈë½ÇËÙ¶È
-    s_ins_input.mag_valid = get_mag_yaw_measurement(&s_ins_input.mag_yaw_rad);   // »ñÈ¡´Åº½Ïò
-
-    float steer_rad = servo_get_angle_rad_relative();                     // »ñÈ¡×ªÏò½Ç
-    s_ins_input.omega_rad_s = s_ins_input.v_mps * tanf(steer_rad) / INS_WHEELBASE_M;   // ¼ÆËã½ÇËÙ¶È
-
-    Ins_update(&s_ins_input, 0.004f);                                     // INS¸üĞÂ
-    track_proc();                                                         // ¹ì¼£´¦Àí
-}
-
-////-------------------------------------------------------------------------------------------------------------------
- ////  @brief      8msÖÜÆÚÈÎÎñ
- ////  @param      void
- ////  @return     void
- ////  @note       Ö´ĞĞ°´¼üÉ¨Ãè¡¢Ò£¿Ø´¦Àí¡¢INSµ¼º½ÈÎÎñ
- ////-------------------------------------------------------------------------------------------------------------------
-static void run_8ms_tasks(void)
-{
-    g_key_scan_flag = 1;                                                  // ÉèÖÃ°´¼üÉ¨Ãè±êÖ¾
-
-    yaokong_set_control_enabled((track_follow_flag == 0u) ? 1u : 0u);     // ÉèÖÃÒ£¿ØÊ¹ÄÜ
-    yaokong_data_deal();                                                  // Ò£¿ØÊı¾İ´¦Àí
-
-    key_scanner();
-    INS_NavigationTask();                                                 // INSµ¼º½ÈÎÎñ
-=======
-////  @brief      4ms ÖÜÆÚÈÎÎñ
+////  @brief      4ms å‘¨æœŸä»»åŠ¡å‡½æ•°
 ////  @param      void
 ////  @return     void
-////  @note       ¸ºÔğ¸üĞÂ IMU¡¢±àÂëÆ÷¡¢ÂÖËÙ PID ºÍ INS ÊäÈë
+////  @note       æ‰§è¡ŒåŒ…æ‹¬ IMU æ•°æ®å¤„ç†ã€ç¼–ç å™¨æ›´æ–°ã€PID æ§åˆ¶ã€INS æ›´æ–°ã€è½¨è¿¹å¤„ç†
 ////-------------------------------------------------------------------------------------------------------------------
 static void run_4ms_tasks(void)
 {
-    date_handle(&imu_date);                                               // ¸üĞÂ IMU Êı¾İ
-    encoder_layer_update();                                               // ¸üĞÂ±àÂëÆ÷×´Ì¬
+    date_handle(&imu_date);                                               // å¤„ç† IMU æ•°æ®
+    encoder_layer_update();                                               // æ›´æ–°ç¼–ç å™¨çŠ¶æ€
 
-    const EncoderLayerState* enc = encoder_layer_get_state();             // ¶ÁÈ¡±àÂëÆ÷×´Ì¬
-    wheel_pid_update(enc, 0.004f);                                        // ¸üĞÂÂÖËÙ PID
+    const EncoderLayerState* enc = encoder_layer_get_state();             // è·å–ç¼–ç å™¨çŠ¶æ€
+    wheel_pid_update(enc, 0.004f);                                        // æ›´æ–°ç”µæœº PID
 
-    s_ins_input.v_mps = enc->speed_average_mps;                           // Ğ´Èë INS ËÙ¶ÈÊäÈë
-    s_ins_input.gyro_z_rad_s = imu660.data_Ripen.gyro_z;                  // Ğ´Èë INS ÍÓÂİÒÇÊäÈë
-    s_ins_input.mag_valid = get_mag_yaw_measurement(&s_ins_input.mag_yaw_rad);   // ¸üĞÂ´Åº½Ïò¹Û²â
+    steering_control();                                                   // æ›´æ–°è½¬å‘æ§åˆ¶ï¼ˆ4mså‘¨æœŸè°ƒç”¨ï¼‰
 
-    float steer_rad = servo_get_angle_rad_relative();                     // µ±Ç°¶æ»ú×ª½Ç
-    s_ins_input.omega_rad_s = s_ins_input.v_mps * tanf(steer_rad) / INS_WHEELBASE_M;   // ¹ÀËã³µÁ¾½ÇËÙ¶È
+    s_ins_input.v_mps = enc->speed_average_mps;                           // å†™å…¥ INS é€Ÿåº¦æ•°æ®
+    s_ins_input.gyro_z_rad_s = imu660.data_Ripen.gyro_z;                  // å†™å…¥ INS è§’é€Ÿåº¦æ•°æ®
+    s_ins_input.mag_valid = get_mag_yaw_measurement(&s_ins_input.mag_yaw_rad);   // æ›´æ–°ç£ä¿¡å·è§‚æµ‹
 
-    Ins_update(&s_ins_input, 0.004f);                                     // ¸üĞÂ INS
-    track_proc();                                                         // Ö´ĞĞÑ­¼£´¦Àí
+    float steer_rad = steering_get_current_angle() * 0.017453292519943295f;  // å½“å‰è½¬å‘è§’ï¼ˆå¼§åº¦ï¼‰
+    s_ins_input.omega_rad_s = s_ins_input.v_mps * tanf(steer_rad) / INS_WHEELBASE_M;   // è®¡ç®—è½¦èº«è§’é€Ÿåº¦
+
+    Ins_update(&s_ins_input, 0.004f);                                     // æ›´æ–° INS
+    track_proc();                                                         // æ‰§è¡Œå¾ªè¿¹å¤„ç†
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      8ms ÖÜÆÚÈÎÎñ
+////  @brief      8ms å‘¨æœŸä»»åŠ¡å‡½æ•°
 ////  @param      void
 ////  @return     void
-////  @note       ¸ºÔğÒ£¿Ø¡¢°´¼üºÍ INS µ¼º½ÈÎÎñ
+////  @note       å¤„ç†é¥æ§ã€æŒ‰é”®å’Œ INS å¯¼èˆªä»»åŠ¡
 ////-------------------------------------------------------------------------------------------------------------------
 static void run_8ms_tasks(void)
 {
-    g_key_scan_flag = 1;                                                  // ÇëÇó°´¼üÉ¨Ãè
+    g_key_scan_flag = 1;                                                  // ç½®ä½æŒ‰é”®æ‰«ææ ‡å¿—
 
-    yaokong_set_control_enabled((track_follow_flag == 0u) ? 1u : 0u);     // ÉèÖÃÒ£¿ØÊÇ·ñ½Ó¹Ü
-    yaokong_data_deal();                                                  // ´¦ÀíÒ£¿ØÊı¾İ
+    yaokong_set_control_enabled((track_follow_flag == 0u) ? 1u : 0u);     // è®¾ç½®é¥æ§æ˜¯å¦æ¥ç®¡
+    yaokong_data_deal();                                                  // å¤„ç†é¥æ§æ•°æ®
 
     key_scanner();
-    INS_NavigationTask();                                                 // Ö´ĞĞ INS µ¼º½ÈÎÎñ
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+    INS_NavigationTask();                                                 // æ‰§è¡Œ INS å¯¼èˆªä»»åŠ¡
 }
 
 
@@ -193,28 +132,18 @@ static void send_pos_to_host(void)
     float yaw_gyro, yaw_mag_raw, yaw_mag_rel, yaw_ekf;
     Ins_get_yaw_layers(&yaw_gyro, &yaw_mag_raw, &yaw_mag_rel, &yaw_ekf);
 
-<<<<<<< HEAD
-    // ½«»¡¶È×ª»»Îª½Ç¶È·½±ãÉÏÎ»»ú²é¿´
-=======
-    // ×ª³É½Ç¶ÈºóÔÙ·¢¸øÉÏÎ»»ú£¬±ãÓÚÖ±½Ó²é¿´
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+    // è½¬æˆè§’åº¦å’Œç™¾åˆ†åº¦å•ä½ï¼Œæ–¹ä¾¿ç›´æ¥æŸ¥çœ‹
     yaw_gyro *= 57.29578f;
     yaw_mag_rel *= 57.29578f;
     yaw_ekf *= 57.29578f;
 
-<<<<<<< HEAD
-    char send_buf[64];
-
-    // ·ÖÈı´Î¶ÀÁ¢·¢ËÍÊı¾İ
-=======
     yaw_gyro = -yaw_gyro;
     yaw_mag_rel = -yaw_mag_rel;
     yaw_ekf = -yaw_ekf;
 
     char send_buf[64];
 
-    // µ±Ç°Êä³ö¿Ú¾¶Í³Ò»ÎªË³Ê±ÕëÎªÕı
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+    // å½“å‰æ–¹å‘è§’ç»Ÿä¸€ä¸ºé¡ºæ—¶é’ˆä¸ºæ­£
     sprintf(send_buf, "imu_yaw:%.2f,%.2f,%.2f\r\n", yaw_gyro,yaw_mag_rel,yaw_ekf);
     wireless_uart_send_string(send_buf);
 
@@ -226,24 +155,10 @@ static void send_pos_to_host(void)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
- ////  @brief      40msÖÜÆÚÈÎÎñ
- ////  @param      void
- ////  @return     void
- ////  @note       Ö´ĞĞINSÏÔÊ¾ÈÎÎñ
- ////-------------------------------------------------------------------------------------------------------------------
-static void run_40ms_tasks(void)
-{
-//    key_scanner();                                                        // °´¼üÉ¨Ãè
-    INS_Display();                                                        // INSÏÔÊ¾ÈÎÎñ
-//    send_position_to_host();
-//    imu_mag_send_raw_data_to_pc();
-    send_pos_to_host();
-=======
-////  @brief      ·¢ËÍ×ËÌ¬ºÍº½Ïò·Ö²ãÊı¾İµ½ÉÏÎ»»ú
+////  @brief      å‘é€å§¿æ€å’Œä¸‰è½´ç£åŠ›è®¡æ•°æ®åˆ°ä¸Šä½æœº
 ////  @param      void
 ////  @return     void
-////  @note       Êä³ö¸ñÊ½Îª imu_att:roll,pitch,yaw_gyro,yaw_mag_raw,yaw_mag_rel,yaw_ekf
+////  @note       è¾“å‡ºæ ¼å¼ä¸º imu_att:roll,pitch,yaw_gyro,yaw_mag_raw,yaw_mag_rel,yaw_ekf
 ////-------------------------------------------------------------------------------------------------------------------
 static void send_attitude_to_host(void)
 {
@@ -268,9 +183,9 @@ static void send_attitude_to_host(void)
 
     (void)yaw_rad;
 
-    // ½«½âËãÆ÷×ËÌ¬Ó³Éäµ½³µÉí×ø±êÏµ
-    // ³µÉí roll È¡µ±Ç°½âËãµÄ pitch
-    // ³µÉí pitch È¡µ±Ç°½âËãµÄ -roll
+    // å°†è½½ä½“å§¿æ€æ˜ å°„åˆ°è½¦ä½“åæ ‡ç³»
+    // è½¦ä½“ roll å–å½“å‰ pitch
+    // è½¦ä½“ pitch å–å½“å‰ -roll
     body_roll_rad = pitch_rad;
     body_pitch_rad = -roll_rad;
 
@@ -309,37 +224,28 @@ static void send_attitude_to_host(void)
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      40ms ÖÜÆÚÈÎÎñ
+////  @brief      40ms å‘¨æœŸä»»åŠ¡å‡½æ•°
 ////  @param      void
 ////  @return     void
-////  @note       ¸ºÔğÏÔÊ¾ºÍÉÏÎ»»ú·¢ËÍ
+////  @note       æ‰§è¡Œæ˜¾ç¤ºå’Œä¸Šä½æœºé€šä¿¡
 ////-------------------------------------------------------------------------------------------------------------------
 static void run_40ms_tasks(void)
 {
-//    key_scanner();                                                        // °´¼üÉ¨Ãè
-    INS_Display();                                                        // INS ĞÅÏ¢ÏÔÊ¾
+//    key_scanner();                                                        // æŒ‰é”®æ‰«æ
+    INS_Display();                                                        // INS ä¿¡æ¯æ˜¾ç¤º
 //    send_position_to_host();
 //    imu_mag_send_raw_data_to_pc();
 //    send_pos_to_host();
     send_attitude_to_host();
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 //    menu();
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
- ////  @brief      ÖĞ¶ÏÈÎÎñÂÖÑ¯
- ////  @param      void
- ////  @return     void
- ////  @note       ÔÚÖ÷Ñ­»·ÖĞµ÷ÓÃ£¬´¦Àí¹ÒÆğµÄÖÜÆÚÈÎÎñ
- ////-------------------------------------------------------------------------------------------------------------------
-=======
-////  @brief      ÖĞ¶ÏÈÎÎñÂÖÑ¯Èë¿Ú
+////  @brief      ä¸­æ–­ä»»åŠ¡è½®è¯¢å‡½æ•°
 ////  @param      void
 ////  @return     void
-////  @note       °´¹ÒÆğ¼ÆÊıÒÀ´ÎÖ´ĞĞ¸÷ÖÜÆÚÈÎÎñ
+////  @note       åœ¨ä¸»å¾ªç¯ä¸­è°ƒç”¨ï¼Œæ ¹æ®è®¡æ•°å™¨æ‰§è¡Œå„ä»»åŠ¡
 ////-------------------------------------------------------------------------------------------------------------------
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
 void InterruptTasks_Poll(void)
 {
     while (s_pending_4ms)

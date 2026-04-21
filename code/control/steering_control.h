@@ -25,7 +25,7 @@
 #define STEER_PWM_MAX           2000                // PWM 输出限幅
 
 #define STEER_ZERO_SAMPLES      10                  // 零位标定时采样次数
-
+#define STEER_GEAR_RATIO        (30.0f / 56.0f)     //齿轮比
 //-------------------------------------------外部结构体声明------------------------------------------------------------
 extern imu660_struct imu660;                       // IMU 数据结构体
 
