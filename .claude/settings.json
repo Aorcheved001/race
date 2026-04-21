@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(python)",
+      "Bash(cat)",
+      "Bash(python _fix_encoding_temp.py)",
+      "Bash(rm _fix_encoding_temp.py)",
+      "Bash(powershell -Command \"[System.IO.File]::ReadAllText\\('docs\\\\命令.txt', [System.Text.Encoding]::GetEncoding\\('gb2312'\\)\\).Substring\\(0, 500\\)\")",
+      "Bash(powershell -Command ' *)",
+      "Bash(echo 'Set-Content -Path \"code/本文件夹作用.txt\" -Value @\" *)",
+      "Bash(powershell -ExecutionPolicy Bypass -File _fix_temp.ps1)",
+      "Bash(rm _fix_temp.ps1)"
+    ]
+  }
+}
