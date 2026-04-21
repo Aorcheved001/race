@@ -1,0 +1,23 @@
+{
+
+"oaicopilot.baseUrl": "https://qianfan.baidubce.com/v2/coding",
+  "oaicopilot.apiKey": "bce-v3/ALTAKSP-7J7OvNiaH4x2u0E9j3puU/112ceaf6c738551c3abce4eae98fd8cbbb89a417",
+		"oaicopilot.models": [
+    {
+        "id": "glm-5",
+        "owned_by": "baidu"
+    }
+		],
+	"folders": [
+		{
+			"path": "../new_ins"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/Users/thinkpad/Desktop/all_code/DC_Motor"
+		}
+	],
+	"settings": {}
+}
