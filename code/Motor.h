@@ -28,6 +28,6 @@ typedef enum
 
 // ========================== 函数声明 ==========================
 void motor_init(void);
-void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent);
-
+void motor_control(MOTOR_TYPE motor , int16 duty);
+void my_motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent);
 #endif /* CODE_MOTOR_H_ */

@@ -358,7 +358,5 @@ Motor.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\encoder.h"
 "D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\encoder.h" :
 Motor.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\\ins\Ins.h"
 "D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\\ins\Ins.h" :
-Motor.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\PID.h"
-"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\PID.h" :
 Motor.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\servo.h"
 "D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\servo.h" :

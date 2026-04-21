@@ -143,9 +143,9 @@ typedef enum
 
 typedef enum
 {
-    HORN_STATE_IDLE = 0,
-    HORN_STATE_PLAYING,
-    HORN_STATE_PAUSING
+    HORN_STATE_IDLE = 0,        //ø’œ–
+    HORN_STATE_PLAYING,         //≤•∑≈
+    HORN_STATE_PAUSING          //‘›Õ£
 } Horn_State_Enum;
 
 typedef struct

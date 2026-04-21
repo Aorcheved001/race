@@ -17,12 +17,12 @@ void motor_init(void)
     //gpio_init(P33_11, GPO, 1, GPO_PUSH_PULL);
     //gpio_set_dir(P33_11, GPO, GPO_PUSH_PULL);
     // MOTOR2: 前臂高臂(S1) + 前臂低臂(S2) + 后臂高臂(S3) + 后臂低臂(S4)
-    //pwm_init(MOTOR2_PWM_PIN1, 10000, 0);    // P14.2 - 前臂高臂 (S1)
-    //pwm_init(MOTOR2_PWM_PIN2, 10000, 0);    // P14.3 - 后臂高臂 (S3)
+    pwm_init(MOTOR2_PWM_PIN1, 10000, 0);    // P14.2 - 前臂高臂 (S1)
+    pwm_init(MOTOR2_PWM_PIN2, 10000, 0);    // P14.3 - 后臂高臂 (S3)
 
     // 初始为刹车模式，全桥低侧导通
-    motor_control(motor_LB, MOTOR_DIR_BRAKE, 0);
-    //motor_control(motor_RB, MOTOR_DIR_BRAKE, 0);
+    motor_control(motor_RB ,0);
+    motor_control(motor_LB ,0);
 }
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -55,14 +55,15 @@ void motor_init(void)
 //                最小 0% (0)
 //                最大 100% (PWM_DUTY_MAX)
 //-------------------------------------------------------------------------------------------------------------------
-void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent)
+void my_motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent)
 {
     uint32 duty;
+
 
     if(percent > 100) percent = 100;
     duty = (uint32)percent * PWM_DUTY_MAX / 100U;
 
-    if(dir == MOTOR_DIR_BRAKE || duty == 0)
+    if( duty == 0)
     {
         // 刹车模式：S1=0, S2=1, S3=0, S4=1
         // 电机两端接地，形成短路回路，快速制动
@@ -115,6 +116,70 @@ void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent)
             case motor_RB:
                 pwm_set_duty(MOTOR2_PWM_PIN1, 0);         // P14.2 S1 = 0, 则 S2 = 1
                 pwm_set_duty(MOTOR2_PWM_PIN2, duty);      // P14.3 S3 PWM
+                break;
+        }
+    }
+}
+
+
+void motor_control(MOTOR_TYPE motor, int16 duty)
+{
+    int8 dir = (duty > 0) ? 1 : -1;
+    int16 abs_duty = abs(duty);
+
+    if(duty == 0)
+    {
+        // 刹车模式：S1=0, S2=1, S3=0, S4=1
+        // 电机两端接地，形成短路回路，快速制动
+        switch(motor)
+        {
+            case motor_LB:
+                pwm_set_duty(MOTOR1_PWM_PIN1, 0);
+                pwm_set_duty(MOTOR1_PWM_PIN2, 0);
+
+                break;
+
+            case motor_RB:
+                pwm_set_duty(MOTOR2_PWM_PIN1, 0);         // P14.2 S1=0
+                pwm_set_duty(MOTOR2_PWM_PIN2, 0);         // P14.3 S3=0
+                break;
+        }
+    }
+    else if(dir == MOTOR_DIR_FORWARD)
+    {
+        // 正转模式：前臂(S1/S2)互补PWM，后臂(S3/S4)固定
+        // S1 = PWM, S2 = complement, S3 = 0, S4 = 1
+        // 电流: S1/S4 导通 S1(PWM)/S2(续流)
+        switch(motor)
+        {
+            case motor_LB:
+                pwm_set_duty(MOTOR1_PWM_PIN1, abs_duty);      // P33.9 S1 PWM
+                pwm_set_duty(MOTOR1_PWM_PIN2, 0);         // P33.11 S3 = 0, 则 S4 = 1
+                //gpio_set_level(P33_11,1);
+                //gpio_low(P33_11);
+                break;
+
+            case motor_RB:
+                pwm_set_duty(MOTOR2_PWM_PIN1, abs_duty);      // P14.2 S1 PWM
+                pwm_set_duty(MOTOR2_PWM_PIN2, 0);         // P14.3 S3 = 0, 则 S4 = 1
+                break;
+        }
+    }
+    else if(dir == MOTOR_DIR_REVERSE)
+    {
+        // 反转模式：后臂(S3/S4)互补PWM，前臂(S1/S2)固定
+        // S1 = 0, S2 = 1, S3 = PWM, S4 = complement
+        // 电流: S2(常通)/S3(PWM) 形成反向电流
+        switch(motor)
+        {
+            case motor_LB:
+                pwm_set_duty(MOTOR1_PWM_PIN1, 0);         // P33.9 S1 = 0, 则 S2 = 1
+                pwm_set_duty(MOTOR1_PWM_PIN2, abs_duty);      // P33.11 S3 PWM
+                break;
+
+            case motor_RB:
+                pwm_set_duty(MOTOR2_PWM_PIN1, 0);         // P14.2 S1 = 0, 则 S2 = 1
+                pwm_set_duty(MOTOR2_PWM_PIN2, abs_duty);      // P14.3 S3 PWM
                 break;
         }
     }

@@ -356,8 +356,6 @@ imu660.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\encoder.h"
 "D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\encoder.h" :
 imu660.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\\ins\Ins.h"
 "D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\\ins\Ins.h" :
-imu660.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\PID.h"
-"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\PID.h" :
 imu660.o :	"D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\servo.h"
 "D:\\AURIX-v1.10.2-workspace\\TC377_Project1\\code\servo.h" :
 imu660.o :	..\code\ins\calibration_params.h
