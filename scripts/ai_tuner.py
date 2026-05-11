@@ -13,12 +13,12 @@ import re
 def build_project():
     """调用 ADS 命令行进行无头编译"""
     print("[AI_TUNER] 开始编译项目...")
-    # TODO: 替换为实际的 eclipsec.exe 路径和工作空间路径
+    # ADS路径和工作空间配置
     cmd = [
-        r"C:\Infineon\AURIX-Studio-1.9.2\eclipse\eclipsec.exe",
+        r"E:\Aorcheved_01\AURIX-Studio-1.10.2\eclipse\eclipsec.exe",
         "-nosplash",
         "-application", "org.eclipse.cdt.managedbuilder.core.headlessbuild",
-        "-data", r"D:\大学生智能车竞赛\存档\4.10",  # Workspace 目录
+        "-data", r"E:\Aorcheved_01",  # ADS Workspace 目录
         "-build", "new_ins"
     ]
     try:

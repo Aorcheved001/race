@@ -332,3 +332,44 @@ All serial port collected data is stored here:
 | GNSS receiver config | `code/ins/gnss.c/h` | Protocol, baud rate |
 | Memory layout | `Lcf_Tasking_Tricore_Tc.lsl` | Section addresses |
 | Compiler flags | `.cproject` (via IDE) | Optimization, defines |
+
+---
+
+## 10. Competition Application Scenarios
+
+For detailed analysis of the 21st Smart Car Competition - Kart Racing Group, see:
+
+**[应用场景.md](../应用场景.md)** - Competition task requirements and project capability analysis
+
+### Quick Links
+
+- **科目1: 自动驾驶** - Trajectory recording/playback, garage positioning
+- **科目2: 战场救护/语音交互** - Precise positioning, voice control
+- **科目3: 如影随形/穿越迷宫** - Path planning, obstacle avoidance
+
+### Key Capabilities
+
+| Feature | Status | Module |
+|---------|--------|--------|
+| INS Navigation | ? Implemented | `code/ins/Ins.c` |
+| Trajectory Recording | ? Implemented | `code/control/track.c` |
+| Pure Pursuit Control | ? Implemented | `code/control/track.c` |
+| Reverse Driving | ? Planned | `code/control/track.c` |
+| Garage Positioning | ? Planned | `code/control/track.c` |
+
+---
+
+## 11. Documentation Index
+
+| Document | Purpose |
+|----------|---------|
+| [CLAUDE.md](../CLAUDE.md) | Project overview and constraints |
+| [应用场景.md](../应用场景.md) | Competition task analysis |
+| [TOOLCHAIN_GUIDE.md](TOOLCHAIN_GUIDE.md) | Toolchain constraints and workflow |
+| [PROJECT_INDEX.md](PROJECT_INDEX.md) | This file - module and API reference |
+| [INS_IMPLEMENTATION_SUMMARY.md](INS_IMPLEMENTATION_SUMMARY.md) | INS algorithm details |
+
+---
+
+**Last Updated**: 2025-01-XX  
+**Maintainer**: Project Development Team

@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
-"""验证磁力计校准质量"""
+"""��֤������У׼����"""
 import numpy as np
 import re
 import sys
+import os
 
-# 读取数据
-filepath = sys.argv[1] if len(sys.argv) > 1 else r'd:\race\save\4.10\new_ins\serial_log_COM14_20260416_211629.txt'
+# ��ȡ�ű�����Ŀ¼���������·��
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
+
+# ��ȡ����
+filepath = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA_DIR, 'serial_log_COM14_20260416_211629.txt')
 print(f"Reading: {filepath}")
 
 data = []
@@ -29,7 +35,7 @@ print(f"  X: {data[:,0].min():.0f} ~ {data[:,0].max():.0f} (range={data[:,0].max
 print(f"  Y: {data[:,1].min():.0f} ~ {data[:,1].max():.0f} (range={data[:,1].max()-data[:,1].min():.0f})")
 print(f"  Z: {data[:,2].min():.0f} ~ {data[:,2].max():.0f} (range={data[:,2].max()-data[:,2].min():.0f})")
 
-# 八分象限分布
+# �?分象限分�?
 octants = np.zeros(8)
 for d in data:
     idx = 0
@@ -77,29 +83,29 @@ print(f"\n=== XY Plane Analysis ===")
 print(f"Covariance eigenvalues: {eigvals_xy}")
 print(f"Aspect ratio: {aspect_xy:.4f}")
 
-# 角度误差估算
+# 角度�?�?估算
 if aspect_xy > 1.01:
-    # 椭圆角度误差公式: max_error ≈ arctan((a-b)/(a+b)) ≈ (a-b)/(a+b) rad
+    # �?圆�?�度�?�?�?�?: max_error �? arctan((a-b)/(a+b)) �? (a-b)/(a+b) rad
     angle_error_deg = np.degrees(np.arctan2(abs(np.sqrt(eigvals_xy[0]) - np.sqrt(eigvals_xy[1])),
                                              np.sqrt(eigvals_xy[0]) + np.sqrt(eigvals_xy[1])))
     print(f"Estimated max angle error: {angle_error_deg:.2f} deg")
 else:
     print("XY plane is nearly circular - minimal angle error expected")
 
-# 航向角覆盖
+# �?向�?��?�盖
 yaw = np.degrees(-np.arctan2(corrected[:,1], corrected[:,0]))
 print(f"\nYaw coverage: {yaw.min():.1f} ~ {yaw.max():.1f} deg")
 
-# 检查数据覆盖是否均匀
+# 检查数�?覆盖�?否均匀
 yaw_bins = np.linspace(-180, 180, 37)
 yaw_hist, _ = np.histogram(yaw, bins=yaw_bins)
 coverage = np.sum(yaw_hist > 0) / 36 * 100
 print(f"Yaw coverage (bins occupied): {coverage:.1f}%")
 
-# 重新拟合椭球
+# 重新拟合�?�?
 print(f"\n=== Refitting ellipsoid ===")
 
-# 无约束最小二乘法 (PC端使用的方法)
+# 无约束最小二乘法 (PC�?使用的方�?)
 D = np.column_stack([
     data[:,0]**2, data[:,1]**2, data[:,2]**2,
     2*data[:,0]*data[:,1], 2*data[:,0]*data[:,2], 2*data[:,1]*data[:,2],
@@ -108,7 +114,7 @@ D = np.column_stack([
 rhs = np.ones(n)
 v, _, _, _ = np.linalg.lstsq(D, rhs, rcond=None)
 
-# 构建椭球矩阵
+# 构建�?球矩�?
 A = np.array([
     [v[0], v[3], v[4], v[6]],
     [v[3], v[1], v[5], v[7]],
@@ -124,7 +130,7 @@ T = np.eye(4)
 T[:3, 3] = center_new
 R = T.T @ A @ T
 R_norm = -R[:3, :3] / R[3, 3]
-R_norm = 0.5 * (R_norm + R_norm.T)  # 对称化
+R_norm = 0.5 * (R_norm + R_norm.T)  # 对称�?
 
 evals_new, evecs_new = np.linalg.eigh(R_norm)
 radii_new = np.sqrt(1.0 / evals_new)
@@ -134,7 +140,7 @@ print(f"New radii: {radii_new}")
 print(f"Radii ratio X/Y: {radii_new[0]/radii_new[1]:.4f}")
 print(f"Radii ratio X/Z: {radii_new[0]/radii_new[2]:.4f}")
 
-# 计算新的软铁矩阵
+# 计算新的�?铁矩�?
 avg_radius = np.mean(radii_new)
 scale_matrix = np.diag(avg_radius / radii_new)
 soft_iron_new = evecs_new @ scale_matrix @ evecs_new.T
@@ -142,7 +148,7 @@ soft_iron_new = evecs_new @ scale_matrix @ evecs_new.T
 print(f"\nNew soft iron matrix:")
 print(soft_iron_new)
 
-# 验证新参数
+# 验证新参�?
 corrected_new = (data - center_new) @ soft_iron_new.T
 norms_new = np.linalg.norm(corrected_new, axis=1)
 
@@ -151,14 +157,14 @@ print(f"Norm: mean={np.mean(norms_new):.1f}, std={np.std(norms_new):.1f}")
 print(f"Residual: {np.std(norms_new)/np.mean(norms_new)*100:.2f}%")
 print(f"Max/Min ratio: {norms_new.max()/norms_new.min():.4f}")
 
-# XY平面分析（新参数）
+# XY平面分析（新参数�?
 xy_new = corrected_new[:, :2]
 cov_xy_new = np.cov(xy_new.T)
 eigvals_xy_new, _ = np.linalg.eig(cov_xy_new)
 aspect_new = np.sqrt(max(eigvals_xy_new)/min(eigvals_xy_new))
 print(f"\nNew XY aspect ratio: {aspect_new:.4f}")
 
-# 诊断结论
+# 诊断结�??
 print(f"\n{'='*60}")
 print("DIAGNOSIS")
 print(f"{'='*60}")
@@ -176,7 +182,7 @@ if np.std(norms)/np.mean(norms) > 0.05:
 else:
     print(f"[OK] Residual {np.std(norms)/np.mean(norms)*100:.2f}% is acceptable")
 
-# 检查象限覆盖
+# 检查象限�?�盖
 min_octant = octants.min()
 max_octant = octants.max()
 if min_octant / max_octant < 0.3:

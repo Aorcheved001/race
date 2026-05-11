@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc21360a --dep-file=steering_control.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/control/steering_control.src ../code/control/steering_control.c"
+	.compiler_invocation	"ctc -f cc13148a --dep-file=steering_control.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/control/steering_control.src ../code/control/steering_control.c"
 	.compiler_name		"ctc"
 	;source	'../code/control/steering_control.c'
 
@@ -23,12 +23,12 @@ steering_read_zero:	.type	func
 	j	.L2
 .L3:
 	call	absolute_encoder_get_location
-.L282:
+.L286:
 	add	d9,d2
-.L283:
+.L287:
 	mov	d4,#2
 	call	system_delay_ms
-.L284:
+.L288:
 	add	d8,#1
 .L141:
 	extr.u	d8,d8,#0,#8
@@ -36,9 +36,9 @@ steering_read_zero:	.type	func
 	jlt.u	d8,#10,.L3
 .L137:
 	div	e0,d9,d15
-.L285:
+.L289:
 	extr	d2,d0,#0,#16
-.L286:
+.L290:
 	j	.L4
 .L4:
 	ret
@@ -149,9 +149,9 @@ steering_set_target:	.type	func
 .L6:
 	movh.a	a15,#@his(g_target_angle)
 	lea	a15,[a15]@los(g_target_angle)
-.L229:
+.L231:
 	st.w	[a15],d4
-.L230:
+.L232:
 	ret
 .L119:
 	
@@ -181,64 +181,69 @@ steering_control:	.type	func
 	movh	d0,#15796
 .L195:
 	mul.f	d15,d15,d0
+.L196:
+	mov	d0,#9362
+	addih	d0,d0,#16137
+.L197:
+	mul.f	d15,d15,d0
 .L144:
 	movh.a	a15,#@his(g_target_angle)
 	lea	a15,[a15]@los(g_target_angle)
 	ld.w	d0,[a15]
-.L196:
+.L198:
 	sub.f	d8,d0,d15
 .L146:
 	movh	d15,#17204
 .L145:
 	cmp.f	d15,d8,d15
 	extr.u	d15,d15,#2,#1
-.L197:
-	jeq	d15,#0,.L9
-.L198:
-	movh	d15,#17332
 .L199:
-	sub.f	d8,d8,d15
+	jeq	d15,#0,.L9
 .L200:
+	movh	d15,#17332
+.L201:
+	sub.f	d8,d8,d15
+.L202:
 	j	.L10
 .L9:
 	movh	d15,#49972
-.L201:
+.L203:
 	cmp.f	d15,d8,d15
 	extr.u	d15,d15,#0,#1
-.L202:
-	jeq	d15,#0,.L11
-.L203:
-	movh	d15,#17332
 .L204:
+	jeq	d15,#0,.L11
+.L205:
+	movh	d15,#17332
+.L206:
 	add.f	d8,d8,d15
 .L11:
 .L10:
 	movh.a	a15,#@his(g_last_error)
 	lea	a15,[a15]@los(g_last_error)
 	ld.w	d15,[a15]
-.L205:
+.L207:
 	sub.f	d15,d8,d15
-.L206:
+.L208:
 	mov	d0,#4719
 	addih	d0,d0,#15235
-.L207:
+.L209:
 	div.f	d15,d15,d0
 .L147:
 	movh.a	a15,#@his(imu660)
 	lea	a15,[a15]@los(imu660)
-.L208:
-	ld.w	d0,[a15]104
-.L209:
-	movh	d1,#16672
 .L210:
-	movh	d2,#16968
+	ld.w	d0,[a15]128
 .L211:
-	movh	d3,#16128
+	movh	d1,#16672
 .L212:
+	movh	d2,#16968
+.L213:
+	movh	d3,#16128
+.L214:
 	mul.f	d15,d15,d3
 .L148:
 	madd.f	d15,d15,d8,d2
-.L213:
+.L215:
 	madd.f	d9,d15,d0,d1
 .L149:
 	movh	d15,#17658
@@ -259,21 +264,21 @@ steering_control:	.type	func
 	movh.a	a15,#@his(g_output_enabled)
 	lea	a15,[a15]@los(g_output_enabled)
 	ld.bu	d15,[a15]
-.L214:
+.L216:
 	jeq	d15,#0,.L16
 .L114:
 	insert	d4,d9,#0,#31,#1
-.L215:
-	call	__f_ftos
-.L216:
-	mov	d15,#0
 .L217:
+	call	__f_ftos
+.L218:
+	mov	d15,#0
+.L219:
 	cmp.f	d15,d9,d15
 	and	d15,#6
 	ne	d15,d15,#0
-.L218:
+.L220:
 	jne	d15,#0,.L17
-.L219:
+.L221:
 	mov	d15,#0
 .L150:
 	j	.L18
@@ -285,24 +290,24 @@ steering_control:	.type	func
 	extr.u	d5,d2,#0,#16
 .L152:
 	call	pwm_set_duty
-.L220:
+.L222:
 	mov	d4,#1067
-.L221:
+.L223:
 	mov	d5,d15
 	call	gpio_set_level
 .L115:
 	j	.L19
 .L16:
 	mov	d4,#54
-.L222:
+.L224:
 	mov	d5,#0
 	call	pwm_set_duty
 .L19:
 	movh.a	a15,#@his(g_last_error)
 	lea	a15,[a15]@los(g_last_error)
-.L223:
+.L225:
 	st.w	[a15],d8
-.L224:
+.L226:
 	ret
 .L106:
 	
@@ -324,35 +329,40 @@ steering_get_current_angle:	.type	func
 	movh.a	a15,#@his(g_zero_raw)
 	lea	a15,[a15]@los(g_zero_raw)
 	ld.h	d15,[a15]
-.L235:
+.L237:
 	sub	d2,d15
 .L154:
 	itof	d15,d2
-.L236:
+.L238:
 	movh	d0,#15796
-.L237:
+.L239:
+	mul.f	d15,d15,d0
+.L240:
+	mov	d0,#9362
+	addih	d0,d0,#16137
+.L241:
 	mul.f	d2,d15,d0
 .L155:
 	movh	d15,#17204
-.L238:
-	cmp.f	d15,d2,d15
-	extr.u	d15,d15,#2,#1
-.L239:
-	jeq	d15,#0,.L20
-.L240:
-	movh	d15,#17332
-.L241:
-	sub.f	d2,d2,d15
-.L20:
-	movh	d15,#49972
 .L242:
 	cmp.f	d15,d2,d15
-	extr.u	d15,d15,#0,#1
+	extr.u	d15,d15,#2,#1
 .L243:
-	jeq	d15,#0,.L21
+	jeq	d15,#0,.L20
 .L244:
 	movh	d15,#17332
 .L245:
+	sub.f	d2,d2,d15
+.L20:
+	movh	d15,#49972
+.L246:
+	cmp.f	d15,d2,d15
+	extr.u	d15,d15,#0,#1
+.L247:
+	jeq	d15,#0,.L21
+.L248:
+	movh	d15,#17332
+.L249:
 	add.f	d2,d2,d15
 .L21:
 	j	.L22
@@ -375,11 +385,11 @@ __steering_get_current_angle_function_end:
 steering_set_zero_at_current:	.type	func
 	movh.a	a15,#@his(g_zero_raw)
 	lea	a15,[a15]@los(g_zero_raw)
-.L250:
+.L254:
 	call	steering_read_zero
-.L251:
+.L255:
 	st.h	[a15],d2
-.L252:
+.L256:
 	ret
 .L124:
 	
@@ -400,13 +410,13 @@ steering_set_zero_offset:	.type	func
 .L157:
 	movh.a	a15,#@his(g_zero_raw)
 	lea	a15,[a15]@los(g_zero_raw)
-.L257:
+.L261:
 	call	steering_read_zero
 .L156:
 	add	d15,d2
 .L158:
 	st.h	[a15],d15
-.L258:
+.L262:
 	ret
 .L125:
 	
@@ -424,21 +434,21 @@ __steering_set_zero_offset_function_end:
 .L43:
 steering_set_output_enabled:	.type	func
 	jeq	d4,#0,.L23
-.L263:
+.L267:
 	mov	d15,#1
-.L264:
+.L268:
 	j	.L24
 .L23:
 	mov	d15,#0
 .L24:
 	movh.a	a15,#@his(g_output_enabled)
 	lea	a15,[a15]@los(g_output_enabled)
-.L265:
+.L269:
 	st.b	[a15],d15
-.L266:
+.L270:
 	extr.u	d15,d15,#0,#8
 	jne	d15,#0,.L25
-.L267:
+.L271:
 	mov	d4,#54
 .L159:
 	mov	d5,#0
@@ -461,21 +471,21 @@ __steering_set_output_enabled_function_end:
 .L45:
 steering_set_max_angle:	.type	func
 	mov	d15,#0
-.L272:
+.L276:
 	cmp.f	d15,d4,d15
 	extr.u	d15,d15,#2,#1
-.L273:
+.L277:
 	jeq	d15,#0,.L26
-.L274:
+.L278:
 	movh	d15,#17204
-.L275:
+.L279:
 	cmp.f	d15,d4,d15
 	extr.u	d15,d15,#0,#1
 	jeq	d15,#0,.L27
-.L276:
+.L280:
 	movh.a	a15,#@his(g_max_angle)
 	lea	a15,[a15]@los(g_max_angle)
-.L277:
+.L281:
 	st.w	[a15],d4
 .L27:
 .L26:
@@ -552,7 +562,7 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L47:
-	.word	156010
+	.word	156091
 	.half	3
 	.word	.L48
 	.byte	4
@@ -20865,7 +20875,9 @@ g_max_angle:	.type	object
 	.byte	'SEEKFREE_ASSISTANT_SCC8660',0,3,0,31
 	.byte	'seekfree_assistant_image_type_enum',0,52,86,2
 	.word	154997
-	.byte	20,53,20,9,84,13
+	.byte	15,36
+	.word	240
+	.byte	16,8,0,20,53,39,9,108,13
 	.byte	'gyro_x',0
 	.word	240
 	.byte	4,2,35,0,13
@@ -20911,27 +20923,21 @@ g_max_angle:	.type	object
 	.byte	'mag_z_bias',0
 	.word	240
 	.byte	4,2,35,56,13
-	.byte	'mag_x_scale',0
-	.word	240
-	.byte	4,2,35,60,13
-	.byte	'mag_y_scale',0
-	.word	240
-	.byte	4,2,35,64,13
-	.byte	'mag_z_scale',0
-	.word	240
-	.byte	4,2,35,68,13
+	.byte	'mag_soft_iron',0
+	.word	155218
+	.byte	36,2,35,60,13
 	.byte	'mag_x',0
 	.word	240
-	.byte	4,2,35,72,13
+	.byte	4,2,35,96,13
 	.byte	'mag_y',0
 	.word	240
-	.byte	4,2,35,76,13
+	.byte	4,2,35,100,13
 	.byte	'mag_z',0
 	.word	240
-	.byte	4,2,35,80,0,31
-	.byte	'imu_param',0,53,43,3
-	.word	155218
-	.byte	20,53,45,9,12,13
+	.byte	4,2,35,104,0,31
+	.byte	'imu_param',0,53,81,3
+	.word	155227
+	.byte	20,53,85,9,12,13
 	.byte	'pitch',0
 	.word	240
 	.byte	4,2,35,0,13
@@ -20941,38 +20947,44 @@ g_max_angle:	.type	object
 	.byte	'yaw',0
 	.word	240
 	.byte	4,2,35,8,0,31
-	.byte	'euler_param',0,53,50,3
-	.word	155626
-	.byte	20,53,52,9,192,1,13
+	.byte	'euler_param',0,53,95,3
+	.word	155595
+	.byte	20,53,99,9,240,1,13
 	.byte	'offset_angle',0
-	.word	155626
+	.word	155595
 	.byte	12,2,35,0,13
 	.byte	'data_Raw',0
-	.word	155218
-	.byte	84,2,35,12,13
+	.word	155227
+	.byte	108,2,35,12,13
 	.byte	'data_Ripen',0
-	.word	155218
-	.byte	84,2,35,96,13
+	.word	155227
+	.byte	108,2,35,120,13
 	.byte	'eulerAngle',0
-	.word	155626
-	.byte	12,3,35,180,1,0,31
-	.byte	'imu660_struct',0,53,58,3
-	.word	155694
+	.word	155595
+	.byte	12,3,35,228,1,0,31
+	.byte	'imu660_struct',0,53,111,3
+	.word	155663
 	.byte	36
-	.byte	'imu660',0,53,62,22
-	.word	155694
-	.byte	1,1,20,54,14,9,12,13
+	.byte	'imu660',0,53,119,22
+	.word	155663
+	.byte	1,1,20,54,66,9,20,13
 	.byte	'iError',0
 	.word	240
 	.byte	4,2,35,0,13
 	.byte	'LastError',0
 	.word	240
 	.byte	4,2,35,4,13
+	.byte	'PrevError',0
+	.word	240
+	.byte	4,2,35,8,13
 	.byte	'SumError',0
 	.word	240
-	.byte	4,2,35,8,0,31
-	.byte	'PID_INFO',0,54,19,3
-	.word	155821
+	.byte	4,2,35,12,13
+	.byte	'LastData',0
+	.word	240
+	.byte	4,2,35,16,0,31
+	.byte	'PID_INFO',0,54,73,3
+	.word	155790
 	.byte	20,55,18,9,8,13
 	.byte	'x',0
 	.word	240
@@ -20981,12 +20993,17 @@ g_max_angle:	.type	object
 	.word	240
 	.byte	4,2,35,4,0,31
 	.byte	'INS_Point',0,55,21,3
-	.word	155897
+	.word	155903
 	.byte	17,55,23,9,1,18
 	.byte	'INS_SUB_MODE_SAVE',0,0,18
 	.byte	'INS_SUB_MODE_FOLLOW',0,1,0,31
 	.byte	'INS_SubMode_t',0,55,26,3
-	.word	155943
+	.word	155949
+	.byte	17,56,29,9,1,18
+	.byte	'PID_TEST_MODE_NONE',0,0,18
+	.byte	'PID_TEST_MODE_STEP',0,1,0,31
+	.byte	'pid_test_mode_enum',0,56,33,3
+	.word	156019
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -21100,7 +21117,8 @@ g_max_angle:	.type	object
 	.byte	'seekfree_assistant.h',0,11,0,0
 	.byte	'imu660.h',0,12,0,0
 	.byte	'pid.h',0,13,0,0
-	.byte	'ins_new_264.h',0,13,0,0,0
+	.byte	'ins_new_264.h',0,13,0,0
+	.byte	'PID_cmd.h',0,13,0,0,0
 .L163:
 .L161:
 	.sdecl	'.debug_info',debug,cluster('steering_init')
@@ -21262,76 +21280,80 @@ g_max_angle:	.type	object
 	.half	.L194-.L143
 	.byte	1,5,53,9
 	.half	.L195-.L194
+	.byte	1,5,76,9
+	.half	.L196-.L195
+	.byte	1,5,74,9
+	.half	.L197-.L196
 	.byte	1,5,19,9
-	.half	.L144-.L195
+	.half	.L144-.L197
 	.byte	3,3,1,5,34,9
-	.half	.L196-.L144
+	.half	.L198-.L144
 	.byte	1,5,16,9
-	.half	.L146-.L196
+	.half	.L146-.L198
 	.byte	3,3,1,5,14,9
 	.half	.L145-.L146
 	.byte	1,5,5,9
-	.half	.L197-.L145
+	.half	.L199-.L145
 	.byte	1,5,18,7,9
-	.half	.L198-.L197
-	.byte	3,2,1,5,15,9
-	.half	.L199-.L198
-	.byte	1,5,24,9
 	.half	.L200-.L199
-	.byte	1,5,21,9
-	.half	.L9-.L200
-	.byte	3,2,1,5,19,9
-	.half	.L201-.L9
-	.byte	1,5,10,9
-	.half	.L202-.L201
-	.byte	1,5,18,7,9
-	.half	.L203-.L202
 	.byte	3,2,1,5,15,9
+	.half	.L201-.L200
+	.byte	1,5,24,9
+	.half	.L202-.L201
+	.byte	1,5,21,9
+	.half	.L9-.L202
+	.byte	3,2,1,5,19,9
+	.half	.L203-.L9
+	.byte	1,5,10,9
 	.half	.L204-.L203
-	.byte	1,5,33,9
-	.half	.L10-.L204
-	.byte	3,4,1,5,31,9
-	.half	.L205-.L10
-	.byte	1,5,49,9
+	.byte	1,5,18,7,9
+	.half	.L205-.L204
+	.byte	3,2,1,5,15,9
 	.half	.L206-.L205
+	.byte	1,5,33,9
+	.half	.L10-.L206
+	.byte	3,4,1,5,31,9
+	.half	.L207-.L10
+	.byte	1,5,49,9
+	.half	.L208-.L207
 	.byte	1,5,47,9
-	.half	.L207-.L206
-	.byte	1,5,26,9
-	.half	.L147-.L207
-	.byte	3,3,1,5,43,9
-	.half	.L208-.L147
-	.byte	1,5,20,9
 	.half	.L209-.L208
-	.byte	1,9
-	.half	.L210-.L209
-	.byte	3,126,1,9
+	.byte	1,5,26,9
+	.half	.L147-.L209
+	.byte	3,3,1,5,43,9
+	.half	.L210-.L147
+	.byte	1,5,20,9
 	.half	.L211-.L210
-	.byte	3,1,1,5,23,9
-	.half	.L212-.L211
-	.byte	1,5,18,9
-	.half	.L148-.L212
 	.byte	1,9
-	.half	.L213-.L148
+	.half	.L212-.L211
+	.byte	3,126,1,9
+	.half	.L213-.L212
+	.byte	3,1,1,5,23,9
+	.half	.L214-.L213
+	.byte	1,5,18,9
+	.half	.L148-.L214
+	.byte	1,9
+	.half	.L215-.L148
 	.byte	3,1,1,5,14,9
-	.half	.L149-.L213
+	.half	.L149-.L215
 	.byte	3,3,1,5,8,9
 	.half	.L13-.L149
 	.byte	3,3,1,5,5,9
-	.half	.L214-.L13
+	.half	.L216-.L13
 	.byte	1,5,33,7,9
-	.half	.L114-.L214
+	.half	.L114-.L216
 	.byte	3,2,1,5,26,9
-	.half	.L215-.L114
+	.half	.L217-.L114
 	.byte	1,5,32,9
-	.half	.L216-.L215
-	.byte	3,1,1,5,29,9
-	.half	.L217-.L216
-	.byte	1,5,21,9
 	.half	.L218-.L217
-	.byte	1,5,38,7,9
+	.byte	3,1,1,5,29,9
 	.half	.L219-.L218
+	.byte	1,5,21,9
+	.half	.L220-.L219
+	.byte	1,5,38,7,9
+	.half	.L221-.L220
 	.byte	1,5,42,9
-	.half	.L150-.L219
+	.half	.L150-.L221
 	.byte	1,5,38,9
 	.half	.L17-.L150
 	.byte	1,5,22,9
@@ -21339,23 +21361,23 @@ g_max_angle:	.type	object
 	.byte	3,2,1,5,43,9
 	.half	.L151-.L18
 	.byte	1,5,24,9
-	.half	.L220-.L151
+	.half	.L222-.L151
 	.byte	3,1,1,5,45,9
-	.half	.L221-.L220
+	.half	.L223-.L222
 	.byte	1,5,19,9
-	.half	.L115-.L221
+	.half	.L115-.L223
 	.byte	3,125,1,5,22,9
 	.half	.L16-.L115
 	.byte	3,8,1,5,43,9
-	.half	.L222-.L16
+	.half	.L224-.L16
 	.byte	1,5,5,9
-	.half	.L19-.L222
+	.half	.L19-.L224
 	.byte	3,4,1,5,18,9
-	.half	.L223-.L19
+	.half	.L225-.L19
 	.byte	1,5,1,9
-	.half	.L224-.L223
+	.half	.L226-.L225
 	.byte	3,1,1,7,9
-	.half	.L59-.L224
+	.half	.L59-.L226
 	.byte	0,1,1
 .L190:
 	.sdecl	'.debug_ranges',debug,cluster('steering_control')
@@ -21392,26 +21414,26 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_set_target')
 	.sect	'.debug_line'
 .L62:
-	.word	.L226-.L225
-.L225:
-	.half	3
 	.word	.L228-.L227
 .L227:
+	.half	3
+	.word	.L230-.L229
+.L229:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L228:
+.L230:
 	.byte	5,22,7,0,5,2
 	.word	.L33
 	.byte	3,203,0,1,5,5,9
 	.half	.L6-.L33
 	.byte	1,5,20,9
-	.half	.L229-.L6
+	.half	.L231-.L6
 	.byte	1,5,1,9
-	.half	.L230-.L229
+	.half	.L232-.L231
 	.byte	3,1,1,7,9
-	.half	.L64-.L230
+	.half	.L64-.L232
 	.byte	0,1,1
-.L226:
+.L228:
 	.sdecl	'.debug_ranges',debug,cluster('steering_set_target')
 	.sect	'.debug_ranges'
 .L63:
@@ -21451,54 +21473,58 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_get_current_angle')
 	.sect	'.debug_line'
 .L67:
-	.word	.L232-.L231
-.L231:
-	.half	3
 	.word	.L234-.L233
 .L233:
+	.half	3
+	.word	.L236-.L235
+.L235:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L234:
+.L236:
 	.byte	5,46,7,0,5,2
 	.word	.L37
 	.byte	3,140,1,1,5,33,9
 	.half	.L153-.L37
 	.byte	3,1,1,5,31,9
-	.half	.L235-.L153
+	.half	.L237-.L153
 	.byte	1,5,19,9
-	.half	.L154-.L235
+	.half	.L154-.L237
 	.byte	1,5,55,9
-	.half	.L236-.L154
+	.half	.L238-.L154
 	.byte	1,5,45,9
-	.half	.L237-.L236
-	.byte	1,5,16,9
-	.half	.L155-.L237
-	.byte	3,3,1,5,14,9
-	.half	.L238-.L155
-	.byte	1,5,5,9
 	.half	.L239-.L238
-	.byte	1,5,34,7,9
+	.byte	1,5,68,9
 	.half	.L240-.L239
-	.byte	1,5,31,9
+	.byte	1,5,66,9
 	.half	.L241-.L240
 	.byte	1,5,16,9
-	.half	.L20-.L241
-	.byte	3,1,1,5,14,9
-	.half	.L242-.L20
+	.half	.L155-.L241
+	.byte	3,3,1,5,14,9
+	.half	.L242-.L155
 	.byte	1,5,5,9
 	.half	.L243-.L242
 	.byte	1,5,34,7,9
 	.half	.L244-.L243
 	.byte	1,5,31,9
 	.half	.L245-.L244
+	.byte	1,5,16,9
+	.half	.L20-.L245
+	.byte	3,1,1,5,14,9
+	.half	.L246-.L20
 	.byte	1,5,5,9
-	.half	.L21-.L245
+	.half	.L247-.L246
+	.byte	1,5,34,7,9
+	.half	.L248-.L247
+	.byte	1,5,31,9
+	.half	.L249-.L248
+	.byte	1,5,5,9
+	.half	.L21-.L249
 	.byte	3,2,1,5,1,9
 	.half	.L22-.L21
 	.byte	3,1,1,7,9
 	.half	.L69-.L22
 	.byte	0,1,1
-.L232:
+.L234:
 	.sdecl	'.debug_ranges',debug,cluster('steering_get_current_angle')
 	.sect	'.debug_ranges'
 .L68:
@@ -21530,26 +21556,26 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_set_zero_at_current')
 	.sect	'.debug_line'
 .L72:
-	.word	.L247-.L246
-.L246:
+	.word	.L251-.L250
+.L250:
 	.half	3
-	.word	.L249-.L248
-.L248:
+	.word	.L253-.L252
+.L252:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L249:
+.L253:
 	.byte	5,5,7,0,5,2
 	.word	.L39
 	.byte	3,158,1,1,5,36,9
-	.half	.L250-.L39
+	.half	.L254-.L39
 	.byte	1,5,16,9
-	.half	.L251-.L250
+	.half	.L255-.L254
 	.byte	1,5,1,9
-	.half	.L252-.L251
+	.half	.L256-.L255
 	.byte	3,1,1,7,9
-	.half	.L74-.L252
+	.half	.L74-.L256
 	.byte	0,1,1
-.L247:
+.L251:
 	.sdecl	'.debug_ranges',debug,cluster('steering_set_zero_at_current')
 	.sect	'.debug_ranges'
 .L73:
@@ -21584,30 +21610,30 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_set_zero_offset')
 	.sect	'.debug_line'
 .L77:
-	.word	.L254-.L253
-.L253:
+	.word	.L258-.L257
+.L257:
 	.half	3
-	.word	.L256-.L255
-.L255:
+	.word	.L260-.L259
+.L259:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L256:
+.L260:
 	.byte	5,6,7,0,5,2
 	.word	.L41
 	.byte	3,167,1,1,5,5,9
 	.half	.L157-.L41
 	.byte	3,2,1,5,36,9
-	.half	.L257-.L157
+	.half	.L261-.L157
 	.byte	1,5,39,9
-	.half	.L156-.L257
+	.half	.L156-.L261
 	.byte	1,5,16,9
 	.half	.L158-.L156
 	.byte	1,5,1,9
-	.half	.L258-.L158
+	.half	.L262-.L158
 	.byte	3,1,1,7,9
-	.half	.L79-.L258
+	.half	.L79-.L262
 	.byte	0,1,1
-.L254:
+.L258:
 	.sdecl	'.debug_ranges',debug,cluster('steering_set_zero_offset')
 	.sect	'.debug_ranges'
 .L78:
@@ -21642,38 +21668,38 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_set_output_enabled')
 	.sect	'.debug_line'
 .L82:
-	.word	.L260-.L259
-.L259:
+	.word	.L264-.L263
+.L263:
 	.half	3
-	.word	.L262-.L261
-.L261:
+	.word	.L266-.L265
+.L265:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L262:
+.L266:
 	.byte	5,24,7,0,5,2
 	.word	.L43
 	.byte	3,179,1,1,5,31,7,9
-	.half	.L263-.L43
+	.half	.L267-.L43
 	.byte	1,5,36,9
-	.half	.L264-.L263
+	.half	.L268-.L267
 	.byte	1,5,31,9
-	.half	.L23-.L264
+	.half	.L23-.L268
 	.byte	1,5,5,9
 	.half	.L24-.L23
 	.byte	1,5,22,9
-	.half	.L265-.L24
+	.half	.L269-.L24
 	.byte	1,5,9,9
-	.half	.L266-.L265
+	.half	.L270-.L269
 	.byte	3,1,1,5,22,9
-	.half	.L267-.L266
+	.half	.L271-.L270
 	.byte	3,2,1,5,43,9
-	.half	.L159-.L267
+	.half	.L159-.L271
 	.byte	1,5,1,9
 	.half	.L25-.L159
 	.byte	3,2,1,7,9
 	.half	.L84-.L25
 	.byte	0,1,1
-.L260:
+.L264:
 	.sdecl	'.debug_ranges',debug,cluster('steering_set_output_enabled')
 	.sect	'.debug_ranges'
 .L83:
@@ -21708,34 +21734,34 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_set_max_angle')
 	.sect	'.debug_line'
 .L87:
-	.word	.L269-.L268
-.L268:
+	.word	.L273-.L272
+.L272:
 	.half	3
-	.word	.L271-.L270
-.L270:
+	.word	.L275-.L274
+.L274:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L271:
+.L275:
 	.byte	5,24,7,0,5,2
 	.word	.L45
 	.byte	3,194,1,1,5,22,9
-	.half	.L272-.L45
+	.half	.L276-.L45
 	.byte	1,5,8,9
-	.half	.L273-.L272
-	.byte	1,5,48,7,9
-	.half	.L274-.L273
-	.byte	1,5,46,9
-	.half	.L275-.L274
-	.byte	1,5,9,9
-	.half	.L276-.L275
-	.byte	3,2,1,5,21,9
 	.half	.L277-.L276
+	.byte	1,5,48,7,9
+	.half	.L278-.L277
+	.byte	1,5,46,9
+	.half	.L279-.L278
+	.byte	1,5,9,9
+	.half	.L280-.L279
+	.byte	3,2,1,5,21,9
+	.half	.L281-.L280
 	.byte	1,5,1,9
-	.half	.L26-.L277
+	.half	.L26-.L281
 	.byte	3,2,1,7,9
 	.half	.L89-.L26
 	.byte	0,1,1
-.L269:
+.L273:
 	.sdecl	'.debug_ranges',debug,cluster('steering_set_max_angle')
 	.sect	'.debug_ranges'
 .L88:
@@ -21780,14 +21806,14 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_line',debug,cluster('steering_read_zero')
 	.sect	'.debug_line'
 .L92:
-	.word	.L279-.L278
-.L278:
+	.word	.L283-.L282
+.L282:
 	.half	3
-	.word	.L281-.L280
-.L280:
+	.word	.L285-.L284
+.L284:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/control/steering_control.c',0,0,0,0,0
-.L281:
+.L285:
 	.byte	5,15,7,0,5,2
 	.word	.L29
 	.byte	3,28,1,5,25,9
@@ -21799,25 +21825,25 @@ g_max_angle:	.type	object
 	.byte	1,5,45,9
 	.half	.L3-.L140
 	.byte	3,2,1,5,13,9
-	.half	.L282-.L3
+	.half	.L286-.L3
 	.byte	1,5,25,9
-	.half	.L283-.L282
+	.half	.L287-.L286
 	.byte	3,1,1,5,36,9
-	.half	.L284-.L283
+	.half	.L288-.L287
 	.byte	3,125,1,5,33,9
-	.half	.L2-.L284
+	.half	.L2-.L288
 	.byte	1,5,24,7,9
 	.half	.L137-.L2
 	.byte	3,6,1,5,12,9
-	.half	.L285-.L137
+	.half	.L289-.L137
 	.byte	1,5,5,9
-	.half	.L286-.L285
+	.half	.L290-.L289
 	.byte	1,5,1,9
-	.half	.L4-.L286
+	.half	.L4-.L290
 	.byte	3,1,1,7,9
 	.half	.L94-.L4
 	.byte	0,1,1
-.L279:
+.L283:
 	.sdecl	'.debug_ranges',debug,cluster('steering_read_zero')
 	.sect	'.debug_ranges'
 .L93:
@@ -22081,7 +22107,7 @@ g_max_angle:	.type	object
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L287:
+.L291:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -22089,39 +22115,39 @@ g_max_angle:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('steering_read_zero')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L29,.L131-.L29
+	.word	.L291,.L29,.L131-.L29
 	.sdecl	'.debug_frame',debug,cluster('steering_init')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L31,.L105-.L31
+	.word	.L291,.L31,.L105-.L31
 	.sdecl	'.debug_frame',debug,cluster('steering_set_target')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L287,.L33,.L119-.L33
+	.word	.L291,.L33,.L119-.L33
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('steering_control')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L35,.L106-.L35
+	.word	.L291,.L35,.L106-.L35
 	.sdecl	'.debug_frame',debug,cluster('steering_get_current_angle')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L37,.L121-.L37
+	.word	.L291,.L37,.L121-.L37
 	.sdecl	'.debug_frame',debug,cluster('steering_set_zero_at_current')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L39,.L124-.L39
+	.word	.L291,.L39,.L124-.L39
 	.sdecl	'.debug_frame',debug,cluster('steering_set_zero_offset')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L41,.L125-.L41
+	.word	.L291,.L41,.L125-.L41
 	.sdecl	'.debug_frame',debug,cluster('steering_set_output_enabled')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L287,.L43,.L127-.L43
+	.word	.L291,.L43,.L127-.L43
 	.sdecl	'.debug_frame',debug,cluster('steering_set_max_angle')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L287,.L45,.L129-.L45
+	.word	.L291,.L45,.L129-.L45
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

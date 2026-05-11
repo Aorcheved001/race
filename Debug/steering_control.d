@@ -336,14 +336,14 @@ steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\syst
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\system\init_all.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\ins\Ins.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\ins\Ins.h" :
+steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\vehicle_config.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\vehicle_config.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\ins\gnss.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\ins\gnss.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\motor.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\motor.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\system\menu.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\system\menu.h" :
-steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\servo.h"
-"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\servo.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\system\interrupt.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\system\interrupt.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\pid.h"
@@ -358,3 +358,7 @@ steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\cont
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\ins_new_264.h" :
 steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\steering_control.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\steering_control.h" :
+steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\VOFA.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\VOFA.h" :
+steering_control.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\PID_cmd.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\code\\control\PID_cmd.h" :

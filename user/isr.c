@@ -212,8 +212,8 @@ IFX_INTERRUPT(uart2_tx_isr, 0, UART2_TX_INT_PRIO)
 IFX_INTERRUPT(uart2_rx_isr, 0, UART2_RX_INT_PRIO)
 {
     interrupt_global_enable(0);                     // 开启中断嵌套
-//    wireless_module_uart_handler();                 // 无线模块统一回调函数
-    lora3a22_uart_callback();
+    wireless_module_uart_handler();                 // 无线模块统一回调函数
+//    lora3a22_uart_callback();
 
 }
 // 串口3默认连接到GPS定位模块

@@ -3,23 +3,30 @@
 
 #include "zf_common_headfile.h"
 
-// ========================== 电机引脚定义 ==========================
-// 假设 C 是左后，D 是右后
-#define MOTORC_PWM_PIN      ATOM0_CH2_P21_4    // 左后电机 PWM
-#define MOTORC_DIR_PIN      P21_3               // 左后电机 方向
+// ========================== 寮曡剼瀹氫箟 ==========================
+//ATOM0_CH1_P33_9
+//#define MOTOR1_PWM_PIN1     ATOM1_CH1_P33_9
+#define MOTOR1_PWM_PIN1     ATOM0_CH1_P33_9
+#define MOTOR1_PWM_PIN2     ATOM1_CH2_P33_11
 
-#define MOTORD_PWM_PIN      ATOM0_CH3_P21_5     // 右后电机 PWM
-#define MOTORD_DIR_PIN      P21_2               // 右后电机 方向
+#define MOTOR2_PWM_PIN1     ATOM0_CH3_P14_2
+#define MOTOR2_PWM_PIN2     ATOM0_CH2_P14_3
 
-// ========================== 类型定义 ==========================
+// ========================== 绫诲瀷瀹氫箟 ==========================
 typedef enum
 {
-    motor_LB, // 左后 (Left Back)
-    motor_RB, // 右后 (Right Back)
+    motor_LB,   // 宸﹀悗 (Left Back)
+    motor_RB,   // 鍙冲悗 (Right Back)
 } MOTOR_TYPE;
 
-// ========================== 函数声明 ==========================
-void motor_init(void);                              // 电机初始化
-void motor_control(MOTOR_TYPE motor, int16 duty);   // 单个电机控制
+typedef enum
+{
+    MOTOR_DIR_FORWARD   =  1,   // 姝ｈ浆
+    MOTOR_DIR_BRAKE     =  0,   // 鍒硅溅
+    MOTOR_DIR_REVERSE   = -1,   // 鍙嶈浆
+} MotorDir;
 
+// ========================== 鍑芥暟澹版槑 ==========================
+void motor_init(void);
+void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent);
 #endif /* CODE_MOTOR_H_ */
