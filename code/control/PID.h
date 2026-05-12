@@ -1,149 +1,156 @@
 /*
  * PID.h
  *
- *  ¼¶ÁªÊ½ PID ¿ØÖÆ²ã
- *  Ö§³Ö£ºÎ»ÖÃ»· + ËÙ¶È»· + ½ÇËÙ¶È»· Èı¼¶¿ØÖÆ
+ * çº§è”å¼ PID æ§åˆ¶å™¨
+ * æ”¯æŒï¼šä½ç½®ç¯ + é€Ÿåº¦ç¯ + åèˆªè§’é€Ÿåº¦ç¯
  *
- *  ¼Ü¹¹ËµÃ÷£º
- *  +------------------------------------------------------------------+
- *  |                    ¼¶Áª PID ¿ØÖÆ¼Ü¹¹                             |
- *  +------------------------------------------------------------------+
- *  |                                                                  |
- *  |   Íâ»·(Î»ÖÃ»·)   -->   ÖĞ»·(ËÙ¶È»·)   -->   ÄÚ»·(½ÇËÙ¶È»·)   -->   Êä³öPWM   |
- *  |   target_pos          ref_speed          ref_yaw_rate           out_steer_pwm   |
- *  |   (m)                 (m/s)              (rad/s)                ×ªÏò¶æ»ú          |
- *  |                                                                  |
- *  |   ÊäÈë£º              ÊäÈë£º             ÊäÈë£º                                |
- *  |   ÀÛ»ıÎ»ÖÃÎó²î        ËÙ¶ÈÄ¿±êÎó²î       ½ÇËÙ¶ÈÎó²î/×ªÏòÎó²î                  |
- *  |                                                                  |
- *  |   Êä³ö²ÎÊı            Êä³ö²ÎÊı           Êä³ö²ÎÊı                              |
- *  |   position_param      speed_param        yaw_rate_param                       |
- *  |                                                                  |
- *  +------------------------------------------------------------------+
- *  |   ËÙ¶È»·Ö±½ÓÊä³öÇı¶¯µç»úPWM                                          |
- *  |   ½ÇËÙ¶ÈÆ«²î = ×ªÏò½ÇËÙ¶È - Êµ¼Ê×ªÏò                                 |
- *  +------------------------------------------------------------------+
+ * æ•´ä½“è¯´æ˜
+ * +------------------------------------------------------------------+
+ * |                    å·®é€Ÿåº•ç›˜ PID æ§åˆ¶æ¶æ„                         |
+ * +------------------------------------------------------------------+
+ * |                                                                  |
+ * |   å¤–ç¯(ä½ç½®ç¯)   -->   ä¸­ç¯(é€Ÿåº¦ç¯)   -->   å†…ç¯(åèˆªè§’é€Ÿåº¦ç¯)   -->   è¾“å‡ºPWM   |
+ * |   target_pos          ref_speed          ref_yaw_rate           out_steer_pwm   |
+ * |   (m)                 (m/s)              (rad/s)                è½¬å‘PWM         |
+ * |                                                                  |
+ * |   è¾“å…¥ï¼š              è¾“å…¥ï¼š             è¾“å…¥ï¼š                                |
+ * |   ç´¯åŠ ä½ç½®æŒ‡ä»¤        é€Ÿåº¦ç›®æ ‡å€¼         åèˆªè§’é€Ÿåº¦æŒ‡ä»¤ / è½¬å‘æŒ‡ä»¤            |
+ * |                                                                  |
+ * |   å‚æ•°ï¼š              å‚æ•°ï¼š             å‚æ•°ï¼š                                |
+ * |   position_param      speed_param        yaw_rate_param                       |
+ * |                                                                  |
+ * +------------------------------------------------------------------+
+ * |   é€Ÿåº¦ç¯ç›´æ¥è¾“å‡ºå·¦å³è½® PWM                                        |
+ * |   åèˆªè§’é€Ÿåº¦åå·® = ç›®æ ‡è½¬å¼¯è§’é€Ÿåº¦ - å®é™…è½¬å¼¯è§’é€Ÿåº¦                 |
+ * +------------------------------------------------------------------+
  *
- *  Ê¹ÓÃ·½·¨£º
- *    1. wheel_pid_init()              - ³õÊ¼»¯£¨ÔÚmainÖĞµ÷ÓÃÒ»´Î£©
- *    2. wheel_pid_enable(...)         - Ê¹ÄÜ¿ØÖÆ»·
- *    3. wheel_pid_set_speed_target()  - ÉèÖÃËÙ¶ÈÄ¿±ê£¨m/s£©
- *    4. wheel_pid_set_yaw_target()    - ÉèÖÃ½ÇËÙ¶ÈÄ¿±ê£¨rad/s£©
- *    5. wheel_pid_update(enc, dt)     - 4msÖÜÆÚµ÷ÓÃ£¨ºËĞÄ¼ÆËã£©
+ * ä½¿ç”¨æ–¹æ³•ï¼š
+ *   1. wheel_pid_init()              - åˆå§‹åŒ–ï¼ˆmainä¸­è°ƒç”¨ä¸€æ¬¡ï¼‰
+ *   2. wheel_pid_enable(...)         - ä½¿èƒ½å„æ§åˆ¶ç¯
+ *   3. wheel_pid_set_speed_target()  - è®¾ç½®é€Ÿåº¦ç›®æ ‡ï¼ˆm/sï¼‰
+ *   4. wheel_pid_set_yaw_target()    - è®¾ç½®åèˆªè§’é€Ÿåº¦ç›®æ ‡ï¼ˆrad/sï¼‰
+ *   5. wheel_pid_update(enc, dt)     - å‘¨æœŸè°ƒç”¨ï¼ˆæ¨è4msï¼‰
  *
- *  ¼æÈİ½Ó¿Ú£¨¿É´Ó¾É´úÂëµ÷ÓÃ£¬ÄÚ²¿Ó³Éäµ½¼¶ÁªPID£©£º
- *    - wheel_pid_enable(1)           £ºÊ¹ÄÜÈ«²¿»·
- *    - wheel_pid_set_target_speed(v) £ºÉèÖÃÁ½ÂÖËÙ¶ÈÎªv
- *    - wheel_pid_update(enc, dt)     £ºÄÚ²¿¹À¼Æyaw_rate£¬µ÷ÓÃ¼¶ÁªPID
+ * å…¼å®¹æ—§æ¥å£ï¼š
+ *   - wheel_pid_enable(1,1,0,1)      ä½¿èƒ½å¯¹åº”ç¯
+ *   - wheel_pid_set_target_speed(v)  è®¾ç½®ç›¸åŒå·¦å³è½®é€Ÿåº¦
+ *   - wheel_pid_update(enc, dt)      å†…éƒ¨è‡ªåŠ¨ä¼°ç®—åèˆªè§’é€Ÿåº¦
  */
 
 #ifndef CODE_CONTROL_PID_H_
 #define CODE_CONTROL_PID_H_
 
-//-------------------------------------------Í·ÎÄ¼ş°üº¬------------------------------------------------------------
+//------------------------------------------- å¤´æ–‡ä»¶å¼•ç”¨ ------------------------------------------------------------
+
 #include "zf_common_headfile.h"
 #include "vehicle_config.h"
 
-//-------------------------------------------ºê¶¨Òå-----------------------------------------------------------------
+//------------------------------------------- å®å®šä¹‰ -----------------------------------------------------------------
 
-/* PID²ÎÊıË÷Òı */
-#define PID_PARAM_KP         0       /* ±ÈÀıÏµÊı */
-#define PID_PARAM_KI         1       /* »ı·ÖÏµÊı */
-#define PID_PARAM_KD         2       /* Î¢·ÖÏµÊı */
-#define PID_PARAM_I_LIMIT    3       /* »ı·ÖÏŞ·ù */
+/* PID å‚æ•°æ•°ç»„ç´¢å¼• */
+#define PID_PARAM_KP         0       /* æ¯”ä¾‹ç³»æ•° */
+#define PID_PARAM_KI         1       /* ç§¯åˆ†ç³»æ•° */
+#define PID_PARAM_KD         2       /* å¾®åˆ†ç³»æ•° */
+#define PID_PARAM_I_LIMIT    3       /* ç§¯åˆ†é™å¹…å€¼ */
 
-/* PIDÊä³öÏŞ·ù */
-#define WHEEL_PID_PWM_ABS_MAX       2000.0f   /* Çı¶¯PWM×î´óÖµ£¨¾ø¶ÔÖµ£© */
-#define SPEED_REF_ABS_MAX_MPS       2.5f      /* ËÙ¶È²Î¿¼ÏŞ·ùÖµ(m/s) */
-#define YAW_RATE_REF_ABS_MAX_RPS    5.0f      /* ½ÇËÙ¶È²Î¿¼ÏŞ·ùÖµ(rad/s) */
-#define STEER_PWM_ABS_MAX           200.0f    /* ×ªÏòPWMÏŞ·ùÖµ£¨¶æ»ú×ªÏò×î´óÖµ£© */
+/* PWM å’Œå‚è€ƒå€¼é™å¹… */
+#define WHEEL_PID_PWM_ABS_MAX       2000.0f   /* PWMç»å¯¹æœ€å¤§å€¼ï¼ˆåŸå§‹èŒƒå›´ï¼‰ */
+#define SPEED_REF_ABS_MAX_MPS       2.5f      /* é€Ÿåº¦å‚è€ƒé™å¹… (m/s) */
+#define YAW_RATE_REF_ABS_MAX_RPS    5.0f      /* åèˆªè§’é€Ÿåº¦å‚è€ƒé™å¹… (rad/s) */
+#define STEER_PWM_ABS_MAX           200.0f    /* è½¬å‘PWMé™å¹…å€¼ */
 
-//-------------------------------------------½á¹¹Ìå¶¨Òå-------------------------------------------------------------
+#define WHEEL_PID_PWM_LIMIT_PERCENT 70.0f     /* PWMè¾“å‡ºç™¾åˆ†æ¯”é™å¹…ï¼ˆé»˜è®¤70%ï¼‰ */
+
+//------------------------------------------- ç»“æ„ä½“å®šä¹‰ -------------------------------------------------------------
 
 /**
- * PID¿ØÖÆÆ÷ÄÚ²¿×´Ì¬£¨ÔöÁ¿Ê½¡¢Ö¡Î¢·ÖµÄ¸÷ÖÖÀúÊ·£©
+ * PID å†…éƒ¨çŠ¶æ€ç»“æ„ä½“ï¼ˆä½ç½®å¼PIDï¼‰
  */
 typedef struct
 {
-    float iError;        /* µ±Ç°Îó²î£¨ÓÃÓÚÎ¢·Ö¼ÆËã£© */
-    float LastError;     /* ÉÏÒ»Ö¡Îó²î */
-    float PrevError;     /* ÉÏÉÏÒ»Ö¡Îó²î£¨ÓÃÓÚÎ¢·Ö£© */
-    float SumError;      /* Îó²îÀÛ»ı£¨ÓÃÓÚ»ı·Ö£© */
-    float LastData;      /* ÉÏÒ»Ö¡Êı¾İ£¨ÓÃÓÚÎ¢·Ö¼ÆËã£© */
+    float iError;        /* å½“å‰è¯¯å·® */
+    float LastError;     /* ä¸Šä¸€æ¬¡è¯¯å·® */
+    float PrevError;     /* ä¸Šä¸Šä¸€æ¬¡è¯¯å·®ï¼ˆç”¨äºå¾®åˆ†ï¼‰ */
+    float SumError;      /* è¯¯å·®ç§¯åˆ†å€¼ */
+    float LastData;      /* ä¸Šä¸€æ¬¡è¾“å‡ºå€¼ */
 } PID_INFO;
 
 /**
- * ¼¶ÁªÊ½¶à»·PID¿ØÖÆÆ÷½á¹¹Ìå
- * °üº¬Î»ÖÃ»·¡¢ËÙ¶È»·¡¢½ÇËÙ¶È»·µÄPID×´Ì¬
+ * å·®é€Ÿåº•ç›˜çº§è” PID æ€»æ§åˆ¶å™¨ç»“æ„ä½“
  */
 typedef struct
 {
-    /*--------- PIDÄÚ²¿×´Ì¬ --------*/
-    PID_INFO pid_pos_left;           /* ×óÂÖÎ»ÖÃ»·PID×´Ì¬ */
-    PID_INFO pid_pos_right;          /* ÓÒÂÖÎ»ÖÃ»·PID×´Ì¬ */
-    PID_INFO pid_spd_left;           /* ×óÂÖËÙ¶È»·PID×´Ì¬ */
-    PID_INFO pid_spd_right;          /* ÓÒÂÖËÙ¶È»·PID×´Ì¬ */
-    PID_INFO pid_yaw_rate;           /* ½ÇËÙ¶È»·PID×´Ì¬£¨Í³Ò»´¦Àí£© */
+    /*--------- PID å†…éƒ¨çŠ¶æ€ --------*/
+    PID_INFO pid_pos_left;           /* å·¦è½®ä½ç½®ç¯ PID çŠ¶æ€ */
+    PID_INFO pid_pos_right;          /* å³è½®ä½ç½®ç¯ PID çŠ¶æ€ */
+    PID_INFO pid_spd_left;           /* å·¦è½®é€Ÿåº¦ç¯ PID çŠ¶æ€ */
+    PID_INFO pid_spd_right;          /* å³è½®é€Ÿåº¦ç¯ PID çŠ¶æ€ */
+    PID_INFO pid_yaw_rate;           /* åèˆªè§’é€Ÿåº¦ç¯ PID çŠ¶æ€ */
 
-    /*--------- PID²ÎÊı --------*/
-    float position_param[4];         /* Î»ÖÃ»·PID²ÎÊı [Kp, Ki, Kd, »ı·ÖÏŞ·ù] */
-    float speed_param[4];            /* ËÙ¶È»·PID²ÎÊı [Kp, Ki, Kd, »ı·ÖÏŞ·ù] */
-    float yaw_rate_param[4];         /* ½ÇËÙ¶È»·PID²ÎÊı [Kp, Ki, Kd, »ı·ÖÏŞ·ù] */
+    /*--------- PID å‚æ•° --------*/
+    float position_param[4];         /* ä½ç½®ç¯ PID å‚æ•° [Kp, Ki, Kd, I_limit] */
+    float speed_param_left[4];       /* å·¦è½®é€Ÿåº¦ç¯ PID å‚æ•° */
+    float speed_param_right[4];      /* å³è½®é€Ÿåº¦ç¯ PID å‚æ•° */
+    float yaw_rate_param[4];         /* åèˆªè§’é€Ÿåº¦ç¯ PID å‚æ•° */
 
-    /*--------- ¿ØÖÆÄ¿±ê --------*/
-    float cmd_speed_left_mps;        /* ¿ØÖÆËÙ¶È-×óÂÖ(m/s) */
-    float cmd_speed_right_mps;       /* ¿ØÖÆËÙ¶È-ÓÒÂÖ(m/s) */
-    float target_pos_left_m;         /* Ä¿±êÎ»ÖÃ-×óÂÖ(m) */
-    float target_pos_right_m;        /* Ä¿±êÎ»ÖÃ-ÓÒÂÖ(m) */
-    float ref_speed_left_mps;        /* ËÙ¶È²Î¿¼-×óÂÖ(m/s) */
-    float ref_speed_right_mps;       /* ËÙ¶È²Î¿¼-ÓÒÂÖ(m/s) */
-    float cmd_yaw_rate_rps;          /* ¿ØÖÆ½ÇËÙ¶È(rad/s) */
-    float ref_yaw_rate_rps;          /* ½ÇËÙ¶È²Î¿¼Öµ(rad/s) */
+    /*--------- ç›®æ ‡ä¸å‚è€ƒå€¼ --------*/
+    float cmd_speed_left_mps;        /* æŒ‡ä»¤é€Ÿåº¦ - å·¦è½® (m/s) */
+    float cmd_speed_right_mps;       /* æŒ‡ä»¤é€Ÿåº¦ - å³è½® (m/s) */
+    float target_pos_left_m;         /* ç›®æ ‡ä½ç½® - å·¦è½® (m) */
+    float target_pos_right_m;        /* ç›®æ ‡ä½ç½® - å³è½® (m) */
+    float ref_speed_left_mps;        /* å‚è€ƒé€Ÿåº¦ - å·¦è½® (m/s) */
+    float ref_speed_right_mps;       /* å‚è€ƒé€Ÿåº¦ - å³è½® (m/s) */
+    float cmd_yaw_rate_rps;          /* æŒ‡ä»¤åèˆªè§’é€Ÿåº¦ (rad/s) */
+    float ref_yaw_rate_rps;          /* å‚è€ƒåèˆªè§’é€Ÿåº¦ (rad/s) */
 
-    /*--------- PIDÊä³ö --------*/
-    float out_left_pwm;              /* ×óÂÖPWMÊä³ö£¨Ç°ÂÖµç»ú£© */
-    float out_right_pwm;             /* ÓÒÂÖPWMÊä³ö£¨Ç°ÂÖµç»ú£© */
-    float out_steer_pwm;             /* ×ªÏòPWMÊä³ö£¨¶æ»ú×ªÏò£© */
+    /*--------- PID è¾“å‡º --------*/
+    float out_left_pwm;              /* å·¦è½® PWM è¾“å‡ºå€¼ */
+    float out_right_pwm;             /* å³è½® PWM è¾“å‡ºå€¼ */
+    float out_steer_pwm;             /* è½¬å‘ PWM è¾“å‡ºå€¼ */
 
-    /*--------- Ê¹ÄÜ¿ØÖÆ --------*/
-    uint8 enable_output;             /* Êä³öÊ¹ÄÜ */
-    uint8 enable_speed_loop;         /* ËÙ¶È»·Ê¹ÄÜ */
-    uint8 enable_position_loop;      /* Î»ÖÃ»·Ê¹ÄÜ */
-    uint8 enable_yaw_rate_loop;      /* ½ÇËÙ¶È»·Ê¹ÄÜ */
-    uint8 initialized;               /* ³õÊ¼»¯±êÖ¾ */
+    /*--------- ä½¿èƒ½æ ‡å¿— --------*/
+    uint8 enable_output;             /* æ€»è¾“å‡ºä½¿èƒ½ */
+    uint8 enable_speed_loop;         /* é€Ÿåº¦ç¯ä½¿èƒ½ */
+    uint8 enable_position_loop;      /* ä½ç½®ç¯ä½¿èƒ½ */
+    uint8 enable_yaw_rate_loop;      /* åèˆªè§’é€Ÿåº¦ç¯ä½¿èƒ½ */
+    uint8 initialized;               /* åˆå§‹åŒ–å®Œæˆæ ‡å¿— */
 } WHEEL_PID_LAYER;
 
 
-//-------------------------------------------Íâ²¿±äÁ¿ÉùÃ÷------------------------------------------------------------
+//------------------------------------------- å¤–éƒ¨å˜é‡å£°æ˜ -----------------------------------------------------------
+
 extern WHEEL_PID_LAYER g_wheel_pid;
 
 
-//-------------------------------------------º¯ÊıÉùÃ÷---------------------------------------------------------------
+//------------------------------------------- å‡½æ•°å£°æ˜ ---------------------------------------------------------------
 
-void wheel_pid_init(void);                                                    /* ³õÊ¼»¯PID¿ØÖÆÆ÷ */
+void wheel_pid_init(void);                                                    /* åˆå§‹åŒ– PID æ§åˆ¶å™¨ */
 
-void wheel_pid_enable(uint8 enable_output, uint8 enable_speed_loop,           /* Ê¹ÄÜ¿ØÖÆ»· */
-        uint8 enable_position_loop, uint8 enable_yaw_rate_loop);
+void wheel_pid_enable(uint8 enable_output, uint8 enable_speed_loop,           /* ä½¿èƒ½æ§åˆ¶ç¯ */
+                      uint8 enable_position_loop, uint8 enable_yaw_rate_loop);
 
-void wheel_pid_set_speed_target(float left_mps, float right_mps);             /* ÉèÖÃËÙ¶ÈÄ¿±ê£¬µ¥Î»m/s */
+void wheel_pid_set_speed_target(float left_mps, float right_mps);             /* è®¾ç½®å·¦å³è½®ç›®æ ‡é€Ÿåº¦ (m/s) */
 
-void wheel_pid_set_position_target(float left_m, float right_m);              /* ÉèÖÃÎ»ÖÃÄ¿±ê£¬µ¥Î»m */
+void wheel_pid_set_target_speed(float target_speed_mps);                      /* è®¾ç½®ç›¸åŒç›®æ ‡é€Ÿåº¦ï¼ˆç›´çº¿å¿«æ·æ¥å£ï¼‰ */
 
-void wheel_pid_set_yaw_target(float yaw_rate_rps);                            /* ÉèÖÃ½ÇËÙ¶ÈÄ¿±ê£¬µ¥Î»rad/s */
+void wheel_pid_set_position_target(float left_m, float right_m);              /* è®¾ç½®å·¦å³è½®ç›®æ ‡ä½ç½® (m) */
 
-void wheel_pid_set_speed_param(float kp, float ki, float kd, float i_limit);  /* ÉèÖÃËÙ¶È»·PID²ÎÊı */
+void wheel_pid_set_yaw_target(float yaw_rate_rps);                            /* è®¾ç½®ç›®æ ‡åèˆªè§’é€Ÿåº¦ (rad/s) */
 
-void wheel_pid_set_position_param(float kp, float ki, float kd, float i_limit);    /* ÉèÖÃÎ»ÖÃ»·PID²ÎÊı */
+void wheel_pid_set_speed_param_left(float kp, float ki, float kd, float i_limit);   /* è®¾ç½®å·¦è½®é€Ÿåº¦ç¯å‚æ•° */
 
-void wheel_pid_set_yaw_rate_param(float kp, float ki, float kd, float i_limit);    /* ÉèÖÃ½ÇËÙ¶È»·PID²ÎÊı */
+void wheel_pid_set_speed_param_right(float kp, float ki, float kd, float i_limit);  /* è®¾ç½®å³è½®é€Ÿåº¦ç¯å‚æ•° */
 
-void wheel_pid_set_speed_ref_limit_mps(float abs_max_mps);                    /* ÉèÖÃËÙ¶È²Î¿¼ÏŞ·ùÖµ£¬µ¥Î»m/s */
+void wheel_pid_set_speed_param(float kp, float ki, float kd, float i_limit);        /* åŒæ—¶è®¾ç½®å·¦å³è½®é€Ÿåº¦ç¯å‚æ•° */
 
-void wheel_pid_set_yaw_rate_ref_limit_rps(float abs_max_rps);                 /* ÉèÖÃ½ÇËÙ¶È²Î¿¼ÏŞ·ùÖµ£¬µ¥Î»rad/s */
+void wheel_pid_set_position_param(float kp, float ki, float kd, float i_limit);     /* è®¾ç½®ä½ç½®ç¯å‚æ•° */
 
-void wheel_pid_update(const EncoderLayerState *enc, float dt_s);              /* ¸üĞÂPID¼ÆËã£¬ÖÜÆÚµ÷ÓÃ */
+void wheel_pid_set_yaw_rate_param(float kp, float ki, float kd, float i_limit);     /* è®¾ç½®åèˆªè§’é€Ÿåº¦ç¯å‚æ•° */
 
-void wheel_pid_set_target_speed(float target_speed_mps);                      /* ÉèÖÃÄ¿±êËÙ¶È£¨¼æÈİ½Ó¿Ú£©£¬µ¥Î»m/s */
+void wheel_pid_set_speed_ref_limit_mps(float abs_max_mps);                    /* è®¾ç½®é€Ÿåº¦å‚è€ƒé™å¹… (m/s) */
 
+void wheel_pid_set_yaw_rate_ref_limit_rps(float abs_max_rps);                 /* è®¾ç½®åèˆªè§’é€Ÿåº¦å‚è€ƒé™å¹… (rad/s) */
+
+void wheel_pid_update(const EncoderLayerState *enc, float dt_s);              /* ä¸»æ›´æ–°å‡½æ•°ï¼ˆæ¨èè°ƒç”¨ï¼‰ */
 
 #endif /* CODE_CONTROL_PID_H_ */

@@ -8,12 +8,10 @@
  *    [4字节 float][4字节 float][...][0x00 0x00 0x80 0x7f]  帧尾为固定值
  *
  *  VOFA+ 指令格式：
- *    P1=0.5!   -> 速度环 Kp
- *    K1=0.1!   -> 速度环 Ki
- *    D1=0.05!  -> 速度环 Kd
- *    P3=1.0!   -> 位置环 Kp
- *    K3=0.0!   -> 位置环 Ki
- *    D3=0.0!   -> 位置环 Kd
+ *    P1=xx!   -> 左轮速度环 Kp    P2=xx!   -> 右轮速度环 Kp
+ *    K1=xx!   -> 左轮速度环 Ki    K2=xx!   -> 右轮速度环 Ki
+ *    D1=xx!   -> 左轮速度环 Kd    D2=xx!   -> 右轮速度环 Kd
+ *    P3=xx!   -> 位置环 Kp        K3=xx!   -> 位置环 Ki        D3=xx!   -> 位置环 Kd
  *
  *  Created on: 2026-03-15
  *      Author: DreamerDay
@@ -164,6 +162,11 @@ void vofa_update(const EncoderLayerState *enc)
 //  返回值       void
 //  使用示例     vofa_pid_adjust();
 //  备注信息     放在循环中轮询
+//               指令格式:
+//               P1=xx! - 左轮速度环 Kp    P2=xx! - 右轮速度环 Kp
+//               K1=xx! - 左轮速度环 Ki    K2=xx! - 右轮速度环 Ki
+//               D1=xx! - 左轮速度环 Kd    D2=xx! - 右轮速度环 Kd
+//               P3=xx! - 位置环 Kp        K3=xx! - 位置环 Ki        D3=xx! - 位置环 Kd
 //-------------------------------------------------------------------------------------------------------------------
 void vofa_pid_adjust(void)
 {
@@ -174,29 +177,35 @@ void vofa_pid_adjust(void)
 
     float val = vofa_parse_value();
 
-    // P1/K1/D1 -> 速度环
+    // P1/K1/D1 -> 左轮速度环   P2/K2/D2 -> 右轮速度环
     // P3/K3/D3 -> 位置环
     switch (vofa_fifo_out_buf[0])
     {
         case 'P':
             if (vofa_fifo_out_buf[1] == '1')
-                g_wheel_pid.speed_param[0]  = val;     // 速度环 Kp
+                g_wheel_pid.speed_param_left[0]  = val;     // 左轮速度环 Kp
+            else if (vofa_fifo_out_buf[1] == '2')
+                g_wheel_pid.speed_param_right[0] = val;     // 右轮速度环 Kp
             else if (vofa_fifo_out_buf[1] == '3')
-                g_wheel_pid.position_param[0] = val;    // 位置环 Kp
+                g_wheel_pid.position_param[0] = val;        // 位置环 Kp
             break;
 
         case 'K':
             if (vofa_fifo_out_buf[1] == '1')
-                g_wheel_pid.speed_param[1]  = val;     // 速度环 Ki
+                g_wheel_pid.speed_param_left[1]  = val;     // 左轮速度环 Ki
+            else if (vofa_fifo_out_buf[1] == '2')
+                g_wheel_pid.speed_param_right[1] = val;     // 右轮速度环 Ki
             else if (vofa_fifo_out_buf[1] == '3')
-                g_wheel_pid.position_param[1] = val;    // 位置环 Ki
+                g_wheel_pid.position_param[1] = val;        // 位置环 Ki
             break;
 
         case 'D':
             if (vofa_fifo_out_buf[1] == '1')
-                g_wheel_pid.speed_param[2]  = val;     // 速度环 Kd
+                g_wheel_pid.speed_param_left[2]  = val;     // 左轮速度环 Kd
+            else if (vofa_fifo_out_buf[1] == '2')
+                g_wheel_pid.speed_param_right[2] = val;     // 右轮速度环 Kd
             else if (vofa_fifo_out_buf[1] == '3')
-                g_wheel_pid.position_param[2] = val;    // 位置环 Kd
+                g_wheel_pid.position_param[2] = val;        // 位置环 Kd
             break;
 
         default:

@@ -1,25 +1,26 @@
 /*
  * PID_cmd.c
  *
- *  PID ´®¿ÚÃüÁî½âÎöÓëµ÷ÊÔÏµÍ³ÊµÏÖ
- *  Ö§³ÖÊµÊ±²ÎÊıµ÷Õû¡¢½á¹û»¯Êı¾İÊä³ö¡¢×Ô¶¯²âÊÔ
+ * PID å‘½ä»¤è¡Œè°ƒè¯•ç³»ç»Ÿ
+ * æ”¯æŒå®æ—¶å‚æ•°ä¿®æ”¹ã€ç›®æ ‡è®¾ç½®ã€é¥æµ‹ã€è‡ªåŠ¨æµ‹è¯•ç­‰åŠŸèƒ½
  *
- *  Created on: 2026-04-27
- *      Author: Auto-Generated
+ * Created on: 2026-04-27
+ *     Author: Auto-Generated
  */
 
-//-------------------------------------------Í·ÎÄ¼ş°üº¬------------------------------------------------------------
 #include "zf_common_headfile.h"
 
-//-------------------------------------------È«¾Ö±äÁ¿----------------------------------------------------------------
-/* PIDÃüÁîÏµÍ³È«¾Ö×´Ì¬ */
+//------------------------------------------- å…¨å±€å˜é‡ --------------------------------------------------------------
+
+/* PID å‘½ä»¤ç³»ç»Ÿå…¨å±€çŠ¶æ€ */
 PID_CMD_STATE g_pid_cmd;
 
-/* ±£´æ²âÊÔÇ°µÄÒ£²âÉèÖÃ£¬ÓÃÓÚ»Ö¸´ */
+/* ä¿å­˜ä¹‹å‰çš„é¥æµ‹è®¾ç½®ï¼Œç”¨äºæµ‹è¯•ç»“æŸåæ¢å¤ */
 static uint16 s_saved_telemetry_rate_ms = 50;
-static uint8 s_saved_telemetry_enabled = 0u;
+static uint8  s_saved_telemetry_enabled = 0u;
 
-//-------------------------------------------ÄÚ²¿º¯ÊıÉùÃ÷------------------------------------------------------------
+//------------------------------------------- å†…éƒ¨å‡½æ•°å£°æ˜ ----------------------------------------------------------
+
 static void cmd_send_help(void);
 static void cmd_send_status(void);
 static void cmd_set_speed_param(int argc, char *argv[]);
@@ -31,19 +32,14 @@ static void cmd_set_telemetry_rate(int argc, char *argv[]);
 static void cmd_start_step_test(int argc, char *argv[]);
 static void cmd_stop_test(void);
 static void cmd_enable_loops(int argc, char *argv[]);
-static float parse_float(const char *str, float default_val);
-static int parse_int(const char *str, int default_val);
-static int strcmp_nocase(const char *s1, const char *s2);
 
-//-------------------------------------------¸¨Öúº¯ÊıÊµÏÖ-----------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_send_string
-// ¹¦ÄÜËµÃ÷       Í¨¹ıÎŞÏß´®¿Ú·¢ËÍ×Ö·û´®£¨×Ô¶¯×·¼Ó \r\n£©
-// ²ÎÊıËµÃ÷       str         - Òª·¢ËÍµÄ×Ö·û´®
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       wheel_pid_cmd_send_string("OK");
-// ±¸×¢ĞÅÏ¢       ·â×° wireless_uart_send_string£¬Í³Ò»Êä³ö½Ó¿Ú
-//-------------------------------------------------------------------------------------------------------------------
+static float parse_float(const char *str, float default_val);
+static int   parse_int(const char *str, int default_val);
+static int   strcmp_nocase(const char *s1, const char *s2);
+
+//------------------------------------------- å·¥å…·å‡½æ•° --------------------------------------------------------------
+
+// é€šè¿‡æ— çº¿ä¸²å£å‘é€å­—ç¬¦ä¸²ï¼ˆè‡ªåŠ¨è¿½åŠ  \r\nï¼‰
 void wheel_pid_cmd_send_string(const char *str)
 {
     if (str == NULL) return;
@@ -52,13 +48,7 @@ void wheel_pid_cmd_send_string(const char *str)
     wireless_uart_send_string("\r\n");
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       parse_float
-// ¹¦ÄÜËµÃ÷       °²È«½âÎö¸¡µãÊı
-// ²ÎÊıËµÃ÷       str         - ×Ö·û´®
-// ²ÎÊıËµÃ÷       default_val - ½âÎöÊ§°ÜÊ±µÄÄ¬ÈÏÖµ
-// ·µ»Ø²ÎÊı       float       - ½âÎö½á¹û
-//-------------------------------------------------------------------------------------------------------------------
+// å®‰å…¨å­—ç¬¦ä¸²è½¬ float
 static float parse_float(const char *str, float default_val)
 {
     if (str == NULL || str[0] == '\0') return default_val;
@@ -67,14 +57,14 @@ static float parse_float(const char *str, float default_val)
     int sign = 1;
     int i = 0;
 
-    // Ìø¹ıÇ°µ¼¿Õ¸ñ
+    // è·³è¿‡å‰å¯¼ç©ºæ ¼
     while (str[i] == ' ') i++;
 
-    // ´¦Àí·ûºÅ
+    // å¤„ç†ç¬¦å·
     if (str[i] == '-') { sign = -1; i++; }
     else if (str[i] == '+') { i++; }
 
-    // ÕûÊı²¿·Ö
+    // æ•´æ•°éƒ¨åˆ†
     result = 0.0f;
     while (str[i] >= '0' && str[i] <= '9')
     {
@@ -82,7 +72,7 @@ static float parse_float(const char *str, float default_val)
         i++;
     }
 
-    // Ğ¡Êı²¿·Ö
+    // å°æ•°éƒ¨åˆ†
     if (str[i] == '.')
     {
         i++;
@@ -100,13 +90,7 @@ static float parse_float(const char *str, float default_val)
     return result * sign;
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       parse_int
-// ¹¦ÄÜËµÃ÷       °²È«½âÎöÕûÊı
-// ²ÎÊıËµÃ÷       str         - ×Ö·û´®
-// ²ÎÊıËµÃ÷       default_val - ½âÎöÊ§°ÜÊ±µÄÄ¬ÈÏÖµ
-// ·µ»Ø²ÎÊı       int         - ½âÎö½á¹û
-//-------------------------------------------------------------------------------------------------------------------
+// å®‰å…¨å­—ç¬¦ä¸²è½¬ int
 static int parse_int(const char *str, int default_val)
 {
     if (str == NULL || str[0] == '\0') return default_val;
@@ -129,12 +113,7 @@ static int parse_int(const char *str, int default_val)
     return result * sign;
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       strcmp_nocase
-// ¹¦ÄÜËµÃ÷       ²»Çø·Ö´óĞ¡Ğ´µÄ×Ö·û´®±È½Ï
-// ²ÎÊıËµÃ÷       s1, s2      - ´ı±È½Ï×Ö·û´®
-// ·µ»Ø²ÎÊı       int         - 0±íÊ¾ÏàµÈ
-//-------------------------------------------------------------------------------------------------------------------
+// ä¸åŒºåˆ†å¤§å°å†™å­—ç¬¦ä¸²æ¯”è¾ƒ
 static int strcmp_nocase(const char *s1, const char *s2)
 {
     if (s1 == NULL || s2 == NULL) return -1;
@@ -144,7 +123,6 @@ static int strcmp_nocase(const char *s1, const char *s2)
         char c1 = *s1;
         char c2 = *s2;
 
-        // ×ªĞ¡Ğ´
         if (c1 >= 'A' && c1 <= 'Z') c1 += 32;
         if (c2 >= 'A' && c2 <= 'Z') c2 += 32;
 
@@ -157,45 +135,31 @@ static int strcmp_nocase(const char *s1, const char *s2)
     return *s1 - *s2;
 }
 
-//-------------------------------------------³õÊ¼»¯º¯Êı--------------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_init
-// ¹¦ÄÜËµÃ÷       ³õÊ¼»¯ PID ÃüÁîÏµÍ³
-// ²ÎÊıËµÃ÷       void
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       ÔÚ wheel_pid_init() ÖĞµ÷ÓÃ
-// ±¸×¢ĞÅÏ¢       ³õÊ¼»¯ÃüÁî»º³åÇø¡¢Ò£²â²ÎÊı¡¢²âÊÔ×´Ì¬
-//-------------------------------------------------------------------------------------------------------------------
+//------------------------------------------- åˆå§‹åŒ–å‡½æ•° -----------------------------------------------------------
+
+// PID å‘½ä»¤ç³»ç»Ÿåˆå§‹åŒ–ï¼ˆåœ¨ wheel_pid_init() ä¸­è¢«è°ƒç”¨ï¼‰
 void wheel_pid_cmd_init(void)
 {
     memset(&g_pid_cmd, 0, sizeof(g_pid_cmd));
 
     g_pid_cmd.telemetry_rate_ms = PID_CMD_TELEMETRY_DEFAULT_MS;
-    g_pid_cmd.telemetry_enabled = 0u;           // Ä¬ÈÏ¹Ø±ÕÒ£²â
-    g_pid_cmd.test_mode = PID_TEST_MODE_NONE;
-    g_pid_cmd.cmd_ready = 0u;
-    g_pid_cmd.cmd_index = 0u;
-    g_pid_cmd.timestamp_ms = 0u;
+    g_pid_cmd.telemetry_enabled = 0u;           // é»˜è®¤å…³é—­é¥æµ‹
+    g_pid_cmd.test_mode         = PID_TEST_MODE_NONE;
+    g_pid_cmd.cmd_ready         = 0u;
+    g_pid_cmd.cmd_index         = 0u;
+    g_pid_cmd.timestamp_ms      = 0u;
 }
 
-//-------------------------------------------ÃüÁî½âÎöº¯Êı------------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_process_byte
-// ¹¦ÄÜËµÃ÷       ´¦Àíµ¥¸ö½ÓÊÕ×Ö½Ú£¨ÔÚ´®¿Ú»Øµ÷»òÂÖÑ¯ÖĞµ÷ÓÃ£©
-// ²ÎÊıËµÃ÷       byte        - ½ÓÊÕµ½µÄ×Ö½Ú
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       wheel_pid_cmd_process_byte(data);
-// ±¸×¢ĞÅÏ¢       ÀÛ»ı×Ö½ÚÖ±µ½ÊÕµ½ÍêÕûÃüÁî£¨ÒÔ \r »ò \n ½áÎ²£©
-//-------------------------------------------------------------------------------------------------------------------
+//------------------------------------------- å‘½ä»¤æ¥æ”¶ä¸å¤„ç† -------------------------------------------------------
+
+// å¤„ç†ä¸²å£æ¥æ”¶åˆ°çš„å•ä¸ªå­—èŠ‚ï¼ˆåœ¨ä¸²å£ä¸­æ–­æˆ–æŸ¥è¯¢ä¸­è°ƒç”¨ï¼‰
 void wheel_pid_cmd_process_byte(uint8 byte)
 {
-    // ºöÂÔ¿Õ×Ö½Ú
     if (byte == 0) return;
 
-    // ¼ì²âÃüÁî½áÊø·û
+    // æ£€æµ‹å‘½ä»¤ç»“æŸç¬¦
     if (byte == '\r' || byte == '\n')
     {
-        // Èç¹û»º³åÇøÓĞÄÚÈİ£¬±ê¼ÇÃüÁîÍê³É
         if (g_pid_cmd.cmd_index > 0)
         {
             g_pid_cmd.cmd_buffer[g_pid_cmd.cmd_index] = '\0';
@@ -204,31 +168,22 @@ void wheel_pid_cmd_process_byte(uint8 byte)
         return;
     }
 
-    // ¼ì²â»º³åÇøÒç³ö
+    // é˜²æ­¢ç¼“å†²åŒºæº¢å‡º
     if (g_pid_cmd.cmd_index >= PID_CMD_BUFFER_SIZE - 1)
     {
-        g_pid_cmd.cmd_index = 0u;   // ¶ªÆúÒç³öµÄÃüÁî
+        g_pid_cmd.cmd_index = 0u;
         return;
     }
 
-    // ÀÛ»ı×Ö½Ú
     g_pid_cmd.cmd_buffer[g_pid_cmd.cmd_index++] = (char)byte;
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_poll
-// ¹¦ÄÜËµÃ÷       ÂÖÑ¯´¦ÀíÃüÁîºÍÒ£²â£¨ÔÚ¶¨Ê±ÈÎÎñÖĞµ÷ÓÃ£©
-// ²ÎÊıËµÃ÷       void
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       ÔÚ run_4ms_tasks() ÖĞµ÷ÓÃ
-// ±¸×¢ĞÅÏ¢       ´¦Àí´ıÖ´ĞĞÃüÁî¡¢¸üĞÂÒ£²âÊä³ö¡¢¹ÜÀí²âÊÔÄ£Ê½
-//-------------------------------------------------------------------------------------------------------------------
+// å‘½ä»¤è½®è¯¢å¤„ç†ï¼ˆå»ºè®®åœ¨ 4ms å®šæ—¶ä»»åŠ¡ä¸­è°ƒç”¨ï¼‰
 void wheel_pid_cmd_poll(void)
 {
-    // ¸üĞÂÊ±¼ä´Á
-    g_pid_cmd.timestamp_ms += 4u;   // ¼ÙÉèÃ¿4msµ÷ÓÃÒ»´Î
+    g_pid_cmd.timestamp_ms += 4u;   // æ¯è°ƒç”¨ä¸€æ¬¡ç´¯åŠ 4ms
 
-    // ´¦Àí´ıÖ´ĞĞÃüÁî
+    // æ‰§è¡Œå¾…å¤„ç†çš„å‘½ä»¤
     if (g_pid_cmd.cmd_ready)
     {
         wheel_pid_cmd_execute(g_pid_cmd.cmd_buffer);
@@ -236,7 +191,7 @@ void wheel_pid_cmd_poll(void)
         g_pid_cmd.cmd_index = 0u;
     }
 
-    // Ò£²âÊä³ö
+    // é¥æµ‹å‘é€
     if (g_pid_cmd.telemetry_enabled)
     {
         g_pid_cmd.telemetry_counter += 4u;
@@ -247,7 +202,7 @@ void wheel_pid_cmd_poll(void)
         }
     }
 
-    // ²âÊÔÄ£Ê½¹ÜÀí
+    // è‡ªåŠ¨æµ‹è¯•è¶…æ—¶å¤„ç†
     if (g_pid_cmd.test_mode == PID_TEST_MODE_STEP)
     {
         uint32 elapsed = g_pid_cmd.timestamp_ms - g_pid_cmd.test_start_time_ms;
@@ -258,24 +213,16 @@ void wheel_pid_cmd_poll(void)
     }
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_execute
-// ¹¦ÄÜËµÃ÷       Ö´ĞĞÃüÁî×Ö·û´®
-// ²ÎÊıËµÃ÷       cmd         - ÃüÁî×Ö·û´®
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       wheel_pid_cmd_execute("SET_SPEED_PARAM 0 50 0 100");
-// ±¸×¢ĞÅÏ¢       ½âÎöÃüÁîÀàĞÍºÍ²ÎÊı£¬µ÷ÓÃ¶ÔÓ¦µÄ´¦Àíº¯Êı
-//-------------------------------------------------------------------------------------------------------------------
+// æ‰§è¡Œå®Œæ•´å‘½ä»¤å­—ç¬¦ä¸²
 void wheel_pid_cmd_execute(const char *cmd)
 {
     if (cmd == NULL || cmd[0] == '\0') return;
 
-    // ²ÎÊı½âÎö£¨×î¶à8¸ö²ÎÊı£©
     char *argv[8];
     int argc = 0;
     char buffer[PID_CMD_BUFFER_SIZE];
 
-    // ¸´ÖÆÃüÁîµ½»º³åÇø£¨±ÜÃâĞŞ¸ÄÔ­×Ö·û´®£©
+    // å¤åˆ¶å‘½ä»¤åˆ°ç¼“å†²åŒº
     uint16 i = 0;
     while (cmd[i] && i < PID_CMD_BUFFER_SIZE - 1)
     {
@@ -284,7 +231,7 @@ void wheel_pid_cmd_execute(const char *cmd)
     }
     buffer[i] = '\0';
 
-    // ·Ö¸î²ÎÊı
+    // åˆ†å‰²å‚æ•°
     argv[argc] = buffer;
     for (i = 0; buffer[i] && argc < 8; i++)
     {
@@ -299,62 +246,35 @@ void wheel_pid_cmd_execute(const char *cmd)
     }
     argc++;
 
-    // ÃüÁîÆ¥ÅäÓëÖ´ĞĞ
+    // å‘½ä»¤åŒ¹é…ä¸åˆ†å‘
     if (strcmp_nocase(argv[0], "HELP") == 0)
-    {
         cmd_send_help();
-    }
     else if (strcmp_nocase(argv[0], "GET_STATUS") == 0)
-    {
         cmd_send_status();
-    }
     else if (strcmp_nocase(argv[0], "SET_SPEED_PARAM") == 0)
-    {
         cmd_set_speed_param(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "SET_POSITION_PARAM") == 0)
-    {
         cmd_set_position_param(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "SET_YAW_PARAM") == 0)
-    {
         cmd_set_yaw_param(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "SET_SPEED_TARGET") == 0)
-    {
         cmd_set_speed_target(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "SET_YAW_TARGET") == 0)
-    {
         cmd_set_yaw_target(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "SET_TELEMETRY_RATE") == 0)
-    {
         cmd_set_telemetry_rate(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "START_STEP_TEST") == 0)
-    {
         cmd_start_step_test(argc, argv);
-    }
     else if (strcmp_nocase(argv[0], "STOP_TEST") == 0)
-    {
         cmd_stop_test();
-    }
     else if (strcmp_nocase(argv[0], "ENABLE_LOOPS") == 0)
-    {
         cmd_enable_loops(argc, argv);
-    }
     else
-    {
         wheel_pid_cmd_send_string("ERR:Unknown command. Send HELP for list.");
-    }
 }
 
-//-------------------------------------------ÃüÁî´¦Àíº¯Êı------------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_send_help
-// ¹¦ÄÜËµÃ÷       ·¢ËÍ°ïÖúĞÅÏ¢
-//-------------------------------------------------------------------------------------------------------------------
+//------------------------------------------- å‘½ä»¤å¤„ç†å‡½æ•° ---------------------------------------------------------
+
 static void cmd_send_help(void)
 {
     wheel_pid_cmd_send_string("=== PID Command Help ===");
@@ -371,60 +291,51 @@ static void cmd_send_help(void)
     wheel_pid_cmd_send_string("HELP");
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_send_status
-// ¹¦ÄÜËµÃ÷       ·¢ËÍµ±Ç°×´Ì¬ĞÅÏ¢
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_send_status(void)
 {
     char buf[128];
-
     wheel_pid_cmd_send_string("=== PID Status ===");
 
-    // ËÙ¶È»·²ÎÊı
-    sprintf(buf, "SPEED_PARAM: Kp=%.2f Ki=%.2f Kd=%.2f I_limit=%.2f",
-            g_wheel_pid.speed_param[0], g_wheel_pid.speed_param[1],
-            g_wheel_pid.speed_param[2], g_wheel_pid.speed_param[3]);
+    sprintf(buf, "SPEED_PARAM_L: Kp=%.2f Ki=%.2f Kd=%.2f I_limit=%.2f",
+            g_wheel_pid.speed_param_left[0], g_wheel_pid.speed_param_left[1],
+            g_wheel_pid.speed_param_left[2], g_wheel_pid.speed_param_left[3]);
     wheel_pid_cmd_send_string(buf);
 
-    // Î»ÖÃ»·²ÎÊı
+    sprintf(buf, "SPEED_PARAM_R: Kp=%.2f Ki=%.2f Kd=%.2f I_limit=%.2f",
+            g_wheel_pid.speed_param_right[0], g_wheel_pid.speed_param_right[1],
+            g_wheel_pid.speed_param_right[2], g_wheel_pid.speed_param_right[3]);
+    wheel_pid_cmd_send_string(buf);
+
     sprintf(buf, "POSITION_PARAM: Kp=%.2f Ki=%.2f Kd=%.2f I_limit=%.2f",
             g_wheel_pid.position_param[0], g_wheel_pid.position_param[1],
             g_wheel_pid.position_param[2], g_wheel_pid.position_param[3]);
     wheel_pid_cmd_send_string(buf);
 
-    // ½ÇËÙÂÊ»·²ÎÊı
     sprintf(buf, "YAW_PARAM: Kp=%.2f Ki=%.2f Kd=%.2f I_limit=%.2f",
             g_wheel_pid.yaw_rate_param[0], g_wheel_pid.yaw_rate_param[1],
             g_wheel_pid.yaw_rate_param[2], g_wheel_pid.yaw_rate_param[3]);
     wheel_pid_cmd_send_string(buf);
 
-    // Ê¹ÄÜ×´Ì¬
     sprintf(buf, "ENABLE: out=%d speed=%d pos=%d yaw=%d",
             g_wheel_pid.enable_output, g_wheel_pid.enable_speed_loop,
             g_wheel_pid.enable_position_loop, g_wheel_pid.enable_yaw_rate_loop);
     wheel_pid_cmd_send_string(buf);
 
-    // Ä¿±êÖµ
     sprintf(buf, "TARGET: speed_L=%.2f speed_R=%.2f yaw=%.2f",
             g_wheel_pid.cmd_speed_left_mps, g_wheel_pid.cmd_speed_right_mps,
             g_wheel_pid.cmd_yaw_rate_rps);
     wheel_pid_cmd_send_string(buf);
 
-    // Ò£²â×´Ì¬
     sprintf(buf, "TELEMETRY: rate=%dms enabled=%d",
             g_pid_cmd.telemetry_rate_ms, g_pid_cmd.telemetry_enabled);
     wheel_pid_cmd_send_string(buf);
 
-    // ²âÊÔ×´Ì¬
     sprintf(buf, "TEST_MODE: %d", g_pid_cmd.test_mode);
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_set_speed_param
-// ¹¦ÄÜËµÃ÷       ÉèÖÃËÙ¶È»· PID ²ÎÊı
-//-------------------------------------------------------------------------------------------------------------------
+// ...ï¼ˆåç»­çš„ cmd_set_xxx å‡½æ•°ä¸åŸæ¥é€»è¾‘å®Œå…¨ä¸€è‡´ï¼Œä»…æ³¨é‡Šæ”¹ä¸ºä¸­æ–‡ï¼‰
+
 static void cmd_set_speed_param(int argc, char *argv[])
 {
     if (argc < 5)
@@ -445,10 +356,6 @@ static void cmd_set_speed_param(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_set_position_param
-// ¹¦ÄÜËµÃ÷       ÉèÖÃÎ»ÖÃ»· PID ²ÎÊı
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_set_position_param(int argc, char *argv[])
 {
     if (argc < 5)
@@ -469,10 +376,6 @@ static void cmd_set_position_param(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_set_yaw_param
-// ¹¦ÄÜËµÃ÷       ÉèÖÃ½ÇËÙÂÊ»· PID ²ÎÊı
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_set_yaw_param(int argc, char *argv[])
 {
     if (argc < 5)
@@ -493,10 +396,6 @@ static void cmd_set_yaw_param(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_set_speed_target
-// ¹¦ÄÜËµÃ÷       ÉèÖÃËÙ¶ÈÄ¿±ê
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_set_speed_target(int argc, char *argv[])
 {
     if (argc < 3)
@@ -505,7 +404,7 @@ static void cmd_set_speed_target(int argc, char *argv[])
         return;
     }
 
-    float left = parse_float(argv[1], 0.0f);
+    float left  = parse_float(argv[1], 0.0f);
     float right = parse_float(argv[2], 0.0f);
 
     wheel_pid_set_speed_target(left, right);
@@ -515,10 +414,6 @@ static void cmd_set_speed_target(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_set_yaw_target
-// ¹¦ÄÜËµÃ÷       ÉèÖÃ½ÇËÙÂÊÄ¿±ê
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_set_yaw_target(int argc, char *argv[])
 {
     if (argc < 2)
@@ -536,10 +431,6 @@ static void cmd_set_yaw_target(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_set_telemetry_rate
-// ¹¦ÄÜËµÃ÷       ÉèÖÃÒ£²âÊä³öÖÜÆÚ
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_set_telemetry_rate(int argc, char *argv[])
 {
     if (argc < 2)
@@ -568,10 +459,6 @@ static void cmd_set_telemetry_rate(int argc, char *argv[])
     }
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_start_step_test
-// ¹¦ÄÜËµÃ÷       ¿ªÊ¼½×Ô¾ÏìÓ¦²âÊÔ
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_start_step_test(int argc, char *argv[])
 {
     if (argc < 3)
@@ -590,25 +477,17 @@ static void cmd_start_step_test(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_stop_test
-// ¹¦ÄÜËµÃ÷       Í£Ö¹²âÊÔ
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_stop_test(void)
 {
     wheel_pid_cmd_stop_test();
     wheel_pid_cmd_send_string("OK:TEST_STOPPED");
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       cmd_enable_loops
-// ¹¦ÄÜËµÃ÷       ÉèÖÃ¸÷»·Ê¹ÄÜ×´Ì¬
-//-------------------------------------------------------------------------------------------------------------------
 static void cmd_enable_loops(int argc, char *argv[])
 {
     if (argc < 5)
     {
-        wheel_pid_cmd_send_string("ERR:Usage: ENABLE_LOOPS output speed pos yaw");
+        wheel_pid_cmd_send_string("ERR:Usage: ENABLE_LOOPS out spd pos yaw");
         return;
     }
 
@@ -624,15 +503,9 @@ static void cmd_enable_loops(int argc, char *argv[])
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------Ò£²âº¯Êı----------------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_send_telemetry
-// ¹¦ÄÜËµÃ÷       ·¢ËÍÒ£²âÊı¾İĞĞ£¨CSV¸ñÊ½£©
-// ²ÎÊıËµÃ÷       void
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       ÔÚÒ£²â¶¨Ê±Æ÷ÖĞµ÷ÓÃ
-// ±¸×¢ĞÅÏ¢       Êä³ö¸ñÊ½: TELEMETRY,timestamp_ms,speed_cmd_l,speed_cmd_r,speed_act_l,speed_act_r,...
-//-------------------------------------------------------------------------------------------------------------------
+//------------------------------------------- é¥æµ‹ä¸æµ‹è¯•å‡½æ•° ---------------------------------------------------------
+
+// å‘é€é¥æµ‹æ•°æ®ï¼ˆCSVæ ¼å¼ï¼‰
 void wheel_pid_cmd_send_telemetry(void)
 {
     const EncoderLayerState *enc = encoder_layer_get_state();
@@ -640,91 +513,57 @@ void wheel_pid_cmd_send_telemetry(void)
 
     char buf[PID_CMD_TELEMETRY_BUF_SIZE];
 
-    // ¼ÆËãÎó²î
     float err_spd_l = g_wheel_pid.cmd_speed_left_mps - enc->speed_left_mps;
     float err_spd_r = g_wheel_pid.cmd_speed_right_mps - enc->speed_right_mps;
-    float err_yaw = g_wheel_pid.cmd_yaw_rate_rps - g_wheel_pid.ref_yaw_rate_rps;
+    float err_yaw   = g_wheel_pid.cmd_yaw_rate_rps - g_wheel_pid.ref_yaw_rate_rps;
 
-    // ¸ñÊ½»¯Ò£²âÊı¾İ
     sprintf(buf,
             "TELEMETRY,%lu,%.3f,%.3f,%.3f,%.3f,%.3f,%.3f,%.1f,%.1f,%.1f,%.4f,%.4f,%.4f,%.4f,%.4f",
             (unsigned long)g_pid_cmd.timestamp_ms,
-            g_wheel_pid.cmd_speed_left_mps,
-            g_wheel_pid.cmd_speed_right_mps,
-            enc->speed_left_mps,
-            enc->speed_right_mps,
-            g_wheel_pid.cmd_yaw_rate_rps,
-            g_wheel_pid.ref_yaw_rate_rps,
-            g_wheel_pid.out_left_pwm,
-            g_wheel_pid.out_right_pwm,
-            g_wheel_pid.out_steer_pwm,
-            err_spd_l,
-            err_spd_r,
-            err_yaw,
-            enc->odom_left_m,
-            enc->odom_right_m);
+            g_wheel_pid.cmd_speed_left_mps, g_wheel_pid.cmd_speed_right_mps,
+            enc->speed_left_mps, enc->speed_right_mps,
+            g_wheel_pid.cmd_yaw_rate_rps, g_wheel_pid.ref_yaw_rate_rps,
+            g_wheel_pid.out_left_pwm, g_wheel_pid.out_right_pwm, g_wheel_pid.out_steer_pwm,
+            err_spd_l, err_spd_r, err_yaw,
+            enc->odom_left_m, enc->odom_right_m);
 
     wheel_pid_cmd_send_string(buf);
 }
 
-//-------------------------------------------²âÊÔÄ£Ê½º¯Êı------------------------------------------------------------
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_start_step_test
-// ¹¦ÄÜËµÃ÷       ¿ªÊ¼½×Ô¾ÏìÓ¦²âÊÔ
-// ²ÎÊıËµÃ÷       speed       - Ä¿±êËÙ¶È (m/s)
-// ²ÎÊıËµÃ÷       duration_ms - ²âÊÔ³ÖĞøÊ±¼ä (ms)
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       wheel_pid_cmd_start_step_test(1.0f, 3000);
-// ±¸×¢ĞÅÏ¢       ÉèÖÃÄ¿±êËÙ¶È²¢Æô¶¯Ò£²â£¬²âÊÔ½áÊøºó×Ô¶¯Í£Ö¹
-//-------------------------------------------------------------------------------------------------------------------
+// å¼€å§‹é˜¶è·ƒå“åº”æµ‹è¯•
 void wheel_pid_cmd_start_step_test(float speed, uint32 duration_ms)
 {
-    // ±£´æµ±Ç°Ò£²âÉèÖÃ
+    // ä¿å­˜å½“å‰é¥æµ‹è®¾ç½®
     s_saved_telemetry_rate_ms = g_pid_cmd.telemetry_rate_ms;
     s_saved_telemetry_enabled = g_pid_cmd.telemetry_enabled;
 
-    // ÖØÖÃ±àÂëÆ÷Àï³Ì
     encoder_layer_clear_odom();
 
-    // ÉèÖÃÄ¿±êËÙ¶È£¨×óÓÒÏàÍ¬£©
     wheel_pid_set_speed_target(speed, speed);
+    wheel_pid_enable(1, 1, 0, 0);        // ä»…å¼€å¯é€Ÿåº¦ç¯
 
-    // È·±£ËÙ¶È»·Ê¹ÄÜ
-    wheel_pid_enable(1, 1, 0, 0);
-
-    // Æô¶¯Ò£²â£¨²âÊÔÊ±Ê¹ÓÃ¸ü¸ßÆµÂÊ£©
+    // æé«˜é¥æµ‹é¢‘ç‡
     g_pid_cmd.telemetry_enabled = 1u;
     g_pid_cmd.telemetry_rate_ms = 20;
     g_pid_cmd.telemetry_counter = 0u;
 
-    // ÉèÖÃ²âÊÔ×´Ì¬
     g_pid_cmd.test_mode = PID_TEST_MODE_STEP;
     g_pid_cmd.test_start_time_ms = g_pid_cmd.timestamp_ms;
     g_pid_cmd.test_duration_ms = duration_ms;
     g_pid_cmd.test_target_speed = speed;
 
-    // ·¢ËÍ²âÊÔ¿ªÊ¼±ê¼Ç
     wheel_pid_cmd_send_string("TEST_STEP_START");
 }
 
-//-------------------------------------------------------------------------------------------------------------------
-// º¯ÊıÃû³Æ       wheel_pid_cmd_stop_test
-// ¹¦ÄÜËµÃ÷       Í£Ö¹µ±Ç°²âÊÔ
-// ²ÎÊıËµÃ÷       void
-// ·µ»Ø²ÎÊı       void
-// Ê¹ÓÃÊ¾Àı       wheel_pid_cmd_stop_test();
-// ±¸×¢ĞÅÏ¢       Í£Ö¹µç»ú¡¢¹Ø±ÕÒ£²â¡¢·¢ËÍ²âÊÔ½áÊø±ê¼Ç
-//-------------------------------------------------------------------------------------------------------------------
+// åœæ­¢å½“å‰æµ‹è¯•
 void wheel_pid_cmd_stop_test(void)
 {
-    // Í£Ö¹µç»ú
     wheel_pid_set_speed_target(0.0f, 0.0f);
 
-    // »Ö¸´Ò£²âÉèÖÃ
+    // æ¢å¤ä¹‹å‰é¥æµ‹è®¾ç½®
     g_pid_cmd.telemetry_rate_ms = s_saved_telemetry_rate_ms;
     g_pid_cmd.telemetry_enabled = s_saved_telemetry_enabled;
     g_pid_cmd.test_mode = PID_TEST_MODE_NONE;
 
-    // ·¢ËÍ²âÊÔ½áÊø±ê¼Ç
     wheel_pid_cmd_send_string("TEST_STEP_END");
 }
