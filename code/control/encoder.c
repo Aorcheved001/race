@@ -10,7 +10,7 @@
 
 static float g_tick_to_meter_left  = ENCODER_TICK_TO_METER_DEFAULT;   // 每脉冲对应米数 m/tick
 static float g_tick_to_meter_right = ENCODER_TICK_TO_METER_DEFAULT;   // 每脉冲对应米数 m/tick
-static float g_sample_dt_s = 0.004f;               // 采样周期（秒），>0 有效；应与 encoder_layer_update 的调用周期一致
+static float g_sample_dt_s = 0.001f;               // 采样周期（秒），>0 有效；应与 encoder_layer_update 的调用周期一致
 volatile int16 tick_left_pid = 0;          //周期更新一次编码器获得的数值  左轮取反值，约定前进方向速度为正
 volatile int16 tick_right_pid = 0;
  //-------------------------------------------内部结构体区------------------------------------------------------------
