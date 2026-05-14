@@ -1,5 +1,6 @@
 zf_driver_dma.o :	../libraries/zf_driver/zf_driver_dma.c
 ../libraries/zf_driver/zf_driver_dma.c :
+<<<<<<< HEAD
 zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Dma\\Dma\IfxDma_Dma.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Dma\\Dma\IfxDma_Dma.h" :
 zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxDma_cfg.h"
@@ -14,6 +15,22 @@ zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\librari
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_clock.h" :
 zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Dma\\Dma\IfxDma_Dma.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Dma\\Dma\IfxDma_Dma.h" :
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxDma_cfg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_Impl\IfxDma_cfg.h" :
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h" :
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 zf_driver_dma.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_driver_dma.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -146,5 +163,10 @@ zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\librari
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Dma\\Std\IfxDma.h" :
 zf_driver_dma.o :	..\libraries\zf_driver\zf_driver_exti.h
 ..\libraries\zf_driver\zf_driver_exti.h :
+<<<<<<< HEAD
 zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuEru.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuEru.h" :
+=======
+zf_driver_dma.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuEru.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuEru.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6

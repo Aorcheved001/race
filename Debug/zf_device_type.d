@@ -2,10 +2,17 @@ zf_device_type.o :	../libraries/zf_device/zf_device_type.c
 ../libraries/zf_device/zf_device_type.c :
 zf_device_type.o :	..\libraries\zf_device\zf_device_type.h
 ..\libraries\zf_device\zf_device_type.h :
+<<<<<<< HEAD
 zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_debug.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_debug.h" :
 zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_debug.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_debug.h" :
+zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 zf_device_type.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_device_type.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -34,6 +41,7 @@ zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\librar
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
 zf_device_type.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+<<<<<<< HEAD
 zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Platform_Types.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Platform_Types.h" :
 zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
@@ -42,3 +50,13 @@ zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\librar
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
 zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_interrupt.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_interrupt.h" :
+=======
+zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Platform_Types.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Platform_Types.h" :
+zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+zf_device_type.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_interrupt.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_interrupt.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6

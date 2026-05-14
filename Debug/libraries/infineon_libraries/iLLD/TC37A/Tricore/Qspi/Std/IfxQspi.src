@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc26284a --dep-file=IfxQspi.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c"
+=======
+	.compiler_invocation	"ctc -f cc1528a --dep-file=IfxQspi.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c'
 
@@ -1290,7 +1294,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L142:
+<<<<<<< HEAD
 	.word	101681
+=======
+	.word	101675
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L143
 	.byte	4
@@ -1298,29 +1306,48 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L144
 	.byte	2,1,1,3
 	.word	221
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
+<<<<<<< HEAD
 	.word	224
+=======
+	.word	218
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
 .L279:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+<<<<<<< HEAD
 	.word	269
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
 	.word	281
+=======
+	.word	263
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	275
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,4
 	.byte	'Ifx__stopPerfCounters',0,3,1,172,2,17,1,1,6,0,7
 	.byte	'unsigned long long int',0,8,7,9
 	.byte	'void',0,3
+<<<<<<< HEAD
 	.word	393
+=======
+	.word	387
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8
 	.byte	'__ld64',0,3,2,135,1,19
 	.word	367
@@ -1333,7 +1360,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	399
 	.byte	5
 	.byte	'value',0,2,143,1,43
+<<<<<<< HEAD
 	.word	367
+=======
+	.word	361
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7
 .L261:
@@ -1344,7 +1375,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,70,16,4,11
 	.byte	'SRPN',0,1
+<<<<<<< HEAD
 	.word	508
+=======
+	.word	502
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8,0,2,35,0,11
 	.byte	'reserved_8',0,1
 	.word	508
@@ -1403,12 +1438,20 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	4
 	.byte	'IfxSrc_clearRequest',0,3,3,250,1,17,1,1,5
 	.byte	'src',0,3,250,1,60
+<<<<<<< HEAD
 	.word	859
+=======
+	.word	853
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,6,210,9,16,4,11
 	.byte	'ENDINIT',0,4
+<<<<<<< HEAD
 	.word	907
+=======
+	.word	901
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,31,2,35,0,11
 	.byte	'LCK',0,4
 	.word	907
@@ -1426,14 +1469,22 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	501
 	.byte	4,2,35,0,13
 	.byte	'B',0
+<<<<<<< HEAD
 	.word	923
+=======
+	.word	917
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,0
 .L253:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,6,219,9,16,4,11
 	.byte	'reserved_0',0,1
+<<<<<<< HEAD
 	.word	508
+=======
+	.word	502
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,7,2,35,0,11
 	.byte	'reserved_1',0,1
 	.word	508
@@ -1560,23 +1611,38 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	1646
 	.byte	6,0,8
 	.byte	'IfxScuWdt_getSafetyWatchdogPasswordInline',0,3,5,132,5,19
+<<<<<<< HEAD
 	.word	1059
+=======
+	.word	1053
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,6,0,15,8,158,1,9,1,16
 	.byte	'IfxCpu_ResourceCpu_0',0,0,16
 	.byte	'IfxCpu_ResourceCpu_1',0,1,16
 	.byte	'IfxCpu_ResourceCpu_2',0,2,16
 	.byte	'IfxCpu_ResourceCpu_none',0,3,0,8
 	.byte	'IfxCpu_getCoreIndex',0,3,7,232,6,31
+<<<<<<< HEAD
 	.word	2056
 	.byte	1,1,6,0,8
 	.byte	'IfxCpu_areInterruptsEnabled',0,3,7,230,5,20
 	.word	508
+=======
+	.word	2050
+	.byte	1,1,6,0,8
+	.byte	'IfxCpu_areInterruptsEnabled',0,3,7,230,5,20
+	.word	502
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,6,0
 .L287:
 	.byte	7
 	.byte	'unsigned long int',0,4,7,8
 	.byte	'IfxCpu_getPerformanceCounter',0,3,7,252,6,19
+<<<<<<< HEAD
 	.word	2234
+=======
+	.word	2228
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'address',0,7,252,6,55
 	.word	1059
@@ -2907,7 +2973,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	4,3,35,252,1,0,14
 	.word	9387
 	.byte	3
+<<<<<<< HEAD
 	.word	9957
+=======
+	.word	9951
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,9,84,9,1,16
 	.byte	'IfxPort_InputMode_undefined',0,127,16
 	.byte	'IfxPort_InputMode_noPullDevice',0,0,16
@@ -2915,13 +2985,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxPort_InputMode_pullUp',0,16,0,4
 	.byte	'IfxPort_setPinModeInput',0,3,9,159,5,17,1,1,5
 	.byte	'port',0,9,159,5,48
+<<<<<<< HEAD
 	.word	9962
+=======
+	.word	9956
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,9,159,5,60
 	.word	508
 	.byte	5
 	.byte	'mode',0,9,159,5,88
+<<<<<<< HEAD
 	.word	9967
+=======
+	.word	9961
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,9,143,1,9,1,16
 	.byte	'IfxPort_OutputMode_pushPull',0,128,1,16
 	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,15,9,129,1,9,1,16
@@ -2935,7 +3013,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0,4
 	.byte	'IfxPort_setPinModeOutput',0,3,9,165,5,17,1,1,5
 	.byte	'port',0,9,165,5,49
+<<<<<<< HEAD
 	.word	9962
+=======
+	.word	9956
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,9,165,5,61
 	.word	508
@@ -2944,7 +3026,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	10172
 	.byte	5
 	.byte	'index',0,9,165,5,114
+<<<<<<< HEAD
 	.word	10242
+=======
+	.word	10236
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,9,189,1,9,4,16
 	.byte	'IfxPort_State_notChanged',0,0,16
 	.byte	'IfxPort_State_high',0,1,16
@@ -2952,7 +3038,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxPort_State_toggled',0,129,128,4,0,4
 	.byte	'IfxPort_setPinState',0,3,9,171,5,17,1,1,5
 	.byte	'port',0,9,171,5,44
+<<<<<<< HEAD
 	.word	9962
+=======
+	.word	9956
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,9,171,5,56
 	.word	508
@@ -3199,12 +3289,20 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	1059
 	.byte	5,4,2,35,2,11
 	.byte	'CS',0,1
+<<<<<<< HEAD
 	.word	508
+=======
+	.word	502
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,0,2,35,3,0
 .L296:
 	.byte	12,13,147,3,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	485
+=======
+	.word	479
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	501
@@ -3238,12 +3336,20 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	485
 	.byte	15,2,2,35,0,11
 	.byte	'BE',0,1
+<<<<<<< HEAD
 	.word	508
+=======
+	.word	502
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	2,0,2,35,3,0
 .L306:
 	.byte	12,13,187,3,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	485
+=======
+	.word	479
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	501
@@ -3340,12 +3446,20 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	1059
 	.byte	16,0,2,35,0,11
 	.byte	'OEN',0,2
+<<<<<<< HEAD
 	.word	1059
+=======
+	.word	1053
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	16,0,2,35,2,0
 .L381:
 	.byte	12,13,179,4,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	485
+=======
+	.word	479
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	501
@@ -3891,12 +4005,20 @@ __IfxQspi_calculateDelayConstants_function_end:
 .L332:
 	.byte	8
 	.byte	'IfxQspi_getModuleFrequency',0,3,12,152,8,18
+<<<<<<< HEAD
 	.word	281
+=======
+	.word	275
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L333:
 	.byte	5
 	.byte	'qspi',0,12,152,8,55
+<<<<<<< HEAD
 	.word	16366
+=======
+	.word	16360
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L335:
 	.byte	6,0,15,12,179,1,9,1,16
 	.byte	'IfxQspi_Phase_wait',0,0,16
@@ -3909,20 +4031,35 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxQspi_Phase_leadStrobe',0,7,16
 	.byte	'IfxQspi_Phase_trailStrobe',0,8,0,8
 	.byte	'IfxQspi_getPhase',0,3,12,160,8,26
+<<<<<<< HEAD
 	.word	16426
 	.byte	1,1,5
 	.byte	'qspi',0,12,160,8,53
 	.word	16366
+=======
+	.word	16420
+	.byte	1,1,5
+	.byte	'qspi',0,12,160,8,53
+	.word	16360
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0
 .L328:
 	.byte	8
 	.byte	'IfxQspi_getTimeQuantaFrequency',0,3,12,185,8,18
+<<<<<<< HEAD
 	.word	281
+=======
+	.word	275
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L329:
 	.byte	5
 	.byte	'qspi',0,12,185,8,59
+<<<<<<< HEAD
 	.word	16366
+=======
+	.word	16360
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L331:
 	.byte	17,6,0,0,20
 	.byte	'__max',0
@@ -4065,7 +4202,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	2234
 .L247:
 	.byte	3
+<<<<<<< HEAD
 	.word	508
+=======
+	.word	502
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L257:
 	.byte	15,12,95,9,1,16
 	.byte	'IfxQspi_ChannelId_0',0,0,16
@@ -4083,7 +4224,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxQspi_ChannelId_12',0,12,16
 	.byte	'IfxQspi_ChannelId_13',0,13,16
 	.byte	'IfxQspi_ChannelId_14',0,14,0,14
+<<<<<<< HEAD
 	.word	13692
+=======
+	.word	13686
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L263:
 	.byte	3
 	.word	17652
@@ -4218,7 +4363,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	18339
 	.byte	30
 	.byte	'TxRxHandler',0,14,212,1,16
+<<<<<<< HEAD
 	.word	18348
+=======
+	.word	18342
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L502:
 	.byte	10
 	.byte	'SpiIf_Ch_',0,14,214,1,8,48,13
@@ -4226,7 +4375,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	.L503-.L142
 	.byte	4,2,35,0,13
 	.byte	'flags',0
+<<<<<<< HEAD
 	.word	18142
+=======
+	.word	18136
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,2,35,4,13
 	.byte	'errorChecks',0
 	.word	18147
@@ -4252,11 +4405,28 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'rxHandler',0
 	.word	18353
 	.byte	4,2,35,44,0,3
+<<<<<<< HEAD
 	.word	18374
+=======
+	.word	18368
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,14,69,9,1,16
 	.byte	'SpiIf_Status_ok',0,0,16
 	.byte	'SpiIf_Status_busy',0,1,16
 	.byte	'SpiIf_Status_unknown',0,2,0,28
+<<<<<<< HEAD
+=======
+	.word	387
+	.byte	3
+	.word	18634
+	.byte	32
+	.word	18567
+	.byte	1,1,21
+	.word	18328
+	.byte	21
+	.word	18639
+	.byte	21
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	393
 	.byte	3
 	.word	18640
@@ -4298,6 +4468,7 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	18683
 	.byte	4,2,35,0,13
 	.byte	'getStatus',0
+<<<<<<< HEAD
 	.word	18725
 	.byte	4,2,35,4,13
 	.byte	'onTx',0
@@ -4308,12 +4479,28 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	4,2,35,12,13
 	.byte	'onError',0
 	.word	18769
+=======
+	.word	18719
+	.byte	4,2,35,4,13
+	.byte	'onTx',0
+	.word	18763
+	.byte	4,2,35,8,13
+	.byte	'onRx',0
+	.word	18763
+	.byte	4,2,35,12,13
+	.byte	'onError',0
+	.word	18763
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,16,0
 .L504:
 	.byte	10
 	.byte	'SpiIf_',0,14,153,1,8,40,13
 	.byte	'driver',0
+<<<<<<< HEAD
 	.word	18078
+=======
+	.word	18072
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'sending',0
 	.word	2234
@@ -4365,7 +4552,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	18755
 .L309:
 	.byte	28
+<<<<<<< HEAD
 	.word	501
+=======
+	.word	495
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L320:
 	.byte	7
 	.byte	'char',0,1,6
@@ -4377,6 +4568,7 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxQspi_Index_2',0,2,16
 	.byte	'IfxQspi_Index_3',0,3,16
 	.byte	'IfxQspi_Index_4',0,4,0,14
+<<<<<<< HEAD
 	.word	15788
 	.byte	28
 	.word	19271
@@ -4466,6 +4658,97 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	30
 	.byte	'Ifx_Priority',0,15,103,16
 	.word	1059
+=======
+	.word	15782
+	.byte	28
+	.word	19265
+.L384:
+	.byte	3
+	.word	19270
+.L386:
+	.byte	28
+	.word	17305
+.L389:
+	.byte	3
+	.word	18023
+	.byte	28
+	.word	2228
+.L392:
+	.byte	3
+	.word	19290
+	.byte	30
+	.byte	'__wchar_t',0,17,1,1
+	.word	17272
+	.byte	30
+	.byte	'__size_t',0,17,1,1
+	.word	479
+	.byte	30
+	.byte	'__ptrdiff_t',0,17,1,1
+	.word	495
+	.byte	33,1,3
+	.word	19355
+	.byte	30
+	.byte	'__codeptr',0,17,1,1
+	.word	19357
+	.byte	30
+	.byte	'__intptr_t',0,17,1,1
+	.word	495
+	.byte	30
+	.byte	'__uintptr_t',0,17,1,1
+	.word	479
+	.byte	30
+	.byte	'_iob_flag_t',0,18,82,25
+	.word	1053
+	.byte	30
+	.byte	'boolean',0,19,101,29
+	.word	502
+	.byte	30
+	.byte	'uint8',0,19,105,29
+	.word	502
+	.byte	30
+	.byte	'uint16',0,19,109,29
+	.word	1053
+	.byte	30
+	.byte	'uint32',0,19,113,29
+	.word	2228
+	.byte	30
+	.byte	'uint64',0,19,118,29
+	.word	361
+	.byte	30
+	.byte	'sint16',0,19,126,29
+	.word	17272
+	.byte	30
+	.byte	'sint32',0,19,131,1,29
+	.word	18244
+	.byte	7
+	.byte	'long long int',0,8,5,30
+	.byte	'sint64',0,19,138,1,29
+	.word	19545
+	.byte	30
+	.byte	'float32',0,19,167,1,29
+	.word	275
+	.byte	30
+	.byte	'int8',0,20,54,29
+	.word	19140
+	.byte	30
+	.byte	'int16',0,20,55,29
+	.word	17272
+	.byte	30
+	.byte	'int32',0,20,56,29
+	.word	495
+	.byte	30
+	.byte	'int64',0,20,57,29
+	.word	19545
+	.byte	30
+	.byte	'Ifx_TickTime',0,15,79,28
+	.word	19545
+	.byte	30
+	.byte	'Ifx_SizeT',0,15,92,16
+	.word	17272
+	.byte	30
+	.byte	'Ifx_Priority',0,15,103,16
+	.word	1053
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,15,130,1,9,1,16
 	.byte	'Ifx_RxSel_a',0,0,16
 	.byte	'Ifx_RxSel_b',0,1,16
@@ -4476,7 +4759,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'Ifx_RxSel_g',0,6,16
 	.byte	'Ifx_RxSel_h',0,7,0,30
 	.byte	'Ifx_RxSel',0,15,140,1,3
+<<<<<<< HEAD
 	.word	19716
+=======
+	.word	19710
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	14
 	.word	393
 	.byte	3
@@ -4669,14 +4956,22 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	21471
 	.byte	34
 	.byte	'IfxQspi_cfg_indexMap',0,16,94,41
+<<<<<<< HEAD
 	.word	21480
+=======
+	.word	21474
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,15,22,69,9,1,16
 	.byte	'IfxSrc_Tos_cpu0',0,0,16
 	.byte	'IfxSrc_Tos_dma',0,1,16
 	.byte	'IfxSrc_Tos_cpu1',0,2,16
 	.byte	'IfxSrc_Tos_cpu2',0,3,0,30
 	.byte	'IfxSrc_Tos',0,22,75,3
+<<<<<<< HEAD
 	.word	21516
+=======
+	.word	21510
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	30
 	.byte	'Ifx_SRC_SRCR_Bits',0,4,87,3
 	.word	525
@@ -5480,13 +5775,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	26534
 	.byte	30
 	.byte	'SpiIf_Job',0,14,128,1,3
+<<<<<<< HEAD
 	.word	18262
+=======
+	.word	18256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,14,131,1,9,1,16
 	.byte	'SpiIf_Mode_master',0,0,16
 	.byte	'SpiIf_Mode_slave',0,1,16
 	.byte	'SpiIf_Mode_undefined',0,2,0,30
 	.byte	'SpiIf_Mode',0,14,136,1,3
+<<<<<<< HEAD
 	.word	26578
+=======
+	.word	26572
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	30
 	.byte	'SpiIf_SlsoTiming_HalfTsclk',0,14,141,1,16
 	.word	2234
@@ -5498,13 +5801,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	18147
 	.byte	30
 	.byte	'SpiIf_ChMode',0,14,208,1,3
+<<<<<<< HEAD
 	.word	17721
+=======
+	.word	17715
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,23,238,10,9,1,16
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,16
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,16
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,30
 	.byte	'IfxScu_WDTCON1_IR',0,23,243,10,3
+<<<<<<< HEAD
 	.word	26771
+=======
+	.word	26765
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN00_Bits',0,6,70,16,4,11
 	.byte	'EN0',0,1
@@ -9587,6 +9898,7 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	52590
 	.byte	36,3,35,204,4,13
 	.byte	'reserved_270',0
+<<<<<<< HEAD
 	.word	52595
 	.byte	44,3,35,240,4,13
 	.byte	'EICON0',0
@@ -13202,13 +13514,3634 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	30
 	.byte	'Ifx_CPU',0,24,224,16,3
 	.word	80710
+=======
+	.word	52589
+	.byte	44,3,35,240,4,13
+	.byte	'EICON0',0
+	.word	47208
+	.byte	4,3,35,156,5,13
+	.byte	'EICON1',0
+	.word	47272
+	.byte	4,3,35,160,5,13
+	.byte	'EISR',0
+	.word	47524
+	.byte	4,3,35,164,5,13
+	.byte	'WDTS',0
+	.word	52598
+	.byte	12,3,35,168,5,13
+	.byte	'SEICON0',0
+	.word	50553
+	.byte	4,3,35,180,5,13
+	.byte	'SEICON1',0
+	.word	50618
+	.byte	4,3,35,184,5,13
+	.byte	'SEISR',0
+	.word	50683
+	.byte	4,3,35,188,5,13
+	.byte	'reserved_2C0',0
+	.word	52603
+	.byte	176,2,3,35,192,5,13
+	.byte	'ACCEN11',0
+	.word	46298
+	.byte	4,3,35,240,7,13
+	.byte	'ACCEN10',0
+	.word	46233
+	.byte	4,3,35,244,7,13
+	.byte	'ACCEN01',0
+	.word	46168
+	.byte	4,3,35,248,7,13
+	.byte	'ACCEN00',0
+	.word	46103
+	.byte	4,3,35,252,7,0,14
+	.word	52614
+	.byte	30
+	.byte	'Ifx_SCU',0,6,239,17,3
+	.word	54679
+	.byte	10
+	.byte	'_Ifx_CPU_A_Bits',0,24,70,16,4,11
+	.byte	'ADDR',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_A_Bits',0,24,73,3
+	.word	54701
+	.byte	10
+	.byte	'_Ifx_CPU_BIV_Bits',0,24,76,16,4,11
+	.byte	'VSS',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'BIV',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_BIV_Bits',0,24,80,3
+	.word	54762
+	.byte	10
+	.byte	'_Ifx_CPU_BLK_OMASK_Bits',0,24,83,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'OMASK',0,4
+	.word	901
+	.byte	12,15,2,35,0,11
+	.byte	'ONE',0,4
+	.word	901
+	.byte	11,4,2,35,0,11
+	.byte	'reserved_28',0,4
+	.word	901
+	.byte	4,0,2,35,0,0,30
+	.byte	'Ifx_CPU_BLK_OMASK_Bits',0,24,89,3
+	.word	54841
+	.byte	10
+	.byte	'_Ifx_CPU_BLK_OTAR_Bits',0,24,92,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'TBASE',0,4
+	.word	901
+	.byte	23,4,2,35,0,11
+	.byte	'reserved_28',0,4
+	.word	901
+	.byte	4,0,2,35,0,0,30
+	.byte	'Ifx_CPU_BLK_OTAR_Bits',0,24,97,3
+	.word	54979
+	.byte	10
+	.byte	'_Ifx_CPU_BLK_RABR_Bits',0,24,100,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'OBASE',0,4
+	.word	901
+	.byte	17,10,2,35,0,11
+	.byte	'reserved_22',0,4
+	.word	901
+	.byte	2,8,2,35,0,11
+	.byte	'OMEM',0,4
+	.word	901
+	.byte	4,4,2,35,0,11
+	.byte	'reserved_28',0,4
+	.word	901
+	.byte	3,1,2,35,0,11
+	.byte	'OVEN',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_BLK_RABR_Bits',0,24,108,3
+	.word	55100
+	.byte	10
+	.byte	'_Ifx_CPU_BTV_Bits',0,24,111,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'BTV',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_BTV_Bits',0,24,115,3
+	.word	55276
+	.byte	10
+	.byte	'_Ifx_CPU_CCNT_Bits',0,24,118,16,4,11
+	.byte	'COUNTVALUE',0,4
+	.word	901
+	.byte	31,1,2,35,0,11
+	.byte	'SOVF',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CCNT_Bits',0,24,122,3
+	.word	55362
+	.byte	10
+	.byte	'_Ifx_CPU_CCTRL_Bits',0,24,125,16,4,11
+	.byte	'CM',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'CE',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'M1',0,4
+	.word	901
+	.byte	3,27,2,35,0,11
+	.byte	'M2',0,4
+	.word	901
+	.byte	3,24,2,35,0,11
+	.byte	'M3',0,4
+	.word	901
+	.byte	3,21,2,35,0,11
+	.byte	'reserved_11',0,4
+	.word	901
+	.byte	21,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CCTRL_Bits',0,24,133,1,3
+	.word	55451
+	.byte	10
+	.byte	'_Ifx_CPU_COMPAT_Bits',0,24,136,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'RM',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'SP',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'reserved_5',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_COMPAT_Bits',0,24,142,1,3
+	.word	55598
+	.byte	10
+	.byte	'_Ifx_CPU_CORE_ID_Bits',0,24,145,1,16,4,11
+	.byte	'CORE_ID',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	901
+	.byte	29,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CORE_ID_Bits',0,24,149,1,3
+	.word	55727
+	.byte	10
+	.byte	'_Ifx_CPU_CPR_L_Bits',0,24,152,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'LOWBND',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CPR_L_Bits',0,24,156,1,3
+	.word	55827
+	.byte	10
+	.byte	'_Ifx_CPU_CPR_U_Bits',0,24,159,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'UPPBND',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CPR_U_Bits',0,24,163,1,3
+	.word	55922
+	.byte	10
+	.byte	'_Ifx_CPU_CPU_ID_Bits',0,24,166,1,16,4,11
+	.byte	'MOD_REV',0,4
+	.word	901
+	.byte	8,24,2,35,0,11
+	.byte	'MOD_32B',0,4
+	.word	901
+	.byte	8,16,2,35,0,11
+	.byte	'MOD',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CPU_ID_Bits',0,24,171,1,3
+	.word	56017
+	.byte	10
+	.byte	'_Ifx_CPU_CPXE_Bits',0,24,174,1,16,4,11
+	.byte	'XE_N',0,4
+	.word	901
+	.byte	10,22,2,35,0,11
+	.byte	'reserved_10',0,4
+	.word	901
+	.byte	22,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CPXE_Bits',0,24,178,1,3
+	.word	56127
+	.byte	10
+	.byte	'_Ifx_CPU_CREVT_Bits',0,24,181,1,16,4,11
+	.byte	'EVTA',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'BBM',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'BOD',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'SUSP',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'CNT',0,4
+	.word	901
+	.byte	2,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	24,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CREVT_Bits',0,24,189,1,3
+	.word	56219
+	.byte	10
+	.byte	'_Ifx_CPU_CUS_ID_Bits',0,24,192,1,16,4,11
+	.byte	'CID',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	901
+	.byte	29,0,2,35,0,0,30
+	.byte	'Ifx_CPU_CUS_ID_Bits',0,24,196,1,3
+	.word	56373
+	.byte	10
+	.byte	'_Ifx_CPU_D_Bits',0,24,199,1,16,4,11
+	.byte	'DATA',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_D_Bits',0,24,202,1,3
+	.word	56467
+	.byte	10
+	.byte	'_Ifx_CPU_DATR_Bits',0,24,205,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'SBE',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	901
+	.byte	5,23,2,35,0,11
+	.byte	'CWE',0,4
+	.word	901
+	.byte	1,22,2,35,0,11
+	.byte	'CFE',0,4
+	.word	901
+	.byte	1,21,2,35,0,11
+	.byte	'reserved_11',0,4
+	.word	901
+	.byte	3,18,2,35,0,11
+	.byte	'SOE',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'reserved_15',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'reserved_16',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DATR_Bits',0,24,216,1,3
+	.word	56530
+	.byte	10
+	.byte	'_Ifx_CPU_DBGSR_Bits',0,24,219,1,16,4,11
+	.byte	'DE',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'HALT',0,4
+	.word	901
+	.byte	2,29,2,35,0,11
+	.byte	'SIH',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'SUSP',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'reserved_5',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'PREVSUSP',0,4
+	.word	901
+	.byte	1,25,2,35,0,11
+	.byte	'PEVT',0,4
+	.word	901
+	.byte	1,24,2,35,0,11
+	.byte	'EVTSRC',0,4
+	.word	901
+	.byte	5,19,2,35,0,11
+	.byte	'reserved_13',0,4
+	.word	901
+	.byte	19,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DBGSR_Bits',0,24,230,1,3
+	.word	56756
+	.byte	10
+	.byte	'_Ifx_CPU_DBGTCR_Bits',0,24,233,1,16,4,11
+	.byte	'DTA',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DBGTCR_Bits',0,24,237,1,3
+	.word	56971
+	.byte	10
+	.byte	'_Ifx_CPU_DCON0_Bits',0,24,240,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'DCBYP',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	901
+	.byte	30,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DCON0_Bits',0,24,245,1,3
+	.word	57065
+	.byte	10
+	.byte	'_Ifx_CPU_DCON2_Bits',0,24,248,1,16,4,11
+	.byte	'DCACHE_SZE',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'DSCRATCH_SZE',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DCON2_Bits',0,24,252,1,3
+	.word	57181
+	.byte	10
+	.byte	'_Ifx_CPU_DCX_Bits',0,24,255,1,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	6,26,2,35,0,11
+	.byte	'DCXVALUE',0,4
+	.word	901
+	.byte	26,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DCX_Bits',0,24,131,2,3
+	.word	57282
+	.byte	10
+	.byte	'_Ifx_CPU_DEADD_Bits',0,24,134,2,16,4,11
+	.byte	'ERROR_ADDRESS',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DEADD_Bits',0,24,137,2,3
+	.word	57375
+	.byte	10
+	.byte	'_Ifx_CPU_DIEAR_Bits',0,24,140,2,16,4,11
+	.byte	'TA',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DIEAR_Bits',0,24,143,2,3
+	.word	57455
+	.byte	10
+	.byte	'_Ifx_CPU_DIETR_Bits',0,24,146,2,16,4,11
+	.byte	'IED',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'IE_T',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'IE_C',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'IE_S',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'IE_BI',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'E_INFO',0,4
+	.word	901
+	.byte	6,21,2,35,0,11
+	.byte	'IE_UNC',0,4
+	.word	901
+	.byte	1,20,2,35,0,11
+	.byte	'IE_SP',0,4
+	.word	901
+	.byte	1,19,2,35,0,11
+	.byte	'IE_BS',0,4
+	.word	901
+	.byte	1,18,2,35,0,11
+	.byte	'IE_DLMU',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'IE_LPB',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'IE_MTMV',0,4
+	.word	901
+	.byte	1,15,2,35,0,11
+	.byte	'reserved_17',0,4
+	.word	901
+	.byte	15,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DIETR_Bits',0,24,161,2,3
+	.word	57524
+	.byte	10
+	.byte	'_Ifx_CPU_DLMU_SPROT_RGNACCENA_R_Bits',0,24,164,2,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENA_R_Bits',0,24,167,2,3
+	.word	57808
+	.byte	10
+	.byte	'_Ifx_CPU_DLMU_SPROT_RGNACCENA_W_Bits',0,24,170,2,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENA_W_Bits',0,24,173,2,3
+	.word	57911
+	.byte	10
+	.byte	'_Ifx_CPU_DLMU_SPROT_RGNACCENB_R_Bits',0,24,176,2,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENB_R_Bits',0,24,179,2,3
+	.word	58014
+	.byte	10
+	.byte	'_Ifx_CPU_DLMU_SPROT_RGNACCENB_W_Bits',0,24,182,2,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENB_W_Bits',0,24,185,2,3
+	.word	58117
+	.byte	10
+	.byte	'_Ifx_CPU_DLMU_SPROT_RGNLA_Bits',0,24,188,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'ADDR',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNLA_Bits',0,24,192,2,3
+	.word	58220
+	.byte	10
+	.byte	'_Ifx_CPU_DLMU_SPROT_RGNUA_Bits',0,24,195,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'ADDR',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNUA_Bits',0,24,199,2,3
+	.word	58335
+	.byte	10
+	.byte	'_Ifx_CPU_DMS_Bits',0,24,202,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'DMSVALUE',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DMS_Bits',0,24,206,2,3
+	.word	58450
+	.byte	10
+	.byte	'_Ifx_CPU_DPRE_Bits',0,24,209,2,16,4,11
+	.byte	'RE_N',0,4
+	.word	901
+	.byte	18,14,2,35,0,11
+	.byte	'reserved_18',0,4
+	.word	901
+	.byte	14,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DPRE_Bits',0,24,213,2,3
+	.word	58543
+	.byte	10
+	.byte	'_Ifx_CPU_DPR_L_Bits',0,24,216,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'LOWBND',0,4
+	.word	901
+	.byte	29,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DPR_L_Bits',0,24,220,2,3
+	.word	58635
+	.byte	10
+	.byte	'_Ifx_CPU_DPR_U_Bits',0,24,223,2,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'UPPBND',0,4
+	.word	901
+	.byte	29,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DPR_U_Bits',0,24,227,2,3
+	.word	58730
+	.byte	10
+	.byte	'_Ifx_CPU_DPWE_Bits',0,24,230,2,16,4,11
+	.byte	'WE_N',0,4
+	.word	901
+	.byte	18,14,2,35,0,11
+	.byte	'reserved_18',0,4
+	.word	901
+	.byte	14,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DPWE_Bits',0,24,234,2,3
+	.word	58825
+	.byte	10
+	.byte	'_Ifx_CPU_DSTR_Bits',0,24,237,2,16,4,11
+	.byte	'SRE',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'GAE',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'LBE',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'DRE',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	901
+	.byte	2,26,2,35,0,11
+	.byte	'CRE',0,4
+	.word	901
+	.byte	1,25,2,35,0,11
+	.byte	'reserved_7',0,4
+	.word	901
+	.byte	7,18,2,35,0,11
+	.byte	'DTME',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'LOE',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'SDE',0,4
+	.word	901
+	.byte	1,15,2,35,0,11
+	.byte	'SCE',0,4
+	.word	901
+	.byte	1,14,2,35,0,11
+	.byte	'CAC',0,4
+	.word	901
+	.byte	1,13,2,35,0,11
+	.byte	'MPE',0,4
+	.word	901
+	.byte	1,12,2,35,0,11
+	.byte	'CLE',0,4
+	.word	901
+	.byte	1,11,2,35,0,11
+	.byte	'reserved_21',0,4
+	.word	901
+	.byte	3,8,2,35,0,11
+	.byte	'ALN',0,4
+	.word	901
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_25',0,4
+	.word	901
+	.byte	7,0,2,35,0,0,30
+	.byte	'Ifx_CPU_DSTR_Bits',0,24,128,3,3
+	.word	58917
+	.byte	10
+	.byte	'_Ifx_CPU_EXEVT_Bits',0,24,131,3,16,4,11
+	.byte	'EVTA',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'BBM',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'BOD',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'SUSP',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'CNT',0,4
+	.word	901
+	.byte	2,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	24,0,2,35,0,0,30
+	.byte	'Ifx_CPU_EXEVT_Bits',0,24,139,3,3
+	.word	59256
+	.byte	10
+	.byte	'_Ifx_CPU_FCX_Bits',0,24,142,3,16,4,11
+	.byte	'FCXO',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'FCXS',0,4
+	.word	901
+	.byte	4,12,2,35,0,11
+	.byte	'reserved_20',0,4
+	.word	901
+	.byte	12,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FCX_Bits',0,24,147,3,3
+	.word	59410
+	.byte	10
+	.byte	'_Ifx_CPU_FLASHCON0_Bits',0,24,150,3,16,4,11
+	.byte	'TAG1',0,4
+	.word	901
+	.byte	6,26,2,35,0,11
+	.byte	'reserved_6',0,4
+	.word	901
+	.byte	2,24,2,35,0,11
+	.byte	'TAG2',0,4
+	.word	901
+	.byte	6,18,2,35,0,11
+	.byte	'reserved_14',0,4
+	.word	901
+	.byte	2,16,2,35,0,11
+	.byte	'TAG3',0,4
+	.word	901
+	.byte	6,10,2,35,0,11
+	.byte	'reserved_22',0,4
+	.word	901
+	.byte	2,8,2,35,0,11
+	.byte	'TAG4',0,4
+	.word	901
+	.byte	6,2,2,35,0,11
+	.byte	'reserved_30',0,4
+	.word	901
+	.byte	2,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON0_Bits',0,24,160,3,3
+	.word	59516
+	.byte	10
+	.byte	'_Ifx_CPU_FLASHCON1_Bits',0,24,163,3,16,4,11
+	.byte	'STALL',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	901
+	.byte	15,16,2,35,0,11
+	.byte	'MASKUECC',0,4
+	.word	901
+	.byte	2,14,2,35,0,11
+	.byte	'reserved_18',0,4
+	.word	901
+	.byte	6,8,2,35,0,11
+	.byte	'reserved_24',0,4
+	.word	901
+	.byte	2,6,2,35,0,11
+	.byte	'reserved_26',0,4
+	.word	901
+	.byte	6,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON1_Bits',0,24,171,3,3
+	.word	59734
+	.byte	10
+	.byte	'_Ifx_CPU_FLASHCON2_Bits',0,24,174,3,16,4,11
+	.byte	'RECDIS',0,4
+	.word	901
+	.byte	2,30,2,35,0,11
+	.byte	'ECCCORDIS',0,4
+	.word	901
+	.byte	2,28,2,35,0,11
+	.byte	'reserved_4',0,4
+	.word	901
+	.byte	4,24,2,35,0,11
+	.byte	'HMARGIN',0,4
+	.word	901
+	.byte	2,22,2,35,0,11
+	.byte	'MSEL',0,4
+	.word	901
+	.byte	2,20,2,35,0,11
+	.byte	'reserved_12',0,4
+	.word	901
+	.byte	4,16,2,35,0,11
+	.byte	'ECCSCLR',0,4
+	.word	901
+	.byte	2,14,2,35,0,11
+	.byte	'reserved_18',0,4
+	.word	901
+	.byte	6,8,2,35,0,11
+	.byte	'SBABCLR',0,4
+	.word	901
+	.byte	2,6,2,35,0,11
+	.byte	'DBABCLR',0,4
+	.word	901
+	.byte	2,4,2,35,0,11
+	.byte	'MBABCLR',0,4
+	.word	901
+	.byte	2,2,2,35,0,11
+	.byte	'ZBABCLR',0,4
+	.word	901
+	.byte	2,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON2_Bits',0,24,188,3,3
+	.word	59925
+	.byte	10
+	.byte	'_Ifx_CPU_FLASHCON3_Bits',0,24,191,3,16,4,11
+	.byte	'ECCERRINJ',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'EDCERRINJ',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'SBABERRINJ',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'DBABERRINJ',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'MBABERRINJ',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'ZBABERRINJ',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'SBERERRINJ',0,4
+	.word	901
+	.byte	1,25,2,35,0,11
+	.byte	'DBERERRINJ',0,4
+	.word	901
+	.byte	1,24,2,35,0,11
+	.byte	'NVMCERRINJ',0,4
+	.word	901
+	.byte	1,23,2,35,0,11
+	.byte	'FLCONERRINJ',0,4
+	.word	901
+	.byte	1,22,2,35,0,11
+	.byte	'reserved_10',0,4
+	.word	901
+	.byte	22,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON3_Bits',0,24,204,3,3
+	.word	60225
+	.byte	10
+	.byte	'_Ifx_CPU_FLASHCON4_Bits',0,24,207,3,16,4,11
+	.byte	'DDIS',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON4_Bits',0,24,211,3,3
+	.word	60530
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP_CON_Bits',0,24,214,3,16,4,11
+	.byte	'TST',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'TCL',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	901
+	.byte	6,24,2,35,0,11
+	.byte	'RM',0,4
+	.word	901
+	.byte	2,22,2,35,0,11
+	.byte	'reserved_10',0,4
+	.word	901
+	.byte	8,14,2,35,0,11
+	.byte	'FXE',0,4
+	.word	901
+	.byte	1,13,2,35,0,11
+	.byte	'FUE',0,4
+	.word	901
+	.byte	1,12,2,35,0,11
+	.byte	'FZE',0,4
+	.word	901
+	.byte	1,11,2,35,0,11
+	.byte	'FVE',0,4
+	.word	901
+	.byte	1,10,2,35,0,11
+	.byte	'FIE',0,4
+	.word	901
+	.byte	1,9,2,35,0,11
+	.byte	'reserved_23',0,4
+	.word	901
+	.byte	3,6,2,35,0,11
+	.byte	'FX',0,4
+	.word	901
+	.byte	1,5,2,35,0,11
+	.byte	'FU',0,4
+	.word	901
+	.byte	1,4,2,35,0,11
+	.byte	'FZ',0,4
+	.word	901
+	.byte	1,3,2,35,0,11
+	.byte	'FV',0,4
+	.word	901
+	.byte	1,2,2,35,0,11
+	.byte	'FI',0,4
+	.word	901
+	.byte	1,1,2,35,0,11
+	.byte	'reserved_31',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_CON_Bits',0,24,233,3,3
+	.word	60631
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP_OPC_Bits',0,24,236,3,16,4,11
+	.byte	'OPC',0,4
+	.word	901
+	.byte	8,24,2,35,0,11
+	.byte	'FMT',0,4
+	.word	901
+	.byte	1,23,2,35,0,11
+	.byte	'reserved_9',0,4
+	.word	901
+	.byte	7,16,2,35,0,11
+	.byte	'DREG',0,4
+	.word	901
+	.byte	4,12,2,35,0,11
+	.byte	'reserved_20',0,4
+	.word	901
+	.byte	12,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_OPC_Bits',0,24,243,3,3
+	.word	60980
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP_PC_Bits',0,24,246,3,16,4,11
+	.byte	'PC',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_PC_Bits',0,24,249,3,3
+	.word	61140
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP_SRC1_Bits',0,24,252,3,16,4,11
+	.byte	'SRC1',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_SRC1_Bits',0,24,255,3,3
+	.word	61221
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP_SRC2_Bits',0,24,130,4,16,4,11
+	.byte	'SRC2',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_SRC2_Bits',0,24,133,4,3
+	.word	61308
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP_SRC3_Bits',0,24,136,4,16,4,11
+	.byte	'SRC3',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_SRC3_Bits',0,24,139,4,3
+	.word	61395
+	.byte	10
+	.byte	'_Ifx_CPU_ICNT_Bits',0,24,142,4,16,4,11
+	.byte	'COUNTVALUE',0,4
+	.word	901
+	.byte	31,1,2,35,0,11
+	.byte	'SOVF',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_ICNT_Bits',0,24,146,4,3
+	.word	61482
+	.byte	10
+	.byte	'_Ifx_CPU_ICR_Bits',0,24,149,4,16,4,11
+	.byte	'CCPN',0,4
+	.word	901
+	.byte	8,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	7,17,2,35,0,11
+	.byte	'IE',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'PIPN',0,4
+	.word	901
+	.byte	8,8,2,35,0,11
+	.byte	'reserved_24',0,4
+	.word	901
+	.byte	8,0,2,35,0,0,30
+	.byte	'Ifx_CPU_ICR_Bits',0,24,156,4,3
+	.word	61573
+	.byte	10
+	.byte	'_Ifx_CPU_ISP_Bits',0,24,159,4,16,4,11
+	.byte	'ISP',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_ISP_Bits',0,24,162,4,3
+	.word	61715
+	.byte	10
+	.byte	'_Ifx_CPU_KRST0_Bits',0,24,165,4,16,4,11
+	.byte	'RST',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'RSTSTAT',0,4
+	.word	901
+	.byte	2,29,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	901
+	.byte	29,0,2,35,0,0,30
+	.byte	'Ifx_CPU_KRST0_Bits',0,24,170,4,3
+	.word	61781
+	.byte	10
+	.byte	'_Ifx_CPU_KRST1_Bits',0,24,173,4,16,4,11
+	.byte	'RST',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_KRST1_Bits',0,24,177,4,3
+	.word	61892
+	.byte	10
+	.byte	'_Ifx_CPU_KRSTCLR_Bits',0,24,180,4,16,4,11
+	.byte	'CLR',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_KRSTCLR_Bits',0,24,184,4,3
+	.word	61984
+	.byte	10
+	.byte	'_Ifx_CPU_LCX_Bits',0,24,187,4,16,4,11
+	.byte	'LCXO',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'LCXS',0,4
+	.word	901
+	.byte	4,12,2,35,0,11
+	.byte	'reserved_20',0,4
+	.word	901
+	.byte	12,0,2,35,0,0,30
+	.byte	'Ifx_CPU_LCX_Bits',0,24,192,4,3
+	.word	62080
+	.byte	10
+	.byte	'_Ifx_CPU_LPB_SPROT_ACCENA_R_Bits',0,24,195,4,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_LPB_SPROT_ACCENA_R_Bits',0,24,198,4,3
+	.word	62186
+	.byte	10
+	.byte	'_Ifx_CPU_LPB_SPROT_ACCENB_R_Bits',0,24,201,4,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_LPB_SPROT_ACCENB_R_Bits',0,24,204,4,3
+	.word	62281
+	.byte	10
+	.byte	'_Ifx_CPU_M1CNT_Bits',0,24,207,4,16,4,11
+	.byte	'COUNTVALUE',0,4
+	.word	901
+	.byte	31,1,2,35,0,11
+	.byte	'SOVF',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_M1CNT_Bits',0,24,211,4,3
+	.word	62376
+	.byte	10
+	.byte	'_Ifx_CPU_M2CNT_Bits',0,24,214,4,16,4,11
+	.byte	'COUNTVALUE',0,4
+	.word	901
+	.byte	31,1,2,35,0,11
+	.byte	'SOVF',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_M2CNT_Bits',0,24,218,4,3
+	.word	62469
+	.byte	10
+	.byte	'_Ifx_CPU_M3CNT_Bits',0,24,221,4,16,4,11
+	.byte	'COUNTVALUE',0,4
+	.word	901
+	.byte	31,1,2,35,0,11
+	.byte	'SOVF',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_M3CNT_Bits',0,24,225,4,3
+	.word	62562
+	.byte	10
+	.byte	'_Ifx_CPU_OSEL_Bits',0,24,228,4,16,4,11
+	.byte	'SHOVEN_X',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_OSEL_Bits',0,24,231,4,3
+	.word	62655
+	.byte	10
+	.byte	'_Ifx_CPU_PC_Bits',0,24,234,4,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'PC',0,4
+	.word	901
+	.byte	31,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PC_Bits',0,24,238,4,3
+	.word	62728
+	.byte	10
+	.byte	'_Ifx_CPU_PCON0_Bits',0,24,241,4,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'PCBYP',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	901
+	.byte	30,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PCON0_Bits',0,24,246,4,3
+	.word	62813
+	.byte	10
+	.byte	'_Ifx_CPU_PCON1_Bits',0,24,249,4,16,4,11
+	.byte	'PCINV',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'PBINV',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'reserved_2',0,4
+	.word	901
+	.byte	30,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PCON1_Bits',0,24,254,4,3
+	.word	62929
+	.byte	10
+	.byte	'_Ifx_CPU_PCON2_Bits',0,24,129,5,16,4,11
+	.byte	'PCACHE_SZE',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'PSCRATCH_SZE',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PCON2_Bits',0,24,133,5,3
+	.word	63040
+	.byte	10
+	.byte	'_Ifx_CPU_PCXI_Bits',0,24,136,5,16,4,11
+	.byte	'PCXO',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'PCXS',0,4
+	.word	901
+	.byte	4,12,2,35,0,11
+	.byte	'UL',0,4
+	.word	901
+	.byte	1,11,2,35,0,11
+	.byte	'PIE',0,4
+	.word	901
+	.byte	1,10,2,35,0,11
+	.byte	'PCPN',0,4
+	.word	901
+	.byte	8,2,2,35,0,11
+	.byte	'reserved_30',0,4
+	.word	901
+	.byte	2,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PCXI_Bits',0,24,144,5,3
+	.word	63141
+	.byte	10
+	.byte	'_Ifx_CPU_PIEAR_Bits',0,24,147,5,16,4,11
+	.byte	'TA',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PIEAR_Bits',0,24,150,5,3
+	.word	63294
+	.byte	10
+	.byte	'_Ifx_CPU_PIETR_Bits',0,24,153,5,16,4,11
+	.byte	'IED',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'IE_T',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'IE_C',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'IE_S',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'IE_BI',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'E_INFO',0,4
+	.word	901
+	.byte	6,21,2,35,0,11
+	.byte	'IE_UNC',0,4
+	.word	901
+	.byte	1,20,2,35,0,11
+	.byte	'IE_SP',0,4
+	.word	901
+	.byte	1,19,2,35,0,11
+	.byte	'IE_BS',0,4
+	.word	901
+	.byte	1,18,2,35,0,11
+	.byte	'IE_ADDR',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'IE_LPB',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'IE_MTMV',0,4
+	.word	901
+	.byte	1,15,2,35,0,11
+	.byte	'reserved_17',0,4
+	.word	901
+	.byte	15,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PIETR_Bits',0,24,168,5,3
+	.word	63363
+	.byte	10
+	.byte	'_Ifx_CPU_PMA0_Bits',0,24,171,5,16,4,11
+	.byte	'DAC',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'reserved_16',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PMA0_Bits',0,24,175,5,3
+	.word	63647
+	.byte	10
+	.byte	'_Ifx_CPU_PMA1_Bits',0,24,178,5,16,4,11
+	.byte	'CAC',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'reserved_16',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PMA1_Bits',0,24,182,5,3
+	.word	63738
+	.byte	10
+	.byte	'_Ifx_CPU_PMA2_Bits',0,24,185,5,16,4,11
+	.byte	'PSI',0,4
+	.word	901
+	.byte	16,16,2,35,0,11
+	.byte	'reserved_16',0,4
+	.word	901
+	.byte	16,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PMA2_Bits',0,24,189,5,3
+	.word	63829
+	.byte	10
+	.byte	'_Ifx_CPU_PSTR_Bits',0,24,192,5,16,4,11
+	.byte	'FRE',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'reserved_1',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'FBE',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	901
+	.byte	9,20,2,35,0,11
+	.byte	'FPE',0,4
+	.word	901
+	.byte	1,19,2,35,0,11
+	.byte	'reserved_13',0,4
+	.word	901
+	.byte	1,18,2,35,0,11
+	.byte	'FME',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'reserved_15',0,4
+	.word	901
+	.byte	17,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PSTR_Bits',0,24,202,5,3
+	.word	63920
+	.byte	10
+	.byte	'_Ifx_CPU_PSW_Bits',0,24,205,5,16,4,11
+	.byte	'CDC',0,4
+	.word	901
+	.byte	7,25,2,35,0,11
+	.byte	'CDE',0,4
+	.word	901
+	.byte	1,24,2,35,0,11
+	.byte	'GW',0,4
+	.word	901
+	.byte	1,23,2,35,0,11
+	.byte	'IS',0,4
+	.word	901
+	.byte	1,22,2,35,0,11
+	.byte	'IO',0,4
+	.word	901
+	.byte	2,20,2,35,0,11
+	.byte	'PRS',0,4
+	.word	901
+	.byte	2,18,2,35,0,11
+	.byte	'S',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'PRS2',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'reserved_16',0,4
+	.word	901
+	.byte	8,8,2,35,0,11
+	.byte	'USB',0,4
+	.word	901
+	.byte	8,0,2,35,0,0,30
+	.byte	'Ifx_CPU_PSW_Bits',0,24,217,5,3
+	.word	64123
+	.byte	10
+	.byte	'_Ifx_CPU_RGN_ACCENA_Bits',0,24,220,5,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_ACCENA_Bits',0,24,223,5,3
+	.word	64328
+	.byte	10
+	.byte	'_Ifx_CPU_RGN_ACCENB_Bits',0,24,226,5,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_ACCENB_Bits',0,24,229,5,3
+	.word	64407
+	.byte	10
+	.byte	'_Ifx_CPU_RGN_LA_Bits',0,24,232,5,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'ADDR',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_LA_Bits',0,24,236,5,3
+	.word	64486
+	.byte	10
+	.byte	'_Ifx_CPU_RGN_UA_Bits',0,24,239,5,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'ADDR',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_UA_Bits',0,24,243,5,3
+	.word	64581
+	.byte	10
+	.byte	'_Ifx_CPU_SEGEN_Bits',0,24,246,5,16,4,11
+	.byte	'ADFLIP',0,4
+	.word	901
+	.byte	8,24,2,35,0,11
+	.byte	'ADTYPE',0,4
+	.word	901
+	.byte	2,22,2,35,0,11
+	.byte	'reserved_10',0,4
+	.word	901
+	.byte	21,1,2,35,0,11
+	.byte	'AE',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SEGEN_Bits',0,24,252,5,3
+	.word	64676
+	.byte	10
+	.byte	'_Ifx_CPU_SFR_SPROT_ACCENA_W_Bits',0,24,255,5,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SFR_SPROT_ACCENA_W_Bits',0,24,130,6,3
+	.word	64804
+	.byte	10
+	.byte	'_Ifx_CPU_SFR_SPROT_ACCENB_W_Bits',0,24,133,6,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SFR_SPROT_ACCENB_W_Bits',0,24,136,6,3
+	.word	64899
+	.byte	10
+	.byte	'_Ifx_CPU_SMACON_Bits',0,24,139,6,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	24,8,2,35,0,11
+	.byte	'IODT',0,4
+	.word	901
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_25',0,4
+	.word	901
+	.byte	7,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SMACON_Bits',0,24,144,6,3
+	.word	64994
+	.byte	10
+	.byte	'_Ifx_CPU_SPR_SPROT_RGNACCENA_R_Bits',0,24,147,6,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SPR_SPROT_RGNACCENA_R_Bits',0,24,150,6,3
+	.word	65112
+	.byte	10
+	.byte	'_Ifx_CPU_SPR_SPROT_RGNACCENB_R_Bits',0,24,153,6,16,4,11
+	.byte	'EN',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SPR_SPROT_RGNACCENB_R_Bits',0,24,156,6,3
+	.word	65213
+	.byte	10
+	.byte	'_Ifx_CPU_SWEVT_Bits',0,24,159,6,16,4,11
+	.byte	'EVTA',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'BBM',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'BOD',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'SUSP',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'CNT',0,4
+	.word	901
+	.byte	2,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	24,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SWEVT_Bits',0,24,167,6,3
+	.word	65314
+	.byte	10
+	.byte	'_Ifx_CPU_SYSCON_Bits',0,24,170,6,16,4,11
+	.byte	'FCDSF',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'PROTEN',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'TPROTEN',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'IS',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'TS',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'reserved_5',0,4
+	.word	901
+	.byte	3,24,2,35,0,11
+	.byte	'ESDIS',0,4
+	.word	901
+	.byte	1,23,2,35,0,11
+	.byte	'reserved_9',0,4
+	.word	901
+	.byte	7,16,2,35,0,11
+	.byte	'U1_IED',0,4
+	.word	901
+	.byte	1,15,2,35,0,11
+	.byte	'U1_IOS',0,4
+	.word	901
+	.byte	1,14,2,35,0,11
+	.byte	'reserved_18',0,4
+	.word	901
+	.byte	6,8,2,35,0,11
+	.byte	'BHALT',0,4
+	.word	901
+	.byte	1,7,2,35,0,11
+	.byte	'reserved_25',0,4
+	.word	901
+	.byte	7,0,2,35,0,0,30
+	.byte	'Ifx_CPU_SYSCON_Bits',0,24,185,6,3
+	.word	65468
+	.byte	10
+	.byte	'_Ifx_CPU_TASK_ASI_Bits',0,24,188,6,16,4,11
+	.byte	'ASI',0,4
+	.word	901
+	.byte	5,27,2,35,0,11
+	.byte	'reserved_5',0,4
+	.word	901
+	.byte	27,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TASK_ASI_Bits',0,24,192,6,3
+	.word	65767
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_CON_Bits',0,24,195,6,16,4,11
+	.byte	'TEXP0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'TEXP1',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'TEXP2',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'reserved_3',0,4
+	.word	901
+	.byte	13,16,2,35,0,11
+	.byte	'TTRAP',0,4
+	.word	901
+	.byte	1,15,2,35,0,11
+	.byte	'reserved_17',0,4
+	.word	901
+	.byte	15,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_CON_Bits',0,24,203,6,3
+	.word	65865
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_CLASS_EN_Bits',0,24,206,6,16,4,11
+	.byte	'EXTIM_CLASS_EN',0,4
+	.word	901
+	.byte	8,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	24,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_CLASS_EN_Bits',0,24,210,6,3
+	.word	66037
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_ENTRY_CVAL_Bits',0,24,213,6,16,4,11
+	.byte	'ENTRY_CVAL',0,4
+	.word	901
+	.byte	12,20,2,35,0,11
+	.byte	'reserved_12',0,4
+	.word	901
+	.byte	20,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_ENTRY_CVAL_Bits',0,24,217,6,3
+	.word	66166
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_ENTRY_LVAL_Bits',0,24,220,6,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	4,28,2,35,0,11
+	.byte	'ENTRY_LVAL',0,4
+	.word	901
+	.byte	8,20,2,35,0,11
+	.byte	'reserved_12',0,4
+	.word	901
+	.byte	20,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_ENTRY_LVAL_Bits',0,24,225,6,3
+	.word	66296
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_EXIT_CVAL_Bits',0,24,228,6,16,4,11
+	.byte	'EXIT_CVAL',0,4
+	.word	901
+	.byte	24,8,2,35,0,11
+	.byte	'reserved_24',0,4
+	.word	901
+	.byte	8,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_EXIT_CVAL_Bits',0,24,232,6,3
+	.word	66448
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_EXIT_LVAL_Bits',0,24,235,6,16,4,11
+	.byte	'reserved_0',0,4
+	.word	901
+	.byte	4,28,2,35,0,11
+	.byte	'EXIT_LVAL',0,4
+	.word	901
+	.byte	20,8,2,35,0,11
+	.byte	'reserved_24',0,4
+	.word	901
+	.byte	8,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_EXIT_LVAL_Bits',0,24,240,6,3
+	.word	66575
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_FCX_Bits',0,24,243,6,16,4,11
+	.byte	'EXIT_FCX',0,4
+	.word	901
+	.byte	20,12,2,35,0,11
+	.byte	'reserved_20',0,4
+	.word	901
+	.byte	12,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_FCX_Bits',0,24,247,6,3
+	.word	66724
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM_STAT_Bits',0,24,250,6,16,4,11
+	.byte	'EXIT_TIN',0,4
+	.word	901
+	.byte	8,24,2,35,0,11
+	.byte	'EXIT_CLASS',0,4
+	.word	901
+	.byte	3,21,2,35,0,11
+	.byte	'reserved_11',0,4
+	.word	901
+	.byte	4,17,2,35,0,11
+	.byte	'EXIT_AT',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'ENTRY_TIN',0,4
+	.word	901
+	.byte	8,8,2,35,0,11
+	.byte	'ENTRY_CLASS',0,4
+	.word	901
+	.byte	3,5,2,35,0,11
+	.byte	'reserved_27',0,4
+	.word	901
+	.byte	4,1,2,35,0,11
+	.byte	'ENTRY_AT',0,4
+	.word	901
+	.byte	1,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_STAT_Bits',0,24,132,7,3
+	.word	66838
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_TIMER_Bits',0,24,135,7,16,4,11
+	.byte	'TIMER',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_TIMER_Bits',0,24,138,7,3
+	.word	67082
+	.byte	10
+	.byte	'_Ifx_CPU_TRIG_ACC_Bits',0,24,141,7,16,4,11
+	.byte	'T0',0,4
+	.word	901
+	.byte	1,31,2,35,0,11
+	.byte	'T1',0,4
+	.word	901
+	.byte	1,30,2,35,0,11
+	.byte	'T2',0,4
+	.word	901
+	.byte	1,29,2,35,0,11
+	.byte	'T3',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'T4',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'T5',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'T6',0,4
+	.word	901
+	.byte	1,25,2,35,0,11
+	.byte	'T7',0,4
+	.word	901
+	.byte	1,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	24,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TRIG_ACC_Bits',0,24,152,7,3
+	.word	67162
+	.byte	10
+	.byte	'_Ifx_CPU_TR_ADR_Bits',0,24,155,7,16,4,11
+	.byte	'ADDR',0,4
+	.word	901
+	.byte	32,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TR_ADR_Bits',0,24,158,7,3
+	.word	67357
+	.byte	10
+	.byte	'_Ifx_CPU_TR_EVT_Bits',0,24,161,7,16,4,11
+	.byte	'EVTA',0,4
+	.word	901
+	.byte	3,29,2,35,0,11
+	.byte	'BBM',0,4
+	.word	901
+	.byte	1,28,2,35,0,11
+	.byte	'BOD',0,4
+	.word	901
+	.byte	1,27,2,35,0,11
+	.byte	'SUSP',0,4
+	.word	901
+	.byte	1,26,2,35,0,11
+	.byte	'CNT',0,4
+	.word	901
+	.byte	2,24,2,35,0,11
+	.byte	'reserved_8',0,4
+	.word	901
+	.byte	4,20,2,35,0,11
+	.byte	'TYP',0,4
+	.word	901
+	.byte	1,19,2,35,0,11
+	.byte	'RNG',0,4
+	.word	901
+	.byte	1,18,2,35,0,11
+	.byte	'reserved_14',0,4
+	.word	901
+	.byte	1,17,2,35,0,11
+	.byte	'ASI_EN',0,4
+	.word	901
+	.byte	1,16,2,35,0,11
+	.byte	'ASI',0,4
+	.word	901
+	.byte	5,11,2,35,0,11
+	.byte	'reserved_21',0,4
+	.word	901
+	.byte	6,5,2,35,0,11
+	.byte	'AST',0,4
+	.word	901
+	.byte	1,4,2,35,0,11
+	.byte	'ALD',0,4
+	.word	901
+	.byte	1,3,2,35,0,11
+	.byte	'reserved_29',0,4
+	.word	901
+	.byte	3,0,2,35,0,0,30
+	.byte	'Ifx_CPU_TR_EVT_Bits',0,24,178,7,3
+	.word	67430
+	.byte	12,24,186,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	54701
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_A',0,24,191,7,3
+	.word	67748
+	.byte	12,24,194,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	54762
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_BIV',0,24,199,7,3
+	.word	67807
+	.byte	12,24,202,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	54841
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_BLK_OMASK',0,24,207,7,3
+	.word	67868
+	.byte	12,24,210,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	54979
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_BLK_OTAR',0,24,215,7,3
+	.word	67935
+	.byte	12,24,218,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55100
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_BLK_RABR',0,24,223,7,3
+	.word	68001
+	.byte	12,24,226,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55276
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_BTV',0,24,231,7,3
+	.word	68067
+	.byte	12,24,234,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55362
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CCNT',0,24,239,7,3
+	.word	68128
+	.byte	12,24,242,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55451
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CCTRL',0,24,247,7,3
+	.word	68190
+	.byte	12,24,250,7,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55598
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_COMPAT',0,24,255,7,3
+	.word	68253
+	.byte	12,24,130,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55727
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CORE_ID',0,24,135,8,3
+	.word	68317
+	.byte	12,24,138,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55827
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CPR_L',0,24,143,8,3
+	.word	68382
+	.byte	12,24,146,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	55922
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CPR_U',0,24,151,8,3
+	.word	68445
+	.byte	12,24,154,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56017
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CPU_ID',0,24,159,8,3
+	.word	68508
+	.byte	12,24,162,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56127
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CPXE',0,24,167,8,3
+	.word	68572
+	.byte	12,24,170,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56219
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CREVT',0,24,175,8,3
+	.word	68634
+	.byte	12,24,178,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56373
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_CUS_ID',0,24,183,8,3
+	.word	68697
+	.byte	12,24,186,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56467
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_D',0,24,191,8,3
+	.word	68761
+	.byte	12,24,194,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56530
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DATR',0,24,199,8,3
+	.word	68820
+	.byte	12,24,202,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56756
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DBGSR',0,24,207,8,3
+	.word	68882
+	.byte	12,24,210,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	56971
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DBGTCR',0,24,215,8,3
+	.word	68945
+	.byte	12,24,218,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57065
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DCON0',0,24,223,8,3
+	.word	69009
+	.byte	12,24,226,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57181
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DCON2',0,24,231,8,3
+	.word	69072
+	.byte	12,24,234,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57282
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DCX',0,24,239,8,3
+	.word	69135
+	.byte	12,24,242,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57375
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DEADD',0,24,247,8,3
+	.word	69196
+	.byte	12,24,250,8,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57455
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DIEAR',0,24,255,8,3
+	.word	69259
+	.byte	12,24,130,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57524
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DIETR',0,24,135,9,3
+	.word	69322
+	.byte	12,24,138,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57808
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENA_R',0,24,143,9,3
+	.word	69385
+	.byte	12,24,146,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	57911
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENA_W',0,24,151,9,3
+	.word	69465
+	.byte	12,24,154,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58014
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENB_R',0,24,159,9,3
+	.word	69545
+	.byte	12,24,162,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58117
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNACCENB_W',0,24,167,9,3
+	.word	69625
+	.byte	12,24,170,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58220
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNLA',0,24,175,9,3
+	.word	69705
+	.byte	12,24,178,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58335
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DLMU_SPROT_RGNUA',0,24,183,9,3
+	.word	69779
+	.byte	12,24,186,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58450
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DMS',0,24,191,9,3
+	.word	69853
+	.byte	12,24,194,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58543
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DPRE',0,24,199,9,3
+	.word	69914
+	.byte	12,24,202,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58635
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DPR_L',0,24,207,9,3
+	.word	69976
+	.byte	12,24,210,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58730
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DPR_U',0,24,215,9,3
+	.word	70039
+	.byte	12,24,218,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58825
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DPWE',0,24,223,9,3
+	.word	70102
+	.byte	12,24,226,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	58917
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_DSTR',0,24,231,9,3
+	.word	70164
+	.byte	12,24,234,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	59256
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_EXEVT',0,24,239,9,3
+	.word	70226
+	.byte	12,24,242,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	59410
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FCX',0,24,247,9,3
+	.word	70289
+	.byte	12,24,250,9,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	59516
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON0',0,24,255,9,3
+	.word	70350
+	.byte	12,24,130,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	59734
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON1',0,24,135,10,3
+	.word	70417
+	.byte	12,24,138,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	59925
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON2',0,24,143,10,3
+	.word	70484
+	.byte	12,24,146,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	60225
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON3',0,24,151,10,3
+	.word	70551
+	.byte	12,24,154,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	60530
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FLASHCON4',0,24,159,10,3
+	.word	70618
+	.byte	12,24,162,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	60631
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_CON',0,24,167,10,3
+	.word	70685
+	.byte	12,24,170,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	60980
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_OPC',0,24,175,10,3
+	.word	70755
+	.byte	12,24,178,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61140
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_PC',0,24,183,10,3
+	.word	70825
+	.byte	12,24,186,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61221
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_SRC1',0,24,191,10,3
+	.word	70894
+	.byte	12,24,194,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61308
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_SRC2',0,24,199,10,3
+	.word	70965
+	.byte	12,24,202,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61395
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_FPU_TRAP_SRC3',0,24,207,10,3
+	.word	71036
+	.byte	12,24,210,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61482
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_ICNT',0,24,215,10,3
+	.word	71107
+	.byte	12,24,218,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61573
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_ICR',0,24,223,10,3
+	.word	71169
+	.byte	12,24,226,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61715
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_ISP',0,24,231,10,3
+	.word	71230
+	.byte	12,24,234,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61781
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_KRST0',0,24,239,10,3
+	.word	71291
+	.byte	12,24,242,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61892
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_KRST1',0,24,247,10,3
+	.word	71354
+	.byte	12,24,250,10,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	61984
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_KRSTCLR',0,24,255,10,3
+	.word	71417
+	.byte	12,24,130,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62080
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_LCX',0,24,135,11,3
+	.word	71482
+	.byte	12,24,138,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62186
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_LPB_SPROT_ACCENA_R',0,24,143,11,3
+	.word	71543
+	.byte	12,24,146,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62281
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_LPB_SPROT_ACCENB_R',0,24,151,11,3
+	.word	71619
+	.byte	12,24,154,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62376
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_M1CNT',0,24,159,11,3
+	.word	71695
+	.byte	12,24,162,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62469
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_M2CNT',0,24,167,11,3
+	.word	71758
+	.byte	12,24,170,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62562
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_M3CNT',0,24,175,11,3
+	.word	71821
+	.byte	12,24,178,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62655
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_OSEL',0,24,183,11,3
+	.word	71884
+	.byte	12,24,186,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62728
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PC',0,24,191,11,3
+	.word	71946
+	.byte	12,24,194,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62813
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PCON0',0,24,199,11,3
+	.word	72006
+	.byte	12,24,202,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	62929
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PCON1',0,24,207,11,3
+	.word	72069
+	.byte	12,24,210,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63040
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PCON2',0,24,215,11,3
+	.word	72132
+	.byte	12,24,218,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63141
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PCXI',0,24,223,11,3
+	.word	72195
+	.byte	12,24,226,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63294
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PIEAR',0,24,231,11,3
+	.word	72257
+	.byte	12,24,234,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63363
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PIETR',0,24,239,11,3
+	.word	72320
+	.byte	12,24,242,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63647
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PMA0',0,24,247,11,3
+	.word	72383
+	.byte	12,24,250,11,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63738
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PMA1',0,24,255,11,3
+	.word	72445
+	.byte	12,24,130,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63829
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PMA2',0,24,135,12,3
+	.word	72507
+	.byte	12,24,138,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	63920
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PSTR',0,24,143,12,3
+	.word	72569
+	.byte	12,24,146,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64123
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_PSW',0,24,151,12,3
+	.word	72631
+	.byte	12,24,154,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64328
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_ACCENA',0,24,159,12,3
+	.word	72692
+	.byte	12,24,162,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64407
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_ACCENB',0,24,167,12,3
+	.word	72760
+	.byte	12,24,170,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64486
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_LA',0,24,175,12,3
+	.word	72828
+	.byte	12,24,178,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64581
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_RGN_UA',0,24,183,12,3
+	.word	72892
+	.byte	12,24,186,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64676
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SEGEN',0,24,191,12,3
+	.word	72956
+	.byte	12,24,194,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64804
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SFR_SPROT_ACCENA_W',0,24,199,12,3
+	.word	73019
+	.byte	12,24,202,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64899
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SFR_SPROT_ACCENB_W',0,24,207,12,3
+	.word	73095
+	.byte	12,24,210,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	64994
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SMACON',0,24,215,12,3
+	.word	73171
+	.byte	12,24,218,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	65112
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SPR_SPROT_RGNACCENA_R',0,24,223,12,3
+	.word	73235
+	.byte	12,24,226,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	65213
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SPR_SPROT_RGNACCENB_R',0,24,231,12,3
+	.word	73314
+	.byte	12,24,234,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	65314
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SWEVT',0,24,239,12,3
+	.word	73393
+	.byte	12,24,242,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	65468
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_SYSCON',0,24,247,12,3
+	.word	73456
+	.byte	12,24,250,12,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	65767
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TASK_ASI',0,24,255,12,3
+	.word	73520
+	.byte	12,24,130,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	65865
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_CON',0,24,135,13,3
+	.word	73586
+	.byte	12,24,138,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66037
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_CLASS_EN',0,24,143,13,3
+	.word	73651
+	.byte	12,24,146,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66166
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_ENTRY_CVAL',0,24,151,13,3
+	.word	73727
+	.byte	12,24,154,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66296
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_ENTRY_LVAL',0,24,159,13,3
+	.word	73805
+	.byte	12,24,162,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66448
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_EXIT_CVAL',0,24,167,13,3
+	.word	73883
+	.byte	12,24,170,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66575
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_EXIT_LVAL',0,24,175,13,3
+	.word	73960
+	.byte	12,24,178,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66724
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_FCX',0,24,183,13,3
+	.word	74037
+	.byte	12,24,186,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	66838
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_EXTIM_STAT',0,24,191,13,3
+	.word	74108
+	.byte	12,24,194,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	67082
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TPS_TIMER',0,24,199,13,3
+	.word	74180
+	.byte	12,24,202,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	67162
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TRIG_ACC',0,24,207,13,3
+	.word	74247
+	.byte	12,24,210,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	67357
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TR_ADR',0,24,215,13,3
+	.word	74313
+	.byte	12,24,218,13,9,4,13
+	.byte	'U',0
+	.word	479
+	.byte	4,2,35,0,13
+	.byte	'I',0
+	.word	495
+	.byte	4,2,35,0,13
+	.byte	'B',0
+	.word	67430
+	.byte	4,2,35,0,0,30
+	.byte	'Ifx_CPU_TR_EVT',0,24,223,13,3
+	.word	74377
+	.byte	10
+	.byte	'_Ifx_CPU_RGN',0,24,235,13,25,16,13
+	.byte	'LA',0
+	.word	72828
+	.byte	4,2,35,0,13
+	.byte	'UA',0
+	.word	72892
+	.byte	4,2,35,4,13
+	.byte	'ACCENA',0
+	.word	72692
+	.byte	4,2,35,8,13
+	.byte	'ACCENB',0
+	.word	72760
+	.byte	4,2,35,12,0,14
+	.word	74441
+	.byte	30
+	.byte	'Ifx_CPU_RGN',0,24,241,13,3
+	.word	74517
+	.byte	10
+	.byte	'_Ifx_CPU_BLK',0,24,128,14,25,12,13
+	.byte	'RABR',0
+	.word	68001
+	.byte	4,2,35,0,13
+	.byte	'OTAR',0
+	.word	67935
+	.byte	4,2,35,4,13
+	.byte	'OMASK',0
+	.word	67868
+	.byte	4,2,35,8,0,14
+	.word	74543
+	.byte	30
+	.byte	'Ifx_CPU_BLK',0,24,133,14,3
+	.word	74606
+	.byte	10
+	.byte	'_Ifx_CPU_FPU_TRAP',0,24,148,14,25,28,13
+	.byte	'CON',0
+	.word	70685
+	.byte	4,2,35,0,13
+	.byte	'PC',0
+	.word	70825
+	.byte	4,2,35,4,13
+	.byte	'OPC',0
+	.word	70755
+	.byte	4,2,35,8,13
+	.byte	'reserved_C',0
+	.word	3466
+	.byte	4,2,35,12,13
+	.byte	'SRC1',0
+	.word	70894
+	.byte	4,2,35,16,13
+	.byte	'SRC2',0
+	.word	70965
+	.byte	4,2,35,20,13
+	.byte	'SRC3',0
+	.word	71036
+	.byte	4,2,35,24,0,14
+	.word	74632
+	.byte	30
+	.byte	'Ifx_CPU_FPU_TRAP',0,24,157,14,3
+	.word	74757
+	.byte	10
+	.byte	'_Ifx_CPU_DPR',0,24,172,14,25,8,13
+	.byte	'L',0
+	.word	69976
+	.byte	4,2,35,0,13
+	.byte	'U',0
+	.word	70039
+	.byte	4,2,35,4,0,14
+	.word	74788
+	.byte	30
+	.byte	'Ifx_CPU_DPR',0,24,176,14,3
+	.word	74830
+	.byte	10
+	.byte	'_Ifx_CPU_CPR',0,24,191,14,25,8,13
+	.byte	'L',0
+	.word	68382
+	.byte	4,2,35,0,13
+	.byte	'U',0
+	.word	68445
+	.byte	4,2,35,4,0,14
+	.word	74856
+	.byte	30
+	.byte	'Ifx_CPU_CPR',0,24,195,14,3
+	.word	74898
+	.byte	18,12
+	.word	74180
+	.byte	19,2,0,10
+	.byte	'_Ifx_CPU_TPS',0,24,210,14,25,16,13
+	.byte	'CON',0
+	.word	73586
+	.byte	4,2,35,0,13
+	.byte	'TIMER',0
+	.word	74924
+	.byte	12,2,35,4,0,14
+	.word	74933
+	.byte	30
+	.byte	'Ifx_CPU_TPS',0,24,214,14,3
+	.word	74981
+	.byte	10
+	.byte	'_Ifx_CPU_TPS_EXTIM',0,24,229,14,25,28,13
+	.byte	'ENTRY_LVAL',0
+	.word	73805
+	.byte	4,2,35,0,13
+	.byte	'ENTRY_CVAL',0
+	.word	73727
+	.byte	4,2,35,4,13
+	.byte	'EXIT_LVAL',0
+	.word	73960
+	.byte	4,2,35,8,13
+	.byte	'EXIT_CVAL',0
+	.word	73883
+	.byte	4,2,35,12,13
+	.byte	'CLASS_EN',0
+	.word	73651
+	.byte	4,2,35,16,13
+	.byte	'STAT',0
+	.word	74108
+	.byte	4,2,35,20,13
+	.byte	'FCX',0
+	.word	74037
+	.byte	4,2,35,24,0,14
+	.word	75007
+	.byte	30
+	.byte	'Ifx_CPU_TPS_EXTIM',0,24,238,14,3
+	.word	75156
+	.byte	10
+	.byte	'_Ifx_CPU_TR',0,24,253,14,25,8,13
+	.byte	'EVT',0
+	.word	74377
+	.byte	4,2,35,0,13
+	.byte	'ADR',0
+	.word	74313
+	.byte	4,2,35,4,0,14
+	.word	75188
+	.byte	30
+	.byte	'Ifx_CPU_TR',0,24,129,15,3
+	.word	75233
+	.byte	18,128,34
+	.word	502
+	.byte	19,255,33,0,18,236,253,2
+	.word	502
+	.byte	19,235,253,2,0,18,244,31
+	.word	502
+	.byte	19,243,31,0,18,128,1
+	.word	74441
+	.byte	19,7,0,14
+	.word	75293
+	.byte	18,232,1
+	.word	502
+	.byte	19,231,1,0,18,128,48
+	.word	502
+	.byte	19,255,47,0,18,128,3
+	.word	74543
+	.byte	19,31,0,14
+	.word	75330
+	.byte	18,160,39
+	.word	502
+	.byte	19,159,39,0,18,208,223,1
+	.word	502
+	.byte	19,207,223,1,0,18,248,1
+	.word	502
+	.byte	19,247,1,0,18,244,29
+	.word	502
+	.byte	19,243,29,0,18,188,3
+	.word	502
+	.byte	19,187,3,0,18,232,3
+	.word	502
+	.byte	19,231,3,0,18,252,23
+	.word	502
+	.byte	19,251,23,0,14
+	.word	74632
+	.byte	18,228,63
+	.word	502
+	.byte	19,227,63,0,18,144,1
+	.word	74788
+	.byte	19,17,0,14
+	.word	75440
+	.byte	18,240,30
+	.word	502
+	.byte	19,239,30,0,18,80
+	.word	74856
+	.byte	19,9,0,14
+	.word	75466
+	.byte	18,176,31
+	.word	502
+	.byte	19,175,31,0,18,152,7
+	.word	502
+	.byte	19,151,7,0,14
+	.word	74933
+	.byte	18,48
+	.word	502
+	.byte	19,47,0,14
+	.word	75007
+	.byte	18,164,23
+	.word	502
+	.byte	19,163,23,0,18,64
+	.word	75188
+	.byte	19,7,0,14
+	.word	75532
+	.byte	18,192,23
+	.word	502
+	.byte	19,191,23,0,18,28
+	.word	502
+	.byte	19,27,0,18,180,1
+	.word	502
+	.byte	19,179,1,0,18,172,1
+	.word	502
+	.byte	19,171,1,0,18,64
+	.word	68761
+	.byte	19,15,0,18,64
+	.word	67748
+	.byte	19,15,0,10
+	.byte	'_Ifx_CPU',0,24,144,15,25,128,128,8,13
+	.byte	'reserved_0',0
+	.word	75258
+	.byte	128,34,2,35,0,13
+	.byte	'FLASHCON0',0
+	.word	70350
+	.byte	4,3,35,128,34,13
+	.byte	'FLASHCON1',0
+	.word	70417
+	.byte	4,3,35,132,34,13
+	.byte	'FLASHCON2',0
+	.word	70484
+	.byte	4,3,35,136,34,13
+	.byte	'FLASHCON3',0
+	.word	70551
+	.byte	4,3,35,140,34,13
+	.byte	'FLASHCON4',0
+	.word	70618
+	.byte	4,3,35,144,34,13
+	.byte	'reserved_1114',0
+	.word	75269
+	.byte	236,253,2,3,35,148,34,13
+	.byte	'KRST0',0
+	.word	71291
+	.byte	4,4,35,128,160,3,13
+	.byte	'KRST1',0
+	.word	71354
+	.byte	4,4,35,132,160,3,13
+	.byte	'KRSTCLR',0
+	.word	71417
+	.byte	4,4,35,136,160,3,13
+	.byte	'reserved_D00C',0
+	.word	75282
+	.byte	244,31,4,35,140,160,3,13
+	.byte	'RGN',0
+	.word	75303
+	.byte	128,1,4,35,128,192,3,13
+	.byte	'reserved_E080',0
+	.word	5286
+	.byte	8,4,35,128,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R0',0
+	.word	73235
+	.byte	4,4,35,136,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R0',0
+	.word	73314
+	.byte	4,4,35,140,193,3,13
+	.byte	'reserved_E090',0
+	.word	5286
+	.byte	8,4,35,144,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R1',0
+	.word	73235
+	.byte	4,4,35,152,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R1',0
+	.word	73314
+	.byte	4,4,35,156,193,3,13
+	.byte	'reserved_E0A0',0
+	.word	5286
+	.byte	8,4,35,160,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R2',0
+	.word	73235
+	.byte	4,4,35,168,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R2',0
+	.word	73314
+	.byte	4,4,35,172,193,3,13
+	.byte	'reserved_E0B0',0
+	.word	5286
+	.byte	8,4,35,176,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R3',0
+	.word	73235
+	.byte	4,4,35,184,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R3',0
+	.word	73314
+	.byte	4,4,35,188,193,3,13
+	.byte	'reserved_E0C0',0
+	.word	5286
+	.byte	8,4,35,192,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R4',0
+	.word	73235
+	.byte	4,4,35,200,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R4',0
+	.word	73314
+	.byte	4,4,35,204,193,3,13
+	.byte	'reserved_E0D0',0
+	.word	5286
+	.byte	8,4,35,208,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R5',0
+	.word	73235
+	.byte	4,4,35,216,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R5',0
+	.word	73314
+	.byte	4,4,35,220,193,3,13
+	.byte	'reserved_E0E0',0
+	.word	5286
+	.byte	8,4,35,224,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R6',0
+	.word	73235
+	.byte	4,4,35,232,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R6',0
+	.word	73314
+	.byte	4,4,35,236,193,3,13
+	.byte	'reserved_E0F0',0
+	.word	5286
+	.byte	8,4,35,240,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R7',0
+	.word	73235
+	.byte	4,4,35,248,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R7',0
+	.word	73314
+	.byte	4,4,35,252,193,3,13
+	.byte	'SFR_SPROT_ACCENA_W',0
+	.word	73019
+	.byte	4,4,35,128,194,3,13
+	.byte	'SFR_SPROT_ACCENB_W',0
+	.word	73095
+	.byte	4,4,35,132,194,3,13
+	.byte	'reserved_E108',0
+	.word	5286
+	.byte	8,4,35,136,194,3,13
+	.byte	'LPB_SPROT_ACCENA_R',0
+	.word	71543
+	.byte	4,4,35,144,194,3,13
+	.byte	'LPB_SPROT_ACCENB_R',0
+	.word	71619
+	.byte	4,4,35,148,194,3,13
+	.byte	'reserved_E118',0
+	.word	75308
+	.byte	232,1,4,35,152,194,3,13
+	.byte	'DLMU_SPROT_RGNLA0',0
+	.word	69705
+	.byte	4,4,35,128,196,3,13
+	.byte	'DLMU_SPROT_RGNUA0',0
+	.word	69779
+	.byte	4,4,35,132,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W0',0
+	.word	69465
+	.byte	4,4,35,136,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W0',0
+	.word	69625
+	.byte	4,4,35,140,196,3,13
+	.byte	'DLMU_SPROT_RGNLA1',0
+	.word	69705
+	.byte	4,4,35,144,196,3,13
+	.byte	'DLMU_SPROT_RGNUA1',0
+	.word	69779
+	.byte	4,4,35,148,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W1',0
+	.word	69465
+	.byte	4,4,35,152,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W1',0
+	.word	69625
+	.byte	4,4,35,156,196,3,13
+	.byte	'DLMU_SPROT_RGNLA2',0
+	.word	69705
+	.byte	4,4,35,160,196,3,13
+	.byte	'DLMU_SPROT_RGNUA2',0
+	.word	69779
+	.byte	4,4,35,164,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W2',0
+	.word	69465
+	.byte	4,4,35,168,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W2',0
+	.word	69625
+	.byte	4,4,35,172,196,3,13
+	.byte	'DLMU_SPROT_RGNLA3',0
+	.word	69705
+	.byte	4,4,35,176,196,3,13
+	.byte	'DLMU_SPROT_RGNUA3',0
+	.word	69779
+	.byte	4,4,35,180,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W3',0
+	.word	69465
+	.byte	4,4,35,184,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W3',0
+	.word	69625
+	.byte	4,4,35,188,196,3,13
+	.byte	'DLMU_SPROT_RGNLA4',0
+	.word	69705
+	.byte	4,4,35,192,196,3,13
+	.byte	'DLMU_SPROT_RGNUA4',0
+	.word	69779
+	.byte	4,4,35,196,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W4',0
+	.word	69465
+	.byte	4,4,35,200,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W4',0
+	.word	69625
+	.byte	4,4,35,204,196,3,13
+	.byte	'DLMU_SPROT_RGNLA5',0
+	.word	69705
+	.byte	4,4,35,208,196,3,13
+	.byte	'DLMU_SPROT_RGNUA5',0
+	.word	69779
+	.byte	4,4,35,212,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W5',0
+	.word	69465
+	.byte	4,4,35,216,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W5',0
+	.word	69625
+	.byte	4,4,35,220,196,3,13
+	.byte	'DLMU_SPROT_RGNLA6',0
+	.word	69705
+	.byte	4,4,35,224,196,3,13
+	.byte	'DLMU_SPROT_RGNUA6',0
+	.word	69779
+	.byte	4,4,35,228,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W6',0
+	.word	69465
+	.byte	4,4,35,232,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W6',0
+	.word	69625
+	.byte	4,4,35,236,196,3,13
+	.byte	'DLMU_SPROT_RGNLA7',0
+	.word	69705
+	.byte	4,4,35,240,196,3,13
+	.byte	'DLMU_SPROT_RGNUA7',0
+	.word	69779
+	.byte	4,4,35,244,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W7',0
+	.word	69465
+	.byte	4,4,35,248,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W7',0
+	.word	69625
+	.byte	4,4,35,252,196,3,13
+	.byte	'reserved_E280',0
+	.word	5286
+	.byte	8,4,35,128,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R0',0
+	.word	69385
+	.byte	4,4,35,136,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R0',0
+	.word	69545
+	.byte	4,4,35,140,197,3,13
+	.byte	'reserved_E290',0
+	.word	5286
+	.byte	8,4,35,144,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R1',0
+	.word	69385
+	.byte	4,4,35,152,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R1',0
+	.word	69545
+	.byte	4,4,35,156,197,3,13
+	.byte	'reserved_E2A0',0
+	.word	5286
+	.byte	8,4,35,160,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R2',0
+	.word	69385
+	.byte	4,4,35,168,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R2',0
+	.word	69545
+	.byte	4,4,35,172,197,3,13
+	.byte	'reserved_E2B0',0
+	.word	5286
+	.byte	8,4,35,176,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R3',0
+	.word	69385
+	.byte	4,4,35,184,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R3',0
+	.word	69545
+	.byte	4,4,35,188,197,3,13
+	.byte	'reserved_E2C0',0
+	.word	5286
+	.byte	8,4,35,192,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R4',0
+	.word	69385
+	.byte	4,4,35,200,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R4',0
+	.word	69545
+	.byte	4,4,35,204,197,3,13
+	.byte	'reserved_E2D0',0
+	.word	5286
+	.byte	8,4,35,208,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R5',0
+	.word	69385
+	.byte	4,4,35,216,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R5',0
+	.word	69545
+	.byte	4,4,35,220,197,3,13
+	.byte	'reserved_E2E0',0
+	.word	5286
+	.byte	8,4,35,224,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R6',0
+	.word	69385
+	.byte	4,4,35,232,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R6',0
+	.word	69545
+	.byte	4,4,35,236,197,3,13
+	.byte	'reserved_E2F0',0
+	.word	5286
+	.byte	8,4,35,240,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R7',0
+	.word	69385
+	.byte	4,4,35,248,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R7',0
+	.word	69545
+	.byte	4,4,35,252,197,3,13
+	.byte	'reserved_E300',0
+	.word	75319
+	.byte	128,48,4,35,128,198,3,13
+	.byte	'OSEL',0
+	.word	71884
+	.byte	4,4,35,128,246,3,13
+	.byte	'reserved_FB04',0
+	.word	5626
+	.byte	12,4,35,132,246,3,13
+	.byte	'BLK',0
+	.word	75340
+	.byte	128,3,4,35,144,246,3,13
+	.byte	'reserved_FC90',0
+	.word	75345
+	.byte	160,39,4,35,144,249,3,13
+	.byte	'SEGEN',0
+	.word	72956
+	.byte	4,4,35,176,160,4,13
+	.byte	'reserved_11034',0
+	.word	75356
+	.byte	208,223,1,4,35,180,160,4,13
+	.byte	'TASK_ASI',0
+	.word	73520
+	.byte	4,4,35,132,128,6,13
+	.byte	'reserved_18008',0
+	.word	75369
+	.byte	248,1,4,35,136,128,6,13
+	.byte	'PMA0',0
+	.word	72383
+	.byte	4,4,35,128,130,6,13
+	.byte	'PMA1',0
+	.word	72445
+	.byte	4,4,35,132,130,6,13
+	.byte	'PMA2',0
+	.word	72507
+	.byte	4,4,35,136,130,6,13
+	.byte	'reserved_1810C',0
+	.word	75380
+	.byte	244,29,4,35,140,130,6,13
+	.byte	'DCON2',0
+	.word	69072
+	.byte	4,4,35,128,160,6,13
+	.byte	'reserved_19004',0
+	.word	5286
+	.byte	8,4,35,132,160,6,13
+	.byte	'SMACON',0
+	.word	73171
+	.byte	4,4,35,140,160,6,13
+	.byte	'DSTR',0
+	.word	70164
+	.byte	4,4,35,144,160,6,13
+	.byte	'reserved_19014',0
+	.word	3466
+	.byte	4,4,35,148,160,6,13
+	.byte	'DATR',0
+	.word	68820
+	.byte	4,4,35,152,160,6,13
+	.byte	'DEADD',0
+	.word	69196
+	.byte	4,4,35,156,160,6,13
+	.byte	'DIEAR',0
+	.word	69259
+	.byte	4,4,35,160,160,6,13
+	.byte	'DIETR',0
+	.word	69322
+	.byte	4,4,35,164,160,6,13
+	.byte	'reserved_19028',0
+	.word	4657
+	.byte	24,4,35,168,160,6,13
+	.byte	'DCON0',0
+	.word	69009
+	.byte	4,4,35,192,160,6,13
+	.byte	'reserved_19044',0
+	.word	75391
+	.byte	188,3,4,35,196,160,6,13
+	.byte	'PSTR',0
+	.word	72569
+	.byte	4,4,35,128,164,6,13
+	.byte	'PCON1',0
+	.word	72069
+	.byte	4,4,35,132,164,6,13
+	.byte	'PCON2',0
+	.word	72132
+	.byte	4,4,35,136,164,6,13
+	.byte	'PCON0',0
+	.word	72006
+	.byte	4,4,35,140,164,6,13
+	.byte	'PIEAR',0
+	.word	72257
+	.byte	4,4,35,144,164,6,13
+	.byte	'PIETR',0
+	.word	72320
+	.byte	4,4,35,148,164,6,13
+	.byte	'reserved_19218',0
+	.word	75402
+	.byte	232,3,4,35,152,164,6,13
+	.byte	'COMPAT',0
+	.word	68253
+	.byte	4,4,35,128,168,6,13
+	.byte	'reserved_19404',0
+	.word	75413
+	.byte	252,23,4,35,132,168,6,13
+	.byte	'FPU_TRAP',0
+	.word	75424
+	.byte	28,4,35,128,192,6,13
+	.byte	'reserved_1A01C',0
+	.word	75429
+	.byte	228,63,4,35,156,192,6,13
+	.byte	'DPR',0
+	.word	75450
+	.byte	144,1,4,35,128,128,7,13
+	.byte	'reserved_1C090',0
+	.word	75455
+	.byte	240,30,4,35,144,129,7,13
+	.byte	'CPR',0
+	.word	75475
+	.byte	80,4,35,128,160,7,13
+	.byte	'reserved_1D050',0
+	.word	75480
+	.byte	176,31,4,35,208,160,7,13
+	.byte	'CPXE_0',0
+	.word	68572
+	.byte	4,4,35,128,192,7,13
+	.byte	'CPXE_1',0
+	.word	68572
+	.byte	4,4,35,132,192,7,13
+	.byte	'CPXE_2',0
+	.word	68572
+	.byte	4,4,35,136,192,7,13
+	.byte	'CPXE_3',0
+	.word	68572
+	.byte	4,4,35,140,192,7,13
+	.byte	'DPRE_0',0
+	.word	69914
+	.byte	4,4,35,144,192,7,13
+	.byte	'DPRE_1',0
+	.word	69914
+	.byte	4,4,35,148,192,7,13
+	.byte	'DPRE_2',0
+	.word	69914
+	.byte	4,4,35,152,192,7,13
+	.byte	'DPRE_3',0
+	.word	69914
+	.byte	4,4,35,156,192,7,13
+	.byte	'DPWE_0',0
+	.word	70102
+	.byte	4,4,35,160,192,7,13
+	.byte	'DPWE_1',0
+	.word	70102
+	.byte	4,4,35,164,192,7,13
+	.byte	'DPWE_2',0
+	.word	70102
+	.byte	4,4,35,168,192,7,13
+	.byte	'DPWE_3',0
+	.word	70102
+	.byte	4,4,35,172,192,7,13
+	.byte	'reserved_1E030',0
+	.word	24630
+	.byte	16,4,35,176,192,7,13
+	.byte	'CPXE_4',0
+	.word	68572
+	.byte	4,4,35,192,192,7,13
+	.byte	'CPXE_5',0
+	.word	68572
+	.byte	4,4,35,196,192,7,13
+	.byte	'reserved_1E048',0
+	.word	5286
+	.byte	8,4,35,200,192,7,13
+	.byte	'DPRE_4',0
+	.word	69914
+	.byte	4,4,35,208,192,7,13
+	.byte	'DPRE_5',0
+	.word	69914
+	.byte	4,4,35,212,192,7,13
+	.byte	'reserved_1E058',0
+	.word	5286
+	.byte	8,4,35,216,192,7,13
+	.byte	'DPWE_4',0
+	.word	70102
+	.byte	4,4,35,224,192,7,13
+	.byte	'DPWE_5',0
+	.word	70102
+	.byte	4,4,35,228,192,7,13
+	.byte	'reserved_1E068',0
+	.word	75491
+	.byte	152,7,4,35,232,192,7,13
+	.byte	'TPS',0
+	.word	75502
+	.byte	16,4,35,128,200,7,13
+	.byte	'reserved_1E410',0
+	.word	75507
+	.byte	48,4,35,144,200,7,13
+	.byte	'TPS_EXTIM',0
+	.word	75516
+	.byte	28,4,35,192,200,7,13
+	.byte	'reserved_1E45C',0
+	.word	75521
+	.byte	164,23,4,35,220,200,7,13
+	.byte	'TR',0
+	.word	75541
+	.byte	64,4,35,128,224,7,13
+	.byte	'reserved_1F040',0
+	.word	75546
+	.byte	192,23,4,35,192,224,7,13
+	.byte	'CCTRL',0
+	.word	68190
+	.byte	4,4,35,128,248,7,13
+	.byte	'CCNT',0
+	.word	68128
+	.byte	4,4,35,132,248,7,13
+	.byte	'ICNT',0
+	.word	71107
+	.byte	4,4,35,136,248,7,13
+	.byte	'M1CNT',0
+	.word	71695
+	.byte	4,4,35,140,248,7,13
+	.byte	'M2CNT',0
+	.word	71758
+	.byte	4,4,35,144,248,7,13
+	.byte	'M3CNT',0
+	.word	71821
+	.byte	4,4,35,148,248,7,13
+	.byte	'reserved_1FC18',0
+	.word	75308
+	.byte	232,1,4,35,152,248,7,13
+	.byte	'DBGSR',0
+	.word	68882
+	.byte	4,4,35,128,250,7,13
+	.byte	'reserved_1FD04',0
+	.word	3466
+	.byte	4,4,35,132,250,7,13
+	.byte	'EXEVT',0
+	.word	70226
+	.byte	4,4,35,136,250,7,13
+	.byte	'CREVT',0
+	.word	68634
+	.byte	4,4,35,140,250,7,13
+	.byte	'SWEVT',0
+	.word	73393
+	.byte	4,4,35,144,250,7,13
+	.byte	'reserved_1FD14',0
+	.word	75557
+	.byte	28,4,35,148,250,7,13
+	.byte	'TRIG_ACC',0
+	.word	74247
+	.byte	4,4,35,176,250,7,13
+	.byte	'reserved_1FD34',0
+	.word	5626
+	.byte	12,4,35,180,250,7,13
+	.byte	'DMS',0
+	.word	69853
+	.byte	4,4,35,192,250,7,13
+	.byte	'DCX',0
+	.word	69135
+	.byte	4,4,35,196,250,7,13
+	.byte	'DBGTCR',0
+	.word	68945
+	.byte	4,4,35,200,250,7,13
+	.byte	'reserved_1FD4C',0
+	.word	75566
+	.byte	180,1,4,35,204,250,7,13
+	.byte	'PCXI',0
+	.word	72195
+	.byte	4,4,35,128,252,7,13
+	.byte	'PSW',0
+	.word	72631
+	.byte	4,4,35,132,252,7,13
+	.byte	'PC',0
+	.word	71946
+	.byte	4,4,35,136,252,7,13
+	.byte	'reserved_1FE0C',0
+	.word	5286
+	.byte	8,4,35,140,252,7,13
+	.byte	'SYSCON',0
+	.word	73456
+	.byte	4,4,35,148,252,7,13
+	.byte	'CPU_ID',0
+	.word	68508
+	.byte	4,4,35,152,252,7,13
+	.byte	'CORE_ID',0
+	.word	68317
+	.byte	4,4,35,156,252,7,13
+	.byte	'BIV',0
+	.word	67807
+	.byte	4,4,35,160,252,7,13
+	.byte	'BTV',0
+	.word	68067
+	.byte	4,4,35,164,252,7,13
+	.byte	'ISP',0
+	.word	71230
+	.byte	4,4,35,168,252,7,13
+	.byte	'ICR',0
+	.word	71169
+	.byte	4,4,35,172,252,7,13
+	.byte	'reserved_1FE30',0
+	.word	5286
+	.byte	8,4,35,176,252,7,13
+	.byte	'FCX',0
+	.word	70289
+	.byte	4,4,35,184,252,7,13
+	.byte	'LCX',0
+	.word	71482
+	.byte	4,4,35,188,252,7,13
+	.byte	'reserved_1FE40',0
+	.word	24630
+	.byte	16,4,35,192,252,7,13
+	.byte	'CUS_ID',0
+	.word	68697
+	.byte	4,4,35,208,252,7,13
+	.byte	'reserved_1FE54',0
+	.word	75577
+	.byte	172,1,4,35,212,252,7,13
+	.byte	'D',0
+	.word	75588
+	.byte	64,4,35,128,254,7,13
+	.byte	'reserved_1FF40',0
+	.word	24587
+	.byte	64,4,35,192,254,7,13
+	.byte	'A',0
+	.word	75597
+	.byte	64,4,35,128,255,7,13
+	.byte	'reserved_1FFC0',0
+	.word	24587
+	.byte	64,4,35,192,255,7,0,14
+	.word	75606
+	.byte	30
+	.byte	'Ifx_CPU',0,24,224,16,3
+	.word	80704
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,127,9,1,16
 	.byte	'IfxCpu_Id_0',0,0,16
 	.byte	'IfxCpu_Id_1',0,1,16
 	.byte	'IfxCpu_Id_2',0,2,16
 	.byte	'IfxCpu_Id_none',0,3,0,30
 	.byte	'IfxCpu_Id',0,8,133,1,3
+<<<<<<< HEAD
 	.word	80732
+=======
+	.word	80726
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	30
 	.byte	'IfxCpu_ResourceCpu',0,8,164,1,3
 	.word	2056
@@ -13821,12 +17754,20 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	83502
 	.byte	4,2,35,0,0,30
 	.byte	'Ifx_STM_TIM6',0,25,188,3,3
+<<<<<<< HEAD
 	.word	84884
+=======
+	.word	84878
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,7,144,1,9,1,16
 	.byte	'IfxCpu_CounterMode_normal',0,0,16
 	.byte	'IfxCpu_CounterMode_task',0,1,0,30
 	.byte	'IfxCpu_CounterMode',0,7,148,1,3
+<<<<<<< HEAD
 	.word	84946
+=======
+	.word	84940
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	29,7,195,1,9,6,13
 	.byte	'counter',0
 	.word	2234
@@ -14014,26 +17955,45 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	9387
 	.byte	30
 	.byte	'Ifx_P',0,10,130,6,3
+<<<<<<< HEAD
 	.word	86413
+=======
+	.word	86407
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,9,76,9,1,16
 	.byte	'IfxPort_ControlledBy_port',0,0,16
 	.byte	'IfxPort_ControlledBy_hsct',0,1,0,30
 	.byte	'IfxPort_ControlledBy',0,9,80,3
+<<<<<<< HEAD
 	.word	86433
 	.byte	30
 	.byte	'IfxPort_InputMode',0,9,90,3
 	.word	9967
+=======
+	.word	86427
+	.byte	30
+	.byte	'IfxPort_InputMode',0,9,90,3
+	.word	9961
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,9,94,9,1,16
 	.byte	'IfxPort_LvdsMode_high',0,0,16
 	.byte	'IfxPort_LvdsMode_medium',0,1,0,30
 	.byte	'IfxPort_LvdsMode',0,9,98,3
+<<<<<<< HEAD
 	.word	86550
+=======
+	.word	86544
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	30
 	.byte	'IfxPort_OutputIdx',0,9,139,1,3
 	.word	10242
 	.byte	30
 	.byte	'IfxPort_OutputMode',0,9,147,1,3
+<<<<<<< HEAD
 	.word	10172
+=======
+	.word	10166
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,9,153,1,9,1,16
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,16
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,16
@@ -14048,17 +18008,29 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxPort_PadDriver_ttl3v3Speed3',0,14,16
 	.byte	'IfxPort_PadDriver_ttl3v3Speed4',0,15,0,30
 	.byte	'IfxPort_PadDriver',0,9,167,1,3
+<<<<<<< HEAD
 	.word	86686
+=======
+	.word	86680
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,9,171,1,9,1,16
 	.byte	'IfxPort_PadSupply_3v',0,0,16
 	.byte	'IfxPort_PadSupply_5v',0,1,0,30
 	.byte	'IfxPort_PadSupply',0,9,175,1,3
+<<<<<<< HEAD
 	.word	87136
+=======
+	.word	87130
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,9,179,1,9,1,16
 	.byte	'IfxPort_PinFunctionMode_digital',0,0,16
 	.byte	'IfxPort_PinFunctionMode_analog',0,1,0,30
 	.byte	'IfxPort_PinFunctionMode',0,9,183,1,3
+<<<<<<< HEAD
 	.word	87216
+=======
+	.word	87210
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	30
 	.byte	'IfxPort_State',0,9,195,1,3
 	.word	10556
@@ -15714,14 +19686,22 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	95855
 	.byte	4,2,35,0,0,30
 	.byte	'Ifx_SMU_STS',0,26,187,6,3
+<<<<<<< HEAD
 	.word	97726
+=======
+	.word	97720
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,213,2,9,1,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy30',0,1,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy60',0,2,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy120',0,3,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy240',0,4,0,30
 	.byte	'IfxScuCcu_LowPowerDivRatio',0,11,219,2,3
+<<<<<<< HEAD
 	.word	97787
+=======
+	.word	97781
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,223,2,9,1,16
 	.byte	'IfxScuCcu_ModulationAmplitude_0p5',0,0,16
 	.byte	'IfxScuCcu_ModulationAmplitude_1p0',0,1,16
@@ -15731,25 +19711,41 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxScuCcu_ModulationAmplitude_2p5',0,5,16
 	.byte	'IfxScuCcu_ModulationAmplitude_count',0,6,0,30
 	.byte	'IfxScuCcu_ModulationAmplitude',0,11,232,2,3
+<<<<<<< HEAD
 	.word	97980
+=======
+	.word	97974
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,129,4,9,1,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fOsc1',0,0,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fOsc0',0,1,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fSysclk',0,2,0,30
 	.byte	'IfxScuCcu_PllInputClockSelection',0,11,134,4,3
+<<<<<<< HEAD
 	.word	98281
+=======
+	.word	98275
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,138,4,9,1,16
 	.byte	'IfxScuCcu_Traprequest_esr0',0,0,16
 	.byte	'IfxScuCcu_Traprequest_esr1',0,1,16
 	.byte	'IfxScuCcu_Traprequest_trap2',0,2,16
 	.byte	'IfxScuCcu_Traprequest_smu',0,3,0,30
 	.byte	'IfxScuCcu_Traprequest',0,11,144,4,3
+<<<<<<< HEAD
 	.word	98455
+=======
+	.word	98449
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,150,4,9,1,16
 	.byte	'IfxScuCcu_ModEn_disabled',0,0,16
 	.byte	'IfxScuCcu_ModEn_enabled',0,1,0,30
 	.byte	'IfxScuCcu_ModEn',0,11,154,4,3
+<<<<<<< HEAD
 	.word	98609
+=======
+	.word	98603
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	29,11,165,4,9,6,13
 	.byte	'pDivider',0
 	.word	508
@@ -15994,16 +19990,27 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	100343
 	.byte	30
 	.byte	'IfxQspi_ChannelId',0,12,112,3
+<<<<<<< HEAD
 	.word	17311
+=======
+	.word	17305
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,162,1,9,1,16
 	.byte	'IfxQspi_Mode_master',0,0,16
 	.byte	'IfxQspi_Mode_pwmOverQspi',0,1,16
 	.byte	'IfxQspi_Mode_slave',0,2,0,30
 	.byte	'IfxQspi_Mode',0,12,167,1,3
+<<<<<<< HEAD
 	.word	100400
 	.byte	30
 	.byte	'IfxQspi_Phase',0,12,190,1,3
 	.word	16426
+=======
+	.word	100394
+	.byte	30
+	.byte	'IfxQspi_Phase',0,12,190,1,3
+	.word	16420
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,194,1,9,1,16
 	.byte	'IfxQspi_PhaseTransitionEvent_endOfWait',0,0,16
 	.byte	'IfxQspi_PhaseTransitionEvent_serialClockPolarityChange',0,1,16
@@ -16014,48 +20021,79 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	'IfxQspi_PhaseTransitionEvent_dataNotAvailable',0,6,16
 	.byte	'IfxQspi_PhaseTransitionEvent_endOfExpect',0,7,0,30
 	.byte	'IfxQspi_PhaseTransitionEvent',0,12,204,1,3
+<<<<<<< HEAD
 	.word	100522
+=======
+	.word	100516
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,208,1,9,1,16
 	.byte	'IfxQspi_Reset_none',0,0,16
 	.byte	'IfxQspi_Reset_stateMachineAndFifo',0,1,16
 	.byte	'IfxQspi_Reset_registers',0,2,16
 	.byte	'IfxQspi_Reset_kernel',0,3,0,30
 	.byte	'IfxQspi_Reset',0,12,214,1,3
+<<<<<<< HEAD
 	.word	100946
+=======
+	.word	100940
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,218,1,9,1,16
 	.byte	'IfxQspi_RxFifoInt_0',0,0,16
 	.byte	'IfxQspi_RxFifoInt_1',0,1,16
 	.byte	'IfxQspi_RxFifoInt_2',0,2,16
 	.byte	'IfxQspi_RxFifoInt_3',0,3,0,30
 	.byte	'IfxQspi_RxFifoInt',0,12,224,1,3
+<<<<<<< HEAD
 	.word	101082
+=======
+	.word	101076
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,229,1,9,1,16
 	.byte	'IfxQspi_SleepMode_enable',0,0,16
 	.byte	'IfxQspi_SleepMode_disable',0,1,0,30
 	.byte	'IfxQspi_SleepMode',0,12,233,1,3
+<<<<<<< HEAD
 	.word	101204
+=======
+	.word	101198
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,147,2,9,1,16
 	.byte	'IfxQspi_TxFifoInt_1',0,0,16
 	.byte	'IfxQspi_TxFifoInt_2',0,1,16
 	.byte	'IfxQspi_TxFifoInt_3',0,2,16
 	.byte	'IfxQspi_TxFifoInt_4',0,3,0,30
 	.byte	'IfxQspi_TxFifoInt',0,12,153,2,3
+<<<<<<< HEAD
 	.word	101293
+=======
+	.word	101287
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,159,2,9,1,16
 	.byte	'IfxQspi_FifoMode_combinedMove',0,0,16
 	.byte	'IfxQspi_FifoMode_singleMove',0,1,16
 	.byte	'IfxQspi_FifoMode_batchMove',0,2,0,30
 	.byte	'IfxQspi_FifoMode',0,12,164,2,3
+<<<<<<< HEAD
 	.word	101415
+=======
+	.word	101409
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,168,2,9,1,16
 	.byte	'IfxQspi_SuspendMode_none',0,0,16
 	.byte	'IfxQspi_SuspendMode_hard',0,1,16
 	.byte	'IfxQspi_SuspendMode_soft',0,2,0,30
 	.byte	'IfxQspi_SuspendMode',0,12,173,2,3
+<<<<<<< HEAD
 	.word	101539
 	.byte	30
 	.byte	'IfxQspi_DelayConst',0,12,186,2,3
 	.word	18029
+=======
+	.word	101533
+	.byte	30
+	.byte	'IfxQspi_DelayConst',0,12,186,2,3
+	.word	18023
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -16080,7 +20118,11 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.word	.L508-.L507
 .L507:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common',0,0
@@ -16109,34 +20151,56 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxQspi_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxQspi_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0,0,0,0
 	.byte	'stdio.h',0,2,0,0
 	.byte	'PLATFORM_TYPES.H',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0
 	.byte	'Ifx_TypesReg.h',0,1,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxSrc_cfg.h',0
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxSrc_cfg.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxCpu_regdef.h',0,1,0,0
 	.byte	'IfxStm_regdef.h',0,1,0,0
 	.byte	'IfxSmu_regdef.h',0,1,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_PinMap\\IfxQspi_PinMap.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_PinMap\\IfxQspi_PinMap.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L508:
 .L506:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_read16')
 	.sect	'.debug_info'
 .L145:
+<<<<<<< HEAD
 	.word	348
+=======
+	.word	342
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L146
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L148,.L147
 	.byte	2
 	.word	.L141
@@ -16202,13 +20266,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_read32')
 	.sect	'.debug_info'
 .L150:
+<<<<<<< HEAD
 	.word	348
+=======
+	.word	342
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L151
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L153,.L152
 	.byte	2
 	.word	.L141
@@ -16274,13 +20346,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_read8')
 	.sect	'.debug_info'
 .L155:
+<<<<<<< HEAD
 	.word	347
+=======
+	.word	341
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L156
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L158,.L157
 	.byte	2
 	.word	.L141
@@ -16346,13 +20426,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_resetModule')
 	.sect	'.debug_info'
 .L160:
+<<<<<<< HEAD
 	.word	316
+=======
+	.word	310
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L161
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L163,.L162
 	.byte	2
 	.word	.L141
@@ -16430,13 +20518,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_write16')
 	.sect	'.debug_info'
 .L165:
+<<<<<<< HEAD
 	.word	391
+=======
+	.word	385
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L166
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L168,.L167
 	.byte	2
 	.word	.L141
@@ -16512,13 +20608,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_write32')
 	.sect	'.debug_info'
 .L170:
+<<<<<<< HEAD
 	.word	391
+=======
+	.word	385
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L171
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L173,.L172
 	.byte	2
 	.word	.L141
@@ -16594,13 +20698,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_write8')
 	.sect	'.debug_info'
 .L175:
+<<<<<<< HEAD
 	.word	390
+=======
+	.word	384
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L176
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L178,.L177
 	.byte	2
 	.word	.L141
@@ -16676,13 +20788,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_calcRealBaudrate')
 	.sect	'.debug_info'
 .L180:
+<<<<<<< HEAD
 	.word	375
+=======
+	.word	369
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L181
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L183,.L182
 	.byte	2
 	.word	.L141
@@ -16791,13 +20911,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_calculateBasicConfigurationValue')
 	.sect	'.debug_info'
 .L185:
+<<<<<<< HEAD
 	.word	433
+=======
+	.word	427
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L186
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L188,.L187
 	.byte	2
 	.word	.L141
@@ -16937,13 +21065,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_calculateExtendedConfigurationValue')
 	.sect	'.debug_info'
 .L190:
+<<<<<<< HEAD
 	.word	789
+=======
+	.word	783
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L191
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L193,.L192
 	.byte	2
 	.word	.L141
@@ -17266,13 +21402,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_calculatePrescaler')
 	.sect	'.debug_info'
 .L195:
+<<<<<<< HEAD
 	.word	532
+=======
+	.word	526
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L196
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L198,.L197
 	.byte	2
 	.word	.L141
@@ -17391,13 +21535,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_calculateTimeQuantumLength')
 	.sect	'.debug_info'
 .L200:
+<<<<<<< HEAD
 	.word	513
+=======
+	.word	507
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L201
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L203,.L202
 	.byte	2
 	.word	.L141
@@ -17539,13 +21691,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_getAddress')
 	.sect	'.debug_info'
 .L205:
+<<<<<<< HEAD
 	.word	319
+=======
+	.word	313
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L206
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L208,.L207
 	.byte	2
 	.word	.L141
@@ -17609,13 +21769,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_getIndex')
 	.sect	'.debug_info'
 .L210:
+<<<<<<< HEAD
 	.word	336
+=======
+	.word	330
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L211
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L213,.L212
 	.byte	2
 	.word	.L141
@@ -17700,13 +21868,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_recalcBasicConfiguration')
 	.sect	'.debug_info'
 .L215:
+<<<<<<< HEAD
 	.word	404
+=======
+	.word	398
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L216
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L218,.L217
 	.byte	2
 	.word	.L141
@@ -17777,13 +21953,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_setSlaveSelectOutputControl')
 	.sect	'.debug_info'
 .L220:
+<<<<<<< HEAD
 	.word	422
+=======
+	.word	416
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L221
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L223,.L222
 	.byte	2
 	.word	.L141
@@ -17873,13 +22057,21 @@ __IfxQspi_calculateDelayConstants_function_end:
 	.sdecl	'.debug_info',debug,cluster('IfxQspi_calculateDelayConstants')
 	.sect	'.debug_info'
 .L225:
+<<<<<<< HEAD
 	.word	597
+=======
+	.word	591
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L226
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Qspi/Std/IfxQspi.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L228,.L227
 	.byte	2
 	.word	.L141

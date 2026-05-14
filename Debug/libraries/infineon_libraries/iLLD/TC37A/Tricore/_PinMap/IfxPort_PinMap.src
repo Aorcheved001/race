@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc29788a --dep-file=IfxPort_PinMap.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c"
+=======
+	.compiler_invocation	"ctc -f cc13700a --dep-file=IfxPort_PinMap.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c'
 
@@ -1537,7 +1541,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
+<<<<<<< HEAD
 	.word	37884
+=======
+	.word	37878
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L4
 	.byte	4
@@ -1545,19 +1553,31 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L5
 	.byte	2,1,1,3
 	.word	227
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
+<<<<<<< HEAD
 	.word	230
+=======
+	.word	224
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1,7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+<<<<<<< HEAD
 	.word	275
+=======
+	.word	269
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
 	.word	287
@@ -1577,7 +1597,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.word	373
 	.byte	5
 	.byte	'value',0,2,143,1,43
+<<<<<<< HEAD
 	.word	341
+=======
+	.word	335
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7,7
 	.byte	'int',0,4,5,7
@@ -1585,7 +1609,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_P_OUT_Bits',0,4,147,3,16,4,11
 	.byte	'P0',0,1
+<<<<<<< HEAD
 	.word	482
+=======
+	.word	476
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,7,2,35,0,11
 	.byte	'P1',0,1
 	.word	482
@@ -2896,7 +2924,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	4,3,35,252,1,0,16
 	.word	7443
 	.byte	3
+<<<<<<< HEAD
 	.word	8013
+=======
+	.word	8007
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,189,1,9,4,18
 	.byte	'IfxPort_State_notChanged',0,0,18
 	.byte	'IfxPort_State_high',0,1,18
@@ -2904,7 +2936,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	'IfxPort_State_toggled',0,129,128,4,0,4
 	.byte	'IfxPort_setPinState',0,3,3,171,5,17,1,1,5
 	.byte	'port',0,3,171,5,44
+<<<<<<< HEAD
 	.word	8018
+=======
+	.word	8012
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,3,171,5,56
 	.word	482
@@ -3179,13 +3215,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.word	7443
 	.byte	21
 	.byte	'Ifx_P',0,4,130,6,3
+<<<<<<< HEAD
 	.word	9980
+=======
+	.word	9974
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,11,238,10,9,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,18
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,21
 	.byte	'IfxScu_WDTCON1_IR',0,11,243,10,3
+<<<<<<< HEAD
 	.word	10000
+=======
+	.word	9994
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN00_Bits',0,12,70,16,4,11
 	.byte	'EN0',0,1
@@ -3745,12 +3789,20 @@ IfxPort_Pin_pinTable:	.type	object
 	.word	459
 	.byte	20,0,2,35,0,0,21
 	.byte	'Ifx_SCU_DTSCSTAT_Bits',0,12,188,2,3
+<<<<<<< HEAD
 	.word	13960
+=======
+	.word	13954
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	7
 	.byte	'unsigned int',0,4,7,10
 	.byte	'_Ifx_SCU_EICON0_Bits',0,12,191,2,16,4,11
 	.byte	'reserved_0',0,4
+<<<<<<< HEAD
 	.word	14062
+=======
+	.word	14056
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,31,2,35,0,11
 	.byte	'ENDINIT',0,4
 	.word	14062
@@ -7061,24 +7113,40 @@ IfxPort_Pin_pinTable:	.type	object
 	.word	36384
 	.byte	21
 	.byte	'Ifx_SCU_WDTS',0,12,237,16,3
+<<<<<<< HEAD
 	.word	36445
+=======
+	.word	36439
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,76,9,1,18
 	.byte	'IfxPort_ControlledBy_port',0,0,18
 	.byte	'IfxPort_ControlledBy_hsct',0,1,0,21
 	.byte	'IfxPort_ControlledBy',0,3,80,3
+<<<<<<< HEAD
 	.word	36472
+=======
+	.word	36466
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,84,9,1,18
 	.byte	'IfxPort_InputMode_undefined',0,127,18
 	.byte	'IfxPort_InputMode_noPullDevice',0,0,18
 	.byte	'IfxPort_InputMode_pullDown',0,8,18
 	.byte	'IfxPort_InputMode_pullUp',0,16,0,21
 	.byte	'IfxPort_InputMode',0,3,90,3
+<<<<<<< HEAD
 	.word	36563
+=======
+	.word	36557
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,94,9,1,18
 	.byte	'IfxPort_LvdsMode_high',0,0,18
 	.byte	'IfxPort_LvdsMode_medium',0,1,0,21
 	.byte	'IfxPort_LvdsMode',0,3,98,3
+<<<<<<< HEAD
 	.word	36714
+=======
+	.word	36708
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,129,1,9,1,18
 	.byte	'IfxPort_OutputIdx_general',0,128,1,18
 	.byte	'IfxPort_OutputIdx_alt1',0,136,1,18
@@ -7089,12 +7157,20 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	'IfxPort_OutputIdx_alt6',0,176,1,18
 	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0,21
 	.byte	'IfxPort_OutputIdx',0,3,139,1,3
+<<<<<<< HEAD
 	.word	36795
+=======
+	.word	36789
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,143,1,9,1,18
 	.byte	'IfxPort_OutputMode_pushPull',0,128,1,18
 	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,21
 	.byte	'IfxPort_OutputMode',0,3,147,1,3
+<<<<<<< HEAD
 	.word	37040
+=======
+	.word	37034
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,153,1,9,1,18
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,18
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,18
@@ -7109,17 +7185,29 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	'IfxPort_PadDriver_ttl3v3Speed3',0,14,18
 	.byte	'IfxPort_PadDriver_ttl3v3Speed4',0,15,0,21
 	.byte	'IfxPort_PadDriver',0,3,167,1,3
+<<<<<<< HEAD
 	.word	37138
+=======
+	.word	37132
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,171,1,9,1,18
 	.byte	'IfxPort_PadSupply_3v',0,0,18
 	.byte	'IfxPort_PadSupply_5v',0,1,0,21
 	.byte	'IfxPort_PadSupply',0,3,175,1,3
+<<<<<<< HEAD
 	.word	37588
+=======
+	.word	37582
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,179,1,9,1,18
 	.byte	'IfxPort_PinFunctionMode_digital',0,0,18
 	.byte	'IfxPort_PinFunctionMode_analog',0,1,0,21
 	.byte	'IfxPort_PinFunctionMode',0,3,183,1,3
+<<<<<<< HEAD
 	.word	37668
+=======
+	.word	37662
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	21
 	.byte	'IfxPort_State',0,3,195,1,3
 	.word	8023
@@ -7142,7 +7230,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	15,15,0
 .L339:
 	.byte	14,192,20
+<<<<<<< HEAD
 	.word	37868
+=======
+	.word	37862
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,40,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -7163,7 +7255,11 @@ IfxPort_Pin_pinTable:	.type	object
 	.word	.L343-.L342
 .L342:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common',0,0
@@ -7171,17 +7267,28 @@ IfxPort_Pin_pinTable:	.type	object
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
 	.byte	0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxPort_regdef.h',0,1,0,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0,0,0,0
 	.byte	'stdio.h',0,2,0,0
 	.byte	'PLATFORM_TYPES.H',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'Ifx_TypesReg.h',0,1,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'Ifx_TypesReg.h',0,1,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxScu_regdef.h',0,1,0,0,0
 .L343:
@@ -7189,13 +7296,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_0')
 	.sect	'.debug_info'
 .L6:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L7
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_0',0,5,48,13
@@ -7211,13 +7326,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_1')
 	.sect	'.debug_info'
 .L8:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L9
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_1',0,5,49,13
@@ -7233,13 +7356,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_10')
 	.sect	'.debug_info'
 .L10:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L11
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_10',0,5,50,13
@@ -7255,13 +7386,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_11')
 	.sect	'.debug_info'
 .L12:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L13
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_11',0,5,51,13
@@ -7277,13 +7416,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_12')
 	.sect	'.debug_info'
 .L14:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L15
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_12',0,5,52,13
@@ -7299,13 +7446,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_2')
 	.sect	'.debug_info'
 .L16:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L17
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_2',0,5,53,13
@@ -7321,13 +7476,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_3')
 	.sect	'.debug_info'
 .L18:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L19
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_3',0,5,54,13
@@ -7343,13 +7506,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_4')
 	.sect	'.debug_info'
 .L20:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L21
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_4',0,5,55,13
@@ -7365,13 +7536,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_5')
 	.sect	'.debug_info'
 .L22:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L23
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_5',0,5,56,13
@@ -7387,13 +7566,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_6')
 	.sect	'.debug_info'
 .L24:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L25
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_6',0,5,57,13
@@ -7409,13 +7596,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_7')
 	.sect	'.debug_info'
 .L26:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L27
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_7',0,5,58,13
@@ -7431,13 +7626,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_8')
 	.sect	'.debug_info'
 .L28:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L29
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_8',0,5,59,13
@@ -7453,13 +7656,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P00_9')
 	.sect	'.debug_info'
 .L30:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L31
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P00_9',0,5,60,13
@@ -7475,13 +7686,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P01_3')
 	.sect	'.debug_info'
 .L32:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L33
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P01_3',0,5,61,13
@@ -7497,13 +7716,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P01_4')
 	.sect	'.debug_info'
 .L34:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L35
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P01_4',0,5,62,13
@@ -7519,13 +7746,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P01_5')
 	.sect	'.debug_info'
 .L36:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L37
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P01_5',0,5,63,13
@@ -7541,13 +7776,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P01_6')
 	.sect	'.debug_info'
 .L38:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L39
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P01_6',0,5,64,13
@@ -7563,13 +7806,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P01_7')
 	.sect	'.debug_info'
 .L40:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L41
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P01_7',0,5,65,13
@@ -7585,13 +7836,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_0')
 	.sect	'.debug_info'
 .L42:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L43
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_0',0,5,66,13
@@ -7607,13 +7866,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_1')
 	.sect	'.debug_info'
 .L44:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L45
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_1',0,5,67,13
@@ -7629,13 +7896,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_10')
 	.sect	'.debug_info'
 .L46:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L47
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_10',0,5,68,13
@@ -7651,13 +7926,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_11')
 	.sect	'.debug_info'
 .L48:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L49
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_11',0,5,69,13
@@ -7673,13 +7956,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_2')
 	.sect	'.debug_info'
 .L50:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L51
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_2',0,5,70,13
@@ -7695,13 +7986,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_3')
 	.sect	'.debug_info'
 .L52:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L53
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_3',0,5,71,13
@@ -7717,13 +8016,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_4')
 	.sect	'.debug_info'
 .L54:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L55
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_4',0,5,72,13
@@ -7739,13 +8046,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_5')
 	.sect	'.debug_info'
 .L56:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L57
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_5',0,5,73,13
@@ -7761,13 +8076,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_6')
 	.sect	'.debug_info'
 .L58:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L59
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_6',0,5,74,13
@@ -7783,13 +8106,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_7')
 	.sect	'.debug_info'
 .L60:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L61
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_7',0,5,75,13
@@ -7805,13 +8136,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_8')
 	.sect	'.debug_info'
 .L62:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L63
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_8',0,5,76,13
@@ -7827,13 +8166,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P02_9')
 	.sect	'.debug_info'
 .L64:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L65
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P02_9',0,5,77,13
@@ -7849,13 +8196,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_0')
 	.sect	'.debug_info'
 .L66:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L67
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_0',0,5,78,13
@@ -7871,13 +8226,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_1')
 	.sect	'.debug_info'
 .L68:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L69
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_1',0,5,79,13
@@ -7893,13 +8256,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_2')
 	.sect	'.debug_info'
 .L70:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L71
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_2',0,5,80,13
@@ -7915,13 +8286,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_3')
 	.sect	'.debug_info'
 .L72:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L73
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_3',0,5,81,13
@@ -7937,13 +8316,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_4')
 	.sect	'.debug_info'
 .L74:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L75
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_4',0,5,82,13
@@ -7959,13 +8346,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_5')
 	.sect	'.debug_info'
 .L76:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L77
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_5',0,5,83,13
@@ -7981,13 +8376,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_6')
 	.sect	'.debug_info'
 .L78:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L79
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_6',0,5,84,13
@@ -8003,13 +8406,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_7')
 	.sect	'.debug_info'
 .L80:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L81
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_7',0,5,85,13
@@ -8025,13 +8436,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P10_8')
 	.sect	'.debug_info'
 .L82:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L83
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P10_8',0,5,86,13
@@ -8047,13 +8466,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_0')
 	.sect	'.debug_info'
 .L84:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L85
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_0',0,5,87,13
@@ -8069,13 +8496,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_1')
 	.sect	'.debug_info'
 .L86:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L87
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_1',0,5,88,13
@@ -8091,13 +8526,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_10')
 	.sect	'.debug_info'
 .L88:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L89
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_10',0,5,89,13
@@ -8113,13 +8556,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_11')
 	.sect	'.debug_info'
 .L90:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L91
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_11',0,5,90,13
@@ -8135,13 +8586,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_12')
 	.sect	'.debug_info'
 .L92:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L93
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_12',0,5,91,13
@@ -8157,13 +8616,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_13')
 	.sect	'.debug_info'
 .L94:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L95
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_13',0,5,92,13
@@ -8179,13 +8646,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_14')
 	.sect	'.debug_info'
 .L96:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L97
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_14',0,5,93,13
@@ -8201,13 +8676,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_15')
 	.sect	'.debug_info'
 .L98:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L99
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_15',0,5,94,13
@@ -8223,13 +8706,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_2')
 	.sect	'.debug_info'
 .L100:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L101
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_2',0,5,95,13
@@ -8245,13 +8736,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_3')
 	.sect	'.debug_info'
 .L102:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L103
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_3',0,5,96,13
@@ -8267,13 +8766,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_4')
 	.sect	'.debug_info'
 .L104:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L105
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_4',0,5,97,13
@@ -8289,13 +8796,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_5')
 	.sect	'.debug_info'
 .L106:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L107
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_5',0,5,98,13
@@ -8311,13 +8826,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_6')
 	.sect	'.debug_info'
 .L108:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L109
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_6',0,5,99,13
@@ -8333,13 +8856,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_7')
 	.sect	'.debug_info'
 .L110:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L111
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_7',0,5,100,13
@@ -8355,13 +8886,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_8')
 	.sect	'.debug_info'
 .L112:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L113
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_8',0,5,101,13
@@ -8377,13 +8916,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P11_9')
 	.sect	'.debug_info'
 .L114:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L115
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P11_9',0,5,102,13
@@ -8399,13 +8946,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P12_0')
 	.sect	'.debug_info'
 .L116:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L117
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P12_0',0,5,103,13
@@ -8421,13 +8976,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P12_1')
 	.sect	'.debug_info'
 .L118:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L119
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P12_1',0,5,104,13
@@ -8443,13 +9006,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P13_0')
 	.sect	'.debug_info'
 .L120:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L121
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P13_0',0,5,105,13
@@ -8465,13 +9036,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P13_1')
 	.sect	'.debug_info'
 .L122:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L123
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P13_1',0,5,106,13
@@ -8487,13 +9066,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P13_2')
 	.sect	'.debug_info'
 .L124:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L125
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P13_2',0,5,107,13
@@ -8509,13 +9096,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P13_3')
 	.sect	'.debug_info'
 .L126:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L127
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P13_3',0,5,108,13
@@ -8531,13 +9126,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_0')
 	.sect	'.debug_info'
 .L128:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L129
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_0',0,5,109,13
@@ -8553,13 +9156,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_1')
 	.sect	'.debug_info'
 .L130:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L131
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_1',0,5,110,13
@@ -8575,13 +9186,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_10')
 	.sect	'.debug_info'
 .L132:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L133
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_10',0,5,111,13
@@ -8597,13 +9216,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_2')
 	.sect	'.debug_info'
 .L134:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L135
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_2',0,5,112,13
@@ -8619,13 +9246,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_3')
 	.sect	'.debug_info'
 .L136:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L137
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_3',0,5,113,13
@@ -8641,13 +9276,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_4')
 	.sect	'.debug_info'
 .L138:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L139
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_4',0,5,114,13
@@ -8663,13 +9306,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_5')
 	.sect	'.debug_info'
 .L140:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L141
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_5',0,5,115,13
@@ -8685,13 +9336,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_6')
 	.sect	'.debug_info'
 .L142:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L143
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_6',0,5,116,13
@@ -8707,13 +9366,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_7')
 	.sect	'.debug_info'
 .L144:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L145
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_7',0,5,117,13
@@ -8729,13 +9396,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_8')
 	.sect	'.debug_info'
 .L146:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L147
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_8',0,5,118,13
@@ -8751,13 +9426,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P14_9')
 	.sect	'.debug_info'
 .L148:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L149
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P14_9',0,5,119,13
@@ -8773,13 +9456,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_0')
 	.sect	'.debug_info'
 .L150:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L151
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_0',0,5,120,13
@@ -8795,13 +9486,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_1')
 	.sect	'.debug_info'
 .L152:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L153
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_1',0,5,121,13
@@ -8817,13 +9516,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_2')
 	.sect	'.debug_info'
 .L154:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L155
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_2',0,5,122,13
@@ -8839,13 +9546,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_3')
 	.sect	'.debug_info'
 .L156:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L157
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_3',0,5,123,13
@@ -8861,13 +9576,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_4')
 	.sect	'.debug_info'
 .L158:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L159
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_4',0,5,124,13
@@ -8883,13 +9606,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_5')
 	.sect	'.debug_info'
 .L160:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L161
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_5',0,5,125,13
@@ -8905,13 +9636,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_6')
 	.sect	'.debug_info'
 .L162:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L163
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_6',0,5,126,13
@@ -8927,13 +9666,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_7')
 	.sect	'.debug_info'
 .L164:
+<<<<<<< HEAD
 	.word	254
+=======
+	.word	248
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L165
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_7',0,5,127,13
@@ -8949,13 +9696,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P15_8')
 	.sect	'.debug_info'
 .L166:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L167
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P15_8',0,5,128,1,13
@@ -8971,13 +9726,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_0')
 	.sect	'.debug_info'
 .L168:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L169
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_0',0,5,129,1,13
@@ -8993,13 +9756,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_1')
 	.sect	'.debug_info'
 .L170:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L171
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_1',0,5,130,1,13
@@ -9015,13 +9786,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_10')
 	.sect	'.debug_info'
 .L172:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L173
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_10',0,5,131,1,13
@@ -9037,13 +9816,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_11')
 	.sect	'.debug_info'
 .L174:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L175
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_11',0,5,132,1,13
@@ -9059,13 +9846,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_12')
 	.sect	'.debug_info'
 .L176:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L177
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_12',0,5,133,1,13
@@ -9081,13 +9876,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_13')
 	.sect	'.debug_info'
 .L178:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L179
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_13',0,5,134,1,13
@@ -9103,13 +9906,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_14')
 	.sect	'.debug_info'
 .L180:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L181
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_14',0,5,135,1,13
@@ -9125,13 +9936,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_3')
 	.sect	'.debug_info'
 .L182:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L183
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_3',0,5,136,1,13
@@ -9147,13 +9966,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_6')
 	.sect	'.debug_info'
 .L184:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L185
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_6',0,5,137,1,13
@@ -9169,13 +9996,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_7')
 	.sect	'.debug_info'
 .L186:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L187
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_7',0,5,138,1,13
@@ -9191,13 +10026,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_8')
 	.sect	'.debug_info'
 .L188:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L189
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_8',0,5,139,1,13
@@ -9213,13 +10056,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P20_9')
 	.sect	'.debug_info'
 .L190:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L191
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P20_9',0,5,140,1,13
@@ -9235,13 +10086,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_0')
 	.sect	'.debug_info'
 .L192:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L193
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_0',0,5,141,1,13
@@ -9257,13 +10116,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_1')
 	.sect	'.debug_info'
 .L194:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L195
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_1',0,5,142,1,13
@@ -9279,13 +10146,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_2')
 	.sect	'.debug_info'
 .L196:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L197
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_2',0,5,143,1,13
@@ -9301,13 +10176,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_3')
 	.sect	'.debug_info'
 .L198:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L199
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_3',0,5,144,1,13
@@ -9323,13 +10206,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_4')
 	.sect	'.debug_info'
 .L200:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L201
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_4',0,5,145,1,13
@@ -9345,13 +10236,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_5')
 	.sect	'.debug_info'
 .L202:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L203
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_5',0,5,146,1,13
@@ -9367,13 +10266,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_6')
 	.sect	'.debug_info'
 .L204:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L205
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_6',0,5,147,1,13
@@ -9389,13 +10296,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P21_7')
 	.sect	'.debug_info'
 .L206:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L207
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P21_7',0,5,148,1,13
@@ -9411,13 +10326,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_0')
 	.sect	'.debug_info'
 .L208:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L209
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_0',0,5,149,1,13
@@ -9433,13 +10356,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_1')
 	.sect	'.debug_info'
 .L210:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L211
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_1',0,5,150,1,13
@@ -9455,13 +10386,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_10')
 	.sect	'.debug_info'
 .L212:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L213
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_10',0,5,151,1,13
@@ -9477,13 +10416,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_11')
 	.sect	'.debug_info'
 .L214:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L215
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_11',0,5,152,1,13
@@ -9499,13 +10446,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_2')
 	.sect	'.debug_info'
 .L216:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L217
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_2',0,5,153,1,13
@@ -9521,13 +10476,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_3')
 	.sect	'.debug_info'
 .L218:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L219
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_3',0,5,154,1,13
@@ -9543,13 +10506,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_4')
 	.sect	'.debug_info'
 .L220:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L221
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_4',0,5,155,1,13
@@ -9565,13 +10536,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_5')
 	.sect	'.debug_info'
 .L222:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L223
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_5',0,5,156,1,13
@@ -9587,13 +10566,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_6')
 	.sect	'.debug_info'
 .L224:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L225
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_6',0,5,157,1,13
@@ -9609,13 +10596,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_7')
 	.sect	'.debug_info'
 .L226:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L227
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_7',0,5,158,1,13
@@ -9631,13 +10626,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_8')
 	.sect	'.debug_info'
 .L228:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L229
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_8',0,5,159,1,13
@@ -9653,13 +10656,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P22_9')
 	.sect	'.debug_info'
 .L230:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L231
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P22_9',0,5,160,1,13
@@ -9675,13 +10686,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_0')
 	.sect	'.debug_info'
 .L232:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L233
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_0',0,5,161,1,13
@@ -9697,13 +10716,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_1')
 	.sect	'.debug_info'
 .L234:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L235
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_1',0,5,162,1,13
@@ -9719,13 +10746,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_2')
 	.sect	'.debug_info'
 .L236:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L237
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_2',0,5,163,1,13
@@ -9741,13 +10776,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_3')
 	.sect	'.debug_info'
 .L238:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L239
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_3',0,5,164,1,13
@@ -9763,13 +10806,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_4')
 	.sect	'.debug_info'
 .L240:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L241
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_4',0,5,165,1,13
@@ -9785,13 +10836,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_5')
 	.sect	'.debug_info'
 .L242:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L243
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_5',0,5,166,1,13
@@ -9807,13 +10866,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_6')
 	.sect	'.debug_info'
 .L244:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L245
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_6',0,5,167,1,13
@@ -9829,13 +10896,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P23_7')
 	.sect	'.debug_info'
 .L246:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L247
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P23_7',0,5,168,1,13
@@ -9851,13 +10926,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_0')
 	.sect	'.debug_info'
 .L248:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L249
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_0',0,5,169,1,13
@@ -9873,13 +10956,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_1')
 	.sect	'.debug_info'
 .L250:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L251
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_1',0,5,170,1,13
@@ -9895,13 +10986,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_2')
 	.sect	'.debug_info'
 .L252:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L253
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_2',0,5,171,1,13
@@ -9917,13 +11016,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_3')
 	.sect	'.debug_info'
 .L254:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L255
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_3',0,5,172,1,13
@@ -9939,13 +11046,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_4')
 	.sect	'.debug_info'
 .L256:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L257
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_4',0,5,173,1,13
@@ -9961,13 +11076,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_5')
 	.sect	'.debug_info'
 .L258:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L259
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_5',0,5,174,1,13
@@ -9983,13 +11106,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_6')
 	.sect	'.debug_info'
 .L260:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L261
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_6',0,5,175,1,13
@@ -10005,13 +11136,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P32_7')
 	.sect	'.debug_info'
 .L262:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L263
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P32_7',0,5,176,1,13
@@ -10027,13 +11166,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_0')
 	.sect	'.debug_info'
 .L264:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L265
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_0',0,5,177,1,13
@@ -10049,13 +11196,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_1')
 	.sect	'.debug_info'
 .L266:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L267
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_1',0,5,178,1,13
@@ -10071,13 +11226,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_10')
 	.sect	'.debug_info'
 .L268:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L269
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_10',0,5,179,1,13
@@ -10093,13 +11256,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_11')
 	.sect	'.debug_info'
 .L270:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L271
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_11',0,5,180,1,13
@@ -10115,13 +11286,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_12')
 	.sect	'.debug_info'
 .L272:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L273
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_12',0,5,181,1,13
@@ -10137,13 +11316,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_13')
 	.sect	'.debug_info'
 .L274:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L275
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_13',0,5,182,1,13
@@ -10159,13 +11346,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_14')
 	.sect	'.debug_info'
 .L276:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L277
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_14',0,5,183,1,13
@@ -10181,13 +11376,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_15')
 	.sect	'.debug_info'
 .L278:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L279
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_15',0,5,184,1,13
@@ -10203,13 +11406,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_2')
 	.sect	'.debug_info'
 .L280:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L281
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_2',0,5,185,1,13
@@ -10225,13 +11436,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_3')
 	.sect	'.debug_info'
 .L282:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L283
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_3',0,5,186,1,13
@@ -10247,13 +11466,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_4')
 	.sect	'.debug_info'
 .L284:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L285
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_4',0,5,187,1,13
@@ -10269,13 +11496,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_5')
 	.sect	'.debug_info'
 .L286:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L287
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_5',0,5,188,1,13
@@ -10291,13 +11526,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_6')
 	.sect	'.debug_info'
 .L288:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L289
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_6',0,5,189,1,13
@@ -10313,13 +11556,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_7')
 	.sect	'.debug_info'
 .L290:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L291
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_7',0,5,190,1,13
@@ -10335,13 +11586,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_8')
 	.sect	'.debug_info'
 .L292:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L293
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_8',0,5,191,1,13
@@ -10357,13 +11616,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P33_9')
 	.sect	'.debug_info'
 .L294:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L295
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P33_9',0,5,192,1,13
@@ -10379,13 +11646,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P34_1')
 	.sect	'.debug_info'
 .L296:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L297
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P34_1',0,5,193,1,13
@@ -10401,13 +11676,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P34_2')
 	.sect	'.debug_info'
 .L298:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L299
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P34_2',0,5,194,1,13
@@ -10423,13 +11706,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P34_3')
 	.sect	'.debug_info'
 .L300:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L301
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P34_3',0,5,195,1,13
@@ -10445,13 +11736,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P34_4')
 	.sect	'.debug_info'
 .L302:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L303
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P34_4',0,5,196,1,13
@@ -10467,13 +11766,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P34_5')
 	.sect	'.debug_info'
 .L304:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L305
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P34_5',0,5,197,1,13
@@ -10489,13 +11796,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_0')
 	.sect	'.debug_info'
 .L306:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L307
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_0',0,5,198,1,13
@@ -10511,13 +11826,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_1')
 	.sect	'.debug_info'
 .L308:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L309
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_1',0,5,199,1,13
@@ -10533,13 +11856,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_10')
 	.sect	'.debug_info'
 .L310:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L311
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_10',0,5,200,1,13
@@ -10555,13 +11886,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_11')
 	.sect	'.debug_info'
 .L312:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L313
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_11',0,5,201,1,13
@@ -10577,13 +11916,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_12')
 	.sect	'.debug_info'
 .L314:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L315
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_12',0,5,202,1,13
@@ -10599,13 +11946,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_13')
 	.sect	'.debug_info'
 .L316:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L317
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_13',0,5,203,1,13
@@ -10621,13 +11976,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_14')
 	.sect	'.debug_info'
 .L318:
+<<<<<<< HEAD
 	.word	256
+=======
+	.word	250
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L319
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_14',0,5,204,1,13
@@ -10643,13 +12006,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_2')
 	.sect	'.debug_info'
 .L320:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L321
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_2',0,5,205,1,13
@@ -10665,13 +12036,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_3')
 	.sect	'.debug_info'
 .L322:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L323
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_3',0,5,206,1,13
@@ -10687,13 +12066,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_4')
 	.sect	'.debug_info'
 .L324:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L325
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_4',0,5,207,1,13
@@ -10709,13 +12096,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_5')
 	.sect	'.debug_info'
 .L326:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L327
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_5',0,5,208,1,13
@@ -10731,13 +12126,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_6')
 	.sect	'.debug_info'
 .L328:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L329
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_6',0,5,209,1,13
@@ -10753,13 +12156,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_7')
 	.sect	'.debug_info'
 .L330:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L331
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_7',0,5,210,1,13
@@ -10775,13 +12186,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_8')
 	.sect	'.debug_info'
 .L332:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L333
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_8',0,5,211,1,13
@@ -10797,13 +12216,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_P40_9')
 	.sect	'.debug_info'
 .L334:
+<<<<<<< HEAD
 	.word	255
+=======
+	.word	249
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L335
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_P40_9',0,5,212,1,13
@@ -10819,13 +12246,21 @@ IfxPort_Pin_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxPort_Pin_pinTable')
 	.sect	'.debug_info'
 .L336:
+<<<<<<< HEAD
 	.word	262
+=======
+	.word	256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L337
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxPort_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxPort_Pin_pinTable',0,5,215,1,20

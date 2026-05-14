@@ -1,5 +1,6 @@
 Ifx_LowPassPt1F32.o :	../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.c
 ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.c :
+<<<<<<< HEAD
 Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Math\Ifx_LowPassPt1F32.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Math\Ifx_LowPassPt1F32.h" :
 Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
@@ -12,6 +13,20 @@ Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\lib
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_clock.h" :
 Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Math\Ifx_LowPassPt1F32.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Math\Ifx_LowPassPt1F32.h" :
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h" :
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 Ifx_LowPassPt1F32.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 Ifx_LowPassPt1F32.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -34,7 +49,14 @@ Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\lib
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
 Ifx_LowPassPt1F32.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+<<<<<<< HEAD
 Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h" :
 Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+=======
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h" :
+Ifx_LowPassPt1F32.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6

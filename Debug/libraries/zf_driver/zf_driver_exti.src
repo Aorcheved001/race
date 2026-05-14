@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc25064a --dep-file=zf_driver_exti.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/zf_driver/zf_driver_exti.src ../libraries/zf_driver/zf_driver_exti.c"
+=======
+	.compiler_invocation	"ctc -f cc25464a --dep-file=zf_driver_exti.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/zf_driver/zf_driver_exti.src ../libraries/zf_driver/zf_driver_exti.c"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.compiler_name		"ctc"
 	;source	'../libraries/zf_driver/zf_driver_exti.c'
 
@@ -581,7 +585,11 @@ __exti_init_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L67:
+<<<<<<< HEAD
 	.word	99912
+=======
+	.word	99906
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L68
 	.byte	4
@@ -589,27 +597,46 @@ __exti_init_function_end:
 	.byte	1
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L69
 	.byte	2,1,1,3
 	.word	191
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
+<<<<<<< HEAD
 	.word	194
+=======
+	.word	188
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1,7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+<<<<<<< HEAD
 	.word	239
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
 	.word	251
+=======
+	.word	233
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	245
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,4
 	.byte	'Ifx__stopPerfCounters',0,3,1,172,2,17,1,1,6,0,7
 	.byte	'unsigned long long int',0,8,7,9
 	.byte	'void',0,3
+<<<<<<< HEAD
 	.word	363
+=======
+	.word	357
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8
 	.byte	'__ld64',0,3,2,135,1,19
 	.word	337
@@ -622,7 +649,11 @@ __exti_init_function_end:
 	.word	369
 	.byte	5
 	.byte	'value',0,2,143,1,43
+<<<<<<< HEAD
 	.word	337
+=======
+	.word	331
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7,7
 	.byte	'int',0,4,5
@@ -631,7 +662,11 @@ __exti_init_function_end:
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,70,16,4,11
 	.byte	'SRPN',0,1
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8,0,2,35,0,11
 	.byte	'reserved_8',0,1
 	.word	478
@@ -687,14 +722,22 @@ __exti_init_function_end:
 	.word	785
 .L96:
 	.byte	3
+<<<<<<< HEAD
 	.word	824
+=======
+	.word	818
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L183:
 	.byte	4
 	.byte	'IfxSrc_clearRequest',0,3,3,250,1,17,1,1
 .L185:
 	.byte	5
 	.byte	'src',0,3,250,1,60
+<<<<<<< HEAD
 	.word	829
+=======
+	.word	823
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L187:
 	.byte	6,0
 .L100:
@@ -703,7 +746,11 @@ __exti_init_function_end:
 .L103:
 	.byte	5
 	.byte	'src',0,3,128,2,54
+<<<<<<< HEAD
 	.word	829
+=======
+	.word	823
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L105:
 	.byte	6,0
 .L122:
@@ -712,7 +759,11 @@ __exti_init_function_end:
 .L125:
 	.byte	5
 	.byte	'src',0,3,134,2,55
+<<<<<<< HEAD
 	.word	829
+=======
+	.word	823
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L127:
 	.byte	6,0
 .L112:
@@ -721,7 +772,11 @@ __exti_init_function_end:
 .L115:
 	.byte	5
 	.byte	'src',0,3,140,2,54
+<<<<<<< HEAD
 	.word	829
+=======
+	.word	823
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L117:
 	.byte	6,0
 .L171:
@@ -737,7 +792,11 @@ __exti_init_function_end:
 .L176:
 	.byte	5
 	.byte	'src',0,3,146,2,52
+<<<<<<< HEAD
 	.word	829
+=======
+	.word	823
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L178:
 	.byte	5
 	.byte	'typOfService',0,3,146,2,68
@@ -745,13 +804,21 @@ __exti_init_function_end:
 .L180:
 	.byte	5
 	.byte	'priority',0,3,146,2,95
+<<<<<<< HEAD
 	.word	1066
+=======
+	.word	1060
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L182:
 	.byte	17,6,0,0,7
 	.byte	'unsigned int',0,4,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,7,210,9,16,4,11
 	.byte	'ENDINIT',0,4
+<<<<<<< HEAD
 	.word	1165
+=======
+	.word	1159
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,31,2,35,0,11
 	.byte	'LCK',0,4
 	.word	1165
@@ -2215,7 +2282,11 @@ __exti_init_function_end:
 	.byte	4,3,35,252,1,0,14
 	.word	9214
 	.byte	3
+<<<<<<< HEAD
 	.word	9784
+=======
+	.word	9778
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,84,9,1,16
 	.byte	'IfxPort_InputMode_undefined',0,127,16
 	.byte	'IfxPort_InputMode_noPullDevice',0,0,16
@@ -2227,7 +2298,11 @@ __exti_init_function_end:
 .L157:
 	.byte	5
 	.byte	'port',0,8,159,5,48
+<<<<<<< HEAD
 	.word	9789
+=======
+	.word	9783
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L159:
 	.byte	5
 	.byte	'pinIndex',0,8,159,5,60
@@ -2235,7 +2310,11 @@ __exti_init_function_end:
 .L161:
 	.byte	5
 	.byte	'mode',0,8,159,5,88
+<<<<<<< HEAD
 	.word	9794
+=======
+	.word	9788
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L163:
 	.byte	6,0,15,8,189,1,9,4,16
 	.byte	'IfxPort_State_notChanged',0,0,16
@@ -2244,7 +2323,11 @@ __exti_init_function_end:
 	.byte	'IfxPort_State_toggled',0,129,128,4,0,4
 	.byte	'IfxPort_setPinState',0,3,8,171,5,17,1,1,5
 	.byte	'port',0,8,171,5,44
+<<<<<<< HEAD
 	.word	9789
+=======
+	.word	9783
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,8,171,5,56
 	.word	478
@@ -2257,26 +2340,42 @@ __exti_init_function_end:
 	.word	251
 	.byte	17,6,0,0,8
 	.byte	'IfxScuCcu_getStmFrequency',0,3,10,131,13,20
+<<<<<<< HEAD
 	.word	251
+=======
+	.word	245
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,6,0,15,12,158,1,9,1,16
 	.byte	'IfxCpu_ResourceCpu_0',0,0,16
 	.byte	'IfxCpu_ResourceCpu_1',0,1,16
 	.byte	'IfxCpu_ResourceCpu_2',0,2,16
 	.byte	'IfxCpu_ResourceCpu_none',0,3,0,8
 	.byte	'IfxCpu_getCoreIndex',0,3,11,232,6,31
+<<<<<<< HEAD
 	.word	10264
+=======
+	.word	10258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,6,0
 .L142:
 	.byte	8
 	.byte	'IfxCpu_areInterruptsEnabled',0,3,11,230,5,20
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L143:
 	.byte	6,0
 .L139:
 	.byte	8
 	.byte	'IfxCpu_disableInterrupts',0,3,11,238,5,20
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L140:
 	.byte	17,6,0,0,4
@@ -2288,12 +2387,20 @@ __exti_init_function_end:
 .L196:
 	.byte	5
 	.byte	'enabled',0,11,131,8,50
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L198:
 	.byte	6,0,7
 	.byte	'unsigned long int',0,4,7,8
 	.byte	'IfxCpu_getPerformanceCounter',0,3,11,252,6,19
+<<<<<<< HEAD
 	.word	10609
+=======
+	.word	10603
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'address',0,11,252,6,55
 	.word	1066
@@ -2892,12 +2999,20 @@ __exti_init_function_end:
 	.word	10609
 	.byte	1,1,5
 	.byte	'stm',0,13,190,4,44
+<<<<<<< HEAD
 	.word	14301
+=======
+	.word	14295
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0
 .L136:
 	.byte	8
 	.byte	'disableInterrupts',0,3,15,108,20
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L138:
 	.byte	17,6,0,0
@@ -2907,12 +3022,20 @@ __exti_init_function_end:
 .L192:
 	.byte	5
 	.byte	'enabled',0,15,142,1,43
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L194:
 	.byte	17,6,0,0,7
 	.byte	'long long int',0,8,5,8
 	.byte	'getDeadLine',0,3,15,164,2,25
+<<<<<<< HEAD
 	.word	14517
+=======
+	.word	14511
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'timeout',0,15,164,2,50
 	.word	14517
@@ -6455,7 +6578,11 @@ __exti_init_function_end:
 	.word	9789
 	.byte	4,2,35,0,13
 	.byte	'pinIndex',0
+<<<<<<< HEAD
 	.word	478
+=======
+	.word	472
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,2,35,4,0,15,18,130,1,9,1,16
 	.byte	'Ifx_RxSel_a',0,0,16
 	.byte	'Ifx_RxSel_b',0,1,16
@@ -6466,7 +6593,11 @@ __exti_init_function_end:
 	.byte	'Ifx_RxSel_g',0,6,16
 	.byte	'Ifx_RxSel_h',0,7,0,20,17,67,15,20,13
 	.byte	'module',0
+<<<<<<< HEAD
 	.word	37052
+=======
+	.word	37046
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'channelId',0
 	.word	478
@@ -6480,14 +6611,22 @@ __exti_init_function_end:
 	.word	37215
 .L134:
 	.byte	3
+<<<<<<< HEAD
 	.word	37285
+=======
+	.word	37279
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L146:
 	.byte	4
 	.byte	'IfxScuEru_initReqPin',0,3,16,225,3,17,1,1
 .L149:
 	.byte	5
 	.byte	'req',0,16,225,3,53
+<<<<<<< HEAD
 	.word	37290
+=======
+	.word	37284
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L151:
 	.byte	5
 	.byte	'inputMode',0,16,225,3,76
@@ -6499,12 +6638,20 @@ __exti_init_function_end:
 	.byte	'__mfcr',0
 	.word	37360
 	.byte	1,1,1,1,23
+<<<<<<< HEAD
 	.word	471
+=======
+	.word	465
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,24
 	.byte	'__nop',0,1,1,1,1,24
 	.byte	'__disable',0,1,1,1,1,24
 	.byte	'__enable',0,1,1,1,1,25
+<<<<<<< HEAD
 	.word	199
+=======
+	.word	193
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	26
 	.word	225
 	.byte	6,0,25
@@ -6594,7 +6741,11 @@ __exti_init_function_end:
 	.byte	26
 	.word	10144
 	.byte	26
+<<<<<<< HEAD
 	.word	10162
+=======
+	.word	10156
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,8,104,9,1,16
 	.byte	'IfxPort_Mode_inputNoPullDevice',0,0,16
 	.byte	'IfxPort_Mode_inputPullDown',0,8,16
@@ -6617,7 +6768,11 @@ __exti_init_function_end:
 	.byte	'IfxPort_Mode_outputOpenDrainAlt7',0,248,1,0,29
 	.byte	'IfxPort_setPinMode',0,8,185,3,17,1,1,1,1,5
 	.byte	'port',0,8,185,3,43
+<<<<<<< HEAD
 	.word	9789
+=======
+	.word	9783
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,8,185,3,55
 	.word	478
@@ -6878,7 +7033,11 @@ __exti_init_function_end:
 	.byte	26
 	.word	9983
 	.byte	28
+<<<<<<< HEAD
 	.word	9997
+=======
+	.word	9991
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,6,0,0
 .L164:
 	.byte	15,16,97,9,1,16
@@ -6898,7 +7057,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_ExternalInputSelection_5',0,5,0,29
 	.byte	'IfxScuEru_selectExternalInput',0,16,245,1,17,1,1,1,1,5
 	.byte	'inputChannel',0,16,245,1,70
+<<<<<<< HEAD
 	.word	39235
+=======
+	.word	39229
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'inputSignal',0,16,245,1,117
 	.word	39457
@@ -6917,7 +7080,11 @@ __exti_init_function_end:
 	.byte	0,29
 	.byte	'IfxScuEru_enableRisingEdgeDetection',0,16,179,2,17,1,1,1,1,5
 	.byte	'inputChannel',0,16,179,2,76
+<<<<<<< HEAD
 	.word	39235
+=======
+	.word	39229
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 .L166:
 	.byte	15,16,183,1,9,1,16
@@ -6931,14 +7098,22 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_InputNodePointer_7',0,7,0,29
 	.byte	'IfxScuEru_connectTrigger',0,16,218,2,17,1,1,1,1,5
 	.byte	'inputChannel',0,16,218,2,65
+<<<<<<< HEAD
 	.word	39235
+=======
+	.word	39229
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'triggerSelect',0,16,218,2,106
 	.word	40044
 	.byte	0,29
 	.byte	'IfxScuEru_enableTriggerPulse',0,16,230,2,17,1,1,1,1,5
 	.byte	'inputChannel',0,16,230,2,69
+<<<<<<< HEAD
 	.word	39235
+=======
+	.word	39229
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 .L109:
 	.byte	15,16,208,1,9,1,16
@@ -6952,7 +7127,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_OutputChannel_7',0,7,0,29
 	.byte	'IfxScuEru_setFlagPatternDetection',0,16,239,2,17,1,1,1,1,5
 	.byte	'outputChannel',0,16,239,2,75
+<<<<<<< HEAD
 	.word	40440
+=======
+	.word	40434
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'inputChannel',0,16,239,2,113
 	.word	39235
@@ -6962,7 +7141,11 @@ __exti_init_function_end:
 	.byte	0,29
 	.byte	'IfxScuEru_enablePatternDetectionTrigger',0,16,138,3,17,1,1,1,1,5
 	.byte	'outputChannel',0,16,138,3,81
+<<<<<<< HEAD
 	.word	40440
+=======
+	.word	40434
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,16,198,1,9,1,16
 	.byte	'IfxScuEru_InterruptGatingPattern_none',0,0,16
 	.byte	'IfxScuEru_InterruptGatingPattern_alwaysActive',0,1,16
@@ -6970,10 +7153,17 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_InterruptGatingPattern_patternMiss',0,3,0,29
 	.byte	'IfxScuEru_setInterruptGatingPattern',0,16,162,3,17,1,1,1,1,5
 	.byte	'outputChannel',0,16,162,3,77
+<<<<<<< HEAD
 	.word	40440
 	.byte	5
 	.byte	'gatingPattern',0,16,162,3,125
 	.word	40849
+=======
+	.word	40434
+	.byte	5
+	.byte	'gatingPattern',0,16,162,3,125
+	.word	40843
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 .L98:
 	.byte	7
@@ -7002,7 +7192,11 @@ __exti_init_function_end:
 	.byte	'EXTI_TRIGGER_BOTH',0,2,0,10
 	.byte	'_Ifx_CPU_ICR_Bits',0,21,149,4,16,4,11
 	.byte	'CCPN',0,4
+<<<<<<< HEAD
 	.word	1165
+=======
+	.word	1159
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8,24,2,35,0,11
 	.byte	'reserved_8',0,4
 	.word	1165
@@ -7014,12 +7208,20 @@ __exti_init_function_end:
 	.word	1165
 	.byte	8,8,2,35,0,11
 	.byte	'reserved_24',0,4
+<<<<<<< HEAD
 	.word	1165
+=======
+	.word	1159
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8,0,2,35,0,0
 .L144:
 	.byte	12,21,218,10,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	455
+=======
+	.word	449
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	471
@@ -10745,6 +10947,7 @@ __exti_init_function_end:
 	.word	67384
 	.byte	31
 	.byte	'Ifx_CPU_TR',0,21,129,15,3
+<<<<<<< HEAD
 	.word	67429
 	.byte	18,128,34
 	.word	478
@@ -11444,13 +11647,718 @@ __exti_init_function_end:
 	.byte	31
 	.byte	'Ifx_CPU',0,21,224,16,3
 	.word	72900
+=======
+	.word	67423
+	.byte	18,128,34
+	.word	472
+	.byte	19,255,33,0,18,236,253,2
+	.word	472
+	.byte	19,235,253,2,0,18,244,31
+	.word	472
+	.byte	19,243,31,0,18,128,1
+	.word	66631
+	.byte	19,7,0,14
+	.word	67483
+	.byte	18,232,1
+	.word	472
+	.byte	19,231,1,0,18,128,48
+	.word	472
+	.byte	19,255,47,0,18,128,3
+	.word	66733
+	.byte	19,31,0,14
+	.word	67520
+	.byte	18,160,39
+	.word	472
+	.byte	19,159,39,0,18,208,223,1
+	.word	472
+	.byte	19,207,223,1,0,18,248,1
+	.word	472
+	.byte	19,247,1,0,18,244,29
+	.word	472
+	.byte	19,243,29,0,18,188,3
+	.word	472
+	.byte	19,187,3,0,18,232,3
+	.word	472
+	.byte	19,231,3,0,18,252,23
+	.word	472
+	.byte	19,251,23,0,14
+	.word	66822
+	.byte	18,228,63
+	.word	472
+	.byte	19,227,63,0,18,144,1
+	.word	66978
+	.byte	19,17,0,14
+	.word	67630
+	.byte	18,240,30
+	.word	472
+	.byte	19,239,30,0,18,80
+	.word	67046
+	.byte	19,9,0,14
+	.word	67656
+	.byte	18,176,31
+	.word	472
+	.byte	19,175,31,0,18,152,7
+	.word	472
+	.byte	19,151,7,0,14
+	.word	67123
+	.byte	18,48
+	.word	472
+	.byte	19,47,0,14
+	.word	67197
+	.byte	18,164,23
+	.word	472
+	.byte	19,163,23,0,18,64
+	.word	67378
+	.byte	19,7,0,14
+	.word	67722
+	.byte	18,192,23
+	.word	472
+	.byte	19,191,23,0,18,28
+	.word	472
+	.byte	19,27,0,18,180,1
+	.word	472
+	.byte	19,179,1,0,18,172,1
+	.word	472
+	.byte	19,171,1,0,18,64
+	.word	60991
+	.byte	19,15,0,18,64
+	.word	59978
+	.byte	19,15,0,10
+	.byte	'_Ifx_CPU',0,21,144,15,25,128,128,8,13
+	.byte	'reserved_0',0
+	.word	67448
+	.byte	128,34,2,35,0,13
+	.byte	'FLASHCON0',0
+	.word	62580
+	.byte	4,3,35,128,34,13
+	.byte	'FLASHCON1',0
+	.word	62647
+	.byte	4,3,35,132,34,13
+	.byte	'FLASHCON2',0
+	.word	62714
+	.byte	4,3,35,136,34,13
+	.byte	'FLASHCON3',0
+	.word	62781
+	.byte	4,3,35,140,34,13
+	.byte	'FLASHCON4',0
+	.word	62848
+	.byte	4,3,35,144,34,13
+	.byte	'reserved_1114',0
+	.word	67459
+	.byte	236,253,2,3,35,148,34,13
+	.byte	'KRST0',0
+	.word	63481
+	.byte	4,4,35,128,160,3,13
+	.byte	'KRST1',0
+	.word	63544
+	.byte	4,4,35,132,160,3,13
+	.byte	'KRSTCLR',0
+	.word	63607
+	.byte	4,4,35,136,160,3,13
+	.byte	'reserved_D00C',0
+	.word	67472
+	.byte	244,31,4,35,140,160,3,13
+	.byte	'RGN',0
+	.word	67493
+	.byte	128,1,4,35,128,192,3,13
+	.byte	'reserved_E080',0
+	.word	5113
+	.byte	8,4,35,128,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R0',0
+	.word	65425
+	.byte	4,4,35,136,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R0',0
+	.word	65504
+	.byte	4,4,35,140,193,3,13
+	.byte	'reserved_E090',0
+	.word	5113
+	.byte	8,4,35,144,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R1',0
+	.word	65425
+	.byte	4,4,35,152,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R1',0
+	.word	65504
+	.byte	4,4,35,156,193,3,13
+	.byte	'reserved_E0A0',0
+	.word	5113
+	.byte	8,4,35,160,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R2',0
+	.word	65425
+	.byte	4,4,35,168,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R2',0
+	.word	65504
+	.byte	4,4,35,172,193,3,13
+	.byte	'reserved_E0B0',0
+	.word	5113
+	.byte	8,4,35,176,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R3',0
+	.word	65425
+	.byte	4,4,35,184,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R3',0
+	.word	65504
+	.byte	4,4,35,188,193,3,13
+	.byte	'reserved_E0C0',0
+	.word	5113
+	.byte	8,4,35,192,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R4',0
+	.word	65425
+	.byte	4,4,35,200,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R4',0
+	.word	65504
+	.byte	4,4,35,204,193,3,13
+	.byte	'reserved_E0D0',0
+	.word	5113
+	.byte	8,4,35,208,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R5',0
+	.word	65425
+	.byte	4,4,35,216,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R5',0
+	.word	65504
+	.byte	4,4,35,220,193,3,13
+	.byte	'reserved_E0E0',0
+	.word	5113
+	.byte	8,4,35,224,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R6',0
+	.word	65425
+	.byte	4,4,35,232,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R6',0
+	.word	65504
+	.byte	4,4,35,236,193,3,13
+	.byte	'reserved_E0F0',0
+	.word	5113
+	.byte	8,4,35,240,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R7',0
+	.word	65425
+	.byte	4,4,35,248,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R7',0
+	.word	65504
+	.byte	4,4,35,252,193,3,13
+	.byte	'SFR_SPROT_ACCENA_W',0
+	.word	65209
+	.byte	4,4,35,128,194,3,13
+	.byte	'SFR_SPROT_ACCENB_W',0
+	.word	65285
+	.byte	4,4,35,132,194,3,13
+	.byte	'reserved_E108',0
+	.word	5113
+	.byte	8,4,35,136,194,3,13
+	.byte	'LPB_SPROT_ACCENA_R',0
+	.word	63733
+	.byte	4,4,35,144,194,3,13
+	.byte	'LPB_SPROT_ACCENB_R',0
+	.word	63809
+	.byte	4,4,35,148,194,3,13
+	.byte	'reserved_E118',0
+	.word	67498
+	.byte	232,1,4,35,152,194,3,13
+	.byte	'DLMU_SPROT_RGNLA0',0
+	.word	61935
+	.byte	4,4,35,128,196,3,13
+	.byte	'DLMU_SPROT_RGNUA0',0
+	.word	62009
+	.byte	4,4,35,132,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W0',0
+	.word	61695
+	.byte	4,4,35,136,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W0',0
+	.word	61855
+	.byte	4,4,35,140,196,3,13
+	.byte	'DLMU_SPROT_RGNLA1',0
+	.word	61935
+	.byte	4,4,35,144,196,3,13
+	.byte	'DLMU_SPROT_RGNUA1',0
+	.word	62009
+	.byte	4,4,35,148,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W1',0
+	.word	61695
+	.byte	4,4,35,152,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W1',0
+	.word	61855
+	.byte	4,4,35,156,196,3,13
+	.byte	'DLMU_SPROT_RGNLA2',0
+	.word	61935
+	.byte	4,4,35,160,196,3,13
+	.byte	'DLMU_SPROT_RGNUA2',0
+	.word	62009
+	.byte	4,4,35,164,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W2',0
+	.word	61695
+	.byte	4,4,35,168,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W2',0
+	.word	61855
+	.byte	4,4,35,172,196,3,13
+	.byte	'DLMU_SPROT_RGNLA3',0
+	.word	61935
+	.byte	4,4,35,176,196,3,13
+	.byte	'DLMU_SPROT_RGNUA3',0
+	.word	62009
+	.byte	4,4,35,180,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W3',0
+	.word	61695
+	.byte	4,4,35,184,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W3',0
+	.word	61855
+	.byte	4,4,35,188,196,3,13
+	.byte	'DLMU_SPROT_RGNLA4',0
+	.word	61935
+	.byte	4,4,35,192,196,3,13
+	.byte	'DLMU_SPROT_RGNUA4',0
+	.word	62009
+	.byte	4,4,35,196,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W4',0
+	.word	61695
+	.byte	4,4,35,200,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W4',0
+	.word	61855
+	.byte	4,4,35,204,196,3,13
+	.byte	'DLMU_SPROT_RGNLA5',0
+	.word	61935
+	.byte	4,4,35,208,196,3,13
+	.byte	'DLMU_SPROT_RGNUA5',0
+	.word	62009
+	.byte	4,4,35,212,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W5',0
+	.word	61695
+	.byte	4,4,35,216,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W5',0
+	.word	61855
+	.byte	4,4,35,220,196,3,13
+	.byte	'DLMU_SPROT_RGNLA6',0
+	.word	61935
+	.byte	4,4,35,224,196,3,13
+	.byte	'DLMU_SPROT_RGNUA6',0
+	.word	62009
+	.byte	4,4,35,228,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W6',0
+	.word	61695
+	.byte	4,4,35,232,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W6',0
+	.word	61855
+	.byte	4,4,35,236,196,3,13
+	.byte	'DLMU_SPROT_RGNLA7',0
+	.word	61935
+	.byte	4,4,35,240,196,3,13
+	.byte	'DLMU_SPROT_RGNUA7',0
+	.word	62009
+	.byte	4,4,35,244,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W7',0
+	.word	61695
+	.byte	4,4,35,248,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W7',0
+	.word	61855
+	.byte	4,4,35,252,196,3,13
+	.byte	'reserved_E280',0
+	.word	5113
+	.byte	8,4,35,128,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R0',0
+	.word	61615
+	.byte	4,4,35,136,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R0',0
+	.word	61775
+	.byte	4,4,35,140,197,3,13
+	.byte	'reserved_E290',0
+	.word	5113
+	.byte	8,4,35,144,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R1',0
+	.word	61615
+	.byte	4,4,35,152,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R1',0
+	.word	61775
+	.byte	4,4,35,156,197,3,13
+	.byte	'reserved_E2A0',0
+	.word	5113
+	.byte	8,4,35,160,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R2',0
+	.word	61615
+	.byte	4,4,35,168,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R2',0
+	.word	61775
+	.byte	4,4,35,172,197,3,13
+	.byte	'reserved_E2B0',0
+	.word	5113
+	.byte	8,4,35,176,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R3',0
+	.word	61615
+	.byte	4,4,35,184,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R3',0
+	.word	61775
+	.byte	4,4,35,188,197,3,13
+	.byte	'reserved_E2C0',0
+	.word	5113
+	.byte	8,4,35,192,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R4',0
+	.word	61615
+	.byte	4,4,35,200,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R4',0
+	.word	61775
+	.byte	4,4,35,204,197,3,13
+	.byte	'reserved_E2D0',0
+	.word	5113
+	.byte	8,4,35,208,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R5',0
+	.word	61615
+	.byte	4,4,35,216,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R5',0
+	.word	61775
+	.byte	4,4,35,220,197,3,13
+	.byte	'reserved_E2E0',0
+	.word	5113
+	.byte	8,4,35,224,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R6',0
+	.word	61615
+	.byte	4,4,35,232,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R6',0
+	.word	61775
+	.byte	4,4,35,236,197,3,13
+	.byte	'reserved_E2F0',0
+	.word	5113
+	.byte	8,4,35,240,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R7',0
+	.word	61615
+	.byte	4,4,35,248,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R7',0
+	.word	61775
+	.byte	4,4,35,252,197,3,13
+	.byte	'reserved_E300',0
+	.word	67509
+	.byte	128,48,4,35,128,198,3,13
+	.byte	'OSEL',0
+	.word	64074
+	.byte	4,4,35,128,246,3,13
+	.byte	'reserved_FB04',0
+	.word	5453
+	.byte	12,4,35,132,246,3,13
+	.byte	'BLK',0
+	.word	67530
+	.byte	128,3,4,35,144,246,3,13
+	.byte	'reserved_FC90',0
+	.word	67535
+	.byte	160,39,4,35,144,249,3,13
+	.byte	'SEGEN',0
+	.word	65146
+	.byte	4,4,35,176,160,4,13
+	.byte	'reserved_11034',0
+	.word	67546
+	.byte	208,223,1,4,35,180,160,4,13
+	.byte	'TASK_ASI',0
+	.word	65710
+	.byte	4,4,35,132,128,6,13
+	.byte	'reserved_18008',0
+	.word	67559
+	.byte	248,1,4,35,136,128,6,13
+	.byte	'PMA0',0
+	.word	64573
+	.byte	4,4,35,128,130,6,13
+	.byte	'PMA1',0
+	.word	64635
+	.byte	4,4,35,132,130,6,13
+	.byte	'PMA2',0
+	.word	64697
+	.byte	4,4,35,136,130,6,13
+	.byte	'reserved_1810C',0
+	.word	67570
+	.byte	244,29,4,35,140,130,6,13
+	.byte	'DCON2',0
+	.word	61302
+	.byte	4,4,35,128,160,6,13
+	.byte	'reserved_19004',0
+	.word	5113
+	.byte	8,4,35,132,160,6,13
+	.byte	'SMACON',0
+	.word	65361
+	.byte	4,4,35,140,160,6,13
+	.byte	'DSTR',0
+	.word	62394
+	.byte	4,4,35,144,160,6,13
+	.byte	'reserved_19014',0
+	.word	3293
+	.byte	4,4,35,148,160,6,13
+	.byte	'DATR',0
+	.word	61050
+	.byte	4,4,35,152,160,6,13
+	.byte	'DEADD',0
+	.word	61426
+	.byte	4,4,35,156,160,6,13
+	.byte	'DIEAR',0
+	.word	61489
+	.byte	4,4,35,160,160,6,13
+	.byte	'DIETR',0
+	.word	61552
+	.byte	4,4,35,164,160,6,13
+	.byte	'reserved_19028',0
+	.word	4484
+	.byte	24,4,35,168,160,6,13
+	.byte	'DCON0',0
+	.word	61239
+	.byte	4,4,35,192,160,6,13
+	.byte	'reserved_19044',0
+	.word	67581
+	.byte	188,3,4,35,196,160,6,13
+	.byte	'PSTR',0
+	.word	64759
+	.byte	4,4,35,128,164,6,13
+	.byte	'PCON1',0
+	.word	64259
+	.byte	4,4,35,132,164,6,13
+	.byte	'PCON2',0
+	.word	64322
+	.byte	4,4,35,136,164,6,13
+	.byte	'PCON0',0
+	.word	64196
+	.byte	4,4,35,140,164,6,13
+	.byte	'PIEAR',0
+	.word	64447
+	.byte	4,4,35,144,164,6,13
+	.byte	'PIETR',0
+	.word	64510
+	.byte	4,4,35,148,164,6,13
+	.byte	'reserved_19218',0
+	.word	67592
+	.byte	232,3,4,35,152,164,6,13
+	.byte	'COMPAT',0
+	.word	60483
+	.byte	4,4,35,128,168,6,13
+	.byte	'reserved_19404',0
+	.word	67603
+	.byte	252,23,4,35,132,168,6,13
+	.byte	'FPU_TRAP',0
+	.word	67614
+	.byte	28,4,35,128,192,6,13
+	.byte	'reserved_1A01C',0
+	.word	67619
+	.byte	228,63,4,35,156,192,6,13
+	.byte	'DPR',0
+	.word	67640
+	.byte	144,1,4,35,128,128,7,13
+	.byte	'reserved_1C090',0
+	.word	67645
+	.byte	240,30,4,35,144,129,7,13
+	.byte	'CPR',0
+	.word	67665
+	.byte	80,4,35,128,160,7,13
+	.byte	'reserved_1D050',0
+	.word	67670
+	.byte	176,31,4,35,208,160,7,13
+	.byte	'CPXE_0',0
+	.word	60802
+	.byte	4,4,35,128,192,7,13
+	.byte	'CPXE_1',0
+	.word	60802
+	.byte	4,4,35,132,192,7,13
+	.byte	'CPXE_2',0
+	.word	60802
+	.byte	4,4,35,136,192,7,13
+	.byte	'CPXE_3',0
+	.word	60802
+	.byte	4,4,35,140,192,7,13
+	.byte	'DPRE_0',0
+	.word	62144
+	.byte	4,4,35,144,192,7,13
+	.byte	'DPRE_1',0
+	.word	62144
+	.byte	4,4,35,148,192,7,13
+	.byte	'DPRE_2',0
+	.word	62144
+	.byte	4,4,35,152,192,7,13
+	.byte	'DPRE_3',0
+	.word	62144
+	.byte	4,4,35,156,192,7,13
+	.byte	'DPWE_0',0
+	.word	62332
+	.byte	4,4,35,160,192,7,13
+	.byte	'DPWE_1',0
+	.word	62332
+	.byte	4,4,35,164,192,7,13
+	.byte	'DPWE_2',0
+	.word	62332
+	.byte	4,4,35,168,192,7,13
+	.byte	'DPWE_3',0
+	.word	62332
+	.byte	4,4,35,172,192,7,13
+	.byte	'reserved_1E030',0
+	.word	21265
+	.byte	16,4,35,176,192,7,13
+	.byte	'CPXE_4',0
+	.word	60802
+	.byte	4,4,35,192,192,7,13
+	.byte	'CPXE_5',0
+	.word	60802
+	.byte	4,4,35,196,192,7,13
+	.byte	'reserved_1E048',0
+	.word	5113
+	.byte	8,4,35,200,192,7,13
+	.byte	'DPRE_4',0
+	.word	62144
+	.byte	4,4,35,208,192,7,13
+	.byte	'DPRE_5',0
+	.word	62144
+	.byte	4,4,35,212,192,7,13
+	.byte	'reserved_1E058',0
+	.word	5113
+	.byte	8,4,35,216,192,7,13
+	.byte	'DPWE_4',0
+	.word	62332
+	.byte	4,4,35,224,192,7,13
+	.byte	'DPWE_5',0
+	.word	62332
+	.byte	4,4,35,228,192,7,13
+	.byte	'reserved_1E068',0
+	.word	67681
+	.byte	152,7,4,35,232,192,7,13
+	.byte	'TPS',0
+	.word	67692
+	.byte	16,4,35,128,200,7,13
+	.byte	'reserved_1E410',0
+	.word	67697
+	.byte	48,4,35,144,200,7,13
+	.byte	'TPS_EXTIM',0
+	.word	67706
+	.byte	28,4,35,192,200,7,13
+	.byte	'reserved_1E45C',0
+	.word	67711
+	.byte	164,23,4,35,220,200,7,13
+	.byte	'TR',0
+	.word	67731
+	.byte	64,4,35,128,224,7,13
+	.byte	'reserved_1F040',0
+	.word	67736
+	.byte	192,23,4,35,192,224,7,13
+	.byte	'CCTRL',0
+	.word	60420
+	.byte	4,4,35,128,248,7,13
+	.byte	'CCNT',0
+	.word	60358
+	.byte	4,4,35,132,248,7,13
+	.byte	'ICNT',0
+	.word	63337
+	.byte	4,4,35,136,248,7,13
+	.byte	'M1CNT',0
+	.word	63885
+	.byte	4,4,35,140,248,7,13
+	.byte	'M2CNT',0
+	.word	63948
+	.byte	4,4,35,144,248,7,13
+	.byte	'M3CNT',0
+	.word	64011
+	.byte	4,4,35,148,248,7,13
+	.byte	'reserved_1FC18',0
+	.word	67498
+	.byte	232,1,4,35,152,248,7,13
+	.byte	'DBGSR',0
+	.word	61112
+	.byte	4,4,35,128,250,7,13
+	.byte	'reserved_1FD04',0
+	.word	3293
+	.byte	4,4,35,132,250,7,13
+	.byte	'EXEVT',0
+	.word	62456
+	.byte	4,4,35,136,250,7,13
+	.byte	'CREVT',0
+	.word	60864
+	.byte	4,4,35,140,250,7,13
+	.byte	'SWEVT',0
+	.word	65583
+	.byte	4,4,35,144,250,7,13
+	.byte	'reserved_1FD14',0
+	.word	67747
+	.byte	28,4,35,148,250,7,13
+	.byte	'TRIG_ACC',0
+	.word	66437
+	.byte	4,4,35,176,250,7,13
+	.byte	'reserved_1FD34',0
+	.word	5453
+	.byte	12,4,35,180,250,7,13
+	.byte	'DMS',0
+	.word	62083
+	.byte	4,4,35,192,250,7,13
+	.byte	'DCX',0
+	.word	61365
+	.byte	4,4,35,196,250,7,13
+	.byte	'DBGTCR',0
+	.word	61175
+	.byte	4,4,35,200,250,7,13
+	.byte	'reserved_1FD4C',0
+	.word	67756
+	.byte	180,1,4,35,204,250,7,13
+	.byte	'PCXI',0
+	.word	64385
+	.byte	4,4,35,128,252,7,13
+	.byte	'PSW',0
+	.word	64821
+	.byte	4,4,35,132,252,7,13
+	.byte	'PC',0
+	.word	64136
+	.byte	4,4,35,136,252,7,13
+	.byte	'reserved_1FE0C',0
+	.word	5113
+	.byte	8,4,35,140,252,7,13
+	.byte	'SYSCON',0
+	.word	65646
+	.byte	4,4,35,148,252,7,13
+	.byte	'CPU_ID',0
+	.word	60738
+	.byte	4,4,35,152,252,7,13
+	.byte	'CORE_ID',0
+	.word	60547
+	.byte	4,4,35,156,252,7,13
+	.byte	'BIV',0
+	.word	60037
+	.byte	4,4,35,160,252,7,13
+	.byte	'BTV',0
+	.word	60297
+	.byte	4,4,35,164,252,7,13
+	.byte	'ISP',0
+	.word	63420
+	.byte	4,4,35,168,252,7,13
+	.byte	'ICR',0
+	.word	41649
+	.byte	4,4,35,172,252,7,13
+	.byte	'reserved_1FE30',0
+	.word	5113
+	.byte	8,4,35,176,252,7,13
+	.byte	'FCX',0
+	.word	62519
+	.byte	4,4,35,184,252,7,13
+	.byte	'LCX',0
+	.word	63672
+	.byte	4,4,35,188,252,7,13
+	.byte	'reserved_1FE40',0
+	.word	21265
+	.byte	16,4,35,192,252,7,13
+	.byte	'CUS_ID',0
+	.word	60927
+	.byte	4,4,35,208,252,7,13
+	.byte	'reserved_1FE54',0
+	.word	67767
+	.byte	172,1,4,35,212,252,7,13
+	.byte	'D',0
+	.word	67778
+	.byte	64,4,35,128,254,7,13
+	.byte	'reserved_1FF40',0
+	.word	45190
+	.byte	64,4,35,192,254,7,13
+	.byte	'A',0
+	.word	67787
+	.byte	64,4,35,128,255,7,13
+	.byte	'reserved_1FFC0',0
+	.word	45190
+	.byte	64,4,35,192,255,7,0,14
+	.word	67796
+	.byte	31
+	.byte	'Ifx_CPU',0,21,224,16,3
+	.word	72894
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,127,9,1,16
 	.byte	'IfxCpu_Id_0',0,0,16
 	.byte	'IfxCpu_Id_1',0,1,16
 	.byte	'IfxCpu_Id_2',0,2,16
 	.byte	'IfxCpu_Id_none',0,3,0,31
 	.byte	'IfxCpu_Id',0,12,133,1,3
+<<<<<<< HEAD
 	.word	72922
+=======
+	.word	72916
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxCpu_ResourceCpu',0,12,164,1,3
 	.word	10264
@@ -12198,13 +13106,21 @@ __exti_init_function_end:
 	.word	13876
 	.byte	31
 	.byte	'Ifx_STM',0,14,228,3,3
+<<<<<<< HEAD
 	.word	79584
+=======
+	.word	79578
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,27,238,10,9,1,16
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,16
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,16
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,31
 	.byte	'IfxScu_WDTCON1_IR',0,27,243,10,3
+<<<<<<< HEAD
 	.word	79606
+=======
+	.word	79600
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'Ifx_P_ACCEN0_Bits',0,9,104,3
 	.word	8647
@@ -12365,23 +13281,41 @@ __exti_init_function_end:
 	.word	9214
 	.byte	31
 	.byte	'Ifx_P',0,9,130,6,3
+<<<<<<< HEAD
 	.word	80922
+=======
+	.word	80916
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,76,9,1,16
 	.byte	'IfxPort_ControlledBy_port',0,0,16
 	.byte	'IfxPort_ControlledBy_hsct',0,1,0,31
 	.byte	'IfxPort_ControlledBy',0,8,80,3
+<<<<<<< HEAD
 	.word	80942
 	.byte	31
 	.byte	'IfxPort_InputMode',0,8,90,3
 	.word	9794
+=======
+	.word	80936
+	.byte	31
+	.byte	'IfxPort_InputMode',0,8,90,3
+	.word	9788
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,94,9,1,16
 	.byte	'IfxPort_LvdsMode_high',0,0,16
 	.byte	'IfxPort_LvdsMode_medium',0,1,0,31
 	.byte	'IfxPort_LvdsMode',0,8,98,3
+<<<<<<< HEAD
 	.word	81059
 	.byte	31
 	.byte	'IfxPort_Mode',0,8,125,3
 	.word	37696
+=======
+	.word	81053
+	.byte	31
+	.byte	'IfxPort_Mode',0,8,125,3
+	.word	37690
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,129,1,9,1,16
 	.byte	'IfxPort_OutputIdx_general',0,128,1,16
 	.byte	'IfxPort_OutputIdx_alt1',0,136,1,16
@@ -12392,12 +13326,20 @@ __exti_init_function_end:
 	.byte	'IfxPort_OutputIdx_alt6',0,176,1,16
 	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0,31
 	.byte	'IfxPort_OutputIdx',0,8,139,1,3
+<<<<<<< HEAD
 	.word	81161
+=======
+	.word	81155
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,143,1,9,1,16
 	.byte	'IfxPort_OutputMode_pushPull',0,128,1,16
 	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,31
 	.byte	'IfxPort_OutputMode',0,8,147,1,3
+<<<<<<< HEAD
 	.word	81406
+=======
+	.word	81400
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,153,1,9,1,16
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,16
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,16
@@ -12412,17 +13354,29 @@ __exti_init_function_end:
 	.byte	'IfxPort_PadDriver_ttl3v3Speed3',0,14,16
 	.byte	'IfxPort_PadDriver_ttl3v3Speed4',0,15,0,31
 	.byte	'IfxPort_PadDriver',0,8,167,1,3
+<<<<<<< HEAD
 	.word	81504
+=======
+	.word	81498
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,171,1,9,1,16
 	.byte	'IfxPort_PadSupply_3v',0,0,16
 	.byte	'IfxPort_PadSupply_5v',0,1,0,31
 	.byte	'IfxPort_PadSupply',0,8,175,1,3
+<<<<<<< HEAD
 	.word	81954
+=======
+	.word	81948
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,179,1,9,1,16
 	.byte	'IfxPort_PinFunctionMode_digital',0,0,16
 	.byte	'IfxPort_PinFunctionMode_analog',0,1,0,31
 	.byte	'IfxPort_PinFunctionMode',0,8,183,1,3
+<<<<<<< HEAD
 	.word	82034
+=======
+	.word	82028
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxPort_State',0,8,195,1,3
 	.word	9999
@@ -14152,14 +15106,22 @@ __exti_init_function_end:
 	.word	91218
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_SMU_STS',0,28,187,6,3
+<<<<<<< HEAD
 	.word	93089
+=======
+	.word	93083
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,10,213,2,9,1,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy30',0,1,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy60',0,2,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy120',0,3,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy240',0,4,0,31
 	.byte	'IfxScuCcu_LowPowerDivRatio',0,10,219,2,3
+<<<<<<< HEAD
 	.word	93150
+=======
+	.word	93144
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,10,223,2,9,1,16
 	.byte	'IfxScuCcu_ModulationAmplitude_0p5',0,0,16
 	.byte	'IfxScuCcu_ModulationAmplitude_1p0',0,1,16
@@ -14169,25 +15131,41 @@ __exti_init_function_end:
 	.byte	'IfxScuCcu_ModulationAmplitude_2p5',0,5,16
 	.byte	'IfxScuCcu_ModulationAmplitude_count',0,6,0,31
 	.byte	'IfxScuCcu_ModulationAmplitude',0,10,232,2,3
+<<<<<<< HEAD
 	.word	93343
+=======
+	.word	93337
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,10,129,4,9,1,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fOsc1',0,0,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fOsc0',0,1,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fSysclk',0,2,0,31
 	.byte	'IfxScuCcu_PllInputClockSelection',0,10,134,4,3
+<<<<<<< HEAD
 	.word	93644
+=======
+	.word	93638
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,10,138,4,9,1,16
 	.byte	'IfxScuCcu_Traprequest_esr0',0,0,16
 	.byte	'IfxScuCcu_Traprequest_esr1',0,1,16
 	.byte	'IfxScuCcu_Traprequest_trap2',0,2,16
 	.byte	'IfxScuCcu_Traprequest_smu',0,3,0,31
 	.byte	'IfxScuCcu_Traprequest',0,10,144,4,3
+<<<<<<< HEAD
 	.word	93818
+=======
+	.word	93812
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,10,150,4,9,1,16
 	.byte	'IfxScuCcu_ModEn_disabled',0,0,16
 	.byte	'IfxScuCcu_ModEn_enabled',0,1,0,31
 	.byte	'IfxScuCcu_ModEn',0,10,154,4,3
+<<<<<<< HEAD
 	.word	93972
+=======
+	.word	93966
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	20,10,165,4,9,6,13
 	.byte	'pDivider',0
 	.word	478
@@ -14314,12 +15292,20 @@ __exti_init_function_end:
 	.word	93343
 	.byte	1,2,35,1,0,31
 	.byte	'IfxScuCcu_Mod_Config',0,10,141,5,3
+<<<<<<< HEAD
 	.word	95002
+=======
+	.word	94996
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,144,1,9,1,16
 	.byte	'IfxCpu_CounterMode_normal',0,0,16
 	.byte	'IfxCpu_CounterMode_task',0,1,0,31
 	.byte	'IfxCpu_CounterMode',0,11,148,1,3
+<<<<<<< HEAD
 	.word	95076
+=======
+	.word	95070
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	20,11,195,1,9,6,13
 	.byte	'counter',0
 	.word	10609
@@ -14346,17 +15332,29 @@ __exti_init_function_end:
 	.word	95165
 	.byte	6,2,35,24,0,31
 	.byte	'IfxCpu_Perf',0,11,214,1,3
+<<<<<<< HEAD
 	.word	95231
+=======
+	.word	95225
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,151,1,9,1,16
 	.byte	'IfxStm_Comparator_0',0,0,16
 	.byte	'IfxStm_Comparator_1',0,1,0,31
 	.byte	'IfxStm_Comparator',0,13,155,1,3
+<<<<<<< HEAD
 	.word	95349
+=======
+	.word	95343
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,159,1,9,1,16
 	.byte	'IfxStm_ComparatorInterrupt_ir0',0,0,16
 	.byte	'IfxStm_ComparatorInterrupt_ir1',0,1,0,31
 	.byte	'IfxStm_ComparatorInterrupt',0,13,163,1,3
+<<<<<<< HEAD
 	.word	95427
+=======
+	.word	95421
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,167,1,9,1,16
 	.byte	'IfxStm_ComparatorOffset_0',0,0,16
 	.byte	'IfxStm_ComparatorOffset_1',0,1,16
@@ -14391,7 +15389,11 @@ __exti_init_function_end:
 	.byte	'IfxStm_ComparatorOffset_30',0,30,16
 	.byte	'IfxStm_ComparatorOffset_31',0,31,0,31
 	.byte	'IfxStm_ComparatorOffset',0,13,201,1,3
+<<<<<<< HEAD
 	.word	95536
+=======
+	.word	95530
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,205,1,9,1,16
 	.byte	'IfxStm_ComparatorSize_1Bit',0,0,16
 	.byte	'IfxStm_ComparatorSize_2Bits',0,1,16
@@ -14426,24 +15428,40 @@ __exti_init_function_end:
 	.byte	'IfxStm_ComparatorSize_31Bits',0,30,16
 	.byte	'IfxStm_ComparatorSize_32Bits',0,31,0,31
 	.byte	'IfxStm_ComparatorSize',0,13,239,1,3
+<<<<<<< HEAD
 	.word	96494
+=======
+	.word	96488
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,244,1,9,1,16
 	.byte	'IfxStm_SleepMode_enable',0,0,16
 	.byte	'IfxStm_SleepMode_disable',0,1,0,31
 	.byte	'IfxStm_SleepMode',0,13,248,1,3
+<<<<<<< HEAD
 	.word	97514
+=======
+	.word	97508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,252,1,9,1,16
 	.byte	'IfxStm_SuspendMode_none',0,0,16
 	.byte	'IfxStm_SuspendMode_hard',0,1,16
 	.byte	'IfxStm_SuspendMode_soft',0,2,0,31
 	.byte	'IfxStm_SuspendMode',0,13,129,2,3
+<<<<<<< HEAD
 	.word	97600
+=======
+	.word	97594
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxScuEru_ExternalInputSelection',0,16,93,3
 	.word	39457
 	.byte	31
 	.byte	'IfxScuEru_InputChannel',0,16,107,3
+<<<<<<< HEAD
 	.word	39235
+=======
+	.word	39229
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,16,113,9,1,16
 	.byte	'IfxScuEru_InputFilterDepth_disable',0,0,16
 	.byte	'IfxScuEru_InputFilterDepth_1',0,1,16
@@ -14462,7 +15480,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_InputFilterDepth_14',0,14,16
 	.byte	'IfxScuEru_InputFilterDepth_15',0,15,0,31
 	.byte	'IfxScuEru_InputFilterDepth',0,16,131,1,3
+<<<<<<< HEAD
 	.word	97785
+=======
+	.word	97779
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,16,136,1,9,1,16
 	.byte	'IfxScuEru_InputFilterPredivider_disable',0,0,16
 	.byte	'IfxScuEru_InputFilterPredivider_1',0,1,16
@@ -14481,7 +15503,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_InputFilterPredivider_14',0,14,16
 	.byte	'IfxScuEru_InputFilterPredivider_15',0,15,0,31
 	.byte	'IfxScuEru_InputFilterPredivider',0,16,154,1,3
+<<<<<<< HEAD
 	.word	98335
+=======
+	.word	98329
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,16,159,1,9,1,16
 	.byte	'IfxScuEru_InputFilterRequestSelection_0A',0,0,16
 	.byte	'IfxScuEru_InputFilterRequestSelection_5A',0,1,16
@@ -14501,7 +15527,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru_InputFilterRequestSelection_3D',0,15,16
 	.byte	'IfxScuEru_InputFilterRequestSelection_7C',0,16,0,31
 	.byte	'IfxScuEru_InputFilterRequestSelection',0,16,178,1,3
+<<<<<<< HEAD
 	.word	98971
+=======
+	.word	98965
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxScuEru_InputNodePointer',0,16,193,1,3
 	.word	40044
@@ -14516,7 +15546,11 @@ __exti_init_function_end:
 	.word	41139
 	.byte	31
 	.byte	'exti_trigger_enum',0,20,70,2
+<<<<<<< HEAD
 	.word	41468
+=======
+	.word	41462
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -14540,9 +15574,15 @@ __exti_init_function_end:
 	.word	.L284-.L283
 .L283:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std',0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	0
@@ -14575,7 +15615,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru.h',0,2,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_PinMap\\IfxScu_PinMap.h',0
 	.byte	0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'zf_common_debug.h',0,3,0,0
 	.byte	'..\\libraries\\zf_driver\\zf_driver_exti.h',0,0,0,0
@@ -14585,7 +15629,11 @@ __exti_init_function_end:
 	.byte	'PLATFORM_TYPES.H',0,5,0,0
 	.byte	'zf_common_typedef.h',0,3,0,0
 	.byte	'Ifx_TypesReg.h',0,1,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxSmu_regdef.h',0,1,0,0,0
 .L284:
@@ -14593,13 +15641,21 @@ __exti_init_function_end:
 	.sdecl	'.debug_info',debug,cluster('exti_all_close')
 	.sect	'.debug_info'
 .L70:
+<<<<<<< HEAD
 	.word	314
+=======
+	.word	308
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L71
 	.byte	4,1
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L73,.L72
 	.byte	2
 	.word	.L66
@@ -14637,7 +15693,11 @@ __exti_init_function_end:
 .L287:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L288:
 	.byte	5,17,7,0,5,2
@@ -14667,13 +15727,21 @@ __exti_init_function_end:
 	.sdecl	'.debug_info',debug,cluster('exti_enable')
 	.sect	'.debug_info'
 .L75:
+<<<<<<< HEAD
 	.word	337
+=======
+	.word	331
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L76
 	.byte	4,1
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L78,.L77
 	.byte	2
 	.word	.L66
@@ -14715,7 +15783,11 @@ __exti_init_function_end:
 .L293:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L294:
 	.byte	5,82,7,0,5,2
@@ -14745,13 +15817,21 @@ __exti_init_function_end:
 	.sdecl	'.debug_info',debug,cluster('exti_disable')
 	.sect	'.debug_info'
 .L80:
+<<<<<<< HEAD
 	.word	338
+=======
+	.word	332
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L81
 	.byte	4,1
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L83,.L82
 	.byte	2
 	.word	.L66
@@ -14793,7 +15873,11 @@ __exti_init_function_end:
 .L300:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L301:
 	.byte	5,82,7,0,5,2
@@ -14823,13 +15907,21 @@ __exti_init_function_end:
 	.sdecl	'.debug_info',debug,cluster('exti_init')
 	.sect	'.debug_info'
 .L85:
+<<<<<<< HEAD
 	.word	922
+=======
+	.word	916
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L86
 	.byte	4,1
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L88,.L87
 	.byte	2
 	.word	.L66
@@ -14959,7 +16051,11 @@ __exti_init_function_end:
 	.word	.L308-.L307
 .L307:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0,0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu.h',0
@@ -14969,7 +16065,11 @@ __exti_init_function_end:
 	.byte	'IfxScuEru.h',0,1,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
 	.byte	0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L308:
 	.byte	5,6,7,0,5,2
@@ -15135,13 +16235,21 @@ __exti_init_function_end:
 	.sdecl	'.debug_info',debug,cluster('get_exit_pin')
 	.sect	'.debug_info'
 .L90:
+<<<<<<< HEAD
 	.word	296
+=======
+	.word	290
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L91
 	.byte	4,1
 	.byte	'../libraries/zf_driver/zf_driver_exti.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L93,.L92
 	.byte	2
 	.word	.L66

@@ -130,7 +130,11 @@ libraries/zf_device/zf_device_wireless_uart.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/zf_device/zf_device_absolute_encoder.src: ../libraries/zf_device/zf_device_absolute_encoder.c libraries/zf_device/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins_local/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 libraries/zf_device/zf_device_absolute_encoder.o: libraries/zf_device/zf_device_absolute_encoder.src libraries/zf_device/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_device/zf_device_bluetooth_ch9141.src: ../libraries/zf_device/zf_device_bluetooth_ch9141.c libraries/zf_device/subdir.mk
@@ -242,7 +246,11 @@ libraries/zf_device/zf_device_wifi_uart.src: ../libraries/zf_device/zf_device_wi
 libraries/zf_device/zf_device_wifi_uart.o: libraries/zf_device/zf_device_wifi_uart.src libraries/zf_device/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/zf_device/zf_device_wireless_uart.src: ../libraries/zf_device/zf_device_wireless_uart.c libraries/zf_device/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins_local/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 libraries/zf_device/zf_device_wireless_uart.o: libraries/zf_device/zf_device_wireless_uart.src libraries/zf_device/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

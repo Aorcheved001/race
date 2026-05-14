@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc24480a --dep-file=IfxEvadc_Adc.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c"
+=======
+	.compiler_invocation	"ctc -f cc32284a --dep-file=IfxEvadc_Adc.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c'
 
@@ -3246,7 +3250,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L289:
+<<<<<<< HEAD
 	.word	152853
+=======
+	.word	152847
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L290
 	.byte	4
@@ -3254,29 +3262,48 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L291
 	.byte	2,1,1,3
 	.word	227
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
+<<<<<<< HEAD
 	.word	230
+=======
+	.word	224
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
 .L430:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+<<<<<<< HEAD
 	.word	275
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
 	.word	287
+=======
+	.word	269
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,4
 	.byte	'Ifx__stopPerfCounters',0,3,1,172,2,17,1,1,6,0,7
 	.byte	'unsigned long long int',0,8,7,9
 	.byte	'void',0,3
+<<<<<<< HEAD
 	.word	399
+=======
+	.word	393
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8
 	.byte	'__ld64',0,3,2,135,1,19
 	.word	373
@@ -3289,7 +3316,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	405
 	.byte	5
 	.byte	'value',0,2,143,1,43
+<<<<<<< HEAD
 	.word	373
+=======
+	.word	367
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7,7
 	.byte	'int',0,4,5
@@ -3298,7 +3329,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'unsigned char',0,1,8,10
 	.byte	'_Ifx_SRC_SRCR_Bits',0,4,70,16,4,11
 	.byte	'SRPN',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	8,0,2,35,0,11
 	.byte	'reserved_8',0,1
 	.word	514
@@ -3354,14 +3389,22 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	821
 .L729:
 	.byte	3
+<<<<<<< HEAD
 	.word	860
+=======
+	.word	854
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L921:
 	.byte	4
 	.byte	'IfxSrc_clearRequest',0,3,3,250,1,17,1,1
 .L923:
 	.byte	5
 	.byte	'src',0,3,250,1,60
+<<<<<<< HEAD
 	.word	865
+=======
+	.word	859
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L925:
 	.byte	6,0
 .L926:
@@ -3370,7 +3413,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L927:
 	.byte	5
 	.byte	'src',0,3,140,2,54
+<<<<<<< HEAD
 	.word	865
+=======
+	.word	859
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L929:
 	.byte	6,0,15,5,69,9,1,16
 	.byte	'IfxSrc_Tos_cpu0',0,0,16
@@ -3386,7 +3433,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L914:
 	.byte	5
 	.byte	'src',0,3,146,2,52
+<<<<<<< HEAD
 	.word	865
+=======
+	.word	859
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L916:
 	.byte	5
 	.byte	'typOfService',0,3,146,2,68
@@ -3394,13 +3445,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L918:
 	.byte	5
 	.byte	'priority',0,3,146,2,95
+<<<<<<< HEAD
 	.word	1027
+=======
+	.word	1021
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L920:
 	.byte	17,6,0,0,7
 	.byte	'unsigned int',0,4,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,7,210,9,16,4,11
 	.byte	'ENDINIT',0,4
+<<<<<<< HEAD
 	.word	1126
+=======
+	.word	1120
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,31,2,35,0,11
 	.byte	'LCK',0,4
 	.word	1126
@@ -4864,7 +4923,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	4,3,35,252,1,0,14
 	.word	9175
 	.byte	3
+<<<<<<< HEAD
 	.word	9745
+=======
+	.word	9739
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,143,1,9,1,16
 	.byte	'IfxPort_OutputMode_pushPull',0,128,1,16
 	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,15,8,129,1,9,1,16
@@ -4882,7 +4945,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1006:
 	.byte	5
 	.byte	'port',0,8,165,5,49
+<<<<<<< HEAD
 	.word	9750
+=======
+	.word	9744
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1008:
 	.byte	5
 	.byte	'pinIndex',0,8,165,5,61
@@ -4894,7 +4961,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1012:
 	.byte	5
 	.byte	'index',0,8,165,5,114
+<<<<<<< HEAD
 	.word	9825
+=======
+	.word	9819
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1014:
 	.byte	6,0,15,8,189,1,9,4,16
 	.byte	'IfxPort_State_notChanged',0,0,16
@@ -4903,29 +4974,48 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxPort_State_toggled',0,129,128,4,0,4
 	.byte	'IfxPort_setPinState',0,3,8,171,5,17,1,1,5
 	.byte	'port',0,8,171,5,44
+<<<<<<< HEAD
 	.word	9750
+=======
+	.word	9744
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,8,171,5,56
 	.word	514
 	.byte	5
 	.byte	'action',0,8,171,5,80
+<<<<<<< HEAD
 	.word	10139
+=======
+	.word	10133
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,11,158,1,9,1,16
 	.byte	'IfxCpu_ResourceCpu_0',0,0,16
 	.byte	'IfxCpu_ResourceCpu_1',0,1,16
 	.byte	'IfxCpu_ResourceCpu_2',0,2,16
 	.byte	'IfxCpu_ResourceCpu_none',0,3,0,8
 	.byte	'IfxCpu_getCoreIndex',0,3,10,232,6,31
+<<<<<<< HEAD
 	.word	10320
 	.byte	1,1,6,0,8
 	.byte	'IfxCpu_areInterruptsEnabled',0,3,10,230,5,20
 	.word	514
+=======
+	.word	10314
+	.byte	1,1,6,0,8
+	.byte	'IfxCpu_areInterruptsEnabled',0,3,10,230,5,20
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,6,0
 .L454:
 	.byte	7
 	.byte	'unsigned long int',0,4,7,8
 	.byte	'IfxCpu_getPerformanceCounter',0,3,10,252,6,19
+<<<<<<< HEAD
 	.word	10498
+=======
+	.word	10492
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'address',0,10,252,6,55
 	.word	1027
@@ -4945,17 +5035,29 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	17,6,0,0,4
 	.byte	'IfxScuCcu_wait',0,3,12,208,13,17,1,1,5
 	.byte	'timeSec',0,12,208,13,40
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,6,0,0
 .L437:
 	.byte	8
 	.byte	'IfxScuCcu_getAdcFrequency',0,3,12,150,12,20
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L438:
 	.byte	6,0,8
 	.byte	'IfxScuCcu_getStmFrequency',0,3,12,131,13,20
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,6,0,18,16
 	.word	514
 	.byte	19,15,0,10
@@ -5134,12 +5236,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	1,6,2,35,3,11
 	.byte	'reserved_26',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,2,35,3,0
 .L477:
 	.byte	12,14,209,8,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -5918,12 +6028,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	4,4,2,35,3,11
 	.byte	'CEV7NP',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,0,2,35,3,0
 .L719:
 	.byte	12,14,129,9,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -5954,12 +6072,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	4,4,2,35,3,11
 	.byte	'CEV15NP',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,0,2,35,3,0
 .L727:
 	.byte	12,14,137,9,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -5990,12 +6116,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	4,4,2,35,3,11
 	.byte	'REV7NP',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,0,2,35,3,0
 .L756:
 	.byte	12,14,153,10,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -6026,12 +6160,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	4,4,2,35,3,11
 	.byte	'REV15NP',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,0,2,35,3,0
 .L764:
 	.byte	12,14,161,10,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -6270,12 +6412,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	1,1,2,35,3,11
 	.byte	'reserved_31',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,0,2,35,3,0
 .L679:
 	.byte	12,14,145,9,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -6800,12 +6950,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	1027
 	.byte	15,1,2,35,2,11
 	.byte	'SUCAL',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,0,2,35,3,0
 .L977:
 	.byte	12,14,249,7,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -7299,12 +7457,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	5,1,2,35,3,11
 	.byte	'XTWC',0,1
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,0,2,35,3,0
 .L1033:
 	.byte	12,14,209,7,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -7344,12 +7510,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	514
 	.byte	1,2,2,35,2,11
 	.byte	'FCREF',0,2
+<<<<<<< HEAD
 	.word	1027
+=======
+	.word	1021
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	10,0,2,35,2,0
 .L1036:
 	.byte	12,14,225,7,9,4,13
 	.byte	'U',0
+<<<<<<< HEAD
 	.word	491
+=======
+	.word	485
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'I',0
 	.word	507
@@ -7594,14 +7768,22 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	27193
 	.byte	5
 	.byte	'enabled',0,13,234,17,100
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,13,241,5,9,1,16
 	.byte	'IfxEvadc_ChannelNoiseReduction_standardConversion',0,0,16
 	.byte	'IfxEvadc_ChannelNoiseReduction_level1',0,1,16
 	.byte	'IfxEvadc_ChannelNoiseReduction_level2',0,2,16
 	.byte	'IfxEvadc_ChannelNoiseReduction_level3',0,3,0,8
 	.byte	'IfxEvadc_getGlobalConversionMode',0,3,13,236,19,43
+<<<<<<< HEAD
 	.word	27297
+=======
+	.word	27291
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'evadc',0,13,236,19,87
 	.word	27193
@@ -7622,7 +7804,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	20574
 	.byte	5
 	.byte	'resultIdx',0,13,175,20,74
+<<<<<<< HEAD
 	.word	10498
+=======
+	.word	10492
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,13,165,3,9,1,16
 	.byte	'IfxEvadc_RequestSource_queue0',0,0,16
 	.byte	'IfxEvadc_RequestSource_queue1',0,1,16
@@ -7633,7 +7819,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L615:
 	.byte	5
 	.byte	'evadcG',0,13,211,17,50
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L617:
 	.byte	5
 	.byte	'flushQueue',0,13,211,17,66
@@ -7641,12 +7831,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L619:
 	.byte	5
 	.byte	'sourceType',0,13,211,17,101
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L621:
 	.byte	6,0,4
 	.byte	'IfxEvadc_startQueue',0,3,13,162,25,17,1,1,5
 	.byte	'group',0,13,162,25,50
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'sourceType',0,13,162,25,80
 	.word	27682
@@ -7668,7 +7866,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	1,2,35,12,0,21
 	.word	27975
 	.byte	3
+<<<<<<< HEAD
 	.word	28026
+=======
+	.word	28020
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,153,1,9,1,16
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,16
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,16
@@ -7688,7 +7890,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L996:
 	.byte	5
 	.byte	'emux',0,13,232,20,63
+<<<<<<< HEAD
 	.word	28031
+=======
+	.word	28025
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L998:
 	.byte	5
 	.byte	'outputMode',0,13,232,20,88
@@ -7696,33 +7902,57 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1000:
 	.byte	5
 	.byte	'padDriver',0,13,232,20,118
+<<<<<<< HEAD
 	.word	28036
+=======
+	.word	28030
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1002:
 	.byte	17,6,0,0
 .L654:
 	.byte	8
 	.byte	'IfxEvadc_calculateSampleTime',0,3,13,166,17,19
+<<<<<<< HEAD
 	.word	10498
+=======
+	.word	10492
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L655:
 	.byte	5
 	.byte	'analogFrequency',0,13,166,17,56
+<<<<<<< HEAD
 	.word	287
 .L657:
 	.byte	5
 	.byte	'sampleTime',0,13,166,17,81
 	.word	287
+=======
+	.word	281
+.L657:
+	.byte	5
+	.byte	'sampleTime',0,13,166,17,81
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L659:
 	.byte	6,0
 .L432:
 	.byte	8
 	.byte	'IfxEvadc_getAdcAnalogFrequency',0,3,13,209,18,20
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L434:
 	.byte	5
 	.byte	'group',0,13,209,18,64
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L436:
 	.byte	17,6,0,0
 .L408:
@@ -7755,7 +7985,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L511:
 	.byte	5
 	.byte	'evadcG',0,13,150,17,74
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L513:
 	.byte	5
 	.byte	'group',0,13,150,17,99
@@ -7763,7 +7997,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L515:
 	.byte	5
 	.byte	'delay',0,13,150,17,147,1
+<<<<<<< HEAD
 	.word	29014
+=======
+	.word	29008
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L517:
 	.byte	6,0,15,13,230,5,9,1,16
 	.byte	'IfxEvadc_CalibrationSampleTimeControl_2',0,0,16
@@ -7776,7 +8014,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L529:
 	.byte	5
 	.byte	'evadcG',0,13,183,17,64
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L531:
 	.byte	5
 	.byte	'group',0,13,183,17,89
@@ -7784,7 +8026,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L533:
 	.byte	5
 	.byte	'mode',0,13,183,17,134,1
+<<<<<<< HEAD
 	.word	29482
+=======
+	.word	29476
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L535:
 	.byte	6,0
 .L961:
@@ -7793,18 +8039,30 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L963:
 	.byte	5
 	.byte	'evadcG',0,13,199,17,62
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L965:
 	.byte	6,0
 .L439:
 	.byte	8
 	.byte	'IfxEvadc_getGroupConversionMode',0,3,13,137,20,43
+<<<<<<< HEAD
 	.word	27297
+=======
+	.word	27291
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L440:
 	.byte	5
 	.byte	'evadcG',0,13,137,20,88
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L442:
 	.byte	5
 	.byte	'inputClassNum',0,13,137,20,102
@@ -7824,17 +8082,29 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	10498
 	.byte	5
 	.byte	'numResults',0,13,143,20,115
+<<<<<<< HEAD
 	.word	10498
+=======
+	.word	10492
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0
 .L445:
 	.byte	8
 	.byte	'IfxEvadc_getGroupSampleTime',0,3,13,154,20,20
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L447:
 	.byte	5
 	.byte	'evadcG',0,13,154,20,61
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L449:
 	.byte	5
 	.byte	'inputClassNum',0,13,154,20,75
@@ -7842,18 +8112,30 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L451:
 	.byte	5
 	.byte	'analogFrequency',0,13,154,20,98
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L453:
 	.byte	6,0
 .L456:
 	.byte	8
 	.byte	'IfxEvadc_getMasterIndex',0,3,13,167,20,18
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L457:
 	.byte	5
 	.byte	'evadcG',0,13,167,20,55
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L459:
 	.byte	6,0,15,13,162,6,9,1,16
 	.byte	'IfxEvadc_IdlePrecharge_currentLevel',0,0,16
@@ -7864,7 +8146,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L575:
 	.byte	5
 	.byte	'evadcG',0,13,217,20,64
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L577:
 	.byte	5
 	.byte	'group',0,13,217,20,89
@@ -7872,7 +8158,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L579:
 	.byte	5
 	.byte	'mode',0,13,217,20,119
+<<<<<<< HEAD
 	.word	30163
+=======
+	.word	30157
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L581:
 	.byte	6,0
 .L559:
@@ -7881,11 +8171,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L561:
 	.byte	5
 	.byte	'evadcG',0,13,131,21,57
+<<<<<<< HEAD
 	.word	20574
 .L563:
 	.byte	5
 	.byte	'group',0,13,131,21,82
 	.word	28695
+=======
+	.word	20568
+.L563:
+	.byte	5
+	.byte	'group',0,13,131,21,82
+	.word	28689
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L565:
 	.byte	6,0,15,13,178,6,9,1,16
 	.byte	'IfxEvadc_ReferencePrechargeControl_singleClockPhase',0,0,16
@@ -7896,7 +8194,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L538:
 	.byte	5
 	.byte	'evadcG',0,13,175,21,69
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L540:
 	.byte	5
 	.byte	'group',0,13,175,21,94
@@ -7904,7 +8206,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L542:
 	.byte	5
 	.byte	'duration',0,13,175,21,136,1
+<<<<<<< HEAD
 	.word	30403
+=======
+	.word	30397
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L544:
 	.byte	6,0
 .L545:
@@ -7913,11 +8219,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L547:
 	.byte	5
 	.byte	'evadcG',0,13,190,21,64
+<<<<<<< HEAD
 	.word	20574
 .L549:
 	.byte	5
 	.byte	'group',0,13,190,21,89
 	.word	28695
+=======
+	.word	20568
+.L549:
+	.byte	5
+	.byte	'group',0,13,190,21,89
+	.word	28689
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L551:
 	.byte	6,0
 .L418:
@@ -7926,7 +8240,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L421:
 	.byte	5
 	.byte	'evadcG',0,13,205,21,50
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L423:
 	.byte	6,0,15,13,176,5,9,1,16
 	.byte	'IfxEvadc_SampleSynchronization_off',0,0,16
@@ -7937,7 +8255,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L502:
 	.byte	5
 	.byte	'evadcG',0,13,211,21,68
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L504:
 	.byte	5
 	.byte	'group',0,13,211,21,93
@@ -7945,7 +8267,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L506:
 	.byte	5
 	.byte	'mode',0,13,211,21,131,1
+<<<<<<< HEAD
 	.word	30739
+=======
+	.word	30733
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L508:
 	.byte	6,0,15,13,170,6,9,1,16
 	.byte	'IfxEvadc_MsbConversionTime_singleClockCycle',0,0,16
@@ -7956,7 +8282,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L493:
 	.byte	5
 	.byte	'evadcG',0,13,227,21,73
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L495:
 	.byte	5
 	.byte	'group',0,13,227,21,98
@@ -7964,7 +8294,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L497:
 	.byte	5
 	.byte	'mode',0,13,227,21,132,1
+<<<<<<< HEAD
 	.word	30934
+=======
+	.word	30928
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L499:
 	.byte	6,0
 .L628:
@@ -7979,11 +8313,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L585:
 	.byte	5
 	.byte	'evadcG',0,13,255,21,63
+<<<<<<< HEAD
 	.word	20574
 .L587:
 	.byte	5
 	.byte	'analogConverterMode',0,13,255,21,100
 	.word	31132
+=======
+	.word	20568
+.L587:
+	.byte	5
+	.byte	'analogConverterMode',0,13,255,21,100
+	.word	31126
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L589:
 	.byte	6,0
 .L632:
@@ -7992,7 +8334,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L635:
 	.byte	5
 	.byte	'evadcG',0,13,183,24,62
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L637:
 	.byte	5
 	.byte	'inputClassNum',0,13,183,24,76
@@ -8000,7 +8346,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L639:
 	.byte	5
 	.byte	'conversionMode',0,13,183,24,122
+<<<<<<< HEAD
 	.word	27297
+=======
+	.word	27291
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L641:
 	.byte	6,0
 .L642:
@@ -8009,7 +8359,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L645:
 	.byte	5
 	.byte	'evadcG',0,13,195,24,58
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L647:
 	.byte	5
 	.byte	'inputClassNum',0,13,195,24,72
@@ -8021,7 +8375,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L651:
 	.byte	5
 	.byte	'sampleTime',0,13,195,24,120
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L653:
 	.byte	17,6,0,0
 .L602:
@@ -8030,11 +8388,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L603:
 	.byte	5
 	.byte	'evadcG',0,13,213,24,54
+<<<<<<< HEAD
 	.word	20574
 .L605:
 	.byte	5
 	.byte	'masterIndex',0,13,213,24,68
 	.word	514
+=======
+	.word	20568
+.L605:
+	.byte	5
+	.byte	'masterIndex',0,13,213,24,68
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L607:
 	.byte	6,0
 .L518:
@@ -8043,7 +8409,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L520:
 	.byte	5
 	.byte	'evadcG',0,13,140,18,62
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L522:
 	.byte	5
 	.byte	'group',0,13,140,18,87
@@ -8051,7 +8421,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L524:
 	.byte	5
 	.byte	'enabled',0,13,140,18,102
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L526:
 	.byte	6,0
 .L381:
@@ -8060,7 +8434,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L383:
 	.byte	5
 	.byte	'evadc',0,13,177,18,50
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L385:
 	.byte	6,0,15,13,183,3,9,1,16
 	.byte	'IfxEvadc_SrcNr_group0',0,0,16
@@ -8074,16 +8452,28 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L731:
 	.byte	8
 	.byte	'IfxEvadc_getSrcAddress',0,3,13,184,20,35
+<<<<<<< HEAD
 	.word	865
+=======
+	.word	859
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L734:
 	.byte	5
 	.byte	'group',0,13,184,20,75
+<<<<<<< HEAD
 	.word	28695
 .L736:
 	.byte	5
 	.byte	'index',0,13,184,20,97
 	.word	31831
+=======
+	.word	28689
+.L736:
+	.byte	5
+	.byte	'index',0,13,184,20,97
+	.word	31825
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L738:
 	.byte	17
 .L744:
@@ -8094,7 +8484,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L391:
 	.byte	5
 	.byte	'evadc',0,13,171,24,61
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L393:
 	.byte	5
 	.byte	'InputClassNum',0,13,171,24,74
@@ -8102,7 +8496,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L395:
 	.byte	5
 	.byte	'conversionMode',0,13,171,24,120
+<<<<<<< HEAD
 	.word	27297
+=======
+	.word	27291
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L397:
 	.byte	6,0
 .L674:
@@ -8130,11 +8528,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L906:
 	.byte	5
 	.byte	'evadcG',0,13,205,17,59
+<<<<<<< HEAD
 	.word	20574
 .L908:
 	.byte	5
 	.byte	'channelId',0,13,205,17,86
 	.word	32208
+=======
+	.word	20568
+.L908:
+	.byte	5
+	.byte	'channelId',0,13,205,17,86
+	.word	32202
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L910:
 	.byte	6,0,15,13,172,1,9,1,16
 	.byte	'IfxEvadc_ChannelResult_0',0,0,16
@@ -8159,70 +8565,122 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L937:
 	.byte	5
 	.byte	'evadcG',0,13,187,18,60
+<<<<<<< HEAD
 	.word	20574
 .L939:
 	.byte	5
 	.byte	'resultRegister',0,13,187,18,91
 	.word	32689
+=======
+	.word	20568
+.L939:
+	.byte	5
+	.byte	'resultRegister',0,13,187,18,91
+	.word	32683
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L941:
 	.byte	6,0
 .L681:
 	.byte	8
 	.byte	'IfxEvadc_getChannelControlConfig',0,3,13,235,18,30
+<<<<<<< HEAD
 	.word	18995
+=======
+	.word	18989
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L683:
 	.byte	5
 	.byte	'evadcG',0,13,235,18,76
+<<<<<<< HEAD
 	.word	20574
 .L685:
 	.byte	5
 	.byte	'channelIndex',0,13,235,18,103
 	.word	32208
+=======
+	.word	20568
+.L685:
+	.byte	5
+	.byte	'channelIndex',0,13,235,18,103
+	.word	32202
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L687:
 	.byte	6,0
 .L748:
 	.byte	8
 	.byte	'IfxEvadc_getChannelResultServiceRequestNodePointer0',0,3,13,249,18,31
+<<<<<<< HEAD
 	.word	17247
+=======
+	.word	17241
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L750:
 	.byte	5
 	.byte	'evadcG',0,13,249,18,96
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L752:
 	.byte	6,0
 .L758:
 	.byte	8
 	.byte	'IfxEvadc_getChannelResultServiceRequestNodePointer1',0,3,13,129,19,31
+<<<<<<< HEAD
 	.word	17469
+=======
+	.word	17463
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L759:
 	.byte	5
 	.byte	'evadcG',0,13,129,19,96
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L761:
 	.byte	6,0
 .L711:
 	.byte	8
 	.byte	'IfxEvadc_getChannelServiceRequestNodePointer0',0,3,13,137,19,31
+<<<<<<< HEAD
 	.word	16809
+=======
+	.word	16803
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L713:
 	.byte	5
 	.byte	'evadcG',0,13,137,19,90
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L715:
 	.byte	6,0
 .L721:
 	.byte	8
 	.byte	'IfxEvadc_getChannelServiceRequestNodePointer1',0,3,13,145,19,31
+<<<<<<< HEAD
 	.word	17031
+=======
+	.word	17025
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L722:
 	.byte	5
 	.byte	'evadcG',0,13,145,19,90
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L724:
 	.byte	6,0,15,13,109,9,1,16
 	.byte	'IfxEvadc_BoundaryExtension_standard',0,0,16
@@ -8247,7 +8705,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L871:
 	.byte	5
 	.byte	'evadcG',0,13,145,22,55
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L873:
 	.byte	5
 	.byte	'channelIndex',0,13,145,22,82
@@ -8255,7 +8717,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L875:
 	.byte	5
 	.byte	'boundaryMode',0,13,145,22,123
+<<<<<<< HEAD
 	.word	33615
+=======
+	.word	33609
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L877:
 	.byte	6,0
 .L884:
@@ -8264,7 +8730,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L887:
 	.byte	5
 	.byte	'evadcG',0,13,151,22,67
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L889:
 	.byte	5
 	.byte	'channelSrcNr',0,13,151,22,90
@@ -8272,7 +8742,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L891:
 	.byte	5
 	.byte	'channel',0,13,151,22,123
+<<<<<<< HEAD
 	.word	32208
+=======
+	.word	32202
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L893:
 	.byte	6,0
 .L894:
@@ -8281,7 +8755,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L896:
 	.byte	5
 	.byte	'evadcG',0,13,158,22,67
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L898:
 	.byte	5
 	.byte	'channelSrcNr',0,13,158,22,90
@@ -8289,7 +8767,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L900:
 	.byte	5
 	.byte	'channel',0,13,158,22,123
+<<<<<<< HEAD
 	.word	32208
+=======
+	.word	32202
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L902:
 	.byte	6,0,15,13,170,2,9,1,16
 	.byte	'IfxEvadc_InputClasses_group0',0,0,16
@@ -8302,7 +8784,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L841:
 	.byte	5
 	.byte	'evadcG',0,13,165,22,60
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L843:
 	.byte	5
 	.byte	'channelIndex',0,13,165,22,87
@@ -8310,7 +8796,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L845:
 	.byte	5
 	.byte	'inputClass',0,13,165,22,123
+<<<<<<< HEAD
 	.word	34684
+=======
+	.word	34678
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L847:
 	.byte	6,0,15,13,180,2,9,1,16
 	.byte	'IfxEvadc_LimitCheck_noCheck',0,0,16
@@ -8323,7 +8813,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L851:
 	.byte	5
 	.byte	'evadcG',0,13,171,22,64
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L853:
 	.byte	5
 	.byte	'channelIndex',0,13,171,22,91
@@ -8331,7 +8825,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L855:
 	.byte	5
 	.byte	'limitCheck',0,13,171,22,125
+<<<<<<< HEAD
 	.word	34915
+=======
+	.word	34909
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L857:
 	.byte	6,0,15,13,131,1,9,1,16
 	.byte	'IfxEvadc_BoundarySelection_group0',0,0,16
@@ -8344,7 +8842,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L811:
 	.byte	5
 	.byte	'evadcG',0,13,207,24,56
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L813:
 	.byte	5
 	.byte	'channelIndex',0,13,207,24,83
@@ -8352,7 +8854,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L815:
 	.byte	5
 	.byte	'lowerBoundary',0,13,207,24,124
+<<<<<<< HEAD
 	.word	35160
+=======
+	.word	35154
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L817:
 	.byte	6,0,15,13,164,1,9,1,16
 	.byte	'IfxEvadc_ChannelReference_standard',0,0,16
@@ -8363,7 +8869,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L791:
 	.byte	5
 	.byte	'evadcG',0,13,220,24,57
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L793:
 	.byte	5
 	.byte	'channelIndex',0,13,220,24,84
@@ -8371,7 +8881,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L795:
 	.byte	5
 	.byte	'reference',0,13,220,24,124
+<<<<<<< HEAD
 	.word	35410
+=======
+	.word	35404
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L797:
 	.byte	6,0
 .L942:
@@ -8380,7 +8894,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L945:
 	.byte	5
 	.byte	'evadcG',0,13,226,24,66
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L947:
 	.byte	5
 	.byte	'resultSrcNr',0,13,226,24,89
@@ -8388,7 +8906,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L949:
 	.byte	5
 	.byte	'resultRegister',0,13,226,24,125
+<<<<<<< HEAD
 	.word	32689
+=======
+	.word	32683
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L951:
 	.byte	6,0
 .L952:
@@ -8397,7 +8919,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L954:
 	.byte	5
 	.byte	'evadcG',0,13,233,24,66
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L956:
 	.byte	5
 	.byte	'resultSrcNr',0,13,233,24,89
@@ -8405,7 +8931,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L958:
 	.byte	5
 	.byte	'resultRegister',0,13,233,24,125
+<<<<<<< HEAD
 	.word	32689
+=======
+	.word	32683
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L960:
 	.byte	6,0
 .L858:
@@ -8414,7 +8944,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L861:
 	.byte	5
 	.byte	'evadcG',0,13,240,24,57
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L863:
 	.byte	5
 	.byte	'channelIndex',0,13,240,24,84
@@ -8422,7 +8956,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L865:
 	.byte	5
 	.byte	'rightAlignedStorage',0,13,240,24,106
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L867:
 	.byte	6,0
 .L828:
@@ -8431,7 +8969,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L831:
 	.byte	5
 	.byte	'evadcG',0,13,138,25,54
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L833:
 	.byte	5
 	.byte	'channelIndex',0,13,138,25,81
@@ -8439,7 +8981,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L835:
 	.byte	5
 	.byte	'synchonize',0,13,138,25,103
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L837:
 	.byte	6,0
 .L818:
@@ -8448,7 +8994,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L821:
 	.byte	5
 	.byte	'evadcG',0,13,144,25,56
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L823:
 	.byte	5
 	.byte	'channelIndex',0,13,144,25,83
@@ -8456,7 +9006,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L825:
 	.byte	5
 	.byte	'upperBoundary',0,13,144,25,124
+<<<<<<< HEAD
 	.word	35160
+=======
+	.word	35154
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L827:
 	.byte	6,0
 .L798:
@@ -8465,7 +9019,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L801:
 	.byte	5
 	.byte	'evadcG',0,13,179,25,56
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L803:
 	.byte	5
 	.byte	'channelIndex',0,13,179,25,83
@@ -8479,7 +9037,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	26549
 .L1030:
 	.byte	3
+<<<<<<< HEAD
 	.word	36190
+=======
+	.word	36184
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,161,4,9,1,16
 	.byte	'IfxEvadc_BoundaryFlagSwControl_noAction',0,0,16
 	.byte	'IfxEvadc_BoundaryFlagSwControl_clear',0,1,16
@@ -8491,11 +9053,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1070:
 	.byte	5
 	.byte	'evadcFC',0,13,240,17,76
+<<<<<<< HEAD
 	.word	36195
 .L1072:
 	.byte	5
 	.byte	'control',0,13,240,17,116
 	.word	36200
+=======
+	.word	36189
+.L1072:
+	.byte	5
+	.byte	'control',0,13,240,17,116
+	.word	36194
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1074:
 	.byte	6,0,15,13,138,4,9,1,16
 	.byte	'IfxEvadc_BoundaryFlagInversionControl_direct',0,0,16
@@ -8506,11 +9076,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1062:
 	.byte	5
 	.byte	'evadcFC',0,13,246,17,76
+<<<<<<< HEAD
 	.word	36195
 .L1064:
 	.byte	5
 	.byte	'mode',0,13,246,17,123
 	.word	36454
+=======
+	.word	36189
+.L1064:
+	.byte	5
+	.byte	'mode',0,13,246,17,123
+	.word	36448
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1066:
 	.byte	6,0
 .L1038:
@@ -8519,7 +9097,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1041:
 	.byte	5
 	.byte	'evadcFC',0,13,252,17,71
+<<<<<<< HEAD
 	.word	36195
+=======
+	.word	36189
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1043:
 	.byte	6,0
 .L1083:
@@ -8528,7 +9110,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1085:
 	.byte	5
 	.byte	'evadcFC',0,13,155,18,70
+<<<<<<< HEAD
 	.word	36195
+=======
+	.word	36189
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1087:
 	.byte	6,0,15,13,128,4,9,1,16
 	.byte	'IfxEvadc_BoundaryFlagActivationMode_0',0,0,16
@@ -8539,11 +9125,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1054:
 	.byte	5
 	.byte	'evadcFC',0,13,243,21,84
+<<<<<<< HEAD
 	.word	36195
 .L1056:
 	.byte	5
 	.byte	'mode',0,13,243,21,129,1
 	.word	36774
+=======
+	.word	36189
+.L1056:
+	.byte	5
+	.byte	'mode',0,13,243,21,129,1
+	.word	36768
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1058:
 	.byte	6,0,15,13,146,4,9,1,16
 	.byte	'IfxEvadc_BoundaryFlagNodePointer_commonBoundaryFlagOutput0',0,0,16
@@ -8561,11 +9155,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1078:
 	.byte	5
 	.byte	'evadcFC',0,13,249,21,81
+<<<<<<< HEAD
 	.word	36195
 .L1080:
 	.byte	5
 	.byte	'nodePointer',0,13,249,21,123
 	.word	36956
+=======
+	.word	36189
+.L1080:
+	.byte	5
+	.byte	'nodePointer',0,13,249,21,123
+	.word	36950
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1082:
 	.byte	6,0
 .L1044:
@@ -8574,22 +9176,38 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1046:
 	.byte	5
 	.byte	'evadcFC',0,13,196,23,69
+<<<<<<< HEAD
 	.word	36195
 .L1048:
 	.byte	5
 	.byte	'referenceValue',0,13,196,23,85
 	.word	1027
+=======
+	.word	36189
+.L1048:
+	.byte	5
+	.byte	'referenceValue',0,13,196,23,85
+	.word	1021
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L1050:
 	.byte	6,0
 .L471:
 	.byte	8
 	.byte	'IfxEvadc_getAnalogFunctionConfiguration',0,3,13,227,18,30
+<<<<<<< HEAD
 	.word	11986
+=======
+	.word	11980
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L474:
 	.byte	5
 	.byte	'evadcG',0,13,227,18,83
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L476:
 	.byte	6,0,15,13,213,1,9,1,16
 	.byte	'IfxEvadc_EmuxInterface_0',0,0,16
@@ -8600,7 +9218,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L987:
 	.byte	5
 	.byte	'evadc',0,13,221,22,62
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L989:
 	.byte	5
 	.byte	'emuxInterface',0,13,221,22,92
@@ -8608,7 +9230,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L991:
 	.byte	5
 	.byte	'group',0,13,221,22,124
+<<<<<<< HEAD
 	.word	28695
+=======
+	.word	28689
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L993:
 	.byte	6,0
 .L552:
@@ -8617,11 +9243,19 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L554:
 	.byte	5
 	.byte	'evadcG',0,13,185,25,65
+<<<<<<< HEAD
 	.word	20574
 .L556:
 	.byte	5
 	.byte	'group',0,13,185,25,90
 	.word	28695
+=======
+	.word	20568
+.L556:
+	.byte	5
+	.byte	'group',0,13,185,25,90
+	.word	28689
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L558:
 	.byte	6,0
 .L566:
@@ -8630,7 +9264,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L568:
 	.byte	5
 	.byte	'evadcG',0,13,200,25,58
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L570:
 	.byte	5
 	.byte	'group',0,13,200,25,83
@@ -8656,49 +9294,85 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L410:
 	.byte	8
 	.byte	'IfxEvadc_Adc_getEvadcFromGroup',0,3,17,141,8,23
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L411:
 	.byte	5
 	.byte	'group',0,17,141,8,80
+<<<<<<< HEAD
 	.word	38137
+=======
+	.word	38131
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L413:
 	.byte	6,0
 .L414:
 	.byte	8
 	.byte	'IfxEvadc_Adc_getGroupRegsFromGroup',0,3,17,153,8,25
+<<<<<<< HEAD
 	.word	20574
+=======
+	.word	20568
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L415:
 	.byte	5
 	.byte	'group',0,17,153,8,86
+<<<<<<< HEAD
 	.word	38137
+=======
+	.word	38131
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L417:
 	.byte	6,0
 .L461:
 	.byte	8
 	.byte	'IfxEvadc_Adc_getMasterId',0,3,18,102,29
+<<<<<<< HEAD
 	.word	28695
+=======
+	.word	28689
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L463:
 	.byte	5
 	.byte	'slave',0,18,102,71
+<<<<<<< HEAD
 	.word	28695
 .L465:
 	.byte	5
 	.byte	'masterIndex',0,18,102,104
 	.word	514
+=======
+	.word	28689
+.L465:
+	.byte	5
+	.byte	'masterIndex',0,18,102,104
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L467:
 	.byte	6,0
 .L595:
 	.byte	8
 	.byte	'IfxEvadc_Adc_getMasterKernelIndex',0,3,18,128,1,38
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1
 .L597:
 	.byte	5
 	.byte	'slave',0,18,128,1,89
+<<<<<<< HEAD
 	.word	28695
+=======
+	.word	28689
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 .L599:
 	.byte	5
 	.byte	'master',0,18,128,1,113
@@ -8807,7 +9481,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	25
 	.word	10284
 	.byte	25
+<<<<<<< HEAD
 	.word	10302
+=======
+	.word	10296
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,8,104,9,1,16
 	.byte	'IfxPort_Mode_inputNoPullDevice',0,0,16
 	.byte	'IfxPort_Mode_inputPullDown',0,8,16
@@ -8830,7 +9508,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxPort_Mode_outputOpenDrainAlt7',0,248,1,0,28
 	.byte	'IfxPort_setPinMode',0,8,185,3,17,1,1,1,1,5
 	.byte	'port',0,8,185,3,43
+<<<<<<< HEAD
 	.word	9750
+=======
+	.word	9744
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,8,185,3,55
 	.word	514
@@ -8876,13 +9558,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	0,6,0,0,24
 	.word	10773
 	.byte	6,0,24
+<<<<<<< HEAD
 	.word	10813
+=======
+	.word	10807
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,12,175,2,9,1,16
 	.byte	'IfxScuCcu_Fsource_0',0,0,16
 	.byte	'IfxScuCcu_Fsource_1',0,1,16
 	.byte	'IfxScuCcu_Fsource_2',0,2,0,30
 	.byte	'IfxScuCcu_getSourceFrequency',0,12,254,6,20
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'fsource',0,12,254,6,67
 	.word	39771
@@ -8905,6 +9595,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	25
 	.word	27521
 	.byte	25
+<<<<<<< HEAD
 	.word	27536
 	.byte	6,0,24
 	.word	27561
@@ -8944,19 +9635,68 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	5
 	.byte	'sourceType',0,13,181,8,101
 	.word	27682
+=======
+	.word	27530
+	.byte	6,0,24
+	.word	27555
+	.byte	25
+	.word	27592
+	.byte	6,0,24
+	.word	27609
+	.byte	25
+	.word	27640
+	.byte	25
+	.word	27655
+	.byte	6,0,24
+	.word	27779
+	.byte	25
+	.word	27807
+	.byte	25
+	.word	27823
+	.byte	25
+	.word	27843
+	.byte	6,0,24
+	.word	27865
+	.byte	25
+	.word	27893
+	.byte	25
+	.word	27908
+	.byte	6,0,28
+	.byte	'IfxEvadc_disableQueueSlotExternalTrigger',0,13,174,8,17,1,1,1,1,5
+	.byte	'evadcG',0,13,174,8,71
+	.word	20568
+	.byte	5
+	.byte	'sourceType',0,13,174,8,102
+	.word	27676
+	.byte	0,28
+	.byte	'IfxEvadc_enableQueueSlotExternalTrigger',0,13,181,8,17,1,1,1,1,5
+	.byte	'evadcG',0,13,181,8,70
+	.word	20568
+	.byte	5
+	.byte	'sourceType',0,13,181,8,101
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,13,138,2,9,1,16
 	.byte	'IfxEvadc_GatingMode_disabled',0,0,16
 	.byte	'IfxEvadc_GatingMode_always',0,1,16
 	.byte	'IfxEvadc_GatingMode_gatingHigh',0,2,16
 	.byte	'IfxEvadc_GatingMode_gatingLow',0,3,0,30
 	.byte	'IfxEvadc_getQueueSlotGatingMode',0,13,188,8,32
+<<<<<<< HEAD
 	.word	40201
+=======
+	.word	40195
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'evadcG',0,13,188,8,77
 	.word	20574
 	.byte	5
 	.byte	'sourceType',0,13,188,8,108
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,13,148,2,9,1,16
 	.byte	'IfxEvadc_GatingSource_0',0,0,16
 	.byte	'IfxEvadc_GatingSource_1',0,1,16
@@ -8975,37 +9715,61 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_GatingSource_14',0,14,16
 	.byte	'IfxEvadc_GatingSource_15',0,15,0,30
 	.byte	'IfxEvadc_getQueueSlotGatingSource',0,13,195,8,34
+<<<<<<< HEAD
 	.word	40415
+=======
+	.word	40409
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'evadcG',0,13,195,8,81
 	.word	20574
 	.byte	5
 	.byte	'sourceType',0,13,195,8,112
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,13,147,3,9,1,16
 	.byte	'IfxEvadc_RequestSlotPriority_lowest',0,0,16
 	.byte	'IfxEvadc_RequestSlotPriority_low',0,1,16
 	.byte	'IfxEvadc_RequestSlotPriority_high',0,2,16
 	.byte	'IfxEvadc_RequestSlotPriority_highest',0,3,0,30
 	.byte	'IfxEvadc_getQueueSlotPriority',0,13,202,8,41
+<<<<<<< HEAD
 	.word	40928
+=======
+	.word	40922
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'evadcG',0,13,202,8,84
 	.word	20574
 	.byte	5
 	.byte	'sourceType',0,13,202,8,115
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,13,157,3,9,1,16
 	.byte	'IfxEvadc_RequestSlotStartMode_waitForStart',0,0,16
 	.byte	'IfxEvadc_RequestSlotStartMode_cancelInjectRepeat',0,1,0,30
 	.byte	'IfxEvadc_getQueueSlotStartMode',0,13,209,8,42
+<<<<<<< HEAD
 	.word	41163
+=======
+	.word	41157
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'evadcG',0,13,209,8,86
 	.word	20574
 	.byte	5
 	.byte	'sourceType',0,13,209,8,117
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,13,230,3,9,1,16
 	.byte	'IfxEvadc_TriggerSource_0',0,0,16
 	.byte	'IfxEvadc_TriggerSource_1',0,1,16
@@ -9024,20 +9788,32 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_TriggerSource_14',0,14,16
 	.byte	'IfxEvadc_TriggerSource_15',0,15,0,30
 	.byte	'IfxEvadc_getQueueSlotTriggerInput',0,13,216,8,35
+<<<<<<< HEAD
 	.word	41347
+=======
+	.word	41341
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'evadcG',0,13,216,8,82
 	.word	20574
 	.byte	5
 	.byte	'sourceType',0,13,216,8,113
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,15,13,220,3,9,1,16
 	.byte	'IfxEvadc_TriggerMode_noExternalTrigger',0,0,16
 	.byte	'IfxEvadc_TriggerMode_uponFallingEdge',0,1,16
 	.byte	'IfxEvadc_TriggerMode_uponRisingEdge',0,2,16
 	.byte	'IfxEvadc_TriggerMode_uponAnyEdge',0,3,0,30
 	.byte	'IfxEvadc_getQueueSlotTriggerMode',0,13,223,8,33
+<<<<<<< HEAD
 	.word	41876
+=======
+	.word	41870
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,1,1,5
 	.byte	'evadcG',0,13,223,8,79
 	.word	20574
@@ -9100,6 +9876,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	27
 	.word	10137
 	.byte	0,6,0,0,24
+<<<<<<< HEAD
 	.word	28545
 	.byte	25
 	.word	28586
@@ -9289,6 +10066,197 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	32159
 	.byte	25
 	.word	32182
+=======
+	.word	28539
+	.byte	25
+	.word	28580
+	.byte	25
+	.word	28605
+	.byte	6,0,24
+	.word	28627
+	.byte	25
+	.word	28670
+	.byte	17,26
+	.word	10767
+	.byte	27
+	.word	10805
+	.byte	0,6,0,0,24
+	.word	29375
+	.byte	25
+	.word	29427
+	.byte	25
+	.word	29443
+	.byte	25
+	.word	29458
+	.byte	6,0,24
+	.word	29651
+	.byte	25
+	.word	29693
+	.byte	25
+	.word	29709
+	.byte	25
+	.word	29724
+	.byte	6,0,24
+	.word	29741
+	.byte	25
+	.word	29781
+	.byte	6,0,24
+	.word	29799
+	.byte	25
+	.word	29843
+	.byte	25
+	.word	29859
+	.byte	6,0,24
+	.word	29889
+	.byte	25
+	.word	29921
+	.byte	25
+	.word	29936
+	.byte	25
+	.word	29953
+	.byte	25
+	.word	29975
+	.byte	6,0,24
+	.word	29997
+	.byte	25
+	.word	30037
+	.byte	25
+	.word	30053
+	.byte	25
+	.word	30076
+	.byte	6,0,24
+	.word	30103
+	.byte	25
+	.word	30139
+	.byte	6,0,24
+	.word	30240
+	.byte	25
+	.word	30282
+	.byte	25
+	.word	30298
+	.byte	25
+	.word	30313
+	.byte	6,0,24
+	.word	30329
+	.byte	25
+	.word	30364
+	.byte	25
+	.word	30380
+	.byte	6,0,24
+	.word	30513
+	.byte	25
+	.word	30560
+	.byte	25
+	.word	30576
+	.byte	25
+	.word	30591
+	.byte	6,0,24
+	.word	30612
+	.byte	25
+	.word	30654
+	.byte	25
+	.word	30670
+	.byte	6,0,24
+	.word	30687
+	.byte	25
+	.word	30715
+	.byte	6,0,24
+	.word	30834
+	.byte	25
+	.word	30880
+	.byte	25
+	.word	30896
+	.byte	25
+	.word	30911
+	.byte	6,0,24
+	.word	31027
+	.byte	25
+	.word	31078
+	.byte	25
+	.word	31094
+	.byte	25
+	.word	31109
+	.byte	6,0,24
+	.word	31300
+	.byte	25
+	.word	31341
+	.byte	25
+	.word	31357
+	.byte	6,0,24
+	.word	31388
+	.byte	25
+	.word	31428
+	.byte	25
+	.word	31444
+	.byte	25
+	.word	31467
+	.byte	6,0,24
+	.word	31493
+	.byte	25
+	.word	31529
+	.byte	25
+	.word	31545
+	.byte	25
+	.word	31568
+	.byte	25
+	.word	31593
+	.byte	17,26
+	.word	28539
+	.byte	25
+	.word	28580
+	.byte	25
+	.word	28605
+	.byte	27
+	.word	28625
+	.byte	0,6,0,0,24
+	.word	31617
+	.byte	25
+	.word	31649
+	.byte	25
+	.word	31665
+	.byte	6,0,28
+	.byte	'IfxEvadc_setArbiterPriority',0,13,180,11,17,1,1,1,1,5
+	.byte	'evadcG',0,13,180,11,58
+	.word	20568
+	.byte	5
+	.byte	'slotEnable',0,13,180,11,74
+	.word	508
+	.byte	5
+	.byte	'prio',0,13,180,11,115
+	.word	40922
+	.byte	5
+	.byte	'mode',0,13,180,11,151,1
+	.word	41157
+	.byte	5
+	.byte	'slot',0,13,180,11,180,1
+	.word	27676
+	.byte	0,24
+	.word	31688
+	.byte	25
+	.word	31728
+	.byte	25
+	.word	31744
+	.byte	25
+	.word	31759
+	.byte	6,0,24
+	.word	31778
+	.byte	25
+	.word	31808
+	.byte	6,0,24
+	.word	32028
+	.byte	25
+	.word	32063
+	.byte	25
+	.word	32078
+	.byte	17,6,0,0,24
+	.word	32097
+	.byte	25
+	.word	32138
+	.byte	25
+	.word	32153
+	.byte	25
+	.word	32176
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,13,190,2,9,1,16
 	.byte	'IfxEvadc_Protection_channelControl0',0,0,16
 	.byte	'IfxEvadc_Protection_channelControl1',0,1,16
@@ -9363,7 +10331,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_Protection_testFunction',0,210,0,0,28
 	.byte	'IfxEvadc_disableAccess',0,13,163,12,17,1,1,1,1,5
 	.byte	'evadc',0,13,163,12,51
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'protectionSet',0,13,163,12,78
 	.word	43128
@@ -9519,6 +10491,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	25
 	.word	36045
 	.byte	25
+<<<<<<< HEAD
 	.word	36067
 	.byte	6,0,24
 	.word	36092
@@ -9528,6 +10501,17 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	36142
 	.byte	25
 	.word	36164
+=======
+	.word	36061
+	.byte	6,0,24
+	.word	36086
+	.byte	25
+	.word	36120
+	.byte	25
+	.word	36136
+	.byte	25
+	.word	36158
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,15,13,246,1,9,1,16
 	.byte	'IfxEvadc_ExternalMultiplexerMode_softwareControl',0,0,16
 	.byte	'IfxEvadc_ExternalMultiplexerMode_steady',0,1,16
@@ -9549,7 +10533,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_ChannelSelectionStyle_binary',0,1,0,28
 	.byte	'IfxEvadc_configExternalMultiplexerMode',0,13,237,14,17,1,1,1,1,5
 	.byte	'evadc',0,13,237,14,67
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'evadcG',0,13,237,14,87
 	.word	20574
@@ -9632,7 +10620,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	25
 	.word	38022
 	.byte	25
+<<<<<<< HEAD
 	.word	38038
+=======
+	.word	38032
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0
 .L369:
 	.byte	15,13,198,3,9,1,16
@@ -9645,7 +10637,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_Status_channelsStillPending',0,6,0
 .L371:
 	.byte	3
+<<<<<<< HEAD
 	.word	38055
+=======
+	.word	38049
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,192,6,9,1,16
 	.byte	'IfxEvadc_SpreadEarlySamplePointStandardConversionsMode_nominal',0,0,16
 	.byte	'IfxEvadc_SpreadEarlySamplePointStandardConversionsMode_spread',0,1,0,15,13,216,5,9,1,16
@@ -9660,7 +10656,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_SpreadEarlySamplePointEMUXConversionsMode_nominal',0,0,16
 	.byte	'IfxEvadc_SpreadEarlySamplePointEMUXConversionsMode_spread',0,1,0,20,17,165,2,9,16,13
 	.byte	'sampleTime',0
+<<<<<<< HEAD
 	.word	287
+=======
+	.word	281
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'conversionMode',0
 	.word	27297
@@ -9683,7 +10683,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'analogInputPrechargeControlEMUX',0
 	.word	48006
 	.byte	1,2,35,14,0,18,32
+<<<<<<< HEAD
 	.word	48530
+=======
+	.word	48524
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	19,1,0,15,13,196,5,9,1,16
 	.byte	'IfxEvadc_AnalogClockGenerationMode_synchronized',0,0,16
 	.byte	'IfxEvadc_AnalogClockGenerationMode_unsynchronized',0,1,0,15,13,213,6,9,1,16
@@ -9693,7 +10697,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_StartupCalibration_noAction',0,0,16
 	.byte	'IfxEvadc_StartupCalibration_initiate',0,1,0,20,17,246,2,9,40,13
 	.byte	'evadc',0
+<<<<<<< HEAD
 	.word	27193
+=======
+	.word	27187
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'globalInputClass',0
 	.word	48773
@@ -9755,14 +10763,22 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'requestSlotStartMode',0
 	.word	41163
 	.byte	1,2,35,7,0,18,24
+<<<<<<< HEAD
 	.word	49425
+=======
+	.word	49419
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	19,2,0,15,13,99,9,1,16
 	.byte	'IfxEvadc_ArbitrationRounds_4_slots',0,0,16
 	.byte	'IfxEvadc_ArbitrationRounds_8_slots',0,1,16
 	.byte	'IfxEvadc_ArbitrationRounds_16_slots',0,2,16
 	.byte	'IfxEvadc_ArbitrationRounds_20_slots',0,3,0,20,17,155,2,9,4,13
 	.byte	'arbiterRoundLength',0
+<<<<<<< HEAD
 	.word	49548
+=======
+	.word	49542
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,2,35,0,13
 	.byte	'requestSlotQueue0Enabled',0
 	.word	514
@@ -9837,6 +10853,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	49841
 .L481:
 	.byte	3
+<<<<<<< HEAD
 	.word	50394
 	.byte	21
 	.word	49425
@@ -9859,6 +10876,30 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L669:
 	.byte	3
 	.word	50419
+=======
+	.word	50388
+	.byte	21
+	.word	49419
+.L611:
+	.byte	3
+	.word	50398
+.L667:
+	.byte	21
+	.word	49835
+	.byte	20,17,209,2,9,8,13
+	.byte	'channel',0
+	.word	32202
+	.byte	1,2,35,0,13
+	.byte	'resultreg',0
+	.word	32683
+	.byte	1,2,35,1,13
+	.byte	'group',0
+	.word	38131
+	.byte	4,2,35,4,0
+.L669:
+	.byte	3
+	.word	50413
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,133,6,9,1,16
 	.byte	'IfxEvadc_DataModificationMode_standardDataReduction',0,0,16
 	.byte	'IfxEvadc_DataModificationMode_resultFilteringMode',0,1,16
@@ -9886,7 +10927,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_FifoMode_maximumMode',0,2,16
 	.byte	'IfxEvadc_FifoMode_minimumMode',0,3,0,20,17,218,2,9,28,13
 	.byte	'globalResultUsage',0
+<<<<<<< HEAD
 	.word	514
+=======
+	.word	508
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,2,35,0,13
 	.byte	'synchonize',0
 	.word	514
@@ -9963,12 +11008,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	21
 	.word	51486
 	.byte	18,12
+<<<<<<< HEAD
 	.word	28031
+=======
+	.word	28025
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	19,2,0
 .L1020:
 	.byte	20,17,177,2,9,16,13
 	.byte	'pins',0
+<<<<<<< HEAD
 	.word	52030
+=======
+	.word	52024
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	12,2,35,0,13
 	.byte	'outputMode',0
 	.word	9755
@@ -10025,7 +11078,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	1,2,35,8,0
 .L1023:
 	.byte	3
+<<<<<<< HEAD
 	.word	52328
+=======
+	.word	52322
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,171,4,9,1,16
 	.byte	'IfxEvadc_ChannelEventMode_never',0,0,16
 	.byte	'IfxEvadc_ChannelEventMode_aboveCompareValue',0,1,16
@@ -10095,7 +11152,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_TriggerOperatingMode_risingEdge',0,2,16
 	.byte	'IfxEvadc_TriggerOperatingMode_anyEdge',0,3,0,20,17,191,3,9,32,13
 	.byte	'module',0
+<<<<<<< HEAD
 	.word	47865
+=======
+	.word	47859
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	4,2,35,0,13
 	.byte	'fastCompareChannelId',0
 	.word	28695
@@ -10261,7 +11322,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	56193
 	.byte	31
 	.byte	'Ifx_Priority',0,22,103,16
+<<<<<<< HEAD
 	.word	1027
+=======
+	.word	1021
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,22,130,1,9,1,16
 	.byte	'Ifx_RxSel_a',0,0,16
 	.byte	'Ifx_RxSel_b',0,1,16
@@ -10272,7 +11337,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'Ifx_RxSel_g',0,6,16
 	.byte	'Ifx_RxSel_h',0,7,0,31
 	.byte	'Ifx_RxSel',0,22,140,1,3
+<<<<<<< HEAD
 	.word	56362
+=======
+	.word	56356
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'Ifx_UReg_8Bit',0,23,94,24
 	.word	514
@@ -10771,6 +11840,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	10
 	.byte	'_Ifx_SRC_VADC',0,4,130,6,25,128,2,13
 	.byte	'G',0
+<<<<<<< HEAD
 	.word	59535
 	.byte	64,2,35,0,13
 	.byte	'reserved_40',0
@@ -11626,12 +12696,873 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	31
 	.byte	'Ifx_P',0,9,130,6,3
 	.word	66501
+=======
+	.word	59529
+	.byte	64,2,35,0,13
+	.byte	'reserved_40',0
+	.word	19038
+	.byte	64,2,35,64,13
+	.byte	'G8',0
+	.word	59534
+	.byte	16,3,35,128,1,13
+	.byte	'G9',0
+	.word	59539
+	.byte	16,3,35,144,1,13
+	.byte	'G10',0
+	.word	59544
+	.byte	16,3,35,160,1,13
+	.byte	'G11',0
+	.word	59549
+	.byte	16,3,35,176,1,13
+	.byte	'FC',0
+	.word	59563
+	.byte	16,3,35,192,1,13
+	.byte	'reserved_D0',0
+	.word	10847
+	.byte	16,3,35,208,1,13
+	.byte	'CG',0
+	.word	59577
+	.byte	32,3,35,224,1,0,14
+	.word	59582
+	.byte	31
+	.byte	'Ifx_SRC_VADC',0,4,141,6,3
+	.word	59738
+	.byte	10
+	.byte	'_Ifx_SRC_DSADC_DSADC',0,4,156,6,25,8,13
+	.byte	'SRM',0
+	.word	815
+	.byte	4,2,35,0,13
+	.byte	'SRA',0
+	.word	815
+	.byte	4,2,35,4,0,14
+	.word	59765
+	.byte	31
+	.byte	'Ifx_SRC_DSADC_DSADC',0,4,160,6,3
+	.word	59819
+	.byte	18,48
+	.word	59765
+	.byte	19,5,0,14
+	.word	59853
+	.byte	10
+	.byte	'_Ifx_SRC_DSADC',0,4,175,6,25,48,13
+	.byte	'DSADC',0
+	.word	59862
+	.byte	48,2,35,0,0,14
+	.word	59867
+	.byte	31
+	.byte	'Ifx_SRC_DSADC',0,4,178,6,3
+	.word	59904
+	.byte	10
+	.byte	'_Ifx_SRC_ERAY_ERAY',0,4,193,6,25,48,13
+	.byte	'INT0',0
+	.word	815
+	.byte	4,2,35,0,13
+	.byte	'INT1',0
+	.word	815
+	.byte	4,2,35,4,13
+	.byte	'TINT0',0
+	.word	815
+	.byte	4,2,35,8,13
+	.byte	'TINT1',0
+	.word	815
+	.byte	4,2,35,12,13
+	.byte	'NDAT0',0
+	.word	815
+	.byte	4,2,35,16,13
+	.byte	'NDAT1',0
+	.word	815
+	.byte	4,2,35,20,13
+	.byte	'MBSC0',0
+	.word	815
+	.byte	4,2,35,24,13
+	.byte	'MBSC1',0
+	.word	815
+	.byte	4,2,35,28,13
+	.byte	'OBUSY',0
+	.word	815
+	.byte	4,2,35,32,13
+	.byte	'IBUSY',0
+	.word	815
+	.byte	4,2,35,36,13
+	.byte	'reserved_28',0
+	.word	5074
+	.byte	8,2,35,40,0,14
+	.word	59932
+	.byte	31
+	.byte	'Ifx_SRC_ERAY_ERAY',0,4,206,6,3
+	.word	60127
+	.byte	18,48
+	.word	59932
+	.byte	19,0,0,14
+	.word	60159
+	.byte	10
+	.byte	'_Ifx_SRC_ERAY',0,4,221,6,25,48,13
+	.byte	'ERAY',0
+	.word	60168
+	.byte	48,2,35,0,0,14
+	.word	60173
+	.byte	31
+	.byte	'Ifx_SRC_ERAY',0,4,224,6,3
+	.word	60208
+	.byte	10
+	.byte	'_Ifx_SRC_HSM_HSM',0,4,239,6,25,8,13
+	.byte	'HSM',0
+	.word	56746
+	.byte	8,2,35,0,0,14
+	.word	60235
+	.byte	31
+	.byte	'Ifx_SRC_HSM_HSM',0,4,242,6,3
+	.word	60272
+	.byte	18,8
+	.word	60235
+	.byte	19,0,0,14
+	.word	60302
+	.byte	10
+	.byte	'_Ifx_SRC_HSM',0,4,129,7,25,8,13
+	.byte	'HSM',0
+	.word	60311
+	.byte	8,2,35,0,0,14
+	.word	60316
+	.byte	31
+	.byte	'Ifx_SRC_HSM',0,4,132,7,3
+	.word	60349
+	.byte	10
+	.byte	'_Ifx_SRC_SCU',0,4,147,7,25,16,13
+	.byte	'SCUERU',0
+	.word	58215
+	.byte	16,2,35,0,0,14
+	.word	60375
+	.byte	31
+	.byte	'Ifx_SRC_SCU',0,4,150,7,3
+	.word	60411
+	.byte	10
+	.byte	'_Ifx_SRC_PMS_PMS',0,4,165,7,25,4,13
+	.byte	'SR',0
+	.word	815
+	.byte	4,2,35,0,0,14
+	.word	60437
+	.byte	31
+	.byte	'Ifx_SRC_PMS_PMS',0,4,168,7,3
+	.word	60473
+	.byte	18,16
+	.word	60437
+	.byte	19,3,0,14
+	.word	60503
+	.byte	10
+	.byte	'_Ifx_SRC_PMS',0,4,183,7,25,16,13
+	.byte	'PMS',0
+	.word	60512
+	.byte	16,2,35,0,0,14
+	.word	60517
+	.byte	31
+	.byte	'Ifx_SRC_PMS',0,4,186,7,3
+	.word	60550
+	.byte	18,12
+	.word	815
+	.byte	19,2,0,10
+	.byte	'_Ifx_SRC_SMU_SMU',0,4,201,7,25,12,13
+	.byte	'SR',0
+	.word	60576
+	.byte	12,2,35,0,0,14
+	.word	60585
+	.byte	31
+	.byte	'Ifx_SRC_SMU_SMU',0,4,204,7,3
+	.word	60621
+	.byte	18,12
+	.word	60585
+	.byte	19,0,0,14
+	.word	60651
+	.byte	10
+	.byte	'_Ifx_SRC_SMU',0,4,219,7,25,12,13
+	.byte	'SMU',0
+	.word	60660
+	.byte	12,2,35,0,0,14
+	.word	60665
+	.byte	31
+	.byte	'Ifx_SRC_SMU',0,4,222,7,3
+	.word	60698
+	.byte	18,32
+	.word	815
+	.byte	19,7,0,10
+	.byte	'_Ifx_SRC_PSI5_PSI5',0,4,237,7,25,32,13
+	.byte	'SR',0
+	.word	60724
+	.byte	32,2,35,0,0,14
+	.word	60733
+	.byte	31
+	.byte	'Ifx_SRC_PSI5_PSI5',0,4,240,7,3
+	.word	60771
+	.byte	18,32
+	.word	60733
+	.byte	19,0,0,14
+	.word	60803
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5',0,4,255,7,25,32,13
+	.byte	'PSI5',0
+	.word	60812
+	.byte	32,2,35,0,0,14
+	.word	60817
+	.byte	31
+	.byte	'Ifx_SRC_PSI5',0,4,130,8,3
+	.word	60852
+	.byte	10
+	.byte	'_Ifx_SRC_DAM_DAM',0,4,145,8,25,24,13
+	.byte	'LI0',0
+	.word	815
+	.byte	4,2,35,0,13
+	.byte	'RI0',0
+	.word	815
+	.byte	4,2,35,4,13
+	.byte	'LI1',0
+	.word	815
+	.byte	4,2,35,8,13
+	.byte	'RI1',0
+	.word	815
+	.byte	4,2,35,12,13
+	.byte	'DR',0
+	.word	815
+	.byte	4,2,35,16,13
+	.byte	'ERR',0
+	.word	815
+	.byte	4,2,35,20,0,14
+	.word	60879
+	.byte	31
+	.byte	'Ifx_SRC_DAM_DAM',0,4,153,8,3
+	.word	60980
+	.byte	18,24
+	.word	60879
+	.byte	19,0,0,14
+	.word	61010
+	.byte	10
+	.byte	'_Ifx_SRC_DAM',0,4,168,8,25,24,13
+	.byte	'DAM',0
+	.word	61019
+	.byte	24,2,35,0,0,14
+	.word	61024
+	.byte	31
+	.byte	'Ifx_SRC_DAM',0,4,171,8,3
+	.word	61057
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5S_PSI5S',0,4,186,8,25,32,13
+	.byte	'SR',0
+	.word	60724
+	.byte	32,2,35,0,0,14
+	.word	61083
+	.byte	31
+	.byte	'Ifx_SRC_PSI5S_PSI5S',0,4,189,8,3
+	.word	61123
+	.byte	18,32
+	.word	61083
+	.byte	19,0,0,14
+	.word	61157
+	.byte	10
+	.byte	'_Ifx_SRC_PSI5S',0,4,204,8,25,32,13
+	.byte	'PSI5S',0
+	.word	61166
+	.byte	32,2,35,0,0,14
+	.word	61171
+	.byte	31
+	.byte	'Ifx_SRC_PSI5S',0,4,207,8,3
+	.word	61208
+	.byte	10
+	.byte	'_Ifx_SRC_GPSR_GPSR',0,4,222,8,25,32,13
+	.byte	'SR',0
+	.word	60724
+	.byte	32,2,35,0,0,14
+	.word	61236
+	.byte	31
+	.byte	'Ifx_SRC_GPSR_GPSR',0,4,225,8,3
+	.word	61274
+	.byte	18,96
+	.word	61236
+	.byte	19,2,0,14
+	.word	61306
+	.byte	10
+	.byte	'_Ifx_SRC_GPSR',0,4,240,8,25,96,13
+	.byte	'GPSR',0
+	.word	61315
+	.byte	96,2,35,0,0,14
+	.word	61320
+	.byte	31
+	.byte	'Ifx_SRC_GPSR',0,4,243,8,3
+	.word	61355
+	.byte	31
+	.byte	'IfxEvadc_GroupId',0,16,153,1,3
+	.word	28689
+	.byte	18,224,1
+	.word	859
+	.byte	19,55,0,33
+	.byte	'IfxEvadc_cfg_srcAddresses',0,16,159,1,35
+	.word	61408
+	.byte	1,1,31
+	.byte	'Ifx_EVADC_ACCEN0_Bits',0,14,104,3
+	.word	21510
+	.byte	31
+	.byte	'Ifx_EVADC_ACCPROT0_Bits',0,14,117,3
+	.word	22263
+	.byte	31
+	.byte	'Ifx_EVADC_ACCPROT1_Bits',0,14,130,1,3
+	.word	22489
+	.byte	31
+	.byte	'Ifx_EVADC_ACCPROT2_Bits',0,14,141,1,3
+	.word	22715
+	.byte	31
+	.byte	'Ifx_EVADC_CLC_Bits',0,14,151,1,3
+	.word	20668
+	.byte	31
+	.byte	'Ifx_EVADC_EMUXSEL_Bits',0,14,159,1,3
+	.word	25017
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCBFL_Bits',0,14,179,1,3
+	.word	26005
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCCTRL_Bits',0,14,197,1,3
+	.word	25165
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCHYST_Bits',0,14,207,1,3
+	.word	26348
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCM_Bits',0,14,223,1,3
+	.word	25458
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCRAMP0_Bits',0,14,233,1,3
+	.word	25713
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCRAMP1_Bits',0,14,240,1,3
+	.word	25888
+	.byte	31
+	.byte	'Ifx_EVADC_GLOBCFG_Bits',0,14,251,1,3
+	.word	22081
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_BOUND_Bits',0,14,132,2,3
+	.word	23198
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_EFLAG_Bits',0,14,142,2,3
+	.word	23360
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_EVNP_Bits',0,14,150,2,3
+	.word	23549
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_ICLASS_Bits',0,14,167,2,3
+	.word	22895
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_RCR_Bits',0,14,178,2,3
+	.word	24128
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_RES_Bits',0,14,190,2,3
+	.word	24326
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_RESD_Bits',0,14,202,2,3
+	.word	24515
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_TE_Bits',0,14,211,2,3
+	.word	23969
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_TF_Bits',0,14,228,2,3
+	.word	23685
+	.byte	31
+	.byte	'Ifx_EVADC_G_ALIAS_Bits',0,14,237,2,3
+	.word	12329
+	.byte	31
+	.byte	'Ifx_EVADC_G_ANCFG_Bits',0,14,254,2,3
+	.word	11746
+	.byte	31
+	.byte	'Ifx_EVADC_G_ARBCFG_Bits',0,14,142,3,3
+	.word	11139
+	.byte	31
+	.byte	'Ifx_EVADC_G_ARBPR_Bits',0,14,161,3,3
+	.word	11412
+	.byte	31
+	.byte	'Ifx_EVADC_G_BOUND_Bits',0,14,170,3,3
+	.word	12481
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEFCLR_Bits',0,14,192,3,3
+	.word	15771
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEFLAG_Bits',0,14,214,3,3
+	.word	14915
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEVNP0_Bits',0,14,227,3,3
+	.word	16627
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEVNP1_Bits',0,14,240,3,3
+	.word	16843
+	.byte	31
+	.byte	'Ifx_EVADC_G_CHCTR_Bits',0,14,132,4,3
+	.word	18673
+	.byte	31
+	.byte	'Ifx_EVADC_G_EMUXCS_Bits',0,14,139,4,3
+	.word	18222
+	.byte	31
+	.byte	'Ifx_EVADC_G_EMUXCTR_Bits',0,14,156,4,3
+	.word	17912
+	.byte	31
+	.byte	'Ifx_EVADC_G_ICLASS_Bits',0,14,173,4,3
+	.word	12029
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_Q0R_Bits',0,14,189,4,3
+	.word	13642
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QBUR_Bits',0,14,205,4,3
+	.word	14156
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QCTRL_Bits',0,14,225,4,3
+	.word	12836
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QINR_Bits',0,14,241,4,3
+	.word	13894
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QMR_Bits',0,14,128,5,3
+	.word	13188
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QSR_Bits',0,14,140,5,3
+	.word	13441
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_REQTM_Bits',0,14,152,5,3
+	.word	14409
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_REQTS_Bits',0,14,160,5,3
+	.word	14620
+	.byte	31
+	.byte	'Ifx_EVADC_G_RCR_Bits',0,14,173,5,3
+	.word	19047
+	.byte	31
+	.byte	'Ifx_EVADC_G_REFCLR_Bits',0,14,195,5,3
+	.word	16128
+	.byte	31
+	.byte	'Ifx_EVADC_G_REFLAG_Bits',0,14,217,5,3
+	.word	15272
+	.byte	31
+	.byte	'Ifx_EVADC_G_RES_Bits',0,14,229,5,3
+	.word	19272
+	.byte	31
+	.byte	'Ifx_EVADC_G_RESD_Bits',0,14,241,5,3
+	.word	19467
+	.byte	31
+	.byte	'Ifx_EVADC_G_REVNP0_Bits',0,14,254,5,3
+	.word	17065
+	.byte	31
+	.byte	'Ifx_EVADC_G_REVNP1_Bits',0,14,139,6,3
+	.word	17281
+	.byte	31
+	.byte	'Ifx_EVADC_G_SEFCLR_Bits',0,14,148,6,3
+	.word	16485
+	.byte	31
+	.byte	'Ifx_EVADC_G_SEFLAG_Bits',0,14,157,6,3
+	.word	15629
+	.byte	31
+	.byte	'Ifx_EVADC_G_SEVNP_Bits',0,14,166,6,3
+	.word	17503
+	.byte	31
+	.byte	'Ifx_EVADC_G_SRACT_Bits',0,14,181,6,3
+	.word	17651
+	.byte	31
+	.byte	'Ifx_EVADC_G_SYNCTR_Bits',0,14,192,6,3
+	.word	12640
+	.byte	31
+	.byte	'Ifx_EVADC_G_TRCTR_Bits',0,14,208,6,3
+	.word	10856
+	.byte	31
+	.byte	'Ifx_EVADC_G_VFR_Bits',0,14,230,6,3
+	.word	18335
+	.byte	31
+	.byte	'Ifx_EVADC_ID_Bits',0,14,238,6,3
+	.word	20827
+	.byte	31
+	.byte	'Ifx_EVADC_KRST0_Bits',0,14,246,6,3
+	.word	21385
+	.byte	31
+	.byte	'Ifx_EVADC_KRST1_Bits',0,14,253,6,3
+	.word	21279
+	.byte	31
+	.byte	'Ifx_EVADC_KRSTCLR_Bits',0,14,132,7,3
+	.word	21171
+	.byte	31
+	.byte	'Ifx_EVADC_OCS_Bits',0,14,145,7,3
+	.word	20963
+	.byte	31
+	.byte	'Ifx_EVADC_ACCEN0',0,14,158,7,3
+	.word	22041
+	.byte	31
+	.byte	'Ifx_EVADC_ACCPROT0',0,14,166,7,3
+	.word	22449
+	.byte	31
+	.byte	'Ifx_EVADC_ACCPROT1',0,14,174,7,3
+	.word	22675
+	.byte	31
+	.byte	'Ifx_EVADC_ACCPROT2',0,14,182,7,3
+	.word	22855
+	.byte	31
+	.byte	'Ifx_EVADC_CLC',0,14,190,7,3
+	.word	20787
+	.byte	31
+	.byte	'Ifx_EVADC_EMUXSEL',0,14,198,7,3
+	.word	25110
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCBFL',0,14,206,7,3
+	.word	26308
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCCTRL',0,14,214,7,3
+	.word	25418
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCHYST',0,14,222,7,3
+	.word	26492
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCM',0,14,230,7,3
+	.word	25673
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCRAMP0',0,14,238,7,3
+	.word	25848
+	.byte	31
+	.byte	'Ifx_EVADC_FC_FCRAMP1',0,14,246,7,3
+	.word	25965
+	.byte	31
+	.byte	'Ifx_EVADC_GLOBCFG',0,14,254,7,3
+	.word	22223
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_BOUND',0,14,134,8,3
+	.word	23320
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_EFLAG',0,14,142,8,3
+	.word	23500
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_EVNP',0,14,150,8,3
+	.word	23645
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_ICLASS',0,14,158,8,3
+	.word	23149
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_RCR',0,14,166,8,3
+	.word	24277
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_RES',0,14,174,8,3
+	.word	24475
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_RESD',0,14,182,8,3
+	.word	24665
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_TE',0,14,190,8,3
+	.word	24077
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB_TF',0,14,198,8,3
+	.word	23929
+	.byte	31
+	.byte	'Ifx_EVADC_G_ALIAS',0,14,206,8,3
+	.word	12441
+	.byte	31
+	.byte	'Ifx_EVADC_G_ANCFG',0,14,214,8,3
+	.word	11980
+	.byte	31
+	.byte	'Ifx_EVADC_G_ARBCFG',0,14,222,8,3
+	.word	11372
+	.byte	31
+	.byte	'Ifx_EVADC_G_ARBPR',0,14,230,8,3
+	.word	11706
+	.byte	31
+	.byte	'Ifx_EVADC_G_BOUND',0,14,238,8,3
+	.word	12600
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEFCLR',0,14,246,8,3
+	.word	16088
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEFLAG',0,14,254,8,3
+	.word	15232
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEVNP0',0,14,134,9,3
+	.word	16803
+	.byte	31
+	.byte	'Ifx_EVADC_G_CEVNP1',0,14,142,9,3
+	.word	17025
+	.byte	31
+	.byte	'Ifx_EVADC_G_CHCTR',0,14,150,9,3
+	.word	18989
+	.byte	31
+	.byte	'Ifx_EVADC_G_EMUXCS',0,14,158,9,3
+	.word	18295
+	.byte	31
+	.byte	'Ifx_EVADC_G_EMUXCTR',0,14,166,9,3
+	.word	18182
+	.byte	31
+	.byte	'Ifx_EVADC_G_ICLASS',0,14,174,9,3
+	.word	12280
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_Q0R',0,14,182,9,3
+	.word	13854
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QBUR',0,14,190,9,3
+	.word	14369
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QCTRL',0,14,198,9,3
+	.word	13148
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QINR',0,14,206,9,3
+	.word	14116
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QMR',0,14,214,9,3
+	.word	13401
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_QSR',0,14,222,9,3
+	.word	13602
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_REQTM',0,14,230,9,3
+	.word	14580
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q_REQTS',0,14,238,9,3
+	.word	14718
+	.byte	31
+	.byte	'Ifx_EVADC_G_RCR',0,14,246,9,3
+	.word	19223
+	.byte	31
+	.byte	'Ifx_EVADC_G_REFCLR',0,14,254,9,3
+	.word	16445
+	.byte	31
+	.byte	'Ifx_EVADC_G_REFLAG',0,14,134,10,3
+	.word	15589
+	.byte	31
+	.byte	'Ifx_EVADC_G_RES',0,14,142,10,3
+	.word	19418
+	.byte	31
+	.byte	'Ifx_EVADC_G_RESD',0,14,150,10,3
+	.word	19614
+	.byte	31
+	.byte	'Ifx_EVADC_G_REVNP0',0,14,158,10,3
+	.word	17241
+	.byte	31
+	.byte	'Ifx_EVADC_G_REVNP1',0,14,166,10,3
+	.word	17463
+	.byte	31
+	.byte	'Ifx_EVADC_G_SEFCLR',0,14,174,10,3
+	.word	16587
+	.byte	31
+	.byte	'Ifx_EVADC_G_SEFLAG',0,14,182,10,3
+	.word	15731
+	.byte	31
+	.byte	'Ifx_EVADC_G_SEVNP',0,14,190,10,3
+	.word	17611
+	.byte	31
+	.byte	'Ifx_EVADC_G_SRACT',0,14,198,10,3
+	.word	17863
+	.byte	31
+	.byte	'Ifx_EVADC_G_SYNCTR',0,14,206,10,3
+	.word	12787
+	.byte	31
+	.byte	'Ifx_EVADC_G_TRCTR',0,14,214,10,3
+	.word	11090
+	.byte	31
+	.byte	'Ifx_EVADC_G_VFR',0,14,222,10,3
+	.word	18633
+	.byte	31
+	.byte	'Ifx_EVADC_ID',0,14,230,10,3
+	.word	20914
+	.byte	31
+	.byte	'Ifx_EVADC_KRST0',0,14,238,10,3
+	.word	21470
+	.byte	31
+	.byte	'Ifx_EVADC_KRST1',0,14,246,10,3
+	.word	21345
+	.byte	31
+	.byte	'Ifx_EVADC_KRSTCLR',0,14,254,10,3
+	.word	21239
+	.byte	31
+	.byte	'Ifx_EVADC_OCS',0,14,134,11,3
+	.word	21131
+	.byte	14
+	.word	24705
+	.byte	31
+	.byte	'Ifx_EVADC_GLOB',0,14,164,11,3
+	.word	65167
+	.byte	14
+	.word	14758
+	.byte	31
+	.byte	'Ifx_EVADC_G_Q',0,14,189,11,3
+	.word	65196
+	.byte	14
+	.word	19663
+	.byte	31
+	.byte	'Ifx_EVADC_G',0,14,253,11,3
+	.word	65224
+	.byte	14
+	.word	26543
+	.byte	31
+	.byte	'Ifx_EVADC_FC',0,14,150,12,3
+	.word	65250
+	.byte	14
+	.word	26728
+	.byte	31
+	.byte	'Ifx_EVADC',0,14,191,12,3
+	.word	65277
+	.byte	31
+	.byte	'Ifx_P_ACCEN0_Bits',0,9,104,3
+	.word	8602
+	.byte	31
+	.byte	'Ifx_P_ACCEN1_Bits',0,9,110,3
+	.word	8515
+	.byte	31
+	.byte	'Ifx_P_ESR_Bits',0,9,132,1,3
+	.word	5083
+	.byte	31
+	.byte	'Ifx_P_ID_Bits',0,9,140,1,3
+	.word	3134
+	.byte	31
+	.byte	'Ifx_P_IN_Bits',0,9,162,1,3
+	.word	4130
+	.byte	31
+	.byte	'Ifx_P_IOCR0_Bits',0,9,175,1,3
+	.word	3263
+	.byte	31
+	.byte	'Ifx_P_IOCR12_Bits',0,9,188,1,3
+	.word	3910
+	.byte	31
+	.byte	'Ifx_P_IOCR4_Bits',0,9,201,1,3
+	.word	3478
+	.byte	31
+	.byte	'Ifx_P_IOCR8_Bits',0,9,214,1,3
+	.word	3693
+	.byte	31
+	.byte	'Ifx_P_LPCR_Bits',0,9,233,1,3
+	.word	8177
+	.byte	31
+	.byte	'Ifx_P_OMCR_Bits',0,9,255,1,3
+	.word	7829
+	.byte	31
+	.byte	'Ifx_P_OMCR0_Bits',0,9,138,2,3
+	.word	6816
+	.byte	31
+	.byte	'Ifx_P_OMCR12_Bits',0,9,148,2,3
+	.word	7340
+	.byte	31
+	.byte	'Ifx_P_OMCR4_Bits',0,9,159,2,3
+	.word	6990
+	.byte	31
+	.byte	'Ifx_P_OMCR8_Bits',0,9,170,2,3
+	.word	7164
+	.byte	31
+	.byte	'Ifx_P_OMR_Bits',0,9,207,2,3
+	.word	2563
+	.byte	31
+	.byte	'Ifx_P_OMSR_Bits',0,9,229,2,3
+	.word	7496
+	.byte	31
+	.byte	'Ifx_P_OMSR0_Bits',0,9,239,2,3
+	.word	6153
+	.byte	31
+	.byte	'Ifx_P_OMSR12_Bits',0,9,250,2,3
+	.word	6641
+	.byte	31
+	.byte	'Ifx_P_OMSR4_Bits',0,9,133,3,3
+	.word	6300
+	.byte	31
+	.byte	'Ifx_P_OMSR8_Bits',0,9,144,3,3
+	.word	6469
+	.byte	31
+	.byte	'Ifx_P_OUT_Bits',0,9,166,3,3
+	.word	2247
+	.byte	31
+	.byte	'Ifx_P_PCSR_Bits',0,9,189,3,3
+	.word	5789
+	.byte	31
+	.byte	'Ifx_P_PDISC_Bits',0,9,211,3,3
+	.word	5423
+	.byte	31
+	.byte	'Ifx_P_PDR0_Bits',0,9,232,3,3
+	.word	4454
+	.byte	31
+	.byte	'Ifx_P_PDR1_Bits',0,9,253,3,3
+	.word	4758
+	.byte	31
+	.byte	'Ifx_P_ACCEN0',0,9,138,4,3
+	.word	9129
+	.byte	31
+	.byte	'Ifx_P_ACCEN1',0,9,146,4,3
+	.word	8562
+	.byte	31
+	.byte	'Ifx_P_ESR',0,9,154,4,3
+	.word	5374
+	.byte	31
+	.byte	'Ifx_P_ID',0,9,162,4,3
+	.word	3214
+	.byte	31
+	.byte	'Ifx_P_IN',0,9,170,4,3
+	.word	4405
+	.byte	31
+	.byte	'Ifx_P_IOCR0',0,9,178,4,3
+	.word	3438
+	.byte	31
+	.byte	'Ifx_P_IOCR12',0,9,186,4,3
+	.word	4090
+	.byte	31
+	.byte	'Ifx_P_IOCR4',0,9,194,4,3
+	.word	3653
+	.byte	31
+	.byte	'Ifx_P_IOCR8',0,9,202,4,3
+	.word	3870
+	.byte	31
+	.byte	'Ifx_P_LPCR',0,9,210,4,3
+	.word	8457
+	.byte	31
+	.byte	'Ifx_P_OMCR',0,9,218,4,3
+	.word	8137
+	.byte	31
+	.byte	'Ifx_P_OMCR0',0,9,226,4,3
+	.word	6950
+	.byte	31
+	.byte	'Ifx_P_OMCR12',0,9,234,4,3
+	.word	7456
+	.byte	31
+	.byte	'Ifx_P_OMCR4',0,9,242,4,3
+	.word	7124
+	.byte	31
+	.byte	'Ifx_P_OMCR8',0,9,250,4,3
+	.word	7300
+	.byte	31
+	.byte	'Ifx_P_OMR',0,9,130,5,3
+	.word	3094
+	.byte	31
+	.byte	'Ifx_P_OMSR',0,9,138,5,3
+	.word	7789
+	.byte	31
+	.byte	'Ifx_P_OMSR0',0,9,146,5,3
+	.word	6260
+	.byte	31
+	.byte	'Ifx_P_OMSR12',0,9,154,5,3
+	.word	6776
+	.byte	31
+	.byte	'Ifx_P_OMSR4',0,9,162,5,3
+	.word	6429
+	.byte	31
+	.byte	'Ifx_P_OMSR8',0,9,170,5,3
+	.word	6601
+	.byte	31
+	.byte	'Ifx_P_OUT',0,9,178,5,3
+	.word	2523
+	.byte	31
+	.byte	'Ifx_P_PCSR',0,9,186,5,3
+	.word	6113
+	.byte	31
+	.byte	'Ifx_P_PDISC',0,9,194,5,3
+	.word	5749
+	.byte	31
+	.byte	'Ifx_P_PDR0',0,9,202,5,3
+	.word	4718
+	.byte	31
+	.byte	'Ifx_P_PDR1',0,9,210,5,3
+	.word	5034
+	.byte	14
+	.word	9169
+	.byte	31
+	.byte	'Ifx_P',0,9,130,6,3
+	.word	66495
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,24,238,10,9,1,16
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,16
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,16
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,31
 	.byte	'IfxScu_WDTCON1_IR',0,24,243,10,3
+<<<<<<< HEAD
 	.word	66521
+=======
+	.word	66515
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN00_Bits',0,7,70,16,4,11
 	.byte	'EN0',0,1
@@ -15710,6 +17641,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	92322
 	.byte	36,3,35,204,4,13
 	.byte	'reserved_270',0
+<<<<<<< HEAD
 	.word	92327
 	.byte	44,3,35,240,4,13
 	.byte	'EICON0',0
@@ -15752,23 +17684,79 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	31
 	.byte	'Ifx_SCU',0,7,239,17,3
 	.word	94417
+=======
+	.word	92321
+	.byte	44,3,35,240,4,13
+	.byte	'EICON0',0
+	.word	86958
+	.byte	4,3,35,156,5,13
+	.byte	'EICON1',0
+	.word	87022
+	.byte	4,3,35,160,5,13
+	.byte	'EISR',0
+	.word	87274
+	.byte	4,3,35,164,5,13
+	.byte	'WDTS',0
+	.word	92330
+	.byte	12,3,35,168,5,13
+	.byte	'SEICON0',0
+	.word	90303
+	.byte	4,3,35,180,5,13
+	.byte	'SEICON1',0
+	.word	90368
+	.byte	4,3,35,184,5,13
+	.byte	'SEISR',0
+	.word	90433
+	.byte	4,3,35,188,5,13
+	.byte	'reserved_2C0',0
+	.word	92335
+	.byte	176,2,3,35,192,5,13
+	.byte	'ACCEN11',0
+	.word	86048
+	.byte	4,3,35,240,7,13
+	.byte	'ACCEN10',0
+	.word	85983
+	.byte	4,3,35,244,7,13
+	.byte	'ACCEN01',0
+	.word	85918
+	.byte	4,3,35,248,7,13
+	.byte	'ACCEN00',0
+	.word	85853
+	.byte	4,3,35,252,7,0,14
+	.word	92346
+	.byte	31
+	.byte	'Ifx_SCU',0,7,239,17,3
+	.word	94411
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,76,9,1,16
 	.byte	'IfxPort_ControlledBy_port',0,0,16
 	.byte	'IfxPort_ControlledBy_hsct',0,1,0,31
 	.byte	'IfxPort_ControlledBy',0,8,80,3
+<<<<<<< HEAD
 	.word	94439
+=======
+	.word	94433
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,84,9,1,16
 	.byte	'IfxPort_InputMode_undefined',0,127,16
 	.byte	'IfxPort_InputMode_noPullDevice',0,0,16
 	.byte	'IfxPort_InputMode_pullDown',0,8,16
 	.byte	'IfxPort_InputMode_pullUp',0,16,0,31
 	.byte	'IfxPort_InputMode',0,8,90,3
+<<<<<<< HEAD
 	.word	94530
+=======
+	.word	94524
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,94,9,1,16
 	.byte	'IfxPort_LvdsMode_high',0,0,16
 	.byte	'IfxPort_LvdsMode_medium',0,1,0,31
 	.byte	'IfxPort_LvdsMode',0,8,98,3
+<<<<<<< HEAD
 	.word	94681
+=======
+	.word	94675
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxPort_Mode',0,8,125,3
 	.word	38846
@@ -15780,17 +17768,29 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	9755
 	.byte	31
 	.byte	'IfxPort_PadDriver',0,8,167,1,3
+<<<<<<< HEAD
 	.word	28036
+=======
+	.word	28030
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,171,1,9,1,16
 	.byte	'IfxPort_PadSupply_3v',0,0,16
 	.byte	'IfxPort_PadSupply_5v',0,1,0,31
 	.byte	'IfxPort_PadSupply',0,8,175,1,3
+<<<<<<< HEAD
 	.word	94865
+=======
+	.word	94859
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,8,179,1,9,1,16
 	.byte	'IfxPort_PinFunctionMode_digital',0,0,16
 	.byte	'IfxPort_PinFunctionMode_analog',0,1,0,31
 	.byte	'IfxPort_PinFunctionMode',0,8,183,1,3
+<<<<<<< HEAD
 	.word	94945
+=======
+	.word	94939
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxPort_State',0,8,195,1,3
 	.word	10139
@@ -18693,6 +20693,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	115714
 	.byte	31
 	.byte	'Ifx_CPU_TR',0,25,129,15,3
+<<<<<<< HEAD
 	.word	115759
 	.byte	18,128,34
 	.word	514
@@ -19390,13 +21391,716 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	31
 	.byte	'Ifx_CPU',0,25,224,16,3
 	.word	121221
+=======
+	.word	115753
+	.byte	18,128,34
+	.word	508
+	.byte	19,255,33,0,18,236,253,2
+	.word	508
+	.byte	19,235,253,2,0,18,244,31
+	.word	508
+	.byte	19,243,31,0,18,128,1
+	.word	114961
+	.byte	19,7,0,14
+	.word	115813
+	.byte	18,232,1
+	.word	508
+	.byte	19,231,1,0,18,128,48
+	.word	508
+	.byte	19,255,47,0,18,128,3
+	.word	115063
+	.byte	19,31,0,14
+	.word	115850
+	.byte	18,160,39
+	.word	508
+	.byte	19,159,39,0,18,208,223,1
+	.word	508
+	.byte	19,207,223,1,0,18,248,1
+	.word	508
+	.byte	19,247,1,0,18,244,29
+	.word	508
+	.byte	19,243,29,0,18,188,3
+	.word	508
+	.byte	19,187,3,0,18,232,3
+	.word	508
+	.byte	19,231,3,0,18,252,23
+	.word	508
+	.byte	19,251,23,0,14
+	.word	115152
+	.byte	18,228,63
+	.word	508
+	.byte	19,227,63,0,18,144,1
+	.word	115308
+	.byte	19,17,0,14
+	.word	115960
+	.byte	18,240,30
+	.word	508
+	.byte	19,239,30,0,18,80
+	.word	115376
+	.byte	19,9,0,14
+	.word	115986
+	.byte	18,176,31
+	.word	508
+	.byte	19,175,31,0,18,152,7
+	.word	508
+	.byte	19,151,7,0,14
+	.word	115453
+	.byte	18,48
+	.word	508
+	.byte	19,47,0,14
+	.word	115527
+	.byte	18,164,23
+	.word	508
+	.byte	19,163,23,0,18,64
+	.word	115708
+	.byte	19,7,0,14
+	.word	116052
+	.byte	18,192,23
+	.word	508
+	.byte	19,191,23,0,18,180,1
+	.word	508
+	.byte	19,179,1,0,18,172,1
+	.word	508
+	.byte	19,171,1,0,18,64
+	.word	109281
+	.byte	19,15,0,18,64
+	.word	108268
+	.byte	19,15,0,10
+	.byte	'_Ifx_CPU',0,25,144,15,25,128,128,8,13
+	.byte	'reserved_0',0
+	.word	115778
+	.byte	128,34,2,35,0,13
+	.byte	'FLASHCON0',0
+	.word	110870
+	.byte	4,3,35,128,34,13
+	.byte	'FLASHCON1',0
+	.word	110937
+	.byte	4,3,35,132,34,13
+	.byte	'FLASHCON2',0
+	.word	111004
+	.byte	4,3,35,136,34,13
+	.byte	'FLASHCON3',0
+	.word	111071
+	.byte	4,3,35,140,34,13
+	.byte	'FLASHCON4',0
+	.word	111138
+	.byte	4,3,35,144,34,13
+	.byte	'reserved_1114',0
+	.word	115789
+	.byte	236,253,2,3,35,148,34,13
+	.byte	'KRST0',0
+	.word	111811
+	.byte	4,4,35,128,160,3,13
+	.byte	'KRST1',0
+	.word	111874
+	.byte	4,4,35,132,160,3,13
+	.byte	'KRSTCLR',0
+	.word	111937
+	.byte	4,4,35,136,160,3,13
+	.byte	'reserved_D00C',0
+	.word	115802
+	.byte	244,31,4,35,140,160,3,13
+	.byte	'RGN',0
+	.word	115823
+	.byte	128,1,4,35,128,192,3,13
+	.byte	'reserved_E080',0
+	.word	5074
+	.byte	8,4,35,128,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R0',0
+	.word	113755
+	.byte	4,4,35,136,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R0',0
+	.word	113834
+	.byte	4,4,35,140,193,3,13
+	.byte	'reserved_E090',0
+	.word	5074
+	.byte	8,4,35,144,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R1',0
+	.word	113755
+	.byte	4,4,35,152,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R1',0
+	.word	113834
+	.byte	4,4,35,156,193,3,13
+	.byte	'reserved_E0A0',0
+	.word	5074
+	.byte	8,4,35,160,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R2',0
+	.word	113755
+	.byte	4,4,35,168,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R2',0
+	.word	113834
+	.byte	4,4,35,172,193,3,13
+	.byte	'reserved_E0B0',0
+	.word	5074
+	.byte	8,4,35,176,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R3',0
+	.word	113755
+	.byte	4,4,35,184,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R3',0
+	.word	113834
+	.byte	4,4,35,188,193,3,13
+	.byte	'reserved_E0C0',0
+	.word	5074
+	.byte	8,4,35,192,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R4',0
+	.word	113755
+	.byte	4,4,35,200,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R4',0
+	.word	113834
+	.byte	4,4,35,204,193,3,13
+	.byte	'reserved_E0D0',0
+	.word	5074
+	.byte	8,4,35,208,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R5',0
+	.word	113755
+	.byte	4,4,35,216,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R5',0
+	.word	113834
+	.byte	4,4,35,220,193,3,13
+	.byte	'reserved_E0E0',0
+	.word	5074
+	.byte	8,4,35,224,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R6',0
+	.word	113755
+	.byte	4,4,35,232,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R6',0
+	.word	113834
+	.byte	4,4,35,236,193,3,13
+	.byte	'reserved_E0F0',0
+	.word	5074
+	.byte	8,4,35,240,193,3,13
+	.byte	'SPR_SPROT_RGNACCENA_R7',0
+	.word	113755
+	.byte	4,4,35,248,193,3,13
+	.byte	'SPR_SPROT_RGNACCENB_R7',0
+	.word	113834
+	.byte	4,4,35,252,193,3,13
+	.byte	'SFR_SPROT_ACCENA_W',0
+	.word	113539
+	.byte	4,4,35,128,194,3,13
+	.byte	'SFR_SPROT_ACCENB_W',0
+	.word	113615
+	.byte	4,4,35,132,194,3,13
+	.byte	'reserved_E108',0
+	.word	5074
+	.byte	8,4,35,136,194,3,13
+	.byte	'LPB_SPROT_ACCENA_R',0
+	.word	112063
+	.byte	4,4,35,144,194,3,13
+	.byte	'LPB_SPROT_ACCENB_R',0
+	.word	112139
+	.byte	4,4,35,148,194,3,13
+	.byte	'reserved_E118',0
+	.word	115828
+	.byte	232,1,4,35,152,194,3,13
+	.byte	'DLMU_SPROT_RGNLA0',0
+	.word	110225
+	.byte	4,4,35,128,196,3,13
+	.byte	'DLMU_SPROT_RGNUA0',0
+	.word	110299
+	.byte	4,4,35,132,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W0',0
+	.word	109985
+	.byte	4,4,35,136,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W0',0
+	.word	110145
+	.byte	4,4,35,140,196,3,13
+	.byte	'DLMU_SPROT_RGNLA1',0
+	.word	110225
+	.byte	4,4,35,144,196,3,13
+	.byte	'DLMU_SPROT_RGNUA1',0
+	.word	110299
+	.byte	4,4,35,148,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W1',0
+	.word	109985
+	.byte	4,4,35,152,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W1',0
+	.word	110145
+	.byte	4,4,35,156,196,3,13
+	.byte	'DLMU_SPROT_RGNLA2',0
+	.word	110225
+	.byte	4,4,35,160,196,3,13
+	.byte	'DLMU_SPROT_RGNUA2',0
+	.word	110299
+	.byte	4,4,35,164,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W2',0
+	.word	109985
+	.byte	4,4,35,168,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W2',0
+	.word	110145
+	.byte	4,4,35,172,196,3,13
+	.byte	'DLMU_SPROT_RGNLA3',0
+	.word	110225
+	.byte	4,4,35,176,196,3,13
+	.byte	'DLMU_SPROT_RGNUA3',0
+	.word	110299
+	.byte	4,4,35,180,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W3',0
+	.word	109985
+	.byte	4,4,35,184,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W3',0
+	.word	110145
+	.byte	4,4,35,188,196,3,13
+	.byte	'DLMU_SPROT_RGNLA4',0
+	.word	110225
+	.byte	4,4,35,192,196,3,13
+	.byte	'DLMU_SPROT_RGNUA4',0
+	.word	110299
+	.byte	4,4,35,196,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W4',0
+	.word	109985
+	.byte	4,4,35,200,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W4',0
+	.word	110145
+	.byte	4,4,35,204,196,3,13
+	.byte	'DLMU_SPROT_RGNLA5',0
+	.word	110225
+	.byte	4,4,35,208,196,3,13
+	.byte	'DLMU_SPROT_RGNUA5',0
+	.word	110299
+	.byte	4,4,35,212,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W5',0
+	.word	109985
+	.byte	4,4,35,216,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W5',0
+	.word	110145
+	.byte	4,4,35,220,196,3,13
+	.byte	'DLMU_SPROT_RGNLA6',0
+	.word	110225
+	.byte	4,4,35,224,196,3,13
+	.byte	'DLMU_SPROT_RGNUA6',0
+	.word	110299
+	.byte	4,4,35,228,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W6',0
+	.word	109985
+	.byte	4,4,35,232,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W6',0
+	.word	110145
+	.byte	4,4,35,236,196,3,13
+	.byte	'DLMU_SPROT_RGNLA7',0
+	.word	110225
+	.byte	4,4,35,240,196,3,13
+	.byte	'DLMU_SPROT_RGNUA7',0
+	.word	110299
+	.byte	4,4,35,244,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_W7',0
+	.word	109985
+	.byte	4,4,35,248,196,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_W7',0
+	.word	110145
+	.byte	4,4,35,252,196,3,13
+	.byte	'reserved_E280',0
+	.word	5074
+	.byte	8,4,35,128,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R0',0
+	.word	109905
+	.byte	4,4,35,136,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R0',0
+	.word	110065
+	.byte	4,4,35,140,197,3,13
+	.byte	'reserved_E290',0
+	.word	5074
+	.byte	8,4,35,144,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R1',0
+	.word	109905
+	.byte	4,4,35,152,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R1',0
+	.word	110065
+	.byte	4,4,35,156,197,3,13
+	.byte	'reserved_E2A0',0
+	.word	5074
+	.byte	8,4,35,160,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R2',0
+	.word	109905
+	.byte	4,4,35,168,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R2',0
+	.word	110065
+	.byte	4,4,35,172,197,3,13
+	.byte	'reserved_E2B0',0
+	.word	5074
+	.byte	8,4,35,176,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R3',0
+	.word	109905
+	.byte	4,4,35,184,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R3',0
+	.word	110065
+	.byte	4,4,35,188,197,3,13
+	.byte	'reserved_E2C0',0
+	.word	5074
+	.byte	8,4,35,192,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R4',0
+	.word	109905
+	.byte	4,4,35,200,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R4',0
+	.word	110065
+	.byte	4,4,35,204,197,3,13
+	.byte	'reserved_E2D0',0
+	.word	5074
+	.byte	8,4,35,208,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R5',0
+	.word	109905
+	.byte	4,4,35,216,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R5',0
+	.word	110065
+	.byte	4,4,35,220,197,3,13
+	.byte	'reserved_E2E0',0
+	.word	5074
+	.byte	8,4,35,224,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R6',0
+	.word	109905
+	.byte	4,4,35,232,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R6',0
+	.word	110065
+	.byte	4,4,35,236,197,3,13
+	.byte	'reserved_E2F0',0
+	.word	5074
+	.byte	8,4,35,240,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENA_R7',0
+	.word	109905
+	.byte	4,4,35,248,197,3,13
+	.byte	'DLMU_SPROT_RGNACCENB_R7',0
+	.word	110065
+	.byte	4,4,35,252,197,3,13
+	.byte	'reserved_E300',0
+	.word	115839
+	.byte	128,48,4,35,128,198,3,13
+	.byte	'OSEL',0
+	.word	112404
+	.byte	4,4,35,128,246,3,13
+	.byte	'reserved_FB04',0
+	.word	5414
+	.byte	12,4,35,132,246,3,13
+	.byte	'BLK',0
+	.word	115860
+	.byte	128,3,4,35,144,246,3,13
+	.byte	'reserved_FC90',0
+	.word	115865
+	.byte	160,39,4,35,144,249,3,13
+	.byte	'SEGEN',0
+	.word	113476
+	.byte	4,4,35,176,160,4,13
+	.byte	'reserved_11034',0
+	.word	115876
+	.byte	208,223,1,4,35,180,160,4,13
+	.byte	'TASK_ASI',0
+	.word	114040
+	.byte	4,4,35,132,128,6,13
+	.byte	'reserved_18008',0
+	.word	115889
+	.byte	248,1,4,35,136,128,6,13
+	.byte	'PMA0',0
+	.word	112903
+	.byte	4,4,35,128,130,6,13
+	.byte	'PMA1',0
+	.word	112965
+	.byte	4,4,35,132,130,6,13
+	.byte	'PMA2',0
+	.word	113027
+	.byte	4,4,35,136,130,6,13
+	.byte	'reserved_1810C',0
+	.word	115900
+	.byte	244,29,4,35,140,130,6,13
+	.byte	'DCON2',0
+	.word	109592
+	.byte	4,4,35,128,160,6,13
+	.byte	'reserved_19004',0
+	.word	5074
+	.byte	8,4,35,132,160,6,13
+	.byte	'SMACON',0
+	.word	113691
+	.byte	4,4,35,140,160,6,13
+	.byte	'DSTR',0
+	.word	110684
+	.byte	4,4,35,144,160,6,13
+	.byte	'reserved_19014',0
+	.word	3254
+	.byte	4,4,35,148,160,6,13
+	.byte	'DATR',0
+	.word	109340
+	.byte	4,4,35,152,160,6,13
+	.byte	'DEADD',0
+	.word	109716
+	.byte	4,4,35,156,160,6,13
+	.byte	'DIEAR',0
+	.word	109779
+	.byte	4,4,35,160,160,6,13
+	.byte	'DIETR',0
+	.word	109842
+	.byte	4,4,35,164,160,6,13
+	.byte	'reserved_19028',0
+	.word	4445
+	.byte	24,4,35,168,160,6,13
+	.byte	'DCON0',0
+	.word	109529
+	.byte	4,4,35,192,160,6,13
+	.byte	'reserved_19044',0
+	.word	115911
+	.byte	188,3,4,35,196,160,6,13
+	.byte	'PSTR',0
+	.word	113089
+	.byte	4,4,35,128,164,6,13
+	.byte	'PCON1',0
+	.word	112589
+	.byte	4,4,35,132,164,6,13
+	.byte	'PCON2',0
+	.word	112652
+	.byte	4,4,35,136,164,6,13
+	.byte	'PCON0',0
+	.word	112526
+	.byte	4,4,35,140,164,6,13
+	.byte	'PIEAR',0
+	.word	112777
+	.byte	4,4,35,144,164,6,13
+	.byte	'PIETR',0
+	.word	112840
+	.byte	4,4,35,148,164,6,13
+	.byte	'reserved_19218',0
+	.word	115922
+	.byte	232,3,4,35,152,164,6,13
+	.byte	'COMPAT',0
+	.word	108773
+	.byte	4,4,35,128,168,6,13
+	.byte	'reserved_19404',0
+	.word	115933
+	.byte	252,23,4,35,132,168,6,13
+	.byte	'FPU_TRAP',0
+	.word	115944
+	.byte	28,4,35,128,192,6,13
+	.byte	'reserved_1A01C',0
+	.word	115949
+	.byte	228,63,4,35,156,192,6,13
+	.byte	'DPR',0
+	.word	115970
+	.byte	144,1,4,35,128,128,7,13
+	.byte	'reserved_1C090',0
+	.word	115975
+	.byte	240,30,4,35,144,129,7,13
+	.byte	'CPR',0
+	.word	115995
+	.byte	80,4,35,128,160,7,13
+	.byte	'reserved_1D050',0
+	.word	116000
+	.byte	176,31,4,35,208,160,7,13
+	.byte	'CPXE_0',0
+	.word	109092
+	.byte	4,4,35,128,192,7,13
+	.byte	'CPXE_1',0
+	.word	109092
+	.byte	4,4,35,132,192,7,13
+	.byte	'CPXE_2',0
+	.word	109092
+	.byte	4,4,35,136,192,7,13
+	.byte	'CPXE_3',0
+	.word	109092
+	.byte	4,4,35,140,192,7,13
+	.byte	'DPRE_0',0
+	.word	110434
+	.byte	4,4,35,144,192,7,13
+	.byte	'DPRE_1',0
+	.word	110434
+	.byte	4,4,35,148,192,7,13
+	.byte	'DPRE_2',0
+	.word	110434
+	.byte	4,4,35,152,192,7,13
+	.byte	'DPRE_3',0
+	.word	110434
+	.byte	4,4,35,156,192,7,13
+	.byte	'DPWE_0',0
+	.word	110622
+	.byte	4,4,35,160,192,7,13
+	.byte	'DPWE_1',0
+	.word	110622
+	.byte	4,4,35,164,192,7,13
+	.byte	'DPWE_2',0
+	.word	110622
+	.byte	4,4,35,168,192,7,13
+	.byte	'DPWE_3',0
+	.word	110622
+	.byte	4,4,35,172,192,7,13
+	.byte	'reserved_1E030',0
+	.word	10847
+	.byte	16,4,35,176,192,7,13
+	.byte	'CPXE_4',0
+	.word	109092
+	.byte	4,4,35,192,192,7,13
+	.byte	'CPXE_5',0
+	.word	109092
+	.byte	4,4,35,196,192,7,13
+	.byte	'reserved_1E048',0
+	.word	5074
+	.byte	8,4,35,200,192,7,13
+	.byte	'DPRE_4',0
+	.word	110434
+	.byte	4,4,35,208,192,7,13
+	.byte	'DPRE_5',0
+	.word	110434
+	.byte	4,4,35,212,192,7,13
+	.byte	'reserved_1E058',0
+	.word	5074
+	.byte	8,4,35,216,192,7,13
+	.byte	'DPWE_4',0
+	.word	110622
+	.byte	4,4,35,224,192,7,13
+	.byte	'DPWE_5',0
+	.word	110622
+	.byte	4,4,35,228,192,7,13
+	.byte	'reserved_1E068',0
+	.word	116011
+	.byte	152,7,4,35,232,192,7,13
+	.byte	'TPS',0
+	.word	116022
+	.byte	16,4,35,128,200,7,13
+	.byte	'reserved_1E410',0
+	.word	116027
+	.byte	48,4,35,144,200,7,13
+	.byte	'TPS_EXTIM',0
+	.word	116036
+	.byte	28,4,35,192,200,7,13
+	.byte	'reserved_1E45C',0
+	.word	116041
+	.byte	164,23,4,35,220,200,7,13
+	.byte	'TR',0
+	.word	116061
+	.byte	64,4,35,128,224,7,13
+	.byte	'reserved_1F040',0
+	.word	116066
+	.byte	192,23,4,35,192,224,7,13
+	.byte	'CCTRL',0
+	.word	108710
+	.byte	4,4,35,128,248,7,13
+	.byte	'CCNT',0
+	.word	108648
+	.byte	4,4,35,132,248,7,13
+	.byte	'ICNT',0
+	.word	111627
+	.byte	4,4,35,136,248,7,13
+	.byte	'M1CNT',0
+	.word	112215
+	.byte	4,4,35,140,248,7,13
+	.byte	'M2CNT',0
+	.word	112278
+	.byte	4,4,35,144,248,7,13
+	.byte	'M3CNT',0
+	.word	112341
+	.byte	4,4,35,148,248,7,13
+	.byte	'reserved_1FC18',0
+	.word	115828
+	.byte	232,1,4,35,152,248,7,13
+	.byte	'DBGSR',0
+	.word	109402
+	.byte	4,4,35,128,250,7,13
+	.byte	'reserved_1FD04',0
+	.word	3254
+	.byte	4,4,35,132,250,7,13
+	.byte	'EXEVT',0
+	.word	110746
+	.byte	4,4,35,136,250,7,13
+	.byte	'CREVT',0
+	.word	109154
+	.byte	4,4,35,140,250,7,13
+	.byte	'SWEVT',0
+	.word	113913
+	.byte	4,4,35,144,250,7,13
+	.byte	'reserved_1FD14',0
+	.word	20954
+	.byte	28,4,35,148,250,7,13
+	.byte	'TRIG_ACC',0
+	.word	114767
+	.byte	4,4,35,176,250,7,13
+	.byte	'reserved_1FD34',0
+	.word	5414
+	.byte	12,4,35,180,250,7,13
+	.byte	'DMS',0
+	.word	110373
+	.byte	4,4,35,192,250,7,13
+	.byte	'DCX',0
+	.word	109655
+	.byte	4,4,35,196,250,7,13
+	.byte	'DBGTCR',0
+	.word	109465
+	.byte	4,4,35,200,250,7,13
+	.byte	'reserved_1FD4C',0
+	.word	116077
+	.byte	180,1,4,35,204,250,7,13
+	.byte	'PCXI',0
+	.word	112715
+	.byte	4,4,35,128,252,7,13
+	.byte	'PSW',0
+	.word	113151
+	.byte	4,4,35,132,252,7,13
+	.byte	'PC',0
+	.word	112466
+	.byte	4,4,35,136,252,7,13
+	.byte	'reserved_1FE0C',0
+	.word	5074
+	.byte	8,4,35,140,252,7,13
+	.byte	'SYSCON',0
+	.word	113976
+	.byte	4,4,35,148,252,7,13
+	.byte	'CPU_ID',0
+	.word	109028
+	.byte	4,4,35,152,252,7,13
+	.byte	'CORE_ID',0
+	.word	108837
+	.byte	4,4,35,156,252,7,13
+	.byte	'BIV',0
+	.word	108327
+	.byte	4,4,35,160,252,7,13
+	.byte	'BTV',0
+	.word	108587
+	.byte	4,4,35,164,252,7,13
+	.byte	'ISP',0
+	.word	111750
+	.byte	4,4,35,168,252,7,13
+	.byte	'ICR',0
+	.word	111689
+	.byte	4,4,35,172,252,7,13
+	.byte	'reserved_1FE30',0
+	.word	5074
+	.byte	8,4,35,176,252,7,13
+	.byte	'FCX',0
+	.word	110809
+	.byte	4,4,35,184,252,7,13
+	.byte	'LCX',0
+	.word	112002
+	.byte	4,4,35,188,252,7,13
+	.byte	'reserved_1FE40',0
+	.word	10847
+	.byte	16,4,35,192,252,7,13
+	.byte	'CUS_ID',0
+	.word	109217
+	.byte	4,4,35,208,252,7,13
+	.byte	'reserved_1FE54',0
+	.word	116088
+	.byte	172,1,4,35,212,252,7,13
+	.byte	'D',0
+	.word	116099
+	.byte	64,4,35,128,254,7,13
+	.byte	'reserved_1FF40',0
+	.word	19038
+	.byte	64,4,35,192,254,7,13
+	.byte	'A',0
+	.word	116108
+	.byte	64,4,35,128,255,7,13
+	.byte	'reserved_1FFC0',0
+	.word	19038
+	.byte	64,4,35,192,255,7,0,14
+	.word	116117
+	.byte	31
+	.byte	'Ifx_CPU',0,25,224,16,3
+	.word	121215
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,11,127,9,1,16
 	.byte	'IfxCpu_Id_0',0,0,16
 	.byte	'IfxCpu_Id_1',0,1,16
 	.byte	'IfxCpu_Id_2',0,2,16
 	.byte	'IfxCpu_Id_none',0,3,0,31
 	.byte	'IfxCpu_Id',0,11,133,1,3
+<<<<<<< HEAD
 	.word	121243
+=======
+	.word	121237
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxCpu_ResourceCpu',0,11,164,1,3
 	.word	10320
@@ -20009,12 +22713,20 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	124013
 	.byte	4,2,35,0,0,31
 	.byte	'Ifx_STM_TIM6',0,26,188,3,3
+<<<<<<< HEAD
 	.word	125395
+=======
+	.word	125389
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,10,144,1,9,1,16
 	.byte	'IfxCpu_CounterMode_normal',0,0,16
 	.byte	'IfxCpu_CounterMode_task',0,1,0,31
 	.byte	'IfxCpu_CounterMode',0,10,148,1,3
+<<<<<<< HEAD
 	.word	125457
+=======
+	.word	125451
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	20,10,195,1,9,6,13
 	.byte	'counter',0
 	.word	10498
@@ -21688,14 +24400,22 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	136050
 	.byte	31
 	.byte	'IfxScuCcu_Fsource',0,12,180,2,3
+<<<<<<< HEAD
 	.word	39771
+=======
+	.word	39765
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,213,2,9,1,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy30',0,1,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy60',0,2,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy120',0,3,16
 	.byte	'IfxScuCcu_LowPowerDivRatio_divBy240',0,4,0,31
 	.byte	'IfxScuCcu_LowPowerDivRatio',0,12,219,2,3
+<<<<<<< HEAD
 	.word	136138
+=======
+	.word	136132
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,223,2,9,1,16
 	.byte	'IfxScuCcu_ModulationAmplitude_0p5',0,0,16
 	.byte	'IfxScuCcu_ModulationAmplitude_1p0',0,1,16
@@ -21705,25 +24425,41 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxScuCcu_ModulationAmplitude_2p5',0,5,16
 	.byte	'IfxScuCcu_ModulationAmplitude_count',0,6,0,31
 	.byte	'IfxScuCcu_ModulationAmplitude',0,12,232,2,3
+<<<<<<< HEAD
 	.word	136331
+=======
+	.word	136325
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,129,4,9,1,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fOsc1',0,0,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fOsc0',0,1,16
 	.byte	'IfxScuCcu_PllInputClockSelection_fSysclk',0,2,0,31
 	.byte	'IfxScuCcu_PllInputClockSelection',0,12,134,4,3
+<<<<<<< HEAD
 	.word	136632
+=======
+	.word	136626
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,138,4,9,1,16
 	.byte	'IfxScuCcu_Traprequest_esr0',0,0,16
 	.byte	'IfxScuCcu_Traprequest_esr1',0,1,16
 	.byte	'IfxScuCcu_Traprequest_trap2',0,2,16
 	.byte	'IfxScuCcu_Traprequest_smu',0,3,0,31
 	.byte	'IfxScuCcu_Traprequest',0,12,144,4,3
+<<<<<<< HEAD
 	.word	136806
+=======
+	.word	136800
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,12,150,4,9,1,16
 	.byte	'IfxScuCcu_ModEn_disabled',0,0,16
 	.byte	'IfxScuCcu_ModEn_enabled',0,1,0,31
 	.byte	'IfxScuCcu_ModEn',0,12,154,4,3
+<<<<<<< HEAD
 	.word	136960
+=======
+	.word	136954
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	20,12,165,4,9,6,13
 	.byte	'pDivider',0
 	.word	514
@@ -23775,24 +26511,40 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	41163
 	.byte	31
 	.byte	'IfxEvadc_RequestSource',0,13,170,3,3
+<<<<<<< HEAD
 	.word	27682
+=======
+	.word	27676
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,175,3,9,1,16
 	.byte	'IfxEvadc_SleepMode_enable',0,0,16
 	.byte	'IfxEvadc_SleepMode_disable',0,1,0,31
 	.byte	'IfxEvadc_SleepMode',0,13,179,3,3
+<<<<<<< HEAD
 	.word	150570
+=======
+	.word	150564
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxEvadc_SrcNr',0,13,193,3,3
 	.word	31831
 	.byte	31
 	.byte	'IfxEvadc_Status',0,13,207,3,3
+<<<<<<< HEAD
 	.word	47641
+=======
+	.word	47635
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,13,211,3,9,1,16
 	.byte	'IfxEvadc_SuspendMode_none',0,0,16
 	.byte	'IfxEvadc_SuspendMode_hard',0,1,16
 	.byte	'IfxEvadc_SuspendMode_soft',0,2,0,31
 	.byte	'IfxEvadc_SuspendMode',0,13,216,3,3
+<<<<<<< HEAD
 	.word	150711
+=======
+	.word	150705
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	31
 	.byte	'IfxEvadc_TriggerMode',0,13,226,3,3
 	.word	41876
@@ -23950,7 +26702,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	19,11,0
 .L1100:
 	.byte	21
+<<<<<<< HEAD
 	.word	152841
+=======
+	.word	152835
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -23975,7 +26731,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	.L1291-.L1290
 .L1290:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common',0,0
@@ -24005,17 +26765,28 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	'IfxEvadc_regdef.h',0,1,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_PinMap\\IfxEvadc_PinMap.h',0
 	.byte	0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxEvadc_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxEvadc_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Evadc\\Adc\\IfxEvadc_Adc.h',0,0,0,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
 	.byte	'stdio.h',0,2,0,0
 	.byte	'PLATFORM_TYPES.H',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'Ifx_TypesReg.h',0,1,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'Ifx_TypesReg.h',0,1,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxCpu_regdef.h',0,1,0,0
 	.byte	'IfxStm_regdef.h',0,1,0,0
@@ -24026,13 +26797,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initModule')
 	.sect	'.debug_info'
 .L292:
+<<<<<<< HEAD
 	.word	521
+=======
+	.word	515
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L293
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L295,.L294
 	.byte	2
 	.word	.L288
@@ -24097,7 +26876,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1294:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1295:
 	.byte	5,17,7,0,5,2
@@ -24155,13 +26938,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initModuleConfig')
 	.sect	'.debug_info'
 .L297:
+<<<<<<< HEAD
 	.word	332
+=======
+	.word	326
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L298
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L300,.L299
 	.byte	2
 	.word	.L288
@@ -24228,13 +27019,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_deInitGroup')
 	.sect	'.debug_info'
 .L302:
+<<<<<<< HEAD
 	.word	479
+=======
+	.word	473
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L303
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L305,.L304
 	.byte	2
 	.word	.L288
@@ -24292,7 +27091,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Evadc\\Adc\\IfxEvadc_Adc.h',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1320:
 	.byte	4,2,5,25,7,0,5,2
@@ -24330,13 +27133,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_getGroupConfig')
 	.sect	'.debug_info'
 .L307:
+<<<<<<< HEAD
 	.word	820
+=======
+	.word	814
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L308
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L310,.L309
 	.byte	2
 	.word	.L288
@@ -24444,9 +27255,15 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1327:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuCcu.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuCcu.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1328:
 	.byte	5,6,7,0,5,2
@@ -24802,13 +27619,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initGroup')
 	.sect	'.debug_info'
 .L312:
+<<<<<<< HEAD
 	.word	1932
+=======
+	.word	1926
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L313
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L315,.L314
 	.byte	2
 	.word	.L288
@@ -25121,9 +27946,15 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1436:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuCcu.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Scu\\Std\\IfxScuCcu.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1437:
 	.byte	5,17,7,0,5,2
@@ -25891,13 +28722,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initGroupConfig')
 	.sect	'.debug_info'
 .L317:
+<<<<<<< HEAD
 	.word	379
+=======
+	.word	373
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L318
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L320,.L319
 	.byte	2
 	.word	.L288
@@ -26006,13 +28845,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_getChannelConfig')
 	.sect	'.debug_info'
 .L322:
+<<<<<<< HEAD
 	.word	1603
+=======
+	.word	1597
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L323
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L325,.L324
 	.byte	2
 	.word	.L288
@@ -26247,7 +29094,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1691:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Evadc\\Adc\\IfxEvadc_Adc.h',0,0,0,0,0
 .L1692:
@@ -26558,13 +29409,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initChannel')
 	.sect	'.debug_info'
 .L327:
+<<<<<<< HEAD
 	.word	1817
+=======
+	.word	1811
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L328
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L330,.L329
 	.byte	2
 	.word	.L288
@@ -26860,10 +29719,17 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1758:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
 	.byte	0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Evadc\\Adc\\IfxEvadc_Adc.h',0,0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+	.byte	0,0,0
+	.byte	'..\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Evadc\\Adc\\IfxEvadc_Adc.h',0,0,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Src\\Std\\IfxSrc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1759:
 	.byte	5,17,7,0,5,2
@@ -27289,13 +30155,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initChannelConfig')
 	.sect	'.debug_info'
 .L332:
+<<<<<<< HEAD
 	.word	383
+=======
+	.word	377
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L333
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L335,.L334
 	.byte	2
 	.word	.L288
@@ -27352,13 +30226,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_setGlobalConfigurations')
 	.sect	'.debug_info'
 .L337:
+<<<<<<< HEAD
 	.word	365
+=======
+	.word	359
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L338
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L340,.L339
 	.byte	2
 	.word	.L288
@@ -27427,13 +30309,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initExternalMultiplexerMode')
 	.sect	'.debug_info'
 .L342:
+<<<<<<< HEAD
 	.word	560
+=======
+	.word	554
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L343
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L345,.L344
 	.byte	2
 	.word	.L288
@@ -27504,9 +30394,15 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1913:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1914:
 	.byte	5,6,7,0,5,2
@@ -27590,13 +30486,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initExternalMultiplexerModeConfig')
 	.sect	'.debug_info'
 .L347:
+<<<<<<< HEAD
 	.word	391
+=======
+	.word	385
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L348
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L350,.L349
 	.byte	2
 	.word	.L288
@@ -27691,13 +30595,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initFastCompareChannel')
 	.sect	'.debug_info'
 .L352:
+<<<<<<< HEAD
 	.word	805
+=======
+	.word	799
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L353
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L355,.L354
 	.byte	2
 	.word	.L288
@@ -27803,7 +30715,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L1962:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L1963:
 	.byte	5,54,7,0,5,2
@@ -27973,13 +30889,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_initFastCompareChannelConfig')
 	.sect	'.debug_info'
 .L357:
+<<<<<<< HEAD
 	.word	344
+=======
+	.word	338
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L358
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L360,.L359
 	.byte	2
 	.word	.L288
@@ -28122,13 +31046,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_setAnalogConvertControl')
 	.sect	'.debug_info'
 .L362:
+<<<<<<< HEAD
 	.word	441
+=======
+	.word	435
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L363
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L365,.L364
 	.byte	2
 	.word	.L288
@@ -28175,7 +31107,11 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 .L2075:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Evadc\\Std\\IfxEvadc.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0,0
 .L2076:
 	.byte	5,6,7,0,5,2
@@ -28209,13 +31145,21 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxEvadc_Adc_masterIndex')
 	.sect	'.debug_info'
 .L367:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L368
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L288
 	.byte	3
 	.byte	'IfxEvadc_Adc_masterIndex',0,18,80,48
@@ -28264,6 +31208,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.half	2
 	.byte	138,0
 	.word	0,0
+<<<<<<< HEAD
 .L773:
 	.word	-1,.L261,.L1118-.L261,.L668-.L261
 	.half	1
@@ -28271,6 +31216,15 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	0,0
 .L746:
 	.word	-1,.L261,.L1114-.L261,.L1115-.L261
+=======
+.L746:
+	.word	-1,.L261,.L1114-.L261,.L1115-.L261
+	.half	1
+	.byte	111
+	.word	0,0
+.L773:
+	.word	-1,.L261,.L1118-.L261,.L668-.L261
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	1
 	.byte	111
 	.word	0,0
@@ -28534,6 +31488,7 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.half	1
 	.byte	82
 	.word	0,0
+<<<<<<< HEAD
 .L933:
 	.word	-1,.L265,.L1183-.L265,.L106-.L265
 	.half	1
@@ -28541,6 +31496,15 @@ _999002_IfxEvadc_Adc_defaultGroupConfig:	.type	object
 	.word	0,0
 .L883:
 	.word	-1,.L265,.L1182-.L265,.L90-.L265
+=======
+.L883:
+	.word	-1,.L265,.L1182-.L265,.L90-.L265
+	.half	1
+	.byte	98
+	.word	0,0
+.L933:
+	.word	-1,.L265,.L1183-.L265,.L106-.L265
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	1
 	.byte	98
 	.word	0,0

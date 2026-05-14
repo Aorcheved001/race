@@ -2,6 +2,7 @@ IfxCpu_cfg.o :	../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxCpu_c
 ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxCpu_cfg.c :
 IfxCpu_cfg.o :	..\libraries\infineon_libraries\iLLD\TC37A\Tricore\_Impl\IfxCpu_cfg.h
 ..\libraries\infineon_libraries\iLLD\TC37A\Tricore\_Impl\IfxCpu_cfg.h :
+<<<<<<< HEAD
 IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
 IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
@@ -14,6 +15,20 @@ IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_clock.h" :
 IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 IfxCpu_cfg.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 IfxCpu_cfg.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -36,6 +51,7 @@ IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
 IfxCpu_cfg.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+<<<<<<< HEAD
 IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h" :
 IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
@@ -48,3 +64,17 @@ IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_regdef.h" :
 IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\Ifx_TypesReg.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\Ifx_TypesReg.h" :
+=======
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Platform_Types.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_reg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_reg.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_regdef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\IfxCpu_regdef.h" :
+IfxCpu_cfg.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\Ifx_TypesReg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Infra\\Sfr\\TC37A\\_Reg\Ifx_TypesReg.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6

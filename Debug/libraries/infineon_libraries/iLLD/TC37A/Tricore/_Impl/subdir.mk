@@ -102,7 +102,11 @@ libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxStm_cfg.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxAsclin_cfg.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxAsclin_cfg.c libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins_local/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxAsclin_cfg.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxAsclin_cfg.src libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxCan_cfg.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxCan_cfg.c libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
@@ -186,7 +190,11 @@ libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxSrc_cfg.src: ../librari
 libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxSrc_cfg.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxSrc_cfg.src libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxStm_cfg.src: ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxStm_cfg.c libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins_local/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc37x "-fC:/Users/A/AURIX-v1.10.2-workspace/new_ins/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc37x -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxStm_cfg.o: libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/IfxStm_cfg.src libraries/infineon_libraries/iLLD/TC37A/Tricore/_Impl/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

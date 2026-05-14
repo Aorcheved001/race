@@ -101,6 +101,7 @@ void Interrupt_40ms(void) { if (s_pending_40ms < 500u) s_pending_40ms++; }
 static void run_4ms_tasks(void)
 {
 //    date_handle(&imu_date);                                               // 处理 IMU 数据
+<<<<<<< HEAD
 //    encoder_layer_update();                                               // 更新编码器层状态 .
 //
 //    const EncoderLayerState* enc = encoder_layer_get_state();             // 获取编码器状态 .
@@ -123,6 +124,30 @@ static void run_4ms_tasks(void)
     // VOFA+ 数据发送与 PID 在线调节
     ///vofa_update(enc);                  //.
 
+=======
+    encoder_layer_update();                                               // 更新编码器层状态
+
+    const EncoderLayerState* enc = encoder_layer_get_state();             // 获取编码器状态
+    wheel_pid_update(enc, 0.004f);                                        // 车轮 PID 计算
+
+//    steering_control();                                                   // 转向控制（4ms周期执行）
+
+//    s_ins_input.v_mps = enc->speed_average_mps;                           // 写入 INS 速度输入
+//    s_ins_input.gyro_z_rad_s = imu660.data_Ripen.gyro_z;                  // 写入 INS 陀螺仪Z轴输入
+//    s_ins_input.mag_valid = get_mag_yaw_measurement(&s_ins_input.mag_yaw_rad);   // 获取磁偏角观测值
+//    s_ins_input.delta_left_m = enc->delta_left_m;                         // 写入 INS 左轮位移
+//    s_ins_input.delta_right_m = enc->delta_right_m;                       // 写入 INS 右轮位移
+
+//    float steer_rad = steering_get_current_angle() * 0.017453292519943295f;  // 当前转向角转弧度
+//    s_ins_input.omega_rad_s = s_ins_input.v_mps * tanf(steer_rad) / INS_WHEELBASE_M;   // 计算车辆角速度
+//
+//    Ins_update(&s_ins_input, 0.004f);                                     // 更新 INS 数据
+//    track_proc();                                                         // 轨迹处理
+
+    // VOFA+ 数据发送与 PID 在线调节
+    vofa_update(enc);
+
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
     // 从FIFO读取并处理无线指令
     uint8 rx_byte;
     while (wireless_uart_read_buffer(&rx_byte, 1) > 0)
@@ -148,6 +173,7 @@ static void run_8ms_tasks(void)
     yaokong_data_deal();                                                  // 处理遥控器数据
 
     key_scanner();
+<<<<<<< HEAD
 
     // 按键控制目标速度
 //    if(key_get_state(KEY_1) == KEY_SHORT_PRESS)
@@ -157,6 +183,8 @@ static void run_8ms_tasks(void)
 //        g_wheel_pid.cmd_speed_right_mps -= 1.0f;
 //    }
 
+=======
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
     INS_NavigationTask();                                                 // 执行 INS 导航任务
 }
 

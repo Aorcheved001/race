@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc15924a --dep-file=IfxGeth_PinMap.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c"
+=======
+	.compiler_invocation	"ctc -f cc4736a --dep-file=IfxGeth_PinMap.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.src ../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c"
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c'
 
@@ -517,7 +521,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L3:
+<<<<<<< HEAD
 	.word	111817
+=======
+	.word	111811
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L4
 	.byte	4
@@ -525,19 +533,31 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L5
 	.byte	2,1,1,3
 	.word	227
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
+<<<<<<< HEAD
 	.word	230
+=======
+	.word	224
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1,7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+<<<<<<< HEAD
 	.word	275
+=======
+	.word	269
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
 	.word	287
@@ -557,7 +577,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.word	373
 	.byte	5
 	.byte	'value',0,2,143,1,43
+<<<<<<< HEAD
 	.word	341
+=======
+	.word	335
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	6,0,7
 	.byte	'unsigned int',0,4,7,7
 	.byte	'int',0,4,5,7
@@ -565,7 +589,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	'unsigned short int',0,2,7,10
 	.byte	'_Ifx_P_OUT_Bits',0,4,147,3,16,4,11
 	.byte	'P0',0,1
+<<<<<<< HEAD
 	.word	482
+=======
+	.word	476
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,7,2,35,0,11
 	.byte	'P1',0,1
 	.word	482
@@ -1876,7 +1904,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	4,3,35,252,1,0,16
 	.word	7443
 	.byte	3
+<<<<<<< HEAD
 	.word	8013
+=======
+	.word	8007
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,189,1,9,4,18
 	.byte	'IfxPort_State_notChanged',0,0,18
 	.byte	'IfxPort_State_high',0,1,18
@@ -1884,7 +1916,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	'IfxPort_State_toggled',0,129,128,4,0,4
 	.byte	'IfxPort_setPinState',0,3,3,171,5,17,1,1,5
 	.byte	'port',0,3,171,5,44
+<<<<<<< HEAD
 	.word	8018
+=======
+	.word	8012
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	5
 	.byte	'pinIndex',0,3,171,5,56
 	.word	482
@@ -9317,6 +9353,7 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	15,255,25,0,14,32
 	.word	71106
 	.byte	15,3,0,16
+<<<<<<< HEAD
 	.word	71680
 	.byte	14,188,1
 	.word	482
@@ -10221,6 +10258,912 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	21
 	.byte	'Ifx_TickTime',0,11,79,28
 	.word	80158
+=======
+	.word	71674
+	.byte	14,188,1
+	.word	476
+	.byte	15,187,1,0,10
+	.byte	'_Ifx_GETH',0,7,220,33,25,128,66,13
+	.byte	'MAC_CONFIGURATION',0
+	.word	54785
+	.byte	4,2,35,0,13
+	.byte	'MAC_EXT_CONFIGURATION',0
+	.word	55074
+	.byte	4,2,35,4,13
+	.byte	'MAC_PACKET_FILTER',0
+	.word	56073
+	.byte	4,2,35,8,13
+	.byte	'MAC_WATCHDOG_TIMEOUT',0
+	.word	59344
+	.byte	4,2,35,12,13
+	.byte	'reserved_10',0
+	.word	71188
+	.byte	64,2,35,16,13
+	.byte	'MAC_VLAN_TAG_CTRL',0
+	.word	59114
+	.byte	4,2,35,80,23
+	.word	71197
+	.byte	4,2,35,84,13
+	.byte	'MAC_VLAN_HASH_TABLE',0
+	.word	58890
+	.byte	4,2,35,88,13
+	.byte	'reserved_5C',0
+	.word	1522
+	.byte	4,2,35,92,23
+	.word	71260
+	.byte	4,2,35,96,13
+	.byte	'MAC_INNER_VLAN_INCL',0
+	.word	55450
+	.byte	4,2,35,100,13
+	.byte	'reserved_68',0
+	.word	3342
+	.byte	8,2,35,104,13
+	.byte	'MAC_Q0_TX_FLOW_CTRL',0
+	.word	56714
+	.byte	4,2,35,112,13
+	.byte	'reserved_74',0
+	.word	71315
+	.byte	28,2,35,116,13
+	.byte	'MAC_RX_FLOW_CTRL',0
+	.word	57160
+	.byte	4,3,35,144,1,13
+	.byte	'MAC_RXQ_CTRL4',0
+	.word	57088
+	.byte	4,3,35,148,1,13
+	.byte	'reserved_98',0
+	.word	3342
+	.byte	8,3,35,152,1,13
+	.byte	'MAC_RXQ_CTRL0',0
+	.word	56872
+	.byte	4,3,35,160,1,13
+	.byte	'MAC_RXQ_CTRL1',0
+	.word	56944
+	.byte	4,3,35,164,1,13
+	.byte	'MAC_RXQ_CTRL2',0
+	.word	57016
+	.byte	4,3,35,168,1,13
+	.byte	'reserved_AC',0
+	.word	1522
+	.byte	4,3,35,172,1,13
+	.byte	'MAC_INTERRUPT_STATUS',0
+	.word	55607
+	.byte	4,3,35,176,1,13
+	.byte	'MAC_INTERRUPT_ENABLE',0
+	.word	55528
+	.byte	4,3,35,180,1,13
+	.byte	'MAC_RX_TX_STATUS',0
+	.word	57235
+	.byte	4,3,35,184,1,13
+	.byte	'reserved_BC',0
+	.word	1522
+	.byte	4,3,35,188,1,13
+	.byte	'MAC_PMT_CONTROL_STATUS',0
+	.word	56232
+	.byte	4,3,35,192,1,23
+	.word	71324
+	.byte	4,3,35,196,1,13
+	.byte	'reserved_C8',0
+	.word	3342
+	.byte	8,3,35,200,1,13
+	.byte	'MAC_LPI_CONTROL_STATUS',0
+	.word	55686
+	.byte	4,3,35,208,1,13
+	.byte	'MAC_LPI_TIMERS_CONTROL',0
+	.word	55845
+	.byte	4,3,35,212,1,13
+	.byte	'MAC_LPI_ENTRY_TIMER',0
+	.word	55767
+	.byte	4,3,35,216,1,13
+	.byte	'MAC_1US_TIC_COUNTER',0
+	.word	54407
+	.byte	4,3,35,220,1,13
+	.byte	'reserved_E0',0
+	.word	2713
+	.byte	24,3,35,224,1,13
+	.byte	'MAC_PHYIF_CONTROL_STATUS',0
+	.word	56149
+	.byte	4,3,35,248,1,13
+	.byte	'reserved_FC',0
+	.word	71475
+	.byte	20,3,35,252,1,13
+	.byte	'MAC_VERSION',0
+	.word	58820
+	.byte	4,3,35,144,2,13
+	.byte	'MAC_DEBUG',0
+	.word	54935
+	.byte	4,3,35,148,2,13
+	.byte	'reserved_118',0
+	.word	1522
+	.byte	4,3,35,152,2,13
+	.byte	'MAC_HW_FEATURE0',0
+	.word	55154
+	.byte	4,3,35,156,2,13
+	.byte	'MAC_HW_FEATURE1',0
+	.word	55228
+	.byte	4,3,35,160,2,13
+	.byte	'MAC_HW_FEATURE2',0
+	.word	55302
+	.byte	4,3,35,164,2,13
+	.byte	'MAC_HW_FEATURE3',0
+	.word	55376
+	.byte	4,3,35,168,2,13
+	.byte	'reserved_12C',0
+	.word	71484
+	.byte	212,1,3,35,172,2,13
+	.byte	'MAC_MDIO_ADDRESS',0
+	.word	55926
+	.byte	4,3,35,128,4,13
+	.byte	'MAC_MDIO_DATA',0
+	.word	56001
+	.byte	4,3,35,132,4,13
+	.byte	'reserved_208',0
+	.word	71495
+	.byte	40,3,35,136,4,13
+	.byte	'MAC_CSR_SW_CTRL',0
+	.word	54861
+	.byte	4,3,35,176,4,13
+	.byte	'reserved_234',0
+	.word	1522
+	.byte	4,3,35,180,4,13
+	.byte	'MAC_EXT_CFG1',0
+	.word	55003
+	.byte	4,3,35,184,4,13
+	.byte	'reserved_23C',0
+	.word	71504
+	.byte	196,1,3,35,188,4,13
+	.byte	'MAC_ADDRESS_HIGH0',0
+	.word	54560
+	.byte	4,3,35,128,6,13
+	.byte	'MAC_ADDRESS_LOW0',0
+	.word	54710
+	.byte	4,3,35,132,6,13
+	.byte	'MAC_ADDRESS_HIGH1',0
+	.word	54485
+	.byte	4,3,35,136,6,13
+	.byte	'MAC_ADDRESS_LOW1',0
+	.word	54636
+	.byte	4,3,35,140,6,13
+	.byte	'MAC_ADDRESS_HIGH2',0
+	.word	54485
+	.byte	4,3,35,144,6,13
+	.byte	'MAC_ADDRESS_LOW2',0
+	.word	54636
+	.byte	4,3,35,148,6,13
+	.byte	'MAC_ADDRESS_HIGH3',0
+	.word	54485
+	.byte	4,3,35,152,6,13
+	.byte	'MAC_ADDRESS_LOW3',0
+	.word	54636
+	.byte	4,3,35,156,6,13
+	.byte	'MAC_ADDRESS_HIGH4',0
+	.word	54485
+	.byte	4,3,35,160,6,13
+	.byte	'MAC_ADDRESS_LOW4',0
+	.word	54636
+	.byte	4,3,35,164,6,13
+	.byte	'MAC_ADDRESS_HIGH5',0
+	.word	54485
+	.byte	4,3,35,168,6,13
+	.byte	'MAC_ADDRESS_LOW5',0
+	.word	54636
+	.byte	4,3,35,172,6,13
+	.byte	'MAC_ADDRESS_HIGH6',0
+	.word	54485
+	.byte	4,3,35,176,6,13
+	.byte	'MAC_ADDRESS_LOW6',0
+	.word	54636
+	.byte	4,3,35,180,6,13
+	.byte	'MAC_ADDRESS_HIGH7',0
+	.word	54485
+	.byte	4,3,35,184,6,13
+	.byte	'MAC_ADDRESS_LOW7',0
+	.word	54636
+	.byte	4,3,35,188,6,13
+	.byte	'MAC_ADDRESS_HIGH8',0
+	.word	54485
+	.byte	4,3,35,192,6,13
+	.byte	'MAC_ADDRESS_LOW8',0
+	.word	54636
+	.byte	4,3,35,196,6,13
+	.byte	'MAC_ADDRESS_HIGH9',0
+	.word	54485
+	.byte	4,3,35,200,6,13
+	.byte	'MAC_ADDRESS_LOW9',0
+	.word	54636
+	.byte	4,3,35,204,6,13
+	.byte	'MAC_ADDRESS_HIGH10',0
+	.word	54485
+	.byte	4,3,35,208,6,13
+	.byte	'MAC_ADDRESS_LOW10',0
+	.word	54636
+	.byte	4,3,35,212,6,13
+	.byte	'MAC_ADDRESS_HIGH11',0
+	.word	54485
+	.byte	4,3,35,216,6,13
+	.byte	'MAC_ADDRESS_LOW11',0
+	.word	54636
+	.byte	4,3,35,220,6,13
+	.byte	'MAC_ADDRESS_HIGH12',0
+	.word	54485
+	.byte	4,3,35,224,6,13
+	.byte	'MAC_ADDRESS_LOW12',0
+	.word	54636
+	.byte	4,3,35,228,6,13
+	.byte	'MAC_ADDRESS_HIGH13',0
+	.word	54485
+	.byte	4,3,35,232,6,13
+	.byte	'MAC_ADDRESS_LOW13',0
+	.word	54636
+	.byte	4,3,35,236,6,13
+	.byte	'MAC_ADDRESS_HIGH14',0
+	.word	54485
+	.byte	4,3,35,240,6,13
+	.byte	'MAC_ADDRESS_LOW14',0
+	.word	54636
+	.byte	4,3,35,244,6,13
+	.byte	'MAC_ADDRESS_HIGH15',0
+	.word	54485
+	.byte	4,3,35,248,6,13
+	.byte	'MAC_ADDRESS_LOW15',0
+	.word	54636
+	.byte	4,3,35,252,6,13
+	.byte	'MAC_ADDRESS_HIGH16',0
+	.word	54485
+	.byte	4,3,35,128,7,13
+	.byte	'MAC_ADDRESS_LOW16',0
+	.word	54636
+	.byte	4,3,35,132,7,13
+	.byte	'MAC_ADDRESS_HIGH17',0
+	.word	54485
+	.byte	4,3,35,136,7,13
+	.byte	'MAC_ADDRESS_LOW17',0
+	.word	54636
+	.byte	4,3,35,140,7,13
+	.byte	'MAC_ADDRESS_HIGH18',0
+	.word	54485
+	.byte	4,3,35,144,7,13
+	.byte	'MAC_ADDRESS_LOW18',0
+	.word	54636
+	.byte	4,3,35,148,7,13
+	.byte	'MAC_ADDRESS_HIGH19',0
+	.word	54485
+	.byte	4,3,35,152,7,13
+	.byte	'MAC_ADDRESS_LOW19',0
+	.word	54636
+	.byte	4,3,35,156,7,13
+	.byte	'MAC_ADDRESS_HIGH20',0
+	.word	54485
+	.byte	4,3,35,160,7,13
+	.byte	'MAC_ADDRESS_LOW20',0
+	.word	54636
+	.byte	4,3,35,164,7,13
+	.byte	'MAC_ADDRESS_HIGH21',0
+	.word	54485
+	.byte	4,3,35,168,7,13
+	.byte	'MAC_ADDRESS_LOW21',0
+	.word	54636
+	.byte	4,3,35,172,7,13
+	.byte	'MAC_ADDRESS_HIGH22',0
+	.word	54485
+	.byte	4,3,35,176,7,13
+	.byte	'MAC_ADDRESS_LOW22',0
+	.word	54636
+	.byte	4,3,35,180,7,13
+	.byte	'MAC_ADDRESS_HIGH23',0
+	.word	54485
+	.byte	4,3,35,184,7,13
+	.byte	'MAC_ADDRESS_LOW23',0
+	.word	54636
+	.byte	4,3,35,188,7,13
+	.byte	'MAC_ADDRESS_HIGH24',0
+	.word	54485
+	.byte	4,3,35,192,7,13
+	.byte	'MAC_ADDRESS_LOW24',0
+	.word	54636
+	.byte	4,3,35,196,7,13
+	.byte	'MAC_ADDRESS_HIGH25',0
+	.word	54485
+	.byte	4,3,35,200,7,13
+	.byte	'MAC_ADDRESS_LOW25',0
+	.word	54636
+	.byte	4,3,35,204,7,13
+	.byte	'MAC_ADDRESS_HIGH26',0
+	.word	54485
+	.byte	4,3,35,208,7,13
+	.byte	'MAC_ADDRESS_LOW26',0
+	.word	54636
+	.byte	4,3,35,212,7,13
+	.byte	'MAC_ADDRESS_HIGH27',0
+	.word	54485
+	.byte	4,3,35,216,7,13
+	.byte	'MAC_ADDRESS_LOW27',0
+	.word	54636
+	.byte	4,3,35,220,7,13
+	.byte	'MAC_ADDRESS_HIGH28',0
+	.word	54485
+	.byte	4,3,35,224,7,13
+	.byte	'MAC_ADDRESS_LOW28',0
+	.word	54636
+	.byte	4,3,35,228,7,13
+	.byte	'MAC_ADDRESS_HIGH29',0
+	.word	54485
+	.byte	4,3,35,232,7,13
+	.byte	'MAC_ADDRESS_LOW29',0
+	.word	54636
+	.byte	4,3,35,236,7,13
+	.byte	'MAC_ADDRESS_HIGH30',0
+	.word	54485
+	.byte	4,3,35,240,7,13
+	.byte	'MAC_ADDRESS_LOW30',0
+	.word	54636
+	.byte	4,3,35,244,7,13
+	.byte	'MAC_ADDRESS_HIGH31',0
+	.word	54485
+	.byte	4,3,35,248,7,13
+	.byte	'MAC_ADDRESS_LOW31',0
+	.word	54636
+	.byte	4,3,35,252,7,13
+	.byte	'reserved_400',0
+	.word	71515
+	.byte	128,6,3,35,128,8,13
+	.byte	'MMC_CONTROL',0
+	.word	59423
+	.byte	4,3,35,128,14,13
+	.byte	'MMC_RX_INTERRUPT',0
+	.word	59656
+	.byte	4,3,35,132,14,13
+	.byte	'MMC_TX_INTERRUPT',0
+	.word	59811
+	.byte	4,3,35,136,14,13
+	.byte	'MMC_RX_INTERRUPT_MASK',0
+	.word	59731
+	.byte	4,3,35,140,14,13
+	.byte	'MMC_TX_INTERRUPT_MASK',0
+	.word	59886
+	.byte	4,3,35,144,14,13
+	.byte	'TX_OCTET_COUNT_GOOD_BAD',0
+	.word	68740
+	.byte	4,3,35,148,14,13
+	.byte	'TX_PACKET_COUNT_GOOD_BAD',0
+	.word	68981
+	.byte	4,3,35,152,14,13
+	.byte	'TX_BROADCAST_PACKETS_GOOD',0
+	.word	67655
+	.byte	4,3,35,156,14,13
+	.byte	'TX_MULTICAST_PACKETS_GOOD',0
+	.word	68397
+	.byte	4,3,35,160,14,13
+	.byte	'TX_64OCTETS_PACKETS_GOOD_BAD',0
+	.word	67476
+	.byte	4,3,35,164,14,13
+	.byte	'TX_65TO127OCTETS_PACKETS_GOOD_BAD',0
+	.word	67563
+	.byte	4,3,35,168,14,13
+	.byte	'TX_128TO255OCTETS_PACKETS_GOOD_BAD',0
+	.word	67196
+	.byte	4,3,35,172,14,13
+	.byte	'TX_256TO511OCTETS_PACKETS_GOOD_BAD',0
+	.word	67289
+	.byte	4,3,35,176,14,13
+	.byte	'TX_512TO1023OCTETS_PACKETS_GOOD_BAD',0
+	.word	67382
+	.byte	4,3,35,180,14,13
+	.byte	'TX_1024TOMAXOCTETS_PACKETS_GOOD_BAD',0
+	.word	67102
+	.byte	4,3,35,184,14,13
+	.byte	'TX_UNICAST_PACKETS_GOOD_BAD',0
+	.word	69315
+	.byte	4,3,35,188,14,13
+	.byte	'TX_MULTICAST_PACKETS_GOOD_BAD',0
+	.word	68481
+	.byte	4,3,35,192,14,13
+	.byte	'TX_BROADCAST_PACKETS_GOOD_BAD',0
+	.word	67739
+	.byte	4,3,35,196,14,13
+	.byte	'TX_UNDERFLOW_ERROR_PACKETS',0
+	.word	69230
+	.byte	4,3,35,200,14,13
+	.byte	'TX_SINGLE_COLLISION_GOOD_PACKETS',0
+	.word	69139
+	.byte	4,3,35,204,14,13
+	.byte	'TX_MULTIPLE_COLLISION_GOOD_PACKETS',0
+	.word	68569
+	.byte	4,3,35,208,14,13
+	.byte	'TX_DEFERRED_PACKETS',0
+	.word	67910
+	.byte	4,3,35,212,14,13
+	.byte	'TX_LATE_COLLISION_PACKETS',0
+	.word	68163
+	.byte	4,3,35,216,14,13
+	.byte	'TX_EXCESSIVE_COLLISION_PACKETS',0
+	.word	67988
+	.byte	4,3,35,220,14,13
+	.byte	'TX_CARRIER_ERROR_PACKETS',0
+	.word	67827
+	.byte	4,3,35,224,14,13
+	.byte	'TX_OCTET_COUNT_GOOD',0
+	.word	68662
+	.byte	4,3,35,228,14,13
+	.byte	'TX_PACKET_COUNT_GOOD',0
+	.word	68902
+	.byte	4,3,35,232,14,13
+	.byte	'TX_EXCESSIVE_DEFERRAL_ERROR',0
+	.word	68077
+	.byte	4,3,35,236,14,13
+	.byte	'TX_PAUSE_PACKETS',0
+	.word	69064
+	.byte	4,3,35,240,14,13
+	.byte	'TX_VLAN_PACKETS_GOOD',0
+	.word	69401
+	.byte	4,3,35,244,14,13
+	.byte	'TX_OSIZE_PACKETS_GOOD',0
+	.word	68822
+	.byte	4,3,35,248,14,13
+	.byte	'reserved_77C',0
+	.word	1522
+	.byte	4,3,35,252,14,13
+	.byte	'RX_PACKETS_COUNT_GOOD_BAD',0
+	.word	66381
+	.byte	4,3,35,128,15,13
+	.byte	'RX_OCTET_COUNT_GOOD_BAD',0
+	.word	66129
+	.byte	4,3,35,132,15,13
+	.byte	'RX_OCTET_COUNT_GOOD',0
+	.word	66051
+	.byte	4,3,35,136,15,13
+	.byte	'RX_BROADCAST_PACKETS_GOOD',0
+	.word	65325
+	.byte	4,3,35,140,15,13
+	.byte	'RX_MULTICAST_PACKETS_GOOD',0
+	.word	65967
+	.byte	4,3,35,144,15,13
+	.byte	'RX_CRC_ERROR_PACKETS',0
+	.word	65491
+	.byte	4,3,35,148,15,13
+	.byte	'RX_ALIGNMENT_ERROR_PACKETS',0
+	.word	65240
+	.byte	4,3,35,152,15,13
+	.byte	'RX_RUNT_ERROR_PACKETS',0
+	.word	66623
+	.byte	4,3,35,156,15,13
+	.byte	'RX_JABBER_ERROR_PACKETS',0
+	.word	65653
+	.byte	4,3,35,160,15,13
+	.byte	'RX_UNDERSIZE_PACKETS_GOOD',0
+	.word	66703
+	.byte	4,3,35,164,15,13
+	.byte	'RX_OVERSIZE_PACKETS_GOOD',0
+	.word	66298
+	.byte	4,3,35,168,15,13
+	.byte	'RX_64OCTETS_PACKETS_GOOD_BAD',0
+	.word	65061
+	.byte	4,3,35,172,15,13
+	.byte	'RX_65TO127OCTETS_PACKETS_GOOD_BAD',0
+	.word	65148
+	.byte	4,3,35,176,15,13
+	.byte	'RX_128TO255OCTETS_PACKETS_GOOD_BAD',0
+	.word	64781
+	.byte	4,3,35,180,15,13
+	.byte	'RX_256TO511OCTETS_PACKETS_GOOD_BAD',0
+	.word	64874
+	.byte	4,3,35,184,15,13
+	.byte	'RX_512TO1023OCTETS_PACKETS_GOOD_BAD',0
+	.word	64967
+	.byte	4,3,35,188,15,13
+	.byte	'RX_1024TOMAXOCTETS_PACKETS_GOOD_BAD',0
+	.word	64687
+	.byte	4,3,35,192,15,13
+	.byte	'RX_UNICAST_PACKETS_GOOD',0
+	.word	66787
+	.byte	4,3,35,196,15,13
+	.byte	'RX_LENGTH_ERROR_PACKETS',0
+	.word	65735
+	.byte	4,3,35,200,15,13
+	.byte	'RX_OUT_OF_RANGE_TYPE_PACKETS',0
+	.word	66211
+	.byte	4,3,35,204,15,13
+	.byte	'RX_PAUSE_PACKETS',0
+	.word	66465
+	.byte	4,3,35,208,15,13
+	.byte	'RX_FIFO_OVERFLOW_PACKETS',0
+	.word	65570
+	.byte	4,3,35,212,15,13
+	.byte	'RX_VLAN_PACKETS_GOOD_BAD',0
+	.word	66869
+	.byte	4,3,35,216,15,13
+	.byte	'RX_WATCHDOG_ERROR_PACKETS',0
+	.word	66952
+	.byte	4,3,35,220,15,13
+	.byte	'RX_RECEIVE_ERROR_PACKETS',0
+	.word	66540
+	.byte	4,3,35,224,15,13
+	.byte	'RX_CONTROL_PACKETS_GOOD',0
+	.word	65409
+	.byte	4,3,35,228,15,13
+	.byte	'reserved_7E8',0
+	.word	1522
+	.byte	4,3,35,232,15,13
+	.byte	'TX_LPI_USEC_CNTR',0
+	.word	68322
+	.byte	4,3,35,236,15,13
+	.byte	'TX_LPI_TRAN_CNTR',0
+	.word	68247
+	.byte	4,3,35,240,15,13
+	.byte	'RX_LPI_USEC_CNTR',0
+	.word	65892
+	.byte	4,3,35,244,15,13
+	.byte	'RX_LPI_TRAN_CNTR',0
+	.word	65817
+	.byte	4,3,35,248,15,13
+	.byte	'reserved_7FC',0
+	.word	1522
+	.byte	4,3,35,252,15,13
+	.byte	'MMC_IPC_RX_INTERRUPT_MASK',0
+	.word	59572
+	.byte	4,3,35,128,16,13
+	.byte	'reserved_804',0
+	.word	1522
+	.byte	4,3,35,132,16,13
+	.byte	'MMC_IPC_RX_INTERRUPT',0
+	.word	59493
+	.byte	4,3,35,136,16,13
+	.byte	'reserved_80C',0
+	.word	1522
+	.byte	4,3,35,140,16,13
+	.byte	'RXIPV4_GOOD_PACKETS',0
+	.word	62974
+	.byte	4,3,35,144,16,13
+	.byte	'RXIPV4_HEADER_ERROR_PACKETS',0
+	.word	63137
+	.byte	4,3,35,148,16,13
+	.byte	'RXIPV4_NO_PAYLOAD_PACKETS',0
+	.word	63306
+	.byte	4,3,35,152,16,13
+	.byte	'RXIPV4_FRAGMENTED_PACKETS',0
+	.word	62813
+	.byte	4,3,35,156,16,13
+	.byte	'RXIPV4_UDP_CHECKSUM_DISABLED_PACKETS',0
+	.word	63390
+	.byte	4,3,35,160,16,13
+	.byte	'RXIPV6_GOOD_PACKETS',0
+	.word	63655
+	.byte	4,3,35,164,16,13
+	.byte	'RXIPV6_HEADER_ERROR_PACKETS',0
+	.word	63818
+	.byte	4,3,35,168,16,13
+	.byte	'RXIPV6_NO_PAYLOAD_PACKETS',0
+	.word	63987
+	.byte	4,3,35,172,16,13
+	.byte	'RXUDP_GOOD_PACKETS',0
+	.word	64610
+	.byte	4,3,35,176,16,13
+	.byte	'RXUDP_ERROR_PACKETS',0
+	.word	64456
+	.byte	4,3,35,180,16,13
+	.byte	'RXTCP_GOOD_PACKETS',0
+	.word	64302
+	.byte	4,3,35,184,16,13
+	.byte	'RXTCP_ERROR_PACKETS',0
+	.word	64148
+	.byte	4,3,35,188,16,13
+	.byte	'RXICMP_GOOD_PACKETS',0
+	.word	62652
+	.byte	4,3,35,192,16,13
+	.byte	'RXICMP_ERROR_PACKETS',0
+	.word	62496
+	.byte	4,3,35,196,16,13
+	.byte	'reserved_848',0
+	.word	3342
+	.byte	8,3,35,200,16,13
+	.byte	'RXIPV4_GOOD_OCTETS',0
+	.word	62897
+	.byte	4,3,35,208,16,13
+	.byte	'RXIPV4_HEADER_ERROR_OCTETS',0
+	.word	63052
+	.byte	4,3,35,212,16,13
+	.byte	'RXIPV4_NO_PAYLOAD_OCTETS',0
+	.word	63223
+	.byte	4,3,35,216,16,13
+	.byte	'RXIPV4_FRAGMENTED_OCTETS',0
+	.word	62730
+	.byte	4,3,35,220,16,13
+	.byte	'RXIPV4_UDP_CHECKSUM_DISABLE_OCTETS',0
+	.word	63485
+	.byte	4,3,35,224,16,13
+	.byte	'RXIPV6_GOOD_OCTETS',0
+	.word	63578
+	.byte	4,3,35,228,16,13
+	.byte	'RXIPV6_HEADER_ERROR_OCTETS',0
+	.word	63733
+	.byte	4,3,35,232,16,13
+	.byte	'RXIPV6_NO_PAYLOAD_OCTETS',0
+	.word	63904
+	.byte	4,3,35,236,16,13
+	.byte	'RXUDP_GOOD_OCTETS',0
+	.word	64534
+	.byte	4,3,35,240,16,13
+	.byte	'RXUDP_ERROR_OCTETS',0
+	.word	64379
+	.byte	4,3,35,244,16,13
+	.byte	'RXTCP_GOOD_OCTETS',0
+	.word	64226
+	.byte	4,3,35,248,16,13
+	.byte	'RXTCP_ERROR_OCTETS',0
+	.word	64071
+	.byte	4,3,35,252,16,13
+	.byte	'RXICMP_GOOD_OCTETS',0
+	.word	62575
+	.byte	4,3,35,128,17,13
+	.byte	'RXICMP_ERROR_OCTETS',0
+	.word	62418
+	.byte	4,3,35,132,17,13
+	.byte	'reserved_888',0
+	.word	71526
+	.byte	248,4,3,35,136,17,13
+	.byte	'MAC_TIMESTAMP_CONTROL',0
+	.word	57916
+	.byte	4,3,35,128,22,13
+	.byte	'MAC_SUB_SECOND_INCREMENT',0
+	.word	57310
+	.byte	4,3,35,132,22,13
+	.byte	'MAC_SYSTEM_TIME_SECONDS',0
+	.word	57666
+	.byte	4,3,35,136,22,13
+	.byte	'MAC_SYSTEM_TIME_NANOSECONDS',0
+	.word	57487
+	.byte	4,3,35,140,22,13
+	.byte	'MAC_SYSTEM_TIME_SECONDS_UPDATE',0
+	.word	57748
+	.byte	4,3,35,144,22,13
+	.byte	'MAC_SYSTEM_TIME_NANOSECONDS_UPDATE',0
+	.word	57573
+	.byte	4,3,35,148,22,13
+	.byte	'MAC_TIMESTAMP_ADDEND',0
+	.word	57837
+	.byte	4,3,35,152,22,13
+	.byte	'MAC_SYSTEM_TIME_HIGHER_WORD_SECONDS',0
+	.word	57393
+	.byte	4,3,35,156,22,13
+	.byte	'MAC_TIMESTAMP_STATUS',0
+	.word	58557
+	.byte	4,3,35,160,22,13
+	.byte	'reserved_B24',0
+	.word	3682
+	.byte	12,3,35,164,22,13
+	.byte	'MAC_TX_TIMESTAMP_STATUS_NANOSECONDS',0
+	.word	58636
+	.byte	4,3,35,176,22,13
+	.byte	'MAC_TX_TIMESTAMP_STATUS_SECONDS',0
+	.word	58730
+	.byte	4,3,35,180,22,13
+	.byte	'reserved_B38',0
+	.word	2713
+	.byte	24,3,35,184,22,13
+	.byte	'MAC_TIMESTAMP_INGRESS_ASYM_CORR',0
+	.word	58275
+	.byte	4,3,35,208,22,13
+	.byte	'MAC_TIMESTAMP_EGRESS_ASYM_CORR',0
+	.word	57996
+	.byte	4,3,35,212,22,13
+	.byte	'MAC_TIMESTAMP_INGRESS_CORR_NANOSECOND',0
+	.word	58365
+	.byte	4,3,35,216,22,13
+	.byte	'MAC_TIMESTAMP_EGRESS_CORR_NANOSECOND',0
+	.word	58085
+	.byte	4,3,35,220,22,13
+	.byte	'MAC_TIMESTAMP_INGRESS_CORR_SUBNANOSEC',0
+	.word	58461
+	.byte	4,3,35,224,22,13
+	.byte	'MAC_TIMESTAMP_EGRESS_CORR_SUBNANOSEC',0
+	.word	58180
+	.byte	4,3,35,228,22,13
+	.byte	'reserved_B68',0
+	.word	3342
+	.byte	8,3,35,232,22,13
+	.byte	'MAC_PPS_CONTROL',0
+	.word	56640
+	.byte	4,3,35,240,22,13
+	.byte	'reserved_B74',0
+	.word	3682
+	.byte	12,3,35,244,22,13
+	.byte	'MAC_PPS0_TARGET_TIME_SECONDS',0
+	.word	56480
+	.byte	4,3,35,128,23,13
+	.byte	'MAC_PPS0_TARGET_TIME_NANOSECONDS',0
+	.word	56389
+	.byte	4,3,35,132,23,13
+	.byte	'MAC_PPS0_INTERVAL',0
+	.word	56313
+	.byte	4,3,35,136,23,13
+	.byte	'MAC_PPS0_WIDTH',0
+	.word	56567
+	.byte	4,3,35,140,23,13
+	.byte	'reserved_B90',0
+	.word	71537
+	.byte	112,3,35,144,23,13
+	.byte	'MTL_OPERATION_MODE',0
+	.word	60045
+	.byte	4,3,35,128,24,13
+	.byte	'reserved_C04',0
+	.word	71315
+	.byte	28,3,35,132,24,13
+	.byte	'MTL_INTERRUPT_STATUS',0
+	.word	59966
+	.byte	4,3,35,160,24,13
+	.byte	'reserved_C24',0
+	.word	3682
+	.byte	12,3,35,164,24,13
+	.byte	'MTL_RXQ_DMA_MAP0',0
+	.word	60771
+	.byte	4,3,35,176,24,13
+	.byte	'reserved_C34',0
+	.word	71546
+	.byte	204,1,3,35,180,24,13
+	.byte	'MTL_TXQ0',0
+	.word	71557
+	.byte	28,3,35,128,26,13
+	.byte	'reserved_D1C',0
+	.word	71562
+	.byte	16,3,35,156,26,13
+	.byte	'MTL_Q0',0
+	.word	71571
+	.byte	4,3,35,172,26,13
+	.byte	'MTL_RXQ0',0
+	.word	71576
+	.byte	16,3,35,176,26,13
+	.byte	'MTL_TXQ1',0
+	.word	71581
+	.byte	40,3,35,192,26,13
+	.byte	'reserved_D68',0
+	.word	1522
+	.byte	4,3,35,232,26,13
+	.byte	'MTL_Q1',0
+	.word	71586
+	.byte	4,3,35,236,26,13
+	.byte	'MTL_RXQ1',0
+	.word	71591
+	.byte	16,3,35,240,26,13
+	.byte	'MTL_TXQ2',0
+	.word	71596
+	.byte	40,3,35,128,27,13
+	.byte	'reserved_DA8',0
+	.word	1522
+	.byte	4,3,35,168,27,13
+	.byte	'MTL_Q2',0
+	.word	71601
+	.byte	4,3,35,172,27,13
+	.byte	'MTL_RXQ2',0
+	.word	71606
+	.byte	16,3,35,176,27,13
+	.byte	'MTL_TXQ3',0
+	.word	71611
+	.byte	40,3,35,192,27,13
+	.byte	'reserved_DE8',0
+	.word	1522
+	.byte	4,3,35,232,27,13
+	.byte	'MTL_Q3',0
+	.word	71616
+	.byte	4,3,35,236,27,13
+	.byte	'MTL_RXQ3',0
+	.word	71621
+	.byte	16,3,35,240,27,13
+	.byte	'reserved_E00',0
+	.word	71626
+	.byte	128,4,3,35,128,28,13
+	.byte	'DMA_MODE',0
+	.word	53947
+	.byte	4,3,35,128,32,13
+	.byte	'DMA_SYSBUS_MODE',0
+	.word	54014
+	.byte	4,3,35,132,32,13
+	.byte	'DMA_INTERRUPT_STATUS',0
+	.word	53868
+	.byte	4,3,35,136,32,13
+	.byte	'DMA_DEBUG_STATUS0',0
+	.word	53716
+	.byte	4,3,35,140,32,13
+	.byte	'DMA_DEBUG_STATUS1',0
+	.word	53792
+	.byte	4,3,35,144,32,13
+	.byte	'reserved_1014',0
+	.word	71637
+	.byte	236,1,3,35,148,32,13
+	.byte	'DMA_CH',0
+	.word	71658
+	.byte	128,4,3,35,128,34,13
+	.byte	'reserved_1300',0
+	.word	71663
+	.byte	128,26,3,35,128,38,13
+	.byte	'CLC',0
+	.word	52160
+	.byte	4,3,35,128,64,13
+	.byte	'ID',0
+	.word	54152
+	.byte	4,3,35,132,64,13
+	.byte	'GPCTL',0
+	.word	54088
+	.byte	4,3,35,136,64,13
+	.byte	'ACCEN0',0
+	.word	51884
+	.byte	4,3,35,140,64,13
+	.byte	'ACCEN1',0
+	.word	51949
+	.byte	4,3,35,144,64,13
+	.byte	'KRST0',0
+	.word	54213
+	.byte	4,3,35,148,64,13
+	.byte	'KRST1',0
+	.word	54277
+	.byte	4,3,35,152,64,13
+	.byte	'KRSTCLR',0
+	.word	54341
+	.byte	4,3,35,156,64,13
+	.byte	'ACCEND',0
+	.word	71683
+	.byte	32,3,35,160,64,13
+	.byte	'SKEWCTL',0
+	.word	67036
+	.byte	4,3,35,192,64,13
+	.byte	'reserved_2044',0
+	.word	71688
+	.byte	188,1,3,35,196,64,0,16
+	.word	71699
+	.byte	21
+	.byte	'Ifx_GETH',0,7,135,36,3
+	.word	79970
+	.byte	21
+	.byte	'_iob_flag_t',0,8,82,25
+	.word	493
+	.byte	21
+	.byte	'boolean',0,9,101,29
+	.word	476
+	.byte	21
+	.byte	'uint8',0,9,105,29
+	.word	476
+	.byte	21
+	.byte	'uint16',0,9,109,29
+	.word	493
+	.byte	7
+	.byte	'unsigned long int',0,4,7,21
+	.byte	'uint32',0,9,113,29
+	.word	80058
+	.byte	21
+	.byte	'uint64',0,9,118,29
+	.word	335
+	.byte	21
+	.byte	'sint16',0,9,126,29
+	.word	8273
+	.byte	7
+	.byte	'long int',0,4,5,21
+	.byte	'sint32',0,9,131,1,29
+	.word	80124
+	.byte	7
+	.byte	'long long int',0,8,5,21
+	.byte	'sint64',0,9,138,1,29
+	.word	80152
+	.byte	21
+	.byte	'float32',0,9,167,1,29
+	.word	281
+	.byte	7
+	.byte	'char',0,1,6,21
+	.byte	'int8',0,10,54,29
+	.word	80202
+	.byte	21
+	.byte	'int16',0,10,55,29
+	.word	8273
+	.byte	21
+	.byte	'int32',0,10,56,29
+	.word	469
+	.byte	21
+	.byte	'int64',0,10,57,29
+	.word	80152
+	.byte	21
+	.byte	'pvoid',0,11,57,28
+	.word	367
+	.byte	21
+	.byte	'Ifx_TickTime',0,11,79,28
+	.word	80152
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,11,130,1,9,1,18
 	.byte	'Ifx_RxSel_a',0,0,18
 	.byte	'Ifx_RxSel_b',0,1,18
@@ -10231,7 +11174,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	'Ifx_RxSel_g',0,6,18
 	.byte	'Ifx_RxSel_h',0,7,0,21
 	.byte	'Ifx_RxSel',0,11,140,1,3
+<<<<<<< HEAD
 	.word	80306
+=======
+	.word	80300
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	21
 	.byte	'Ifx_P_ACCEN0_Bits',0,4,104,3
 	.word	6876
@@ -10392,13 +11339,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.word	7443
 	.byte	21
 	.byte	'Ifx_P',0,4,130,6,3
+<<<<<<< HEAD
 	.word	81638
+=======
+	.word	81632
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,12,238,10,9,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,18
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,21
 	.byte	'IfxScu_WDTCON1_IR',0,12,243,10,3
+<<<<<<< HEAD
 	.word	81658
+=======
+	.word	81652
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN00_Bits',0,13,70,16,4,11
 	.byte	'EN0',0,1
@@ -10958,12 +11913,20 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.word	459
 	.byte	20,0,2,35,0,0,21
 	.byte	'Ifx_SCU_DTSCSTAT_Bits',0,13,188,2,3
+<<<<<<< HEAD
 	.word	85618
+=======
+	.word	85612
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	7
 	.byte	'unsigned int',0,4,7,10
 	.byte	'_Ifx_SCU_EICON0_Bits',0,13,191,2,16,4,11
 	.byte	'reserved_0',0,4
+<<<<<<< HEAD
 	.word	85720
+=======
+	.word	85714
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	1,31,2,35,0,11
 	.byte	'ENDINIT',0,4
 	.word	85720
@@ -14274,24 +15237,40 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.word	108042
 	.byte	21
 	.byte	'Ifx_SCU_WDTS',0,13,237,16,3
+<<<<<<< HEAD
 	.word	108103
+=======
+	.word	108097
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,76,9,1,18
 	.byte	'IfxPort_ControlledBy_port',0,0,18
 	.byte	'IfxPort_ControlledBy_hsct',0,1,0,21
 	.byte	'IfxPort_ControlledBy',0,3,80,3
+<<<<<<< HEAD
 	.word	108130
+=======
+	.word	108124
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,84,9,1,18
 	.byte	'IfxPort_InputMode_undefined',0,127,18
 	.byte	'IfxPort_InputMode_noPullDevice',0,0,18
 	.byte	'IfxPort_InputMode_pullDown',0,8,18
 	.byte	'IfxPort_InputMode_pullUp',0,16,0,21
 	.byte	'IfxPort_InputMode',0,3,90,3
+<<<<<<< HEAD
 	.word	108221
+=======
+	.word	108215
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,94,9,1,18
 	.byte	'IfxPort_LvdsMode_high',0,0,18
 	.byte	'IfxPort_LvdsMode_medium',0,1,0,21
 	.byte	'IfxPort_LvdsMode',0,3,98,3
+<<<<<<< HEAD
 	.word	108372
+=======
+	.word	108366
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,129,1,9,1,18
 	.byte	'IfxPort_OutputIdx_general',0,128,1,18
 	.byte	'IfxPort_OutputIdx_alt1',0,136,1,18
@@ -14302,12 +15281,20 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	'IfxPort_OutputIdx_alt6',0,176,1,18
 	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0,21
 	.byte	'IfxPort_OutputIdx',0,3,139,1,3
+<<<<<<< HEAD
 	.word	108453
+=======
+	.word	108447
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,143,1,9,1,18
 	.byte	'IfxPort_OutputMode_pushPull',0,128,1,18
 	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,21
 	.byte	'IfxPort_OutputMode',0,3,147,1,3
+<<<<<<< HEAD
 	.word	108698
+=======
+	.word	108692
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,153,1,9,1,18
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,18
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,18
@@ -14322,17 +15309,29 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	'IfxPort_PadDriver_ttl3v3Speed3',0,14,18
 	.byte	'IfxPort_PadDriver_ttl3v3Speed4',0,15,0,21
 	.byte	'IfxPort_PadDriver',0,3,167,1,3
+<<<<<<< HEAD
 	.word	108796
+=======
+	.word	108790
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,171,1,9,1,18
 	.byte	'IfxPort_PadSupply_3v',0,0,18
 	.byte	'IfxPort_PadSupply_5v',0,1,0,21
 	.byte	'IfxPort_PadSupply',0,3,175,1,3
+<<<<<<< HEAD
 	.word	109246
+=======
+	.word	109240
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	17,3,179,1,9,1,18
 	.byte	'IfxPort_PinFunctionMode_digital',0,0,18
 	.byte	'IfxPort_PinFunctionMode_analog',0,1,0,21
 	.byte	'IfxPort_PinFunctionMode',0,3,183,1,3
+<<<<<<< HEAD
 	.word	109326
+=======
+	.word	109320
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	21
 	.byte	'IfxPort_State',0,3,195,1,3
 	.word	8023
@@ -14918,7 +15917,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	15,0,0
 .L173:
 	.byte	14,4
+<<<<<<< HEAD
 	.word	111802
+=======
+	.word	111796
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	15,0,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -14940,7 +15943,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.word	.L177-.L176
 .L176:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common',0,0
@@ -14948,7 +15955,11 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
 	.byte	0,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Port\\Std\\IfxPort.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxPort_regdef.h',0,1,0,0
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0,0,0,0
@@ -14957,9 +15968,15 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.byte	'stdio.h',0,2,0,0
 	.byte	'PLATFORM_TYPES.H',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0
+<<<<<<< HEAD
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+=======
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\_Impl\\IfxScu_cfg.h',0
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.byte	0,0,0
 	.byte	'IfxScu_regdef.h',0,1,0,0
 	.byte	'..\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\_PinMap\\IfxGeth_PinMap.h',0,0,0,0,0
@@ -14968,13 +15985,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_COL_P11_15_IN')
 	.sect	'.debug_info'
 .L6:
+<<<<<<< HEAD
 	.word	262
+=======
+	.word	256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L7
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_COL_P11_15_IN',0,5,48,16
@@ -14990,13 +16015,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_CRSA_P11_14_IN')
 	.sect	'.debug_info'
 .L8:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L9
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_CRSA_P11_14_IN',0,5,49,16
@@ -15012,13 +16045,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_CRSB_P11_11_IN')
 	.sect	'.debug_info'
 .L10:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L11
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_CRSB_P11_11_IN',0,5,50,16
@@ -15034,13 +16075,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_CRSDVA_P11_11_IN')
 	.sect	'.debug_info'
 .L12:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L13
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_CRSDVA_P11_11_IN',0,5,51,18
@@ -15056,13 +16105,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_CRSDVB_P11_14_IN')
 	.sect	'.debug_info'
 .L14:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L15
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_CRSDVB_P11_14_IN',0,5,52,18
@@ -15078,13 +16135,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_GREFCLK_P11_5_IN')
 	.sect	'.debug_info'
 .L16:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L17
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_GREFCLK_P11_5_IN',0,5,53,20
@@ -15100,13 +16165,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_MDC_P02_8_OUT')
 	.sect	'.debug_info'
 .L18:
+<<<<<<< HEAD
 	.word	262
+=======
+	.word	256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L19
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_MDC_P02_8_OUT',0,5,54,17
@@ -15122,13 +16195,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_MDC_P12_0_OUT')
 	.sect	'.debug_info'
 .L20:
+<<<<<<< HEAD
 	.word	262
+=======
+	.word	256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L21
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_MDC_P12_0_OUT',0,5,55,17
@@ -15144,13 +16225,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_MDC_P21_2_OUT')
 	.sect	'.debug_info'
 .L22:
+<<<<<<< HEAD
 	.word	262
+=======
+	.word	256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L23
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_MDC_P21_2_OUT',0,5,56,17
@@ -15166,13 +16255,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_MDIO_P00_0_INOUT')
 	.sect	'.debug_info'
 .L24:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L25
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_MDIO_P00_0_INOUT',0,5,57,20
@@ -15188,13 +16285,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_MDIO_P12_1_INOUT')
 	.sect	'.debug_info'
 .L26:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L27
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_MDIO_P12_1_INOUT',0,5,58,20
@@ -15210,13 +16315,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_MDIO_P21_3_INOUT')
 	.sect	'.debug_info'
 .L28:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L29
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_MDIO_P21_3_INOUT',0,5,59,20
@@ -15232,13 +16345,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_PPS_P14_4_OUT')
 	.sect	'.debug_info'
 .L30:
+<<<<<<< HEAD
 	.word	262
+=======
+	.word	256
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L31
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_PPS_P14_4_OUT',0,5,60,17
@@ -15254,13 +16375,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_REFCLKA_P11_12_IN')
 	.sect	'.debug_info'
 .L32:
+<<<<<<< HEAD
 	.word	266
+=======
+	.word	260
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L33
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_REFCLKA_P11_12_IN',0,5,61,19
@@ -15276,13 +16405,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXCLKA_P11_12_IN')
 	.sect	'.debug_info'
 .L34:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L35
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXCLKA_P11_12_IN',0,5,62,18
@@ -15298,13 +16435,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXCLKB_P11_4_IN')
 	.sect	'.debug_info'
 .L36:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L37
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXCLKB_P11_4_IN',0,5,63,18
@@ -15320,13 +16465,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXCLKC_P12_0_IN')
 	.sect	'.debug_info'
 .L38:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L39
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXCLKC_P12_0_IN',0,5,64,18
@@ -15342,13 +16495,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXCTLA_P11_11_IN')
 	.sect	'.debug_info'
 .L40:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L41
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXCTLA_P11_11_IN',0,5,65,18
@@ -15364,13 +16525,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXD0A_P11_10_IN')
 	.sect	'.debug_info'
 .L42:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L43
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXD0A_P11_10_IN',0,5,66,16
@@ -15386,13 +16555,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXD1A_P11_9_IN')
 	.sect	'.debug_info'
 .L44:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L45
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXD1A_P11_9_IN',0,5,67,16
@@ -15408,13 +16585,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXD2A_P11_8_IN')
 	.sect	'.debug_info'
 .L46:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L47
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXD2A_P11_8_IN',0,5,68,16
@@ -15430,13 +16615,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXD3A_P11_7_IN')
 	.sect	'.debug_info'
 .L48:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L49
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXD3A_P11_7_IN',0,5,69,16
@@ -15452,13 +16645,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXDVA_P11_11_IN')
 	.sect	'.debug_info'
 .L50:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L51
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXDVA_P11_11_IN',0,5,70,17
@@ -15474,13 +16675,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXDVB_P11_14_IN')
 	.sect	'.debug_info'
 .L52:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L53
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXDVB_P11_14_IN',0,5,71,17
@@ -15496,13 +16705,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXERA_P11_13_IN')
 	.sect	'.debug_info'
 .L54:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L55
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXERA_P11_13_IN',0,5,72,17
@@ -15518,13 +16735,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXERB_P21_7_IN')
 	.sect	'.debug_info'
 .L56:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L57
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXERB_P21_7_IN',0,5,73,17
@@ -15540,13 +16765,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_RXERC_P10_0_IN')
 	.sect	'.debug_info'
 .L58:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L59
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_RXERC_P10_0_IN',0,5,74,17
@@ -15562,13 +16795,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXCLKA_P11_5_IN')
 	.sect	'.debug_info'
 .L60:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L61
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXCLKA_P11_5_IN',0,5,75,18
@@ -15584,13 +16825,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXCLKB_P11_12_IN')
 	.sect	'.debug_info'
 .L62:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L63
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXCLKB_P11_12_IN',0,5,76,18
@@ -15606,13 +16855,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXCLK_P11_4_OUT')
 	.sect	'.debug_info'
 .L64:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L65
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXCLK_P11_4_OUT',0,5,77,19
@@ -15628,13 +16885,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXCTL_P11_6_OUT')
 	.sect	'.debug_info'
 .L66:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L67
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXCTL_P11_6_OUT',0,5,78,19
@@ -15650,13 +16915,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXD0_P11_3_OUT')
 	.sect	'.debug_info'
 .L68:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L69
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXD0_P11_3_OUT',0,5,79,17
@@ -15672,13 +16945,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXD1_P11_2_OUT')
 	.sect	'.debug_info'
 .L70:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L71
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXD1_P11_2_OUT',0,5,80,17
@@ -15694,13 +16975,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXD2_P11_1_OUT')
 	.sect	'.debug_info'
 .L72:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L73
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXD2_P11_1_OUT',0,5,81,17
@@ -15716,13 +17005,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXD3_P11_0_OUT')
 	.sect	'.debug_info'
 .L74:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L75
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXD3_P11_0_OUT',0,5,82,17
@@ -15738,13 +17035,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXEN_P11_6_OUT')
 	.sect	'.debug_info'
 .L76:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L77
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXEN_P11_6_OUT',0,5,83,18
@@ -15760,13 +17065,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_TXER_P11_4_OUT')
 	.sect	'.debug_info'
 .L78:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	257
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L79
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_TXER_P11_4_OUT',0,5,84,18
@@ -15782,13 +17095,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Col_In_pinTable')
 	.sect	'.debug_info'
 .L80:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L81
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Col_In_pinTable',0,5,87,23
@@ -15804,13 +17125,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Crs_In_pinTable')
 	.sect	'.debug_info'
 .L82:
+<<<<<<< HEAD
 	.word	264
+=======
+	.word	258
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L83
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Crs_In_pinTable',0,5,93,23
@@ -15826,13 +17155,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Crsdv_In_pinTable')
 	.sect	'.debug_info'
 .L84:
+<<<<<<< HEAD
 	.word	266
+=======
+	.word	260
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L85
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Crsdv_In_pinTable',0,5,100,25
@@ -15848,13 +17185,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Grefclk_In_pinTable')
 	.sect	'.debug_info'
 .L86:
+<<<<<<< HEAD
 	.word	268
+=======
+	.word	262
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L87
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Grefclk_In_pinTable',0,5,107,27
@@ -15870,13 +17215,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Mdc_Out_pinTable')
 	.sect	'.debug_info'
 .L88:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L89
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Mdc_Out_pinTable',0,5,113,24
@@ -15892,13 +17245,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Mdio_InOut_pinTable')
 	.sect	'.debug_info'
 .L90:
+<<<<<<< HEAD
 	.word	268
+=======
+	.word	262
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L91
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Mdio_InOut_pinTable',0,5,121,27
@@ -15914,13 +17275,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Pps_Out_pinTable')
 	.sect	'.debug_info'
 .L92:
+<<<<<<< HEAD
 	.word	266
+=======
+	.word	260
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L93
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Pps_Out_pinTable',0,5,129,1,24
@@ -15936,13 +17305,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Refclk_In_pinTable')
 	.sect	'.debug_info'
 .L94:
+<<<<<<< HEAD
 	.word	268
+=======
+	.word	262
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L95
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Refclk_In_pinTable',0,5,135,1,26
@@ -15958,13 +17335,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Rxclk_In_pinTable')
 	.sect	'.debug_info'
 .L96:
+<<<<<<< HEAD
 	.word	267
+=======
+	.word	261
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L97
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Rxclk_In_pinTable',0,5,141,1,25
@@ -15980,13 +17365,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Rxctl_In_pinTable')
 	.sect	'.debug_info'
 .L98:
+<<<<<<< HEAD
 	.word	267
+=======
+	.word	261
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L99
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Rxctl_In_pinTable',0,5,149,1,25
@@ -16002,13 +17395,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Rxd_In_pinTable')
 	.sect	'.debug_info'
 .L100:
+<<<<<<< HEAD
 	.word	265
+=======
+	.word	259
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L101
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Rxd_In_pinTable',0,5,155,1,23
@@ -16024,13 +17425,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Rxdv_In_pinTable')
 	.sect	'.debug_info'
 .L102:
+<<<<<<< HEAD
 	.word	266
+=======
+	.word	260
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L103
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Rxdv_In_pinTable',0,5,164,1,24
@@ -16046,13 +17455,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Rxer_In_pinTable')
 	.sect	'.debug_info'
 .L104:
+<<<<<<< HEAD
 	.word	266
+=======
+	.word	260
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L105
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Rxer_In_pinTable',0,5,171,1,24
@@ -16068,13 +17485,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Txclk_In_pinTable')
 	.sect	'.debug_info'
 .L106:
+<<<<<<< HEAD
 	.word	267
+=======
+	.word	261
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L107
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Txclk_In_pinTable',0,5,179,1,25
@@ -16090,13 +17515,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Txclk_Out_pinTable')
 	.sect	'.debug_info'
 .L108:
+<<<<<<< HEAD
 	.word	268
+=======
+	.word	262
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L109
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Txclk_Out_pinTable',0,5,186,1,26
@@ -16112,13 +17545,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Txctl_Out_pinTable')
 	.sect	'.debug_info'
 .L110:
+<<<<<<< HEAD
 	.word	268
+=======
+	.word	262
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L111
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Txctl_Out_pinTable',0,5,192,1,26
@@ -16134,13 +17575,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Txd_Out_pinTable')
 	.sect	'.debug_info'
 .L112:
+<<<<<<< HEAD
 	.word	266
+=======
+	.word	260
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L113
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Txd_Out_pinTable',0,5,198,1,24
@@ -16156,13 +17605,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Txen_Out_pinTable')
 	.sect	'.debug_info'
 .L114:
+<<<<<<< HEAD
 	.word	267
+=======
+	.word	261
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L115
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Txen_Out_pinTable',0,5,207,1,25
@@ -16178,13 +17635,21 @@ IfxGeth_Txer_Out_pinTable:	.type	object
 	.sdecl	'.debug_info',debug,cluster('IfxGeth_Txer_Out_pinTable')
 	.sect	'.debug_info'
 .L116:
+<<<<<<< HEAD
 	.word	267
+=======
+	.word	261
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.half	3
 	.word	.L117
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/iLLD/TC37A/Tricore/_PinMap/IfxGeth_PinMap.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1,2
+=======
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1,2
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 	.word	.L2
 	.byte	3
 	.byte	'IfxGeth_Txer_Out_pinTable',0,5,213,1,25

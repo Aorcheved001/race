@@ -60,7 +60,11 @@ void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent)
     uint32 duty;
 
 
+<<<<<<< HEAD
     if(percent > 70) percent = 70;
+=======
+    if(percent > 100) percent = 100;
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
     duty = (uint32)percent * PWM_DUTY_MAX / 100U;
 
     if( duty == 0)
@@ -89,15 +93,25 @@ void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent)
         switch(motor)
         {
             case motor_LB:
+<<<<<<< HEAD
                 pwm_set_duty(MOTOR1_PWM_PIN1, 0);      // P33.9 S1 PWM
                 pwm_set_duty(MOTOR1_PWM_PIN2, duty);         // P33.11 S3 = 0, 则 S4 = 1
+=======
+                pwm_set_duty(MOTOR1_PWM_PIN1, duty);      // P33.9 S1 PWM
+                pwm_set_duty(MOTOR1_PWM_PIN2, 0);         // P33.11 S3 = 0, 则 S4 = 1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
                 //gpio_set_level(P33_11,1);
                 //gpio_low(P33_11);
                 break;
 
             case motor_RB:
+<<<<<<< HEAD
                 pwm_set_duty(MOTOR2_PWM_PIN1, 0);      // P14.2 S1 PWM
                 pwm_set_duty(MOTOR2_PWM_PIN2, duty);         // P14.3 S3 = 0, 则 S4 = 1
+=======
+                pwm_set_duty(MOTOR2_PWM_PIN1, duty);      // P14.2 S1 PWM
+                pwm_set_duty(MOTOR2_PWM_PIN2, 0);         // P14.3 S3 = 0, 则 S4 = 1
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
                 break;
         }
     }

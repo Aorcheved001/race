@@ -1,5 +1,6 @@
 zf_common_interrupt.o :	../libraries/zf_common/zf_common_interrupt.c
 ../libraries/zf_common/zf_common_interrupt.c :
+<<<<<<< HEAD
 zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h" :
 zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
@@ -8,6 +9,16 @@ zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\l
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_clock.h" :
 zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Service\\CpuGeneric\SysSe\Bsp\Bsp.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_clock.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 zf_common_interrupt.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_common_interrupt.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -126,6 +137,7 @@ zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\l
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuCcu.h" :
 zf_common_interrupt.o :	..\libraries\zf_common\zf_common_interrupt.h
 ..\libraries\zf_common\zf_common_interrupt.h :
+<<<<<<< HEAD
 zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_driver\zf_driver_pit.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_driver\zf_driver_pit.h" :
 zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_driver\zf_driver_pwm.h"
@@ -138,3 +150,17 @@ zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\l
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_PinMap\IfxScu_PinMap.h" :
 zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuWdt.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuWdt.h" :
+=======
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_pit.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_pit.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_pwm.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_pwm.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_exti.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_exti.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuEru.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\\Scu\\Std\IfxScuEru.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_PinMap\IfxScu_PinMap.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\_PinMap\IfxScu_PinMap.h" :
+zf_common_interrupt.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuWdt.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Scu\Std\IfxScuWdt.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6

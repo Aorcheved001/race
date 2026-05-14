@@ -147,6 +147,7 @@ void vofa_update(const EncoderLayerState *enc)
 #if VOFA_ENABLE
     vofa_send_float(g_wheel_pid.cmd_speed_left_mps);         // 通道0：目标速度 m/s
     vofa_send_float(enc->speed_left_mps);              // 通道1：左轮实时速度 m/s
+<<<<<<< HEAD
     vofa_send_float(-(enc->speed_right_mps));             // 通道2：右轮实时速度 m/s origin_pidout
     vofa_send_float((g_wheel_pid.out_left_pwm)); // 通道3：左轮PWM归一化
 //    vofa_send_float(origin_error_right); // 通道3：左轮PWM归一化
@@ -156,6 +157,10 @@ void vofa_update(const EncoderLayerState *enc)
 //    vofa_send_float(tick_left_pid);              // 通道1：左轮实时速度 tick/ms
 //    vofa_send_float(tick_right_pid);             // 通道2：右轮实时速度 tick/ms
 //    vofa_send_float((g_wheel_pid.out_left_pwm / 5000.0f)); // 通道3：左轮PWM归一化
+=======
+    vofa_send_float(enc->speed_right_mps);             // 通道2：右轮实时速度 m/s
+    vofa_send_float(g_wheel_pid.out_left_pwm / 5000.0f); // 通道3：左轮PWM归一化
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 
     // JustFloat 固定帧尾
     uint8 tail[4] = {0x00, 0x00, 0x80, 0x7f};

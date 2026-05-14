@@ -22,7 +22,11 @@ void system_init_all(void)
 //    gnss_init(TAU1201);                                             /* 初始化GNSS */
 //    key_init(8);                                                    /* 初始化按键 */
     encoder_init();                                                 /* 初始化编码器 */
+<<<<<<< HEAD
     encoder_layer_set_model(0.00036816f, -0.00036816f, 0.001f);    /* 设置编码器模型参数 */
+=======
+    encoder_layer_set_model(-0.00002204f, -0.00002204f, 0.004f);    /* 设置编码器模型参数 */
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 
     /* 通信与驱动初始化 */
     wireless_uart_init();                                           /* 初始化无线串口 */
@@ -35,11 +39,18 @@ void system_init_all(void)
 //    Ins_init();                                                     /* 初始化INS */
     pit_ms_init(CCU60_CH0, 1);                                      /* 初始化1ms定时器 */
 
+<<<<<<< HEAD
 //    /* PID 控制初始化 */
     wheel_pid_init();                                               /* 初始化车轮PID */
 //    wheel_pid_set_speed_target(4.0f, 0.0f);
     wheel_pid_set_target_speed(4.0f);                               /* 设置目标速度为0 */
     wheel_pid_enable(1, 1, 0, 0);                                   /* 使能输出、速度环，关闭位置环，使能角速度环 */
+=======
+    /* PID 控制初始化 */
+    wheel_pid_init();                                               /* 初始化车轮PID */
+    wheel_pid_set_target_speed(0.2f);                               /* 设置目标速度为0 */
+    wheel_pid_enable(1, 1, 0, 1);                                   /* 使能输出、速度环，关闭位置环，使能角速度环 */
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 
     /* 跟踪追踪初始化 */
 //    track_init();                                                   /* 初始化循迹 */

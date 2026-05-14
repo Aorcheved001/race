@@ -1,6 +1,7 @@
 /*
  * vofa.h
  *
+<<<<<<< HEAD
  * VOFA+ 调试参数工具
  * 支持 JustFloat 波形发送 + 上位机在线调参（支持修改 Kp/Ki/Kd 等）
  *
@@ -19,11 +20,32 @@
  *      K3=xx!  - 位置环 Ki
  *      D3=xx!  - 位置环 Kd
  *      ...（可自行扩展）
+=======
+ * VOFA+ ??????
+ * ?? JustFloat ???? + ???????????? Kp/Ki/Kd ??
+ *
+ * ?????
+ *   1. ? wireless_uart_init() ????? vofa_init()
+ *   2. ? 4ms ??????? vofa_update() ????
+ *   3. ??????? vofa_pid_adjust() ????? PID ??
+ *   4. VOFA+ ????????JustFloat ????
+ *      P1=xx!  - ????? Kp
+ *      P2=xx!  - ????? Kp
+ *      K1=xx!  - ????? Ki
+ *      K2=xx!  - ????? Ki
+ *      D1=xx!  - ????? Kd
+ *      D2=xx!  - ????? Kd
+ *      P3=xx!  - ??? Kp
+ *      K3=xx!  - ??? Ki
+ *      D3=xx!  - ??? Kd
+ *      ...???????
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
  */
 
 #ifndef CODE_DEBUG_VOFA_H_
 #define CODE_DEBUG_VOFA_H_
 
+<<<<<<< HEAD
 //------------------------------------------- 头文件引用 ------------------------------------------------------------
 
 #include "zf_common_headfile.h"
@@ -56,3 +78,37 @@ void vofa_pid_adjust(void);                                             // 解析 
 void vofa_uart_rx_handler(void);                                        // UART 接收中断处理函数
 
 #endif /* CODE_DEBUG_VOFA_H_ */
+=======
+//------------------------------------------- ????? ------------------------------------------------------------
+
+#include "zf_common_headfile.h"
+
+//------------------------------------------- ??? -----------------------------------------------------------------
+
+#define VOFA_ENABLE             (1)                                    // 0=??  1=??
+
+#define VOFA_UART_INDEX         (WIRELESS_UART_INDEX)                  // ???????
+#define VOFA_UART_BAUDRATE      (WIRELESS_UART_BUAD_RATE)              // ???
+#define VOFA_UART_TX_PIN        (WIRELESS_UART_TX_PIN)                 // TX ??
+#define VOFA_UART_RX_PIN        (WIRELESS_UART_RX_PIN)                 // RX ??
+
+//------------------------------------------- ?????? ----------------------------------------------------------
+
+extern uint8  vofa_uart_rx_buf[64];         // UART ?????
+extern uint8  vofa_fifo_out_buf[64];        // FIFO ?????
+extern uint8  vofa_get_data;                // ?????????
+extern uint32 vofa_fifo_data_count;         // FIFO ?????
+extern fifo_struct vofa_data_fifo;          // FIFO ???
+
+//------------------------------------------- ???? ---------------------------------------------------------------
+
+void vofa_init(void);                                                   // VOFA ??????? wireless_uart_init ?????
+
+void vofa_update(const EncoderLayerState *enc);                        // ?????????? 4ms ???????
+
+void vofa_pid_adjust(void);                                             // ?? VOFA+ ??? PID ?????????????
+
+void vofa_uart_rx_handler(void);                                        // UART ????????
+
+#endif /* CODE_DEBUG_VOFA_H_ */
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6

@@ -1,9 +1,16 @@
 zf_device_mt9v03x.o :	../libraries/zf_device/zf_device_mt9v03x.c
 ../libraries/zf_device/zf_device_mt9v03x.c :
+<<<<<<< HEAD
 zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_interrupt.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_interrupt.h" :
 zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_interrupt.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_interrupt.h" :
+zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 zf_device_mt9v03x.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_device_mt9v03x.o :	"C:\Infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -192,8 +199,13 @@ zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\lib
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\infineon_libraries\\iLLD\\TC37A\\Tricore\Cpu\Std\Ifx_Types.h" :
 zf_device_mt9v03x.o :	..\libraries\zf_device\zf_device_camera.h
 ..\libraries\zf_device\zf_device_camera.h :
+<<<<<<< HEAD
 zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_driver\zf_driver_uart.h"
 "C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\libraries\\zf_driver\zf_driver_uart.h" :
+=======
+zf_device_mt9v03x.o :	"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_uart.h"
+"C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\libraries\\zf_driver\zf_driver_uart.h" :
+>>>>>>> d71cca4cef4b2eec4917dccbf69700830f5cd7e6
 zf_device_mt9v03x.o :	..\libraries\zf_device\zf_device_type.h
 ..\libraries\zf_device\zf_device_type.h :
 zf_device_mt9v03x.o :	..\libraries\zf_device\zf_device_config.h
