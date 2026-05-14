@@ -1,58 +1,58 @@
 /*
  * track.c
  *
- * Created on: 2024ï¿½ï¿½6ï¿½ï¿½6ï¿½ï¿½
- * Author: LateRain
- * Modified: 2025ï¿½ï¿½11ï¿½ï¿½22ï¿½ï¿½
+ *  Created on: 2024Äê6ÔÂ6ÈÕ
+ *      Author: LateRain
+ *  Modified: 2025Äê11ÔÂ22ÈÕ
  */
 
-//-------------------------------------------Í·ï¿½Ä¼ï¿½ï¿½ï¿½------------------------------------------------------------
+//-------------------------------------------Í·ÎÄ¼þÒýÓÃ------------------------------------------------------------
 #include "track.h"
 #include "Ins.h"
 #include "zf_driver_flash.h"
 #include "zf_device_ips200.h"
 #include "steering_control.h"
 
-//-------------------------------------------ï¿½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½------------------------------------------------------------
+//-------------------------------------------½á¹¹Ìå±äÁ¿¶¨Òå------------------------------------------------------------
 Ins_Date Ins_date_377 = {0};
 
-//-------------------------------------------È«ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------------------------------
+//-------------------------------------------È«¾Ö±äÁ¿¶¨Òå-----------------------------------------------------------
 uint8 track_save_flag = 0;
 uint8 track_follow_flag = 0;
 uint32 track_total_points = 0;
 
-//-------------------------------------------ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------------------------------
+//-------------------------------------------ÄÚ²¿±äÁ¿¶¨Òå-----------------------------------------------------------
 static uint32 track_flash_cur_write_page = Track_Flash_Page_Begin;
-// ï¿½ï¿½Ç°ï¿½ï¿½Ñ¯Ð´ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
+// µ±Ç°ÂÖÑ¯Ð´ÈëµÄÒ³ºÅ
 
 static float dist_acc_m = 0.0f;
-// ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì±ï¿½ï¿½ï¿½
+// ÄÚ²¿Àï³ÌÀÛ¼Æ¾àÀë»º´æ
 
 static int16_t flash_point_index = 0;
-// ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½flash_union_bufferï¿½ÄµÚ¼ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½floatï¿½Æ£ï¿½
+// µ±Ç°ÔÚflash_union_bufferµÄµÚ¼¸¸öÔªËØ£¨°´float¼Æ£©
 
 static uint32 Ins_Date_Read[510] = {0};
-// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½uint32ï¿½ï¿½ï¿½ï¿½flash_read_pageï¿½Ó¿ï¿½Ò»ï¿½Â£ï¿½
+// ¶ÁÈ¡Êý¾Ý»º´æÊý×é£¨uint32£¬ºÍflash_read_page½Ó¿ÚÒ»ÖÂ£©
 
 static uint16 follow_page = Track_Flash_Page_Begin;
-// Ñ­ï¿½ï¿½Ê±ï¿½ï¿½Ç°ï¿½ï¿½È¡ï¿½ï¿½Ò³ï¿½ï¿½
+// Ñ­¼£Ê±µ±Ç°¶ÁÈ¡µÄÒ³ºÅ
 
 static uint16 follow_point_idx = 1;
-// Ñ­ï¿½ï¿½Ê±ï¿½ï¿½Ç°ï¿½ï¿½È¡ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½
+// Ñ­¼£Ê±µ±Ç°¶ÁÈ¡µÄµãÐòºÅ
 
 static uint32 follow_abs_index = 1;
-// Ñ­ï¿½ï¿½Ê±ï¿½ï¿½Ç°ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1-track_total_pointsï¿½ï¿½
+// Ñ­¼£Ê±µ±Ç°µÄ¾ø¶ÔµãÐòºÅ£¨1-track_total_points£©
 
 static float steer_output = 0.0f;
-// ×ªï¿½ï¿½ï¿½ï¿½ï¿½
+// ×ªÏòÊä³ö
 
 static float steer_output_filtered = 0.0f;
-// ×ªï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½ï¿½
+// ×ªÏòÂË²¨Êä³ö
 
-static float current_speed_dir = 1.0f; // ï¿½ï¿½Ç°ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¾Ç°ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+static float current_speed_dir = 1.0f; // µ±Ç°ÐÐÊ»·½Ïò£¬1±íÊ¾Ç°½ø£¬0±íÊ¾ºóÍË
 
 #define STEER_FILTER_ALPHA    0.85f
-// ×ªï¿½ï¿½Ò»ï¿½×µï¿½Í¨ï¿½Ë²ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½Ô­Ê¼Öµï¿½ï¿½
+// ×ªÏòÒ»½×µÍÍ¨ÂË²¨ÏµÊý£¬Ô½´óÔ½½Ó½üÔ­Ê¼Öµ
 
 #define TRACK_META_PAGE                0u
 #define TRACK_META_MAGIC               0x5452434Bu
@@ -60,13 +60,13 @@ static float current_speed_dir = 1.0f; // ï¿½ï¿½Ç°ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¾Ç
 #define TRACK_MAX_COORD_ABS            1000000.0f
 #define TRACK_MAX_YAW_ABS_RAD          3.5f
 
-//-------------------------------------------ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------------------------------
+//-------------------------------------------ÄÚ²¿º¯ÊýÉùÃ÷-----------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½È¡ï¿½Ñ´æ´¢ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ±ï¿½ï¿½ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      uint32           Êµï¿½Ê¿ï¿½ï¿½ÃµÄµï¿½ï¿½ï¿½
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½Ö¹track_total_pointsï¿½ï¿½ï¿½
+//  º¯ÊýÃû     »ñÈ¡ÒÑ´æ´¢µÄµãÊý£¨´ø±ß½ç±£»¤£©
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      uint32           Êµ¼Ê¿ÉÓÃµÄµãÊý
+//  ±¸×¢ÐÅÏ¢      ·ÀÖ¹track_total_pointsÒç³ö
 //-------------------------------------------------------------------------------------------------------------------
 static uint32 track_get_stored_point_count(void)
 {
@@ -136,11 +136,11 @@ static void track_meta_load(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½flash_union_bufferï¿½ï¿½Ò³Ð´ï¿½ï¿½Ö¸ï¿½ï¿½flashÒ³
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      page_num         Ä¿ï¿½ï¿½Ò³ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_cache_flush(1);
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      Ö±ï¿½Ó½ï¿½flash_union_bufferÐ´ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½Ç°È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½buffer
+//  º¯ÊýÃû     ´Óflash_union_buffer°ÑÒ³Ð´ÈëÖ¸¶¨flashÒ³
+//  ²ÎÊýËµÃ÷      page_num         Ä¿±êÒ³ºÅ
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_flash_cache_flush(1);
+//  ±¸×¢ÐÅÏ¢      Ö±½Ó½«flash_union_bufferÐ´Èë£¬µ÷ÓÃÇ°È·±£ÒÑÌî³äºÃbuffer
 //-------------------------------------------------------------------------------------------------------------------
 static void track_flash_cache_flush(uint32 page_num)
 {
@@ -149,72 +149,72 @@ static void track_flash_cache_flush(uint32 page_num)
         return;
     }
 
-    // ï¿½È²ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // ÏÈ²Á³ýÒ³£¬ÔÙÐ´ÈëÊý¾Ý
     flash_erase_page(0, page_num);
-    flash_write_page_from_buffer(0, page_num);              // Ö±ï¿½Ó½ï¿½flash_union_bufferÐ´ï¿½ï¿½Ö¸ï¿½ï¿½Ò³
+    flash_write_page_from_buffer(0, page_num);              // Ö±½Ó½«flash_union_bufferÐ´ÈëÖ¸¶¨Ò³
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Ò³ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_add();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½Øµï¿½ï¿½ï¿½Ê¼Ò³
+//  º¯ÊýÃû     Ò³ºÅÂÖÑ¯¼Ó
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_flash_add();
+//  ±¸×¢ÐÅÏ¢      ³¬¹ý×îºóÒ»Ò³»Øµ½ÆðÊ¼Ò³
 //-------------------------------------------------------------------------------------------------------------------
 static void track_flash_add(void)
 {
-    track_flash_cur_write_page++;                            // ï¿½ï¿½Ñ¯ï¿½ï¿½
+    track_flash_cur_write_page++;                            // ÂÖÑ¯¼Ó
 
     if(track_flash_cur_write_page >= (Track_Flash_Page_Begin + Track_Flash_Page_Max))
     {
-        track_flash_cur_write_page = Track_Flash_Page_Begin; // ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½Øµï¿½ï¿½ï¿½Ê¼Ò³
+        track_flash_cur_write_page = Track_Flash_Page_Begin; // ³¬¹ý×îºóÒ»Ò³»Øµ½ÆðÊ¼Ò³
     }
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Pure Pursuitï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      x, y, yaw       ï¿½ï¿½Ç°Î»ï¿½ÃºÍºï¿½ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      target          Ä¿ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      float           ×ªï¿½ï¿½Ç£ï¿½ï¿½È£ï¿½
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½ï¿½Pure Pursuitï¿½ã·¨ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½
+//  º¯ÊýÃû     Pure Pursuit¼ÆËã×ªÏò½Ç
+//  ²ÎÊýËµÃ÷      x, y, yaw       µ±Ç°Î»ÖÃºÍº½Ïò½Ç
+//  ²ÎÊýËµÃ÷      target          Ä¿±êµã
+//  ·µ»Ø²ÎÊý      float           ×ªÏò½Ç£¨¶È£©
+//  ±¸×¢ÐÅÏ¢      »ùÓÚPure PursuitËã·¨¼ÆËã×ªÏò½Ç
 //-------------------------------------------------------------------------------------------------------------------
 static float pure_pursuit_calc_steer(float x, float y, float yaw, Ins_follow* target)
 {
-    // 1. ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Æ«ï¿½ï¿½
+    // 1. ¼ÆËãÈ«¾ÖÆ«ÒÆÁ¿
     float dx = target->x - x;
     float dy = target->y - y;
 
-    // 2. ×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµ
+    // 2. ×ª»»µ½³µÁ¾×ø±êÏµ
     float x_local = dx * cosf(yaw) + dy * sinf(yaw);
     float y_local = -dx * sinf(yaw) + dy * cosf(yaw);
 
-    // 3. ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ó¾ï¿½ï¿½ï¿½ (Ld)
+    // 3. ¼ÆËãÇ°ÊÓ¾àÀë (Ld)
     float ld = sqrtf(x_local * x_local + y_local * y_local);
 
-    // ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ã£¬ï¿½Ò·ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ¾ï¿½ï¿½ï¿½×ªï¿½ï¿½
+    // ·ÀÖ¹³ýÁã£¬²¢·ÀÖ¹½ü¾àÀëµ¼ÖÂµÄ¾Þ´ó×ªÏò
     if(ld < 0.1f) return 0.0f;
 
-    // 4. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (k = 2 * y / Ld^2)
+    // 4. ¼ÆËãÇúÂÊ (k = 2 * y / Ld^2)
     float curvature = 2.0f * y_local / (ld * ld);
 
-    // 5. ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½
+    // 5. ¼ÆËã×ªÏò½Ç
     float steer_rad = atanf(curvature * TRACK_WHEELBASE);
-    float steer_deg = steer_rad * 57.2957795130823f; // ×ªï¿½Ç¶ï¿½
+    float steer_deg = steer_rad * 57.2957795130823f; // ×ª½Ç¶È
 
-    // ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½×ª×ªï¿½ï¿½ï¿½ï¿½
+    // µ¹³µÊ±×ªÏòÈ¡·´
     if(target->speed_dir < 0.5f)
     {
         steer_deg = -steer_deg;
     }
 
-    // 6. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-    // ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ -2 ï¿½ï¿½ 2 ï¿½ï¿½Ö®ï¿½ä£¬ï¿½ï¿½Îªï¿½ï¿½Ö±ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // 6. Ð¡½Ç¶ÈËÀÇø´¦Àí
+    // µ±½Ç¶ÈÔÚ -2 µ½ 2 ¶ÈÖ®¼ä£¬ÈÏÎªÊÇÖ±ÐÐ£¬²»×ö´¦Àí
     if (steer_deg > -2.0f && steer_deg < 2.0f)
     {
         steer_deg = 0.0f;
     }
 
-    // 7. ï¿½Þ·ï¿½
+    // 7. ÏÞ·ù
     if(steer_deg > 20.0f) steer_deg = 20.0f;
     if(steer_deg < -20.0f) steer_deg = -20.0f;
 
@@ -222,10 +222,10 @@ static float pure_pursuit_calc_steer(float x, float y, float yaw, Ins_follow* ta
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ×¼ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      abs_index       ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¼ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      uint8           1-ï¿½É¹ï¿½ 0-Ê§ï¿½ï¿½
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½Ô¶ï¿½ï¿½Ð»ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//  º¯ÊýÃû     ×¼±¸Ö¸¶¨ÐòºÅµÄµãÊý¾Ý
+//  ²ÎÊýËµÃ÷      abs_index       ¾ø¶ÔµãÐòºÅ£¨´Ó1¿ªÊ¼£©
+//  ·µ»Ø²ÎÊý      uint8           1-³É¹¦ 0-Ê§°Ü
+//  ±¸×¢ÐÅÏ¢      ×Ô¶¯ÇÐ»»Ò³²¢¼ÓÔØÊý¾Ý
 //-------------------------------------------------------------------------------------------------------------------
 static uint8 track_follow_prepare_point(uint32 abs_index)
 {
@@ -252,10 +252,10 @@ static uint8 track_follow_prepare_point(uint32 abs_index)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Ñ°ï¿½ï¿½Ç°ï¿½Óµï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      x, y            ï¿½ï¿½Ç°Î»ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      uint8           1-ï¿½Òµï¿½ 0-Î´ï¿½Òµï¿½
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½Óµï¿½Ç°ï¿½ã¿ªÊ¼ï¿½ï¿½Ç°Ñ°ï¿½Ò¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ó¾ï¿½ï¿½ï¿½Äµã£¬ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½
+//  º¯ÊýÃû     Ñ°ÕÒÇ°ÊÓµã
+//  ²ÎÊýËµÃ÷      x, y            µ±Ç°Î»ÖÃ
+//  ·µ»Ø²ÎÊý      uint8           1-ÕÒµ½ 0-Î´ÕÒµ½
+//  ±¸×¢ÐÅÏ¢      ´Óµ±Ç°µã¿ªÊ¼ÏòÇ°Ñ°ÕÒ¾àÀë´óÓÚÇ°ÊÓ¾àÀëµÄµã£¬²¢¸üÐÂË÷Òý
 //-------------------------------------------------------------------------------------------------------------------
 static uint8 find_lookahead_point(float x, float y)
 {
@@ -265,43 +265,57 @@ static uint8 find_lookahead_point(float x, float y)
         return 0;
     }
 
-    if(follow_abs_index < 1 || follow_abs_index > stored_points)
+    // Ê¹ÓÃ¾Ö²¿±äÁ¿½øÐÐË÷ÒýËÑË÷£¬±ÜÃâÎÛÈ¾È«¾ÖË÷Òý
+    uint32 local_abs_index = follow_abs_index;
+
+    if(local_abs_index < 1 || local_abs_index > stored_points)
     {
-        follow_abs_index = 1;
+        local_abs_index = 1;
     }
 
     uint32 search_end = stored_points;
-    uint32 start_index = follow_abs_index;
+    uint32 saved_start_index = local_abs_index;  // ±£´æÆðÊ¼Ë÷Òý£¬ÓÃÓÚÊ§°ÜÊ±»Ö¸´
 
-    // ï¿½È¼ï¿½éµ±Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§
-    if(!track_follow_prepare_point(follow_abs_index))
+    // ÏÈ¼ì²éµ±Ç°µãÊÇ·ñÓÐÐ§
+    if(!track_follow_prepare_point(local_abs_index))
     {
-        follow_abs_index = 1;
-        if(!track_follow_prepare_point(follow_abs_index))
+        local_abs_index = 1;
+        if(!track_follow_prepare_point(local_abs_index))
         {
-            return 0;
+            return 0;  // Ê§°ÜÊ±È«¾ÖË÷Òý²»±ä
         }
     }
 
-    // ï¿½Óµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
-    uint32 last_same_dir_index = follow_abs_index;
+    // ´Óµ±Ç°µã¿ªÊ¼ËÑË÷
+    uint32 last_same_dir_index = local_abs_index;
     Ins_follow last_same_dir_point;
-    track_flash_get_point(follow_point_idx, &last_same_dir_point);
+    
+    // ¼ì²é·µ»ØÖµ£¬±ÜÃâÊ¹ÓÃÎ´³õÊ¼»¯Êý¾Ý
+    if(!track_flash_get_point(follow_point_idx, &last_same_dir_point))
+    {
+        // µ±Ç°µã¶ÁÈ¡Ê§°Ü£¬³¢ÊÔ´ÓµÚÒ»¸öµã¿ªÊ¼
+        local_abs_index = 1;
+        if(!track_follow_prepare_point(local_abs_index) || 
+           !track_flash_get_point(follow_point_idx, &last_same_dir_point))
+        {
+            return 0;  // Ê§°ÜÊ±È«¾ÖË÷Òý²»±ä
+        }
+    }
 
-    while(follow_abs_index <= search_end)
+    while(local_abs_index <= search_end)
     {
         Ins_follow pt;
         if(track_flash_get_point(follow_point_idx, &pt))
         {
-            // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ëµ±Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬
+            // ¼ì²éÊÇ·ñÓëµ±Ç°·½ÏòÏàÍ¬
             if((pt.speed_dir >= 0.5f && current_speed_dir >= 0.5f) ||
                (pt.speed_dir < 0.5f && current_speed_dir < 0.5f))
             {
-                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½
-                last_same_dir_index = follow_abs_index;
+                // ·½ÏòÏàÍ¬£¬¼ÇÂ¼×îºóÒ»¸öÍ¬Ïòµã
+                last_same_dir_index = local_abs_index;
                 last_same_dir_point = pt;
 
-                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ã¹»
+                // ¼ì²é¾àÀëÊÇ·ñ×ã¹»
                 float dx = pt.x - x;
                 float dy = pt.y - y;
                 float dist = sqrtf(dx * dx + dy * dy);
@@ -313,37 +327,38 @@ static uint8 find_lookahead_point(float x, float y)
                     Ins_date_377.yaw = pt.yaw;
                     Ins_date_377.speed_dir = pt.speed_dir;
 
+                    // ÕÒµ½ÓÐÐ§µã£¬¸üÐÂÈ«¾ÖË÷Òý
+                    follow_abs_index = local_abs_index;
                     return 1;
                 }
             }
             else
             {
-                // ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Äµï¿½
+                // ·½Ïò²»Í¬£¬Ê¹ÓÃ×îºóÒ»¸öÍ¬ÏòµÄµã
                 Ins_date_377.x   = last_same_dir_point.x;
                 Ins_date_377.y   = last_same_dir_point.y;
                 Ins_date_377.yaw = last_same_dir_point.yaw;
                 Ins_date_377.speed_dir = last_same_dir_point.speed_dir;
 
-                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½
+                // ¸üÐÂÈ«¾ÖË÷ÒýÎª×îºóÒ»¸öÍ¬Ïòµã
                 follow_abs_index = last_same_dir_index;
-
                 return 1;
             }
         }
 
-        follow_abs_index++;
-        if(follow_abs_index > search_end)
+        local_abs_index++;
+        if(local_abs_index > search_end)
         {
             break;
         }
 
-        if(!track_follow_prepare_point(follow_abs_index))
+        if(!track_follow_prepare_point(local_abs_index))
         {
             continue;
         }
     }
 
-    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµã¶¼Ã»ï¿½Òµï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+    // Èç¹ûËùÓÐµã¶¼Ã»ÕÒµ½£¬Ê¹ÓÃ×îºóÒ»¸öµã
     if(track_follow_prepare_point(stored_points))
     {
         Ins_follow pt;
@@ -353,20 +368,22 @@ static uint8 find_lookahead_point(float x, float y)
             Ins_date_377.y   = pt.y;
             Ins_date_377.yaw = pt.yaw;
             Ins_date_377.speed_dir = pt.speed_dir;
-            follow_abs_index = stored_points;
 
+            // ¸üÐÂÈ«¾ÖË÷Òýµ½×îºóÒ»¸öµã
+            follow_abs_index = stored_points;
             return 1;
         }
     }
 
+    // ËùÓÐ²éÕÒ¶¼Ê§°Ü£¬È«¾ÖË÷Òý±£³Ö²»±ä
     return 0;
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      Ö´ï¿½ï¿½Pure PursuitÑ­ï¿½ï¿½ï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ö¡×ªï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½
+//  º¯ÊýÃû     Ñ­¼£ÈÎÎñ
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  ±¸×¢ÐÅÏ¢      Ö´ÐÐPure PursuitÑ­¼£Ëã·¨£¬¶ªÊ§Ê±±£³ÖÉÏÒ»Ö¡×ªÏò½Ç²»Í»±ä
 //-------------------------------------------------------------------------------------------------------------------
 static void track_follow(void)
 {
@@ -385,27 +402,27 @@ static void track_follow(void)
         return;
     }
 
-    // ï¿½ï¿½ï¿½ãµ½Ç°ï¿½Óµï¿½Ä¾ï¿½ï¿½ï¿½
+    // ¼ÆËãµ½Ç°ÊÓµãµÄ¾àÀë
     float dx = Ins_date_377.x - state->x;
     float dy = Ins_date_377.y - state->y;
     float dist_to_lookahead = sqrtf(dx * dx + dy * dy);
 
-    // ï¿½ï¿½È¡ï¿½Üµï¿½ï¿½ï¿½
+    // »ñÈ¡×ÜµãÊý
     uint32 stored_points = track_get_stored_point_count();
 
-    // ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Ó½ï¿½Ç°ï¿½Óµã£¬ï¿½ï¿½Ç°ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // Èç¹ûÒÑ¾­½Ó½üÇ°ÊÓµã£¬ÏòÇ°ÍÆ½øË÷Òý
     if(dist_to_lookahead < 0.05f)
     {
         if(follow_abs_index < stored_points)
         {
-            // ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬
+            // ¼ì²éÏÂÒ»¸öµãÊÇ·ñÍ¬Ïò
             uint32 next_index = follow_abs_index + 1;
             if(track_follow_prepare_point(next_index))
             {
                 Ins_follow next_point;
                 if(track_flash_get_point(follow_point_idx, &next_point))
                 {
-                    // ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ã·½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½
+                    // Èç¹ûÏÂÒ»¸öµã·½Ïò²»Í¬£¬ÇÐ»»·½Ïò
                     if((next_point.speed_dir >= 0.5f && current_speed_dir < 0.5f) ||
                        (next_point.speed_dir < 0.5f && current_speed_dir >= 0.5f))
                     {
@@ -418,7 +435,7 @@ static void track_follow(void)
         }
         else if(follow_abs_index == stored_points)
         {
-            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµã£¬Í£Ö¹Ñ­ï¿½ï¿½
+            // ÒÑ¾­µ½ÖÕµã£¬Í£Ö¹Ñ­¼£
             track_stop_follow();
             return;
         }
@@ -430,9 +447,9 @@ static void track_follow(void)
     steer_output_filtered = STEER_FILTER_ALPHA * steer_output +
                             (1.0f - STEER_FILTER_ALPHA) * steer_output_filtered;
 
-    // ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½
+    // ¸ù¾ÝÂ·¾¶·½Ïò£¬ËÙ¶È·½ÏòÓëÐÐÊ»·½ÏòÒ»ÖÂ
     float target_speed = TRACK_FOLLOW_SPEED;
-    if(Ins_date_377.speed_dir < 0.5f) // speed_dir < 0.5ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+    if(Ins_date_377.speed_dir < 0.5f) // speed_dir < 0.5±íÊ¾µ¹³µ
     {
         target_speed = -TRACK_FOLLOW_SPEED;
     }
@@ -441,32 +458,32 @@ static void track_follow(void)
     wheel_pid_set_target_speed(target_speed);
 }
 
-//-------------------------------------------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------------------------------
+//-------------------------------------------Íâ²¿º¯Êý¶¨Òå-----------------------------------------------------------
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_init();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢
+//  º¯ÊýÃû     ³õÊ¼»¯¹ì¼£Ä£¿é
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_init();
+//  ±¸×¢ÐÅÏ¢
 //-------------------------------------------------------------------------------------------------------------------
 void track_init(void)
 {
     track_flash_cur_write_page = Track_Flash_Page_Begin;
 
-    dist_acc_m = 0.0f;                                        // ï¿½ï¿½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½ï¿½ï¿½
-    flash_point_index = 0;                                    // Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    dist_acc_m = 0.0f;                                        // ÖØÖÃÀÛ¼ÆÀï³Ì
+    flash_point_index = 0;                                    // Ð´ÈëË÷ÒýÇåÁã
 
-    flash_buffer_clear();                                     // ï¿½ï¿½ï¿½flash_union_bufferï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½0xFFï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½
+    flash_buffer_clear();                                     // ½«flash_union_bufferÈ«²¿ÖÃ0xFF£¨·ÀÖ¹´íÎóÊý¾Ý£©
 
-    memset(Ins_Date_Read, 0, sizeof(Ins_Date_Read));          // ï¿½ï¿½Õ¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    memset(Ins_Date_Read, 0, sizeof(Ins_Date_Read));          // Çå¿Õ¶ÁÈ¡»º´æÇø
 
     follow_page = Track_Flash_Page_Begin;
     follow_point_idx = 1;
     follow_abs_index = 1;
     steer_output = 0.0f;
     steer_output_filtered = 0.0f;
-    current_speed_dir = 1.0f; // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ÎªÇ°ï¿½ï¿½
+    current_speed_dir = 1.0f; // ³õÊ¼»¯ÎªÇ°½ø
 
     track_save_flag = 0;
     track_follow_flag = 0;
@@ -476,10 +493,10 @@ void track_init(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½ï¿½Õ¹Ì¶ï¿½ï¿½ï¿½Ì´ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_push_point();
-//  @note        ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¾ï¿½É¹ï¿½Ð´ï¿½ë£¬0ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-//               ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Ò³Ð´flashï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Ò»Ò³
+//  º¯ÊýÃû     °´¹Ì¶¨Àï³Ì´æ´¢Ò»¸öµã
+//  Ê¹ÓÃÊ¾Àý      track_flash_push_point();
+//  @note        ·µ»Ø1±íÊ¾³É¹¦Ð´Èë£¬0±íÊ¾¾àÀëÎ´´ï±ê»òÎ´¿ªÊ¼
+//               ³¬¹ýÒ»Ò³»á×Ô¶¯»»Ò³Ð´flash²¢ÂÖÑ¯µ½ÏÂÒ»Ò³
 //-------------------------------------------------------------------------------------------------------------------
 uint8 track_flash_push_point(void)
 {
@@ -488,17 +505,17 @@ uint8 track_flash_push_point(void)
     if(state != NULL)
     {
         float ds = 0.5f * (state->delta_right_m + state->delta_left_m);
-        dist_acc_m += fabsf(ds);                              // ï¿½Û¼ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½
+        dist_acc_m += fabsf(ds);                              // ÀÛ¼ÆÐÐÊ»Àï³Ì
     }
 
-    // Ã»ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ï¿½Ì£ï¿½ï¿½ï¿½Ð´ï¿½ï¿½
-    if(dist_acc_m < TRACK_SAMPLE_STEP)                        // ï¿½ï¿½ï¿½ï¿½Û¼ï¿½ï¿½ï¿½Ì²ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // Ã»´ïµ½¹Ì¶¨Àï³Ì£¬²»Ð´Èë
+    if(dist_acc_m < TRACK_SAMPLE_STEP)                        // Èç¹ûÀÛ¼ÆÀï³Ì²»×ãÒ»¸ö²ÉÑù¼ä¾à
     {
         return 0;
     }
-    dist_acc_m -= TRACK_SAMPLE_STEP;                          // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡
+    dist_acc_m -= TRACK_SAMPLE_STEP;                          // ¼õÈ¥Ò»¸ö²ÉÑù¼ä¾à£¬±£³ÖÓàÁ¿
 
-    // Ô½ï¿½ç±£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½flashï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½
+    // Ô½½ç±£»¤£¬³¬¹ýÒ»Ò³ÏÈÐ´Èëflash£¬ÔÙÂÖÑ¯Ò³
     if(flash_point_index + (int16_t)Track_Flash_Float_Num > (int16_t)Track_Flash_Page_Float_Num)
     {
         track_flash_cache_flush(track_flash_cur_write_page);
@@ -508,27 +525,27 @@ uint8 track_flash_push_point(void)
         flash_buffer_clear();
     }
 
-    // ï¿½ï¿½x, y, yaw, speed_dirÐ´ï¿½ï¿½flash_union_buffer
+    // ½«x, y, yaw, speed_dirÐ´Èëflash_union_buffer
     const INS_State* ins_state = Ins_get_state();
     const EncoderLayerState* enc_state = encoder_layer_get_state();
     flash_data_union tmp;
 
-    // ï¿½æ´¢Î»ï¿½ÃºÍºï¿½ï¿½ï¿½ï¿½
+    // ´æ´¢Î»ÖÃºÍº½Ïò½Ç
     tmp.float_type = ins_state->x;
-    flash_union_buffer[flash_point_index] = tmp;              // ï¿½ï¿½xÐ´ï¿½ï¿½flash_union_buffer
+    flash_union_buffer[flash_point_index] = tmp;              // ½«xÐ´Èëflash_union_buffer
     tmp.float_type = ins_state->y;
-    flash_union_buffer[flash_point_index + 1] = tmp;          // ï¿½ï¿½yÐ´ï¿½ï¿½flash_union_buffer
+    flash_union_buffer[flash_point_index + 1] = tmp;          // ½«yÐ´Èëflash_union_buffer
     tmp.float_type = ins_state->yaw;
-    flash_union_buffer[flash_point_index + 2] = tmp;          // ï¿½ï¿½yawÐ´ï¿½ï¿½flash_union_buffer
+    flash_union_buffer[flash_point_index + 2] = tmp;          // ½«yawÐ´Èëflash_union_buffer
 
-    // ï¿½æ´¢ï¿½Ù¶È·ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¾Ç°ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
-    float speed_dir = 1.0f; // Ä¬ï¿½ï¿½Ç°ï¿½ï¿½
-    if(enc_state != NULL && enc_state->speed_average_mps < -0.05f) // ï¿½Ù¶ï¿½Îªï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+    // ´æ´¢ËÙ¶È·½Ïò£¬1±íÊ¾Ç°½ø£¬0±íÊ¾ºóÍË
+    float speed_dir = 1.0f; // Ä¬ÈÏÇ°½ø
+    if(enc_state != NULL && enc_state->speed_average_mps < -0.05f) // ËÙ¶ÈÎª¸º±íÊ¾ºóÍË
     {
         speed_dir = 0.0f;
     }
     tmp.float_type = speed_dir;
-    flash_union_buffer[flash_point_index + 3] = tmp;          // ï¿½ï¿½speed_dirÐ´ï¿½ï¿½flash_union_buffer
+    flash_union_buffer[flash_point_index + 3] = tmp;          // ½«speed_dirÐ´Èëflash_union_buffer
 
     flash_point_index += 4;
     if(track_total_points < ((uint32)Track_Flash_Page_Max * (uint32)Track_Flash_Point_Page_Max))
@@ -540,11 +557,11 @@ uint8 track_flash_push_point(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½ï¿½ï¿½Ç°flash_union_bufferÐ´ï¿½ï¿½Ö¸ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿Ú£ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      page_num         Ä¿ï¿½ï¿½Ò³ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_write_cache(1);
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ñ¯Ò³ï¿½Å£ï¿½Ö»Ö´ï¿½ï¿½Ò»ï¿½ï¿½Ö¸ï¿½ï¿½Ò³Ð´ï¿½ï¿½
+//  º¯ÊýÃû     ½«µ±Ç°flash_union_bufferÐ´ÈëÖ¸¶¨Ò³£¨Íâ²¿½Ó¿Ú£©
+//  ²ÎÊýËµÃ÷      page_num         Ä¿±êÒ³ºÅ
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_flash_write_cache(1);
+//  ±¸×¢ÐÅÏ¢      ²»¸Ä±äÂÖÑ¯Ò³ºÅ£¬Ö»Ö´ÐÐÒ»´ÎÖ¸¶¨Ò³Ð´Èë
 //-------------------------------------------------------------------------------------------------------------------
 void track_flash_write_cache(uint32 page_num)
 {
@@ -552,11 +569,11 @@ void track_flash_write_cache(uint32 page_num)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½Ö¸ï¿½ï¿½Ò³ï¿½ï¿½È¡Ò»ï¿½ï¿½Ò³Ô­Ê¼ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ins_Date_Read
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      page_num         Ä¿ï¿½ï¿½Ò³ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_read_page(1);
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½È¡ï¿½ï¿½Éºï¿½ï¿½ï¿½ï¿½ track_flash_get_point(index, &out) ï¿½ï¿½ï¿½ï¿½Å½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//  º¯ÊýÃû     ´ÓÖ¸¶¨Ò³¶ÁÈ¡Ò»Ò³Ô­Ê¼Êý¾Ýµ½¶ÁÈ¡»º´æÇø Ins_Date_Read
+//  ²ÎÊýËµÃ÷      page_num         Ä¿±êÒ³ºÅ
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_flash_read_page(1);
+//  ±¸×¢ÐÅÏ¢      ¶ÁÈ¡Íê³Éºó¿Éµ÷ÓÃ track_flash_get_point(index, &out) À´½âÎöµÃµ½µÄÊý¾Ý
 //-------------------------------------------------------------------------------------------------------------------
 void track_flash_read_page(uint32 page_num)
 {
@@ -565,42 +582,42 @@ void track_flash_read_page(uint32 page_num)
         return;
     }
 
-    flash_read_page(0, page_num, Ins_Date_Read, 510);         // ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    flash_read_page(0, page_num, Ins_Date_Read, 510);         // ½«Ò³Êý¾ÝÈ«²¿¶Áµ½»º´æÇø
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½Ó¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ÅµÄµï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      point_index      ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ã£¬1-170
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      out              ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½Ö¸ï¿½ï¿½
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      uint8            1-ï¿½É¹ï¿½ 0-Ô½ï¿½ï¿½
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      Ins_follow follow; track_flash_get_point(5, &follow);
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½track_flash_read_pageï¿½ï¿½È¡ï¿½ï¿½Ó¦Ò³
+//  º¯ÊýÃû     ´Ó¶ÁÈ¡»º´æÇøÖÐ½âÎöÖ¸¶¨ÐòºÅµÄµã
+//  ²ÎÊýËµÃ÷      point_index      µÚ¼¸¸öµã£¬1-170
+//  ²ÎÊýËµÃ÷      out              Êä³ö½á¹¹ÌåÖ¸Õë
+//  ·µ»Ø²ÎÊý      uint8            1-³É¹¦ 0-Ô½½ç
+//  Ê¹ÓÃÊ¾Àý      Ins_follow follow; track_flash_get_point(5, &follow);
+//  ±¸×¢ÐÅÏ¢      ÐèÏÈµ÷ÓÃtrack_flash_read_page¶ÁÈ¡¶ÔÓ¦Ò³
 //-------------------------------------------------------------------------------------------------------------------
 uint8 track_flash_get_point(uint32 point_index, Ins_follow* out)
 {
     uint32 base = 0;
-    flash_data_union data_temp;                               // ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
+    flash_data_union data_temp;                               // ÁÙÊ±±äÁ¿£¬ÓÃÓÚÊý¾ÝÀàÐÍ×ª»»
 
     if(out == NULL || point_index < 1 || point_index > Track_Flash_Point_Page_Max)
     {
         return 0;
     }
 
-    base = (point_index - 1) * Track_Flash_Float_Num;          // ï¿½ï¿½point_indexï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ö·Îª(point_index-1)*4
+    base = (point_index - 1) * Track_Flash_Float_Num;          // µÚpoint_indexµãµÄÆðÊ¼µØÖ·Îª(point_index-1)*4
 
-    data_temp.uint32_type = Ins_Date_Read[base + 0];          // ï¿½ï¿½xï¿½ï¿½uint32×ªï¿½ï¿½Îªfloat
-    out->x = data_temp.float_type;                            // ï¿½ï¿½xï¿½ï¿½Öµï¿½ï¿½out->x
+    data_temp.uint32_type = Ins_Date_Read[base + 0];          // ½«x´Óuint32×ª»»Îªfloat
+    out->x = data_temp.float_type;                            // ½«x¸³Öµ¸øout->x
 
-    data_temp.uint32_type = Ins_Date_Read[base + 1];          // ï¿½ï¿½yï¿½ï¿½uint32×ªï¿½ï¿½Îªfloat
-    out->y = data_temp.float_type;                            // ï¿½ï¿½yï¿½ï¿½Öµï¿½ï¿½out->y
+    data_temp.uint32_type = Ins_Date_Read[base + 1];          // ½«y´Óuint32×ª»»Îªfloat
+    out->y = data_temp.float_type;                            // ½«y¸³Öµ¸øout->y
 
-    data_temp.uint32_type = Ins_Date_Read[base + 2];          // ï¿½ï¿½yawï¿½ï¿½uint32×ªï¿½ï¿½Îªfloat
-    out->yaw = data_temp.float_type;                          // ï¿½ï¿½yawï¿½ï¿½Öµï¿½ï¿½out->yaw
+    data_temp.uint32_type = Ins_Date_Read[base + 2];          // ½«yaw´Óuint32×ª»»Îªfloat
+    out->yaw = data_temp.float_type;                          // ½«yaw¸³Öµ¸øout->yaw
 
-    data_temp.uint32_type = Ins_Date_Read[base + 3];          // ï¿½ï¿½speed_dirï¿½ï¿½uint32×ªï¿½ï¿½Îªfloat
-    out->speed_dir = data_temp.float_type;                    // ï¿½ï¿½speed_dirï¿½ï¿½Öµï¿½ï¿½out->speed_dir
+    data_temp.uint32_type = Ins_Date_Read[base + 3];          // ½«speed_dir´Óuint32×ª»»Îªfloat
+    out->speed_dir = data_temp.float_type;                    // ½«speed_dir¸³Öµ¸øout->speed_dir
 
-    // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ÎªFlashï¿½ï¿½ï¿½ï¿½Öµ
+    // ¼ì²éÊÇ·ñÎªFlash²Á³ýÖµ£¨Flash²Á³ýºóÎª0xFFFFFFFF£©
     if(Ins_Date_Read[base + 0] == 0xFFFFFFFFu ||
        Ins_Date_Read[base + 1] == 0xFFFFFFFFu ||
        Ins_Date_Read[base + 2] == 0xFFFFFFFFu ||
@@ -609,16 +626,10 @@ uint8 track_flash_get_point(uint32 point_index, Ins_follow* out)
         return 0;
     }
 
-    // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îª0Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
-    if(Ins_Date_Read[base + 0] == 0x00000000u &&
-       Ins_Date_Read[base + 1] == 0x00000000u &&
-       Ins_Date_Read[base + 2] == 0x00000000u &&
-       Ins_Date_Read[base + 3] == 0x00000000u)
-    {
-        return 0;
-    }
+    // ×¢Òâ£º²»¼ì²éÈ«0Öµ£¬ÒòÎª (0, 0, 0, 0) ÊÇºÏ·¨µÄÔ­µãµ¹³µµã
+    // speed_dir=0 ±íÊ¾µ¹³µ£¬x=0, y=0, yaw=0 ±íÊ¾Ô­µã³¯Ïò0¶È
 
-    // ï¿½ï¿½é¸¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
+    // ¼ì²é¸¡µãÊýÓÐÐ§ÐÔ
     if(!track_float_is_valid(out->x, TRACK_MAX_COORD_ABS) ||
        !track_float_is_valid(out->y, TRACK_MAX_COORD_ABS) ||
        !track_float_is_valid(out->yaw, TRACK_MAX_YAW_ABS_RAD) ||
@@ -627,7 +638,7 @@ uint8 track_flash_get_point(uint32 point_index, Ins_follow* out)
         return 0;
     }
 
-    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½
+    // ¼ì²éÊýÖµÊÇ·ñ¹ý´ó£¬·ÀÖ¹´íÎóÊý¾Ý
     if(fabsf(out->x) > 1000.0f || fabsf(out->y) > 1000.0f)
     {
         return 0;
@@ -637,11 +648,11 @@ uint8 track_flash_get_point(uint32 point_index, Ins_follow* out)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ò³
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_clear_all();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½Ò³
+//  º¯ÊýÃû     Çå³ýËùÓÐÊý¾ÝÒ³
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_flash_clear_all();
+//  ±¸×¢ÐÅÏ¢      Çå³ýËùÓÐÓÃµ½µÄÊý¾ÝÒ³
 //-------------------------------------------------------------------------------------------------------------------
 void track_flash_clear_all(void)
 {
@@ -655,11 +666,11 @@ void track_flash_clear_all(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½Ñ¯Ð´Ò³
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      uint32           ï¿½ï¿½Ç°ï¿½ï¿½Ñ¯Ð´Ò³ï¿½ï¿½
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_get_cur_write_page();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢
+//  º¯ÊýÃû     »ñÈ¡µ±Ç°ÂÖÑ¯Ð´Ò³
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      uint32           µ±Ç°ÂÖÑ¯Ð´Ò³ºÅ
+//  Ê¹ÓÃÊ¾Àý      track_flash_get_cur_write_page();
+//  ±¸×¢ÐÅÏ¢
 //-------------------------------------------------------------------------------------------------------------------
 uint32 track_flash_get_cur_write_page(void)
 {
@@ -667,11 +678,11 @@ uint32 track_flash_get_cur_write_page(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½Ð´ï¿½ï¿½bufferï¿½ï¿½floatï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿3ï¿½ï¿½floatÎªÒ»ï¿½ï¿½ï¿½ã£©
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      int16_t          ï¿½ï¿½Ç°flash_point_indexÖµ
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_get_point_index();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢
+//  º¯ÊýÃû     »ñÈ¡µ±Ç°ÒÑÐ´ÈëbufferµÄfloatÊýÁ¿£¨Ã¿4¸öfloatÎªÒ»¸öµã£©
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      int16_t          µ±Ç°flash_point_indexÖµ
+//  Ê¹ÓÃÊ¾Àý      track_flash_get_point_index();
+//  ±¸×¢ÐÅÏ¢
 //-------------------------------------------------------------------------------------------------------------------
 int16_t track_flash_get_point_index(void)
 {
@@ -679,11 +690,11 @@ int16_t track_flash_get_point_index(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Î´ï¿½ï¿½Ò³ï¿½Ä»ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ð´ï¿½ï¿½Flash
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_flash_finish();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      Í£Ö¹ï¿½ï¿½Â¼Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éµï¿½á¶ªÊ§
+//  º¯ÊýÃû     Í£Ö¹¼ÇÂ¼Ê±½«µ±Ç°Î´Ð´Ò³µÄ»º´æÇ¿ÖÆÐ´ÈëFlash
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_flash_finish();
+//  ±¸×¢ÐÅÏ¢      Í£Ö¹¼ÇÂ¼Ê±µ÷ÓÃ£¬·ñÔò×îºóÒ»¶Î»á¶ªÊ§
 //-------------------------------------------------------------------------------------------------------------------
 void track_flash_finish(void)
 {
@@ -696,11 +707,11 @@ void track_flash_finish(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ì¼£ï¿½ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_clear();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+//  º¯ÊýÃû     Çå³ýËùÓÐ¹ì¼£Êý¾Ý
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_clear();
+//  ±¸×¢ÐÅÏ¢      Çå³ýËùÓÐÊý¾ÝÒ³²¢ÖØÖÃ×´Ì¬
 //-------------------------------------------------------------------------------------------------------------------
 void track_clear(void)
 {
@@ -725,11 +736,11 @@ void track_clear(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_start_save();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½
+//  º¯ÊýÃû     ¿ªÊ¼¼ÇÂ¼
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_start_save();
+//  ±¸×¢ÐÅÏ¢      ÖØÖÃ×´Ì¬²¢¿ªÊ¼¼ÇÂ¼
 //-------------------------------------------------------------------------------------------------------------------
 void track_start_save(void)
 {
@@ -748,11 +759,11 @@ void track_start_save(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Í£Ö¹ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_stop_save();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      Í£Ö¹ï¿½ï¿½ã²¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Flash
+//  º¯ÊýÃû     Í£Ö¹¼ÇÂ¼
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_stop_save();
+//  ±¸×¢ÐÅÏ¢      Í£Ö¹¼ÇÂ¼²¢°ÑÊý¾ÝÐ´ÈëFlash
 //-------------------------------------------------------------------------------------------------------------------
 void track_stop_save(void)
 {
@@ -764,11 +775,11 @@ void track_stop_save(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½Ê¼Ñ­ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_start_follow();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½Óµï¿½Ò»Ò³ï¿½ï¿½Ê¼Ñ­ï¿½ï¿½
+//  º¯ÊýÃû     ¿ªÊ¼Ñ­¼£
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_start_follow();
+//  ±¸×¢ÐÅÏ¢      ´ÓµÚÒ»Ò³¿ªÊ¼Ñ­¼£
 //-------------------------------------------------------------------------------------------------------------------
 void track_start_follow(void)
 {
@@ -780,21 +791,21 @@ void track_start_follow(void)
         return;
     }
 
-    // ï¿½ï¿½ï¿½ï¿½INSÎ»ï¿½Ã£ï¿½È·ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ã¿ªÊ¼
+    // ÖØÖÃINSÎ»ÖÃ£¬È·±£´ÓÔ­µã¿ªÊ¼
     Ins_reset(0.0f, 0.0f, 0.0f);
 
-    // ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½×´Ì¬
+    // ÖØÖÃÑ­¼£×´Ì¬
     follow_page = Track_Flash_Page_Begin;
     follow_point_idx = 1;
     follow_abs_index = 1;
     steer_output = 0.0f;
     steer_output_filtered = 0.0f;
-    current_speed_dir = 1.0f; // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ÎªÇ°ï¿½ï¿½
+    current_speed_dir = 1.0f; // ³õÊ¼»¯ÎªÇ°½ø
 
-    // È·ï¿½ï¿½Flashï¿½ï¿½ï¿½Ý¶ï¿½È¡ï¿½ï¿½ï¿½
+    // È·±£FlashÊý¾Ý¶ÁÈ¡Íê³É
     track_flash_read_page(follow_page);
 
-    // ï¿½ï¿½Ö¤ï¿½ï¿½Ò»Ò³ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§
+    // ÑéÖ¤µÚÒ»Ò³Êý¾ÝÊÇ·ñÓÐÐ§
     Ins_follow first_point;
     if(!track_flash_get_point(1, &first_point))
     {
@@ -804,22 +815,22 @@ void track_start_follow(void)
         return;
     }
 
-    // ï¿½ï¿½Ê¼ï¿½ï¿½Ins_date_377ï¿½ï¿½speed_dirï¿½Ö¶ï¿½
+    // ³õÊ¼»¯Ins_date_377µÄspeed_dir×Ö¶Î
     Ins_date_377.speed_dir = first_point.speed_dir;
     current_speed_dir = first_point.speed_dir;
 
-    // ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½Ò»ï¿½ï¿½Ñ°ï¿½ã£¬È·ï¿½ï¿½Tag Xï¿½Ú¿ï¿½Ê¼ï¿½Æ¶ï¿½Ç°ï¿½Í¸ï¿½ï¿½ï¿½
+    // ³¢ÊÔÖ´ÐÐÒ»´ÎÑ°µã£¬È·±£Tag XÔÚ¿ªÊ¼ÒÆ¶¯Ç°¾Í¸üÐÂ
     const INS_State* state = Ins_get_state();
     if(state != NULL)
     {
-        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ñ°ï¿½ã£¬È·ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ð§ï¿½ï¿½
+        // ³¢ÊÔ×î¶à3´ÎÑ°µã£¬È·±£ÕÒµ½ÓÐÐ§µã
         for(int i = 0; i < 3; i++)
         {
             if(find_lookahead_point(state->x, state->y))
             {
                 break;
             }
-            // ï¿½ï¿½ï¿½ï¿½ï¿½Ó³Ùºï¿½ï¿½ï¿½ï¿½ï¿½
+            // ¼òµ¥µÄÑÓ³ÙµÈ´ý
             for(int j = 0; j < 1000; j++)
             {
                 __asm__ volatile ("nop");
@@ -827,23 +838,23 @@ void track_start_follow(void)
         }
     }
 
-    // È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+    // È·±£×ªÏò»Øµ½ÖÐÎ»
     steering_set_target(0.0f);
 
-    // ï¿½ï¿½ï¿½Ã³ï¿½Ê¼ï¿½Ù¶ï¿½
+    // ÉèÖÃ³õÊ¼ËÙ¶È
     wheel_pid_set_target_speed(TRACK_FOLLOW_SPEED);
 
-    // ï¿½Ð»ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½Ä£Ê½
+    // ÇÐ»»µ½Ñ­¼£Ä£Ê½
     track_save_flag = 0;
     track_follow_flag = 1;
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ï¿½ï¿½ï¿½ï¿½Ð´æ´¢ï¿½Ä¹ì¼£ï¿½ã·¢ï¿½Íµï¿½ï¿½ï¿½Î»ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_send_all_points_to_host();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½Í¸ï¿½Ê½: TrackPoint:index,x,y,yaw\r\n
+//  º¯ÊýÃû     ½«ÒÑ´æ´¢µÄ¹ì¼£µã·¢ËÍµ½ÉÏÎ»»ú
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_send_all_points_to_host();
+//  ±¸×¢ÐÅÏ¢      ·¢ËÍ¸ñÊ½: TrackPoint:index,x,y,yaw\r\n
 //-------------------------------------------------------------------------------------------------------------------
 void track_send_all_points_to_host(void)
 {
@@ -874,11 +885,11 @@ void track_send_all_points_to_host(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     Í£Ö¹Ñ­ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_stop_follow();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      Í£Ö¹Ñ­ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½
+//  º¯ÊýÃû     Í£Ö¹Ñ­¼£
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_stop_follow();
+//  ±¸×¢ÐÅÏ¢      Í£Ö¹Ñ­¼£²¢Í£³µ
 //-------------------------------------------------------------------------------------------------------------------
 void track_stop_follow(void)
 {
@@ -888,11 +899,11 @@ void track_stop_follow(void)
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ï¿½ì¼£Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-//  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½      void
-//  ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½      void
-//  Ê¹ï¿½ï¿½Ê¾ï¿½ï¿½      track_proc();
-//  ï¿½ï¿½×¢ï¿½ï¿½Ï¢      ï¿½ï¿½ï¿½Úµï¿½ï¿½Ã£ï¿½Ö´ï¿½Ð´ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½
+//  º¯ÊýÃû     ¹ì¼£Ä£¿éÖ÷´¦Àíº¯Êý
+//  ²ÎÊýËµÃ÷      void
+//  ·µ»Ø²ÎÊý      void
+//  Ê¹ÓÃÊ¾Àý      track_proc();
+//  ±¸×¢ÐÅÏ¢      ÖÜÆÚµ÷ÓÃ£¬Ö´ÐÐ¼ÇÂ¼»òÑ­¼£
 //-------------------------------------------------------------------------------------------------------------------
 void track_proc(void)
 {

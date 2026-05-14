@@ -52,6 +52,12 @@ IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
          if (Count_1ms % 8u  == 0u) Interrupt_8ms();
          if (Count_1ms % 16u == 0u) Interrupt_16ms();
          if (Count_1ms % 40u == 0u) Interrupt_40ms();
+
+         encoder_layer_update();                                               // 更新编码器层状态
+
+         const EncoderLayerState* enc = encoder_layer_get_state();             // 获取编码器状态
+         wheel_pid_update(enc, 0.001f);                                        // 车轮 PID 计算
+         vofa_update(enc);
 }
 
 
@@ -212,8 +218,8 @@ IFX_INTERRUPT(uart2_tx_isr, 0, UART2_TX_INT_PRIO)
 IFX_INTERRUPT(uart2_rx_isr, 0, UART2_RX_INT_PRIO)
 {
     interrupt_global_enable(0);                     // 开启中断嵌套
-//    wireless_module_uart_handler();                 // 无线模块统一回调函数
-    lora3a22_uart_callback();
+    wireless_module_uart_handler();                 // 无线模块统一回调函数
+//    lora3a22_uart_callback();
 
 }
 // 串口3默认连接到GPS定位模块

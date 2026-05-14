@@ -16,9 +16,9 @@
 #define ENCODER_LEFT_PIN_A  TIM5_ENCODER_CH1_P10_3                      // 左轮编码器引脚 A
 #define ENCODER_LEFT_PIN_B  TIM5_ENCODER_CH2_P10_1                      // 左轮编码器引脚 B
 
-#define ENCODER_RIGHT_ID     TIM6_ENCODER                               // 右轮编码器使用的定时器
-#define ENCODER_RIGHT_PIN_A  TIM6_ENCODER_CH1_P20_3                     // 右轮编码器引脚 A
-#define ENCODER_RIGHT_PIN_B  TIM6_ENCODER_CH2_P20_0                     // 右轮编码器引脚 B
+#define ENCODER_RIGHT_ID     TIM4_ENCODER                               // 右轮编码器使用的定时器
+#define ENCODER_RIGHT_PIN_A  TIM4_ENCODER_CH1_P02_8                     // 右轮编码器引脚 A
+#define ENCODER_RIGHT_PIN_B  TIM4_ENCODER_CH2_P33_5                     // 右轮编码器引脚 B
 
 
  //-------------------------------------------结构体区------------------------------------------------------------
@@ -53,4 +53,9 @@ int32 encoder_layer_get_raw_count_right(void);  // 获取当前硬件计数值（不清零）
 
 void  encoder_layer_clear_raw_counts(void);  // 清零左右硬件计数
 
+void encoder_send_speed_to_host(void);        // 发送速度数据到上位机
+
+
+extern volatile int16 tick_left_pid;          //周期更新一次编码器获得的数值  左轮取反值，约定前进方向速度为正
+extern volatile int16 tick_right_pid;
 #endif /* CODE_ENCODER_H_ */

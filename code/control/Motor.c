@@ -1,49 +1,123 @@
 #include "motor.h"
 
 //-------------------------------------------------------------------------------------------------------------------
-// 函数简介     电机硬件初始化
-// 参数说明     void
-// 返回参数     void
-// 备注信息     初始化4个电机的PWM及方向引脚，PWM频率设置为 17kHz，方向引脚配置为推挽输出
+//  函数名称     motor_init
+//  参数说明     void
+//  返回值       void
+//  备注信息     初始化MOTOR1/MOTOR2的PWM引脚，PWM频率17kHz，占空比初始值为0
+//              每个电机使用2个PWM引脚
+//              MOTOR1: ATOM1 CH1(P33.9) + CH2(P33.11)
+//              MOTOR2: ATOM0 CH3(P14.2) + CH2(P14.3)
 //-------------------------------------------------------------------------------------------------------------------
 void motor_init(void)
 {
-    // 左后 (LB)
-    pwm_init(MOTORC_PWM_PIN, 17000, 0);
-    gpio_init(MOTORC_DIR_PIN, GPO, 1, GPO_PUSH_PULL);
+    // MOTOR1: 前臂高臂(S1) + 前臂低臂(S2) + 后臂高臂(S3) + 后臂低臂(S4)
+    pwm_init(MOTOR1_PWM_PIN1, 10000, 0);    // P33.9 - 前臂高臂 (S1)
+    pwm_init(MOTOR1_PWM_PIN2, 10000, 0);    // P33.11 - 后臂高臂 (S3)
+    //gpio_init(P33_11, GPO, 1, GPO_PUSH_PULL);
+    //gpio_set_dir(P33_11, GPO, GPO_PUSH_PULL);
+    // MOTOR2: 前臂高臂(S1) + 前臂低臂(S2) + 后臂高臂(S3) + 后臂低臂(S4)
+    pwm_init(MOTOR2_PWM_PIN1, 10000, 0);    // P14.2 - 前臂高臂 (S1)
+    pwm_init(MOTOR2_PWM_PIN2, 10000, 0);    // P14.3 - 后臂高臂 (S3)
 
-    // 右后 (RB)
-    pwm_init(MOTORD_PWM_PIN, 17000, 0);
-    gpio_init(MOTORD_DIR_PIN, GPO, 1, GPO_PUSH_PULL);
+    // 初始为刹车模式，全桥低侧导通
+    motor_control(motor_RB ,MOTOR_DIR_BRAKE,0);
+    motor_control(motor_LB ,MOTOR_DIR_BRAKE,0);
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-// 函数简介     单个电机控制底层函数
-// 参数说明     motor: 电机通道枚举值 (motor_LF/RF/LB/RB)
-//              duty:  PWM占空比 (带符号整数)
-// 返回参数     void
-// 备注信息     duty > 0 时方向引脚置1，duty < 0 时方向引脚置0，取绝对值输出PWM
-//              PWM限制范围：最小1500，最大2500
+//  函数名称     motor_control
+//  参数说明     motor:     电机通道枚举 (motor_LB / motor_RB)
+//              dir:       方向 (MOTOR_DIR_FORWARD / BRAKE / REVERSE)
+//              percent:   PWM占空比百分比 (0~100)
+//  返回值       void
+//  备注信息     以STM32 TIM1 H桥逻辑实现：
+//
+//              全桥结构：
+//                S1 (前臂高臂)    S2 (前臂低臂)    S3 (后臂高臂)    S4 (后臂低臂)
+//              PWM自动互补S1/S2、S3/S4
+//
+//              正转模式 dir = FORWARD
+//                S1/S2 互补PWM，S1 = duty, S2 = complement
+//                S3 = 0(关断)，S4 = 1
+//                电流: S1(PWM)→电机→S4(常通)→S2(续流) S1/S4为正转方向
+//
+//              反转模式 dir = REVERSE
+//                S3/S4 互补PWM，S3 = duty, S4 = complement
+//                S1 = 0(关断)，S2 = 1
+//                电流: S2(常通)→电机→S3(PWM)→S4(续流) S2/S3为反向电流
+//
+//              刹车模式 dir = BRAKE
+//                S1 = 0, S2 = 1, S3 = 0, S4 = 1
+//                电机两端接地，形成短路回路，快速制动
+//
+//              PWM占空比范围：
+//                最小 0% (0)
+//                最大 100% (PWM_DUTY_MAX)
 //-------------------------------------------------------------------------------------------------------------------
-void motor_control(MOTOR_TYPE motor, int16 duty)
+void motor_control(MOTOR_TYPE motor, MotorDir dir, uint8 percent)
 {
-    uint8 dir = (duty > 0) ? 1 : 0;
-    int16 abs_duty = abs(duty);
+    uint32 duty;
 
-    if(abs_duty > 2000) abs_duty = 2000;
-    if(abs_duty < 1200 && abs_duty != 0) abs_duty = 1200;
 
-    switch(motor)
+    if(percent > 70) percent = 70;
+    duty = (uint32)percent * PWM_DUTY_MAX / 100U;
+
+    if( duty == 0)
     {
-        case motor_LB: // 左后
-            pwm_set_duty(MOTORC_PWM_PIN, (uint16)abs_duty);
-            gpio_set_level(MOTORC_DIR_PIN, dir);
-            break;
+        // 刹车模式：S1=0, S2=1, S3=0, S4=1
+        // 电机两端接地，形成短路回路，快速制动
+        switch(motor)
+        {
+            case motor_LB:
+                pwm_set_duty(MOTOR1_PWM_PIN1, 0);
+                pwm_set_duty(MOTOR1_PWM_PIN2, 0);
 
-        case motor_RB: // 右后
-            pwm_set_duty(MOTORD_PWM_PIN, (uint16)abs_duty);
-            gpio_set_level(MOTORD_DIR_PIN, dir);
-            break;
+                break;
+
+            case motor_RB:
+                pwm_set_duty(MOTOR2_PWM_PIN1, 0);         // P14.2 S1=0
+                pwm_set_duty(MOTOR2_PWM_PIN2, 0);         // P14.3 S3=0
+                break;
+        }
+    }
+    else if(dir == MOTOR_DIR_FORWARD)
+    {
+        // 正转模式：前臂(S1/S2)互补PWM，后臂(S3/S4)固定
+        // S1 = PWM, S2 = complement, S3 = 0, S4 = 1
+        // 电流: S1/S4 导通 S1(PWM)/S2(续流)
+        switch(motor)
+        {
+            case motor_LB:
+                pwm_set_duty(MOTOR1_PWM_PIN1, 0);      // P33.9 S1 PWM
+                pwm_set_duty(MOTOR1_PWM_PIN2, duty);         // P33.11 S3 = 0, 则 S4 = 1
+                //gpio_set_level(P33_11,1);
+                //gpio_low(P33_11);
+                break;
+
+            case motor_RB:
+                pwm_set_duty(MOTOR2_PWM_PIN1, 0);      // P14.2 S1 PWM
+                pwm_set_duty(MOTOR2_PWM_PIN2, duty);         // P14.3 S3 = 0, 则 S4 = 1
+                break;
+        }
+    }
+    else if(dir == MOTOR_DIR_REVERSE)
+    {
+        // 反转模式：后臂(S3/S4)互补PWM，前臂(S1/S2)固定
+        // S1 = 0, S2 = 1, S3 = PWM, S4 = complement
+        // 电流: S2(常通)/S3(PWM) 形成反向电流
+        switch(motor)
+        {
+            case motor_LB:
+                pwm_set_duty(MOTOR1_PWM_PIN1, 0);         // P33.9 S1 = 0, 则 S2 = 1
+                pwm_set_duty(MOTOR1_PWM_PIN2, duty);      // P33.11 S3 PWM
+                break;
+
+            case motor_RB:
+                pwm_set_duty(MOTOR2_PWM_PIN1, 0);         // P14.2 S1 = 0, 则 S2 = 1
+                pwm_set_duty(MOTOR2_PWM_PIN2, duty);      // P14.3 S3 PWM
+                break;
+        }
     }
 }
 

@@ -125,7 +125,6 @@
 #include "gnss.h"
 #include "motor.h"
 #include "menu.h"
-#include "servo.h"
 #include "interrupt.h"
 #include "pid.h"
 #include "zf_device_lora3a22.h"
@@ -133,6 +132,8 @@
 #include "track.h"
 #include "ins_new_264.h"
 #include "steering_control.h"
+#include "VOFA.h"
+#include "PID_cmd.h"
 //=====================================================”√ªß≤„=======================================================
 #endif
 

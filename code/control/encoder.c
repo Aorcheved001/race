@@ -8,10 +8,11 @@
 
  //-------------------------------------------内部定义区------------------------------------------------------------
 
- static float g_tick_to_meter_left  = 0.00002204f;   // π×0.065/9264，左轮“每 tick 位移”（m/tick），>0 有效；可为负以修正方向   实测车转一圈有9364个脉冲
- static float g_tick_to_meter_right = 0.00002204f;   // π×0.065/9264，右轮“每 tick 位移”（m/tick），>0 有效；可为负以修正方向
-static float g_sample_dt_s = 0.004f;                 // 采样周期（秒），>0 有效；应与 encoder_layer_update 的调用周期一致
-
+static float g_tick_to_meter_left  = ENCODER_TICK_TO_METER_DEFAULT;   // 每脉冲对应米数 m/tick
+static float g_tick_to_meter_right = ENCODER_TICK_TO_METER_DEFAULT;   // 每脉冲对应米数 m/tick
+static float g_sample_dt_s = 0.004f;               // 采样周期（秒），>0 有效；应与 encoder_layer_update 的调用周期一致
+volatile int16 tick_left_pid = 0;          //周期更新一次编码器获得的数值  左轮取反值，约定前进方向速度为正
+volatile int16 tick_right_pid = 0;
  //-------------------------------------------内部结构体区------------------------------------------------------------
 static EncoderLayerState g_state;
 
@@ -53,6 +54,9 @@ void encoder_layer_update(void)
 {
     int16 tick_left = -encoder_get_count(ENCODER_LEFT_ID);          //周期更新一次编码器获得的数值  左轮取反值，约定前进方向速度为正
     int16 tick_right = encoder_get_count(ENCODER_RIGHT_ID);         //周期更新一次编码器获得的数值  右轮值，约定前进方向速度为正
+
+    tick_left_pid = tick_left;
+    tick_right_pid = tick_right;
 
     encoder_clear_count(ENCODER_LEFT_ID);                           //周期清除左轮计数
     encoder_clear_count(ENCODER_RIGHT_ID);                          //周期清除右轮计数
@@ -112,4 +116,23 @@ void encoder_layer_clear_odom(void)
 {
     g_state.odom_left_m = 0.0f;
     g_state.odom_right_m = 0.0f;
+}
+
+////-------------------------------------------------------------------------------------------------------------------
+ ////  @brief      发送编码器速度数据到上位机
+ ////  @param      无
+ ////  @note       使用 printf 发送，格式: enc:tick_left,tick_right,speed_left,speed_right,speed_avg
+ ////-------------------------------------------------------------------------------------------------------------------
+void encoder_send_speed_to_host(void)
+{
+    // 方法1: 发送处理后的速度数据
+    printf("enc:%.3f,%.3f,%.3f\r\n", 
+           g_state.speed_left_mps, 
+           g_state.speed_right_mps, 
+           g_state.speed_average_mps);
+    
+    // 方法2: 发送原始 tick 数据（用于调试硬件）
+    int32 raw_left = encoder_get_count(ENCODER_LEFT_ID);
+    int32 raw_right = encoder_get_count(ENCODER_RIGHT_ID);
+    printf("raw:%ld,%ld\r\n", (long)raw_left, (long)raw_right);
 }

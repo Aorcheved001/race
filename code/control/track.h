@@ -11,6 +11,7 @@
 
 //-------------------------------------------头文件区------------------------------------------------------------
 #include "zf_common_headfile.h"
+#include "vehicle_config.h"  // 引入统一车辆参数配置
 
 //-------------------------------------------宏定义区------------------------------------------------------------
 #define Track_Flash_Page_Max          24
@@ -34,8 +35,8 @@
 #define TRACK_LOOKAHEAD_DISTANCE      0.4f
 // Pure Pursuit前视距离（米），建议为采样步长的3-5倍
 
-#define TRACK_WHEELBASE               0.2107f
-// 车辆轴距（米）
+// TRACK_WHEELBASE 已在 vehicle_config.h 中定义
+// 车辆轴距（前后轮距离），用于 Pure Pursuit 转向计算
 
 #define TRACK_FOLLOW_SPEED            0.35f
 // 循迹速度（米/秒）

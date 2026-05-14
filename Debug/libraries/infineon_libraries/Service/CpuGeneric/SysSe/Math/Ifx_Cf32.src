@@ -1,10 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-<<<<<<< HEAD
-	.compiler_invocation	"ctc -f cc8608a --dep-file=Ifx_Cf32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c"
-=======
-	.compiler_invocation	"ctc -f cc29300a --dep-file=Ifx_Cf32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IE:\\\\Aorcheved_01\\\\new_ins -IE:\\\\Aorcheved_01\\\\new_ins\\\\code -IE:\\\\Aorcheved_01\\\\new_ins\\\\code\\\\control -IE:\\\\Aorcheved_01\\\\new_ins\\\\code\\\\ins -IE:\\\\Aorcheved_01\\\\new_ins\\\\code\\\\system -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\zf_common -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\zf_components -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\zf_device -IE:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\zf_driver -IE:\\\\Aorcheved_01\\\\new_ins\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c"
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.compiler_invocation	"ctc -f cc22068a --dep-file=Ifx_Cf32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\control -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\ins -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\code\\\\system -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Configurations -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Ccu6\\\\Timer -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Dma -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Dma\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Flash\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\IncrEnc -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\SpiMaster -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Qspi\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_components -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_device -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_driver -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\mag_calibration -IC:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c"
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c'
 
@@ -843,11 +839,7 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L96:
-<<<<<<< HEAD
-	.word	1390
-=======
-	.word	1371
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	1396
 	.half	3
 	.word	.L97
 	.byte	4
@@ -855,492 +847,255 @@ __VecWin_f32_function_end:
 	.byte	1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L98
 	.byte	2,1,1,3
-	.word	218
+	.word	224
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
-	.word	221
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
-	.word	.L98
-	.byte	2,1,1,3
-	.word	199
-	.byte	4
-	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
-	.byte	'fun',0,1,61,43
-	.word	202
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	227
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
 .L261:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
-<<<<<<< HEAD
-	.word	266
+	.word	272
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
-	.word	278
+	.word	284
 	.byte	6,0,7
 	.byte	'unsigned long long int',0,8,7,9
 	.byte	'void',0,3
-	.word	358
+	.word	364
 	.byte	8
 	.byte	'__ld64',0,3,2,135,1,19
-	.word	332
+	.word	338
 	.byte	1,1,5
 	.byte	'addr',0,2,135,1,32
-	.word	364
+	.word	370
 	.byte	6,0,4
 	.byte	'__st64',0,3,2,143,1,17,1,1,5
 	.byte	'addr',0,2,143,1,30
-	.word	364
+	.word	370
 	.byte	5
 	.byte	'value',0,2,143,1,43
-	.word	332
-=======
-	.word	247
-	.byte	1,1,5
-	.byte	'a',0,1,152,2,44
-	.word	259
-	.byte	6,0,7
-	.byte	'unsigned long long int',0,8,7,9
-	.byte	'void',0,3
-	.word	339
-	.byte	8
-	.byte	'__ld64',0,3,2,135,1,19
-	.word	313
-	.byte	1,1,5
-	.byte	'addr',0,2,135,1,32
-	.word	345
-	.byte	6,0,4
-	.byte	'__st64',0,3,2,143,1,17,1,1,5
-	.byte	'addr',0,2,143,1,30
-	.word	345
-	.byte	5
-	.byte	'value',0,2,143,1,43
-	.word	313
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	338
 	.byte	6,0
 .L237:
 	.byte	10,4,61,9,8,11
 	.byte	'real',0
-<<<<<<< HEAD
-	.word	278
+	.word	284
 	.byte	4,2,35,0,11
 	.byte	'imag',0
-	.word	278
+	.word	284
 	.byte	4,2,35,4,0,12
-	.word	450
+	.word	456
 .L227:
 	.byte	3
-	.word	484
+	.word	490
 .L230:
 	.byte	8
 	.byte	'IFX_Cf32_mul',0,3,3,67,21
-	.word	450
-=======
-	.word	259
-	.byte	4,2,35,0,11
-	.byte	'imag',0
-	.word	259
-	.byte	4,2,35,4,0,12
-	.word	431
-.L227:
-	.byte	3
-	.word	465
-.L230:
-	.byte	8
-	.byte	'IFX_Cf32_mul',0,3,3,67,21
-	.word	431
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	456
 	.byte	1,1
 .L232:
 	.byte	5
 	.byte	'a',0,3,67,50
-<<<<<<< HEAD
-	.word	489
+	.word	495
 .L234:
 	.byte	5
 	.byte	'b',0,3,67,69
-	.word	489
-=======
-	.word	470
-.L234:
-	.byte	5
-	.byte	'b',0,3,67,69
-	.word	470
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	495
 .L236:
 	.byte	6,0
 .L211:
 	.byte	8
 	.byte	'IFX_Cf32_dot',0,3,3,85,20
-<<<<<<< HEAD
-	.word	278
-=======
-	.word	259
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	284
 	.byte	1,1
 .L212:
 	.byte	5
 	.byte	'b',0,3,85,49
-<<<<<<< HEAD
-	.word	489
-=======
-	.word	470
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	495
 .L214:
 	.byte	6,0
 .L220:
 	.byte	8
 	.byte	'IFX_Cf32_mag',0,3,3,91,20
-<<<<<<< HEAD
-	.word	278
-=======
-	.word	259
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	284
 	.byte	1,1
 .L221:
 	.byte	5
 	.byte	'c',0,3,91,49
-<<<<<<< HEAD
-	.word	489
-=======
-	.word	470
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	495
 .L223:
 	.byte	13,6,0,0
 .L190:
 	.byte	3
-<<<<<<< HEAD
-	.word	450
+	.word	456
 	.byte	4
 	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
 	.byte	'a',0,3,125,40
-	.word	614
-	.byte	5
-	.byte	're',0,3,125,51
-	.word	278
-	.byte	5
-	.byte	'im',0,3,125,63
-	.word	278
-	.byte	6,0,14
-	.byte	'log10f',0,5,149,1,25
-	.word	278
-	.byte	1,1,1,1,15,5,149,1,43
-	.word	278
-	.byte	0,14
-	.byte	'sqrtf',0,5,187,1,25
-	.word	278
-	.byte	1,1,1,1,15,5,187,1,43
-	.word	278
-	.byte	0,16
-	.word	226
-	.byte	17
-	.word	252
-	.byte	6,0,16
-	.word	287
-	.byte	17
-	.word	319
-	.byte	6,0,16
-	.word	369
-	.byte	17
-	.word	388
-	.byte	6,0,16
-	.word	404
-	.byte	17
-	.word	419
-	.byte	17
-	.word	433
-	.byte	6,0,16
-	.word	494
-	.byte	17
-	.word	518
-	.byte	17
-	.word	528
-	.byte	6,0,16
-	.word	540
-	.byte	17
-	.word	564
-	.byte	6,0,16
-	.word	576
-	.byte	17
-	.word	600
-	.byte	13,18
-	.word	540
-	.byte	17
-	.word	564
-	.byte	19
-	.word	574
-	.byte	0,6,0,0,16
-	.word	619
-	.byte	17
-	.word	639
-	.byte	17
-	.word	649
-	.byte	17
-	.word	660
-=======
-	.word	431
-	.byte	4
-	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
-	.byte	'a',0,3,125,40
-	.word	595
-	.byte	5
-	.byte	're',0,3,125,51
-	.word	259
-	.byte	5
-	.byte	'im',0,3,125,63
-	.word	259
-	.byte	6,0,14
-	.byte	'log10f',0,5,149,1,25
-	.word	259
-	.byte	1,1,1,1,15,5,149,1,43
-	.word	259
-	.byte	0,14
-	.byte	'sqrtf',0,5,187,1,25
-	.word	259
-	.byte	1,1,1,1,15,5,187,1,43
-	.word	259
-	.byte	0,16
-	.word	207
-	.byte	17
-	.word	233
-	.byte	6,0,16
-	.word	268
-	.byte	17
-	.word	300
-	.byte	6,0,16
-	.word	350
-	.byte	17
-	.word	369
-	.byte	6,0,16
-	.word	385
-	.byte	17
-	.word	400
-	.byte	17
-	.word	414
-	.byte	6,0,16
-	.word	475
-	.byte	17
-	.word	499
-	.byte	17
-	.word	509
-	.byte	6,0,16
-	.word	521
-	.byte	17
-	.word	545
-	.byte	6,0,16
-	.word	557
-	.byte	17
-	.word	581
-	.byte	13,18
-	.word	521
-	.byte	17
-	.word	545
-	.byte	19
-	.word	555
-	.byte	0,6,0,0,16
-	.word	600
-	.byte	17
 	.word	620
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	284
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	284
+	.byte	6,0,14
+	.byte	'log10f',0,5,149,1,25
+	.word	284
+	.byte	1,1,1,1,15,5,149,1,43
+	.word	284
+	.byte	0,14
+	.byte	'sqrtf',0,5,187,1,25
+	.word	284
+	.byte	1,1,1,1,15,5,187,1,43
+	.word	284
+	.byte	0,16
+	.word	232
 	.byte	17
-	.word	630
+	.word	258
+	.byte	6,0,16
+	.word	293
 	.byte	17
-	.word	641
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	325
+	.byte	6,0,16
+	.word	375
+	.byte	17
+	.word	394
+	.byte	6,0,16
+	.word	410
+	.byte	17
+	.word	425
+	.byte	17
+	.word	439
+	.byte	6,0,16
+	.word	500
+	.byte	17
+	.word	524
+	.byte	17
+	.word	534
+	.byte	6,0,16
+	.word	546
+	.byte	17
+	.word	570
+	.byte	6,0,16
+	.word	582
+	.byte	17
+	.word	606
+	.byte	13,18
+	.word	546
+	.byte	17
+	.word	570
+	.byte	19
+	.word	580
+	.byte	0,6,0,0,16
+	.word	625
+	.byte	17
+	.word	645
+	.byte	17
+	.word	655
+	.byte	17
+	.word	666
 	.byte	6,0
 .L194:
 	.byte	7
 	.byte	'short int',0,2,5
 .L192:
 	.byte	3
-<<<<<<< HEAD
-	.word	866
+	.word	872
 .L204:
 	.byte	3
-	.word	278
+	.word	284
 .L208:
 	.byte	7
 	.byte	'unsigned short int',0,2,7,12
-	.word	278
+	.word	284
 .L241:
 	.byte	3
-	.word	911
+	.word	917
 .L254:
 	.byte	3
-	.word	866
+	.word	872
 	.byte	20
 	.byte	'__wchar_t',0,6,1,1
-	.word	866
+	.word	872
 	.byte	7
 	.byte	'unsigned int',0,4,7,20
 	.byte	'__size_t',0,6,1,1
-	.word	944
+	.word	950
 	.byte	7
 	.byte	'int',0,4,5,20
 	.byte	'__ptrdiff_t',0,6,1,1
-	.word	977
+	.word	983
 	.byte	21,1,3
-	.word	1004
+	.word	1010
 	.byte	20
 	.byte	'__codeptr',0,6,1,1
-	.word	1006
+	.word	1012
 	.byte	20
 	.byte	'__intptr_t',0,6,1,1
-	.word	977
+	.word	983
 	.byte	20
 	.byte	'__uintptr_t',0,6,1,1
-	.word	944
+	.word	950
 	.byte	20
 	.byte	'_iob_flag_t',0,7,82,25
-	.word	889
+	.word	895
 	.byte	7
 	.byte	'unsigned char',0,1,8,20
 	.byte	'uint8',0,8,105,29
-	.word	1088
+	.word	1094
 	.byte	20
 	.byte	'uint16',0,8,109,29
-	.word	889
+	.word	895
 	.byte	7
 	.byte	'unsigned long int',0,4,7,20
 	.byte	'uint32',0,8,113,29
-	.word	1134
+	.word	1140
 	.byte	20
 	.byte	'uint64',0,8,118,29
-	.word	332
+	.word	338
 	.byte	20
 	.byte	'sint16',0,8,126,29
-	.word	866
+	.word	872
 	.byte	7
 	.byte	'long int',0,4,5,20
 	.byte	'sint32',0,8,131,1,29
-	.word	1200
+	.word	1206
 	.byte	7
 	.byte	'long long int',0,8,5,20
 	.byte	'sint64',0,8,138,1,29
-	.word	1228
+	.word	1234
 	.byte	20
 	.byte	'float32',0,8,167,1,29
-	.word	278
+	.word	284
 	.byte	7
 	.byte	'char',0,1,6,20
 	.byte	'int8',0,9,54,29
-	.word	1278
+	.word	1284
 	.byte	20
 	.byte	'int16',0,9,55,29
-	.word	866
+	.word	872
 	.byte	20
 	.byte	'int32',0,9,56,29
-	.word	977
+	.word	983
 	.byte	20
 	.byte	'int64',0,9,57,29
-	.word	1228
+	.word	1234
 	.byte	20
 	.byte	'pvoid',0,4,57,28
-	.word	364
+	.word	370
 	.byte	20
 	.byte	'cfloat32',0,4,65,3
-	.word	450
+	.word	456
 	.byte	20
 	.byte	'Ifx_TickTime',0,4,79,28
-	.word	1228
-=======
-	.word	847
-.L204:
-	.byte	3
-	.word	259
-.L208:
-	.byte	7
-	.byte	'unsigned short int',0,2,7,12
-	.word	259
-.L241:
-	.byte	3
-	.word	892
-.L254:
-	.byte	3
-	.word	847
-	.byte	20
-	.byte	'__wchar_t',0,6,1,1
-	.word	847
-	.byte	7
-	.byte	'unsigned int',0,4,7,20
-	.byte	'__size_t',0,6,1,1
-	.word	925
-	.byte	7
-	.byte	'int',0,4,5,20
-	.byte	'__ptrdiff_t',0,6,1,1
-	.word	958
-	.byte	21,1,3
-	.word	985
-	.byte	20
-	.byte	'__codeptr',0,6,1,1
-	.word	987
-	.byte	20
-	.byte	'__intptr_t',0,6,1,1
-	.word	958
-	.byte	20
-	.byte	'__uintptr_t',0,6,1,1
-	.word	925
-	.byte	20
-	.byte	'_iob_flag_t',0,7,82,25
-	.word	870
-	.byte	7
-	.byte	'unsigned char',0,1,8,20
-	.byte	'uint8',0,8,105,29
-	.word	1069
-	.byte	20
-	.byte	'uint16',0,8,109,29
-	.word	870
-	.byte	7
-	.byte	'unsigned long int',0,4,7,20
-	.byte	'uint32',0,8,113,29
-	.word	1115
-	.byte	20
-	.byte	'uint64',0,8,118,29
-	.word	313
-	.byte	20
-	.byte	'sint16',0,8,126,29
-	.word	847
-	.byte	7
-	.byte	'long int',0,4,5,20
-	.byte	'sint32',0,8,131,1,29
-	.word	1181
-	.byte	7
-	.byte	'long long int',0,8,5,20
-	.byte	'sint64',0,8,138,1,29
-	.word	1209
-	.byte	20
-	.byte	'float32',0,8,167,1,29
-	.word	259
-	.byte	7
-	.byte	'char',0,1,6,20
-	.byte	'int8',0,9,54,29
-	.word	1259
-	.byte	20
-	.byte	'int16',0,9,55,29
-	.word	847
-	.byte	20
-	.byte	'int32',0,9,56,29
-	.word	958
-	.byte	20
-	.byte	'int64',0,9,57,29
-	.word	1209
-	.byte	20
-	.byte	'pvoid',0,4,57,28
-	.word	345
-	.byte	20
-	.byte	'cfloat32',0,4,65,3
-	.word	431
-	.byte	20
-	.byte	'Ifx_TickTime',0,4,79,28
-	.word	1209
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	1234
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -1360,27 +1115,15 @@ __VecWin_f32_function_end:
 	.word	.L368-.L367
 .L367:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
-<<<<<<< HEAD
 	.byte	'C:\\Infineon\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
-	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
-	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\zf_common',0,0
-	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\zf_common',0,0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
 	.byte	0,0,0
-	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
-	.byte	0,0,0
-	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
-	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
-=======
-	.byte	'E:\\Aorcheved_01\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
-	.byte	'E:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std',0
-	.byte	'E:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\zf_common',0,0
-	.byte	'E:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
-	.byte	0,0,0
-	.byte	'E:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
 	.byte	0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
-	.byte	'E:\\\\Aorcheved_01\\\\new_ins\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\\\Users\\\\A\\\\AURIX-v1.10.2-workspace\\\\new_ins_local\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'math.h',0,1,0,0
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0,0,0,0
@@ -1392,21 +1135,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('CplxVecCpy_f32S')
 	.sect	'.debug_info'
 .L99:
-<<<<<<< HEAD
-	.word	330
-=======
-	.word	311
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	336
 	.half	3
 	.word	.L100
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L102,.L101
 	.byte	2
 	.word	.L95
@@ -1475,21 +1210,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('CplxVecRst_f32')
 	.sect	'.debug_info'
 .L104:
-<<<<<<< HEAD
-	.word	297
-=======
-	.word	278
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	303
 	.half	3
 	.word	.L105
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L107,.L106
 	.byte	2
 	.word	.L95
@@ -1546,21 +1273,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('CplxVecCpy_f32')
 	.sect	'.debug_info'
 .L109:
-<<<<<<< HEAD
-	.word	311
-=======
-	.word	292
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	317
 	.half	3
 	.word	.L110
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L112,.L111
 	.byte	2
 	.word	.L95
@@ -1622,21 +1341,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('CplxVecPwr_f32')
 	.sect	'.debug_info'
 .L114:
-<<<<<<< HEAD
-	.word	366
-=======
-	.word	347
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	372
 	.half	3
 	.word	.L115
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L117,.L116
 	.byte	2
 	.word	.L95
@@ -1734,21 +1445,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('CplxVecMag_f32')
 	.sect	'.debug_info'
 .L119:
-<<<<<<< HEAD
-	.word	403
-=======
-	.word	384
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	409
 	.half	3
 	.word	.L120
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L122,.L121
 	.byte	2
 	.word	.L95
@@ -1858,21 +1561,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('CplxVecMul_f32')
 	.sect	'.debug_info'
 .L124:
-<<<<<<< HEAD
-	.word	374
-=======
-	.word	355
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	380
 	.half	3
 	.word	.L125
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L127,.L126
 	.byte	2
 	.word	.L95
@@ -1972,21 +1667,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecWin_f32')
 	.sect	'.debug_info'
 .L129:
-<<<<<<< HEAD
-	.word	398
-=======
-	.word	379
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	404
 	.half	3
 	.word	.L130
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L132,.L131
 	.byte	2
 	.word	.L95
@@ -2108,21 +1795,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecPwrdB_f32')
 	.sect	'.debug_info'
 .L134:
-<<<<<<< HEAD
-	.word	310
-=======
-	.word	291
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	316
 	.half	3
 	.word	.L135
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L137,.L136
 	.byte	2
 	.word	.L95
@@ -2191,21 +1870,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecPwrdB_SF')
 	.sect	'.debug_info'
 .L139:
-<<<<<<< HEAD
-	.word	328
-=======
-	.word	309
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	334
 	.half	3
 	.word	.L140
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L142,.L141
 	.byte	2
 	.word	.L95
@@ -2281,21 +1952,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecGain_f32')
 	.sect	'.debug_info'
 .L144:
-<<<<<<< HEAD
-	.word	331
-=======
-	.word	312
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	337
 	.half	3
 	.word	.L145
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L147,.L146
 	.byte	2
 	.word	.L95
@@ -2363,21 +2026,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecOfs_f32')
 	.sect	'.debug_info'
 .L149:
-<<<<<<< HEAD
-	.word	332
-=======
-	.word	313
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	338
 	.half	3
 	.word	.L150
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L152,.L151
 	.byte	2
 	.word	.L95
@@ -2443,21 +2098,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecSum_f32')
 	.sect	'.debug_info'
 .L154:
-<<<<<<< HEAD
-	.word	334
-=======
-	.word	315
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	340
 	.half	3
 	.word	.L155
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L157,.L156
 	.byte	2
 	.word	.L95
@@ -2529,21 +2176,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecAvg_f32')
 	.sect	'.debug_info'
 .L159:
-<<<<<<< HEAD
-	.word	300
-=======
-	.word	281
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	306
 	.half	3
 	.word	.L160
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L162,.L161
 	.byte	2
 	.word	.L95
@@ -2600,21 +2239,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecMax_f32')
 	.sect	'.debug_info'
 .L164:
-<<<<<<< HEAD
-	.word	331
-=======
-	.word	312
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	337
 	.half	3
 	.word	.L165
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L167,.L166
 	.byte	2
 	.word	.L95
@@ -2684,21 +2315,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecMin_f32')
 	.sect	'.debug_info'
 .L169:
-<<<<<<< HEAD
-	.word	331
-=======
-	.word	312
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	337
 	.half	3
 	.word	.L170
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L172,.L171
 	.byte	2
 	.word	.L95
@@ -2768,21 +2391,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecMinIdx_f32')
 	.sect	'.debug_info'
 .L174:
-<<<<<<< HEAD
-	.word	380
-=======
-	.word	361
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	386
 	.half	3
 	.word	.L175
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L177,.L176
 	.byte	2
 	.word	.L95
@@ -2874,21 +2489,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecMaxIdx_f32')
 	.sect	'.debug_info'
 .L179:
-<<<<<<< HEAD
-	.word	380
-=======
-	.word	361
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	386
 	.half	3
 	.word	.L180
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L182,.L181
 	.byte	2
 	.word	.L95
@@ -2980,21 +2587,13 @@ __VecWin_f32_function_end:
 	.sdecl	'.debug_info',debug,cluster('VecHalfSwap_f32')
 	.sect	'.debug_info'
 .L184:
-<<<<<<< HEAD
-	.word	377
-=======
-	.word	358
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.word	383
 	.half	3
 	.word	.L185
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_Cf32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-<<<<<<< HEAD
-	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins\\Debug\\',0,12,1
-=======
-	.byte	'E:\\Aorcheved_01\\new_ins\\Debug\\',0,12,1
->>>>>>> 82b88aed84cc13edbe61c5ab32284ccfbdcd9e9e
+	.byte	'C:\\Users\\A\\AURIX-v1.10.2-workspace\\new_ins_local\\Debug\\',0,12,1
 	.word	.L187,.L186
 	.byte	2
 	.word	.L95

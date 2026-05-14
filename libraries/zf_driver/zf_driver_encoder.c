@@ -198,9 +198,9 @@ void encoder_quad_init (encoder_index_enum encoder_n, encoder_channel1_enum ch1_
 
         case TIM4_ENCODER:
         {
-            IfxGpt12_T4_setCounterInputMode(&MODULE_GPT120, IfxGpt12_IncrementalInterfaceInputMode_bothEdgesTxINOrTxEUD);
+            IfxGpt12_T4_setCounterInputMode(&MODULE_GPT120, IfxGpt12_CounterInputMode_risingEdgeTxIN);
             IfxGpt12_T4_setDirectionSource (&MODULE_GPT120, IfxGpt12_TimerDirectionSource_external);
-            IfxGpt12_T4_setMode            (&MODULE_GPT120, IfxGpt12_Mode_incrementalInterfaceEdgeDetection);
+            IfxGpt12_T4_setMode            (&MODULE_GPT120, IfxGpt12_Mode_counter);
             IfxGpt12_T4_run                (&MODULE_GPT120, IfxGpt12_TimerRun_start);
         }break;
 
@@ -221,13 +221,13 @@ void encoder_quad_init (encoder_index_enum encoder_n, encoder_channel1_enum ch1_
         }break;
     }
 
-    if(encoder_n <= TIM4_ENCODER)
+    if(encoder_n <= TIM3_ENCODER)
     {
-        encoder_mode[encoder_n] = 0;
+        encoder_mode[encoder_n] = 0;    // TIM2/TIM3 真正正交模式，读数需除以4
     }
     else
     {
-        encoder_mode[encoder_n] = 1;
+        encoder_mode[encoder_n] = 1;    // TIM4/TIM5/TIM6 普通计数器模式，不除以4
     }
 }
 

@@ -60,34 +60,13 @@ python mag_calibration\plotter.py --baud 115200
 python mag_calibration\plotter.py --output mag_calibration\calibration_params.h
 
 
-【5】双车轨迹可视化器 (dual_car_viewer.py)
+【5】轨迹查看器 (trajectory_viewer.py)
 ----------------------------------------------------------------
-# 启动双车轨迹可视化 GUI
-python scripts\dual_car_viewer.py
-
-# 功能说明:
-#   - 同时接收两个串口数据
-#   - 实时显示两辆车轨迹
-#   - 车头朝向根据yaw角度
-#   - 可调整场地大小
-#   - 可放置锥桶 (半径15cm)
-#   - 滚轮缩放，中键拖动
-#   - 数据收集与分析
-
-# 操作说明:
-#   左键点击画布: 添加锥桶
-#   右键点击画布: 删除锥桶
-#   滚轮上下: 放大/缩小视图
-#   中键拖动: 平移视图
-
-
-【6】轨迹查看器 (trajectory_viewer.py)
-----------------------------------------------------------------
-# 启动轨迹查看器
+# 启动轨迹查看器 (INS COM24 + RTK COM33)
 python scripts\trajectory_viewer.py
 
 
-【7】AI自动调参工具 (ai_tuner.py)
+【6】AI自动调参工具 (ai_tuner.py)
 ----------------------------------------------------------------
 # 运行自动采集+分析+建议
 python scripts\ai_tuner.py
@@ -99,22 +78,23 @@ python scripts\ai_tuner.py -t 30
 python scripts\ai_tuner.py -o data\auto_test.txt
 
 
-【8】文件同步 (sync.py)
+【7】文件同步 (sync.py)
 ----------------------------------------------------------------
 # 预览同步 (Dry Run)
 python tools\sync.py
 
-# 强制同步 VS -> ADS
+# 强制同步 Trae -> ADS
 python tools\sync.py --force
 
 
-【9】Git 命令速查
+【8】Git 命令速查
 ----------------------------------------------------------------
 # 查看工作区状态
 git st
 
 # 查看完整状态信息
 git status
+
 
 # 查看最近提交历史
 git last
@@ -140,7 +120,7 @@ git unstage code\ins\imu660.c
 # 提交更改
 git commit -m "fix: 修复磁力计航向融合问题"
 
-# 推送到远程分支
+# 推送到远程分支 main
 git push -u origin main
 
 # 查看远程仓库
@@ -153,7 +133,7 @@ git remote set-url origin https://github.com/Aorcheved001/race.git
 git config --global --get http.proxy
 git config --global --get https.proxy
 
-# 设置 Git 使用 Clash 代理
+# 设置 Git 使用 Clash 代理 (解决 GitHub 连接问题)
 git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
 
@@ -161,8 +141,21 @@ git config --global https.proxy http://127.0.0.1:7890
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 
-# 测试 GitHub 连接
+# 测试 GitHub 连接是否正常
 git ls-remote origin
+
+# 同步远程仓库 (安全方式，不会自动合并)
+git fetch origin
+git switch main
+git pull --ff-only origin main
+
+# 查看本地与远程的差异
+git fetch origin
+git lg
+
+# 如果本地分支(如main、fix/mag_yaw)落后于远程分支，先暂存本地更改再拉取：
+# 步骤：查看状态 -> 备份更改 -> 拉取远程
+# 警告：使用 git reset --hard 会丢弃所有未提交的更改，请谨慎操作！
 
 
 ================================================================
@@ -174,26 +167,38 @@ python tools\sync.py --force
 tools\headless_build.bat --flash-only
 python scripts\serial_reader.py -t 60 --save
 
-# 磁力计校准流程: 编译 -> 校准 GUI -> Git操作 -> 推送
+# 磁力计校准流程: 编译 -> 校准 GUI -> 【8】Git操作 -> 推送更改
 tools\headless_build.bat --flash-only
 python mag_calibration\plotter.py
 
-# 双车测试流程: 启动可视化 -> 连接串口 -> 收集数据 -> 分析
-python scripts\dual_car_viewer.py
-
-# 推送更改到 GitHub
+# 推送更改到 GitHub: 查看状态 -> 暂存 -> 提交 -> 推送
 git st
 git add .
 git commit -m "feat: 添加新功能"
 git push -u origin main
 
-# 从远程拉取最新代码
+# 从远程拉取最新代码: 查看状态 -> 切换到 main
 git st
 git fetch origin
 git switch main
 git pull --ff-only origin main
 
+# 创建功能分支: 查看状态 -> 创建 -> 提交 -> 推送
+git switch -c feat/my_change
+git add .
+git commit -m "feat: 新功能描述"
+git push
+
+# GitHub 连接失败解决方案: 开启 Clash -> 设置代理 -> 测试连接 -> 推送
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+git ls-remote origin
+git push -u origin main
+
 # 漂移测试流程: 编译 -> 采集60秒 -> 分析
 tools\headless_build.bat --flash-only
 python scripts\serial_reader.py -t 60 --save -o data\drift_test.txt
 python scripts\analyze_drift.py data\drift_test.txt
+
+# 如果你想测试无线数据采集(如 COM36)，执行: 采集 60 秒并分析姿态漂移
+python scripts\attitude_drift_tuner.py

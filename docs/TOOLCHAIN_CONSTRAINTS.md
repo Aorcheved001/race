@@ -26,8 +26,8 @@ new_ins/
 ├── code/                          # 嵌入式源码
 ├── libraries/                     # 库文件
 ├── Debug/                         # 编译输出
-├── .trae/ .vscode/ .settings/     # IDE 配置
-├── .cproject / .project           # 工程文件
+├── .vscode/ .settings/            # IDE 配置 (VS Code)
+├── .cproject / .project           # 工程文件 (ADS/Eclipse)
 ├── Lcf_Tasking_Tricore_Tc.lsl     # 链接脚本
 │
 ├── tools/                         # 编译/烧录/同步工具

@@ -2,27 +2,31 @@
  * interrupt.c
  */
 
-//-------------------------------------------å¤´æ–‡ä»¶å¼•ç”¨------------------------------------------------------------
+//-------------------------------------------Í·ÎÄ¼ş°üº¬------------------------------------------------------------
 #include "zf_common_headfile.h"
 
-//-------------------------------------------å†…éƒ¨å˜é‡å®šä¹‰------------------------------------------------------------
-static volatile uint16 s_pending_1ms = 0;                                 // 1ms ä»»åŠ¡è®¡æ•°å™¨
-static volatile uint16 s_pending_2ms = 0;                                 // 2ms ä»»åŠ¡è®¡æ•°å™¨
-static volatile uint16 s_pending_4ms = 0;                                 // 4ms ä»»åŠ¡è®¡æ•°å™¨
-static volatile uint16 s_pending_8ms = 0;                                 // 8ms ä»»åŠ¡è®¡æ•°å™¨
-static volatile uint16 s_pending_16ms = 0;                                // 16ms ä»»åŠ¡è®¡æ•°å™¨
-static volatile uint16 s_pending_40ms = 0;                                // 40ms ä»»åŠ¡è®¡æ•°å™¨
 
-volatile uint8 g_key_scan_flag = 0;                                       // æŒ‰é”®æ‰«ææ ‡å¿—
-static INS_Input s_ins_input = {0};                                       // INS è¾“å…¥ç¼“å­˜
-static float s_roll_zero_offset_deg = 0.0f;
-static float s_pitch_zero_offset_deg = 0.0f;
-static float s_roll_zero_sum_deg = 0.0f;
-static float s_pitch_zero_sum_deg = 0.0f;
-static uint16 s_attitude_zero_sample_count = 0u;
-static uint8 s_attitude_zero_ready = 0u;
+//-------------------------------------------È«¾Ö±äÁ¿¶¨Òå------------------------------------------------------------
+static volatile uint16 s_pending_1ms = 0;                                 // 1ms ÈÎÎñ¼ÆÊıÆ÷
+static volatile uint16 s_pending_2ms = 0;                                 // 2ms ÈÎÎñ¼ÆÊıÆ÷
+static volatile uint16 s_pending_4ms = 0;                                 // 4ms ÈÎÎñ¼ÆÊıÆ÷
+static volatile uint16 s_pending_8ms = 0;                                 // 8ms ÈÎÎñ¼ÆÊıÆ÷
+static volatile uint16 s_pending_16ms = 0;                                // 16ms ÈÎÎñ¼ÆÊıÆ÷
+static volatile uint16 s_pending_40ms = 0;                                // 40ms ÈÎÎñ¼ÆÊıÆ÷
 
-//-------------------------------------------å†…éƒ¨å·¥å…·å‡½æ•°------------------------------------------------------------
+volatile uint8 g_key_scan_flag = 0;                                       // °´¼üÉ¨Ãè±êÖ¾
+static INS_Input s_ins_input = {0};                                       // INS ÊäÈë»º´æ
+static float s_roll_zero_offset_deg = 0.0f;                               // ºá¹ö½ÇÁãµãÆ«ÒÆ
+static float s_pitch_zero_offset_deg = 0.0f;                              // ¸©Ñö½ÇÁãµãÆ«ÒÆ
+static float s_roll_zero_sum_deg = 0.0f;                                  // ºá¹ö½ÇÀÛ¼ÓÖµ
+static float s_pitch_zero_sum_deg = 0.0f;                                 // ¸©Ñö½ÇÀÛ¼ÓÖµ
+static uint16 s_attitude_zero_sample_count = 0u;                          // ×ËÌ¬Áãµã²ÉÑù¼ÆÊı
+static uint8 s_attitude_zero_ready = 0u;                                  // ×ËÌ¬ÁãµãĞ£×¼Íê³É±êÖ¾
+
+//-------------------------------------------¾Ö²¿º¯ÊıÉùÃ÷------------------------------------------------------------
+/**
+ * @brief  ½Ç¶È¹éÒ»»¯£¨»¡¶È£©£¬ÏŞÖÆÔÚ [-PI, PI]
+ */
 static float normalize_angle_rad_local(float angle)
 {
     while (angle > INS_PI) angle -= 2.0f * INS_PI;
@@ -30,6 +34,9 @@ static float normalize_angle_rad_local(float angle)
     return angle;
 }
 
+/**
+ * @brief  ¸üĞÂ×ËÌ¬ÁãµãÆ«ÒÆ£¨×Ô¶¯Ğ£×¼£©
+ */
 static void update_attitude_zero_offset(float roll_deg, float pitch_deg)
 {
     const uint16 required_samples = 50u;
@@ -51,6 +58,11 @@ static void update_attitude_zero_offset(float roll_deg, float pitch_deg)
     }
 }
 
+/**
+ * @brief  »ñÈ¡´ÅÁ¦¼Æ¼ÆËãµÄÆ«º½½Ç
+ * @param  yaw_rad: Êä³öÆ«º½½Ç£¨»¡¶È£©
+ * @return ÓĞĞ§±êÖ¾
+ */
 static uint8 get_mag_yaw_measurement(float *yaw_rad)
 {
     float mag_x = imu660.data_Ripen.mag_x;
@@ -61,15 +73,18 @@ static uint8 get_mag_yaw_measurement(float *yaw_rad)
         return 0u;
     }
 
+    // ´ÅÁ¦¼ÆÊı¾İÎŞĞ§£¬Ö±½Ó·µ»Ø
     if((fabsf(mag_x) + fabsf(mag_y)) < 1e-4f)
     {
         return 0u;
     }
 
-    *yaw_rad = normalize_angle_rad_local(-atan2f(mag_y, mag_x));
+    // ÓĞĞ§Ê±Êä³öyaw_rad£¬Êµ¼ÊÖµÓÉINSÄ£¿é¼ÆËã
+    *yaw_rad = 0.0f;
     return 1u;
 }
 
+// ¶¨Ê±Æ÷ÖĞ¶Ï¼ÆÊıº¯Êı
 void Interrupt_1ms(void)  { if (s_pending_1ms  < 500u) s_pending_1ms++; }
 void Interrupt_2ms(void)  { if (s_pending_2ms  < 500u) s_pending_2ms++; }
 void Interrupt_4ms(void)  { if (s_pending_4ms  < 500u) s_pending_4ms++; }
@@ -78,61 +93,90 @@ void Interrupt_16ms(void) { if (s_pending_16ms < 500u) s_pending_16ms++; }
 void Interrupt_40ms(void) { if (s_pending_40ms < 500u) s_pending_40ms++; }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      4ms å‘¨æœŸä»»åŠ¡å‡½æ•°
+////  @brief      4ms ÖÜÆÚÈÎÎñº¯Êı
 ////  @param      void
 ////  @return     void
-////  @note       æ‰§è¡ŒåŒ…æ‹¬ IMU æ•°æ®å¤„ç†ã€ç¼–ç å™¨æ›´æ–°ã€PID æ§åˆ¶ã€INS æ›´æ–°ã€è½¨è¿¹å¤„ç†
+////  @note       Ö´ĞĞ£ºIMUÊı¾İ´¦Àí¡¢±àÂëÆ÷¸üĞÂ¡¢³µÂÖPID¡¢×ªÏò¿ØÖÆ¡¢INS¸üĞÂ¡¢¹ì¼£´¦Àí¡¢Êı¾İÉÏ´«
 ////-------------------------------------------------------------------------------------------------------------------
 static void run_4ms_tasks(void)
 {
-    date_handle(&imu_date);                                               // å¤„ç† IMU æ•°æ®
-    encoder_layer_update();                                               // æ›´æ–°ç¼–ç å™¨çŠ¶æ€
+//    date_handle(&imu_date);                                               // ´¦Àí IMU Êı¾İ
+//    encoder_layer_update();                                               // ¸üĞÂ±àÂëÆ÷²ã×´Ì¬ .
+//
+//    const EncoderLayerState* enc = encoder_layer_get_state();             // »ñÈ¡±àÂëÆ÷×´Ì¬ .
+//    wheel_pid_update(enc, 0.004f);                                        // ³µÂÖ PID ¼ÆËã .
 
-    const EncoderLayerState* enc = encoder_layer_get_state();             // è·å–ç¼–ç å™¨çŠ¶æ€
-    wheel_pid_update(enc, 0.004f);                                        // æ›´æ–°ç”µæœº PID
+//    steering_control();                                                   // ×ªÏò¿ØÖÆ£¨4msÖÜÆÚÖ´ĞĞ£©
 
-    steering_control();                                                   // æ›´æ–°è½¬å‘æ§åˆ¶ï¼ˆ4mså‘¨æœŸè°ƒç”¨ï¼‰
+//    s_ins_input.v_mps = enc->speed_average_mps;                           // Ğ´Èë INS ËÙ¶ÈÊäÈë
+//    s_ins_input.gyro_z_rad_s = imu660.data_Ripen.gyro_z;                  // Ğ´Èë INS ÍÓÂİÒÇZÖáÊäÈë
+//    s_ins_input.mag_valid = get_mag_yaw_measurement(&s_ins_input.mag_yaw_rad);   // »ñÈ¡´ÅÆ«½Ç¹Û²âÖµ
+//    s_ins_input.delta_left_m = enc->delta_left_m;                         // Ğ´Èë INS ×óÂÖÎ»ÒÆ
+//    s_ins_input.delta_right_m = enc->delta_right_m;                       // Ğ´Èë INS ÓÒÂÖÎ»ÒÆ
 
-    s_ins_input.v_mps = enc->speed_average_mps;                           // å†™å…¥ INS é€Ÿåº¦æ•°æ®
-    s_ins_input.gyro_z_rad_s = imu660.data_Ripen.gyro_z;                  // å†™å…¥ INS è§’é€Ÿåº¦æ•°æ®
-    s_ins_input.mag_valid = get_mag_yaw_measurement(&s_ins_input.mag_yaw_rad);   // æ›´æ–°ç£ä¿¡å·è§‚æµ‹
+//    float steer_rad = steering_get_current_angle() * 0.017453292519943295f;  // µ±Ç°×ªÏò½Ç×ª»¡¶È
+//    s_ins_input.omega_rad_s = s_ins_input.v_mps * tanf(steer_rad) / INS_WHEELBASE_M;   // ¼ÆËã³µÁ¾½ÇËÙ¶È
+//
+//    Ins_update(&s_ins_input, 0.004f);                                     // ¸üĞÂ INS Êı¾İ
+//    track_proc();                                                         // ¹ì¼£´¦Àí
 
-    float steer_rad = steering_get_current_angle() * 0.017453292519943295f;  // å½“å‰è½¬å‘è§’ï¼ˆå¼§åº¦ï¼‰
-    s_ins_input.omega_rad_s = s_ins_input.v_mps * tanf(steer_rad) / INS_WHEELBASE_M;   // è®¡ç®—è½¦èº«è§’é€Ÿåº¦
+    // VOFA+ Êı¾İ·¢ËÍÓë PID ÔÚÏßµ÷½Ú
+    ///vofa_update(enc);                  //.
 
-    Ins_update(&s_ins_input, 0.004f);                                     // æ›´æ–° INS
-    track_proc();                                                         // æ‰§è¡Œå¾ªè¿¹å¤„ç†
+    // ´ÓFIFO¶ÁÈ¡²¢´¦ÀíÎŞÏßÖ¸Áî
+    uint8 rx_byte;
+    while (wireless_uart_read_buffer(&rx_byte, 1) > 0)
+    {
+        wheel_pid_cmd_process_byte(rx_byte);
+    }
+
+    // ³µÂÖÖ¸Áî´¦ÀíÓëµ÷ÊÔ
+    wheel_pid_cmd_poll();
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      8ms å‘¨æœŸä»»åŠ¡å‡½æ•°
+////  @brief      8ms ÖÜÆÚÈÎÎñº¯Êı
 ////  @param      void
 ////  @return     void
-////  @note       å¤„ç†é¥æ§ã€æŒ‰é”®å’Œ INS å¯¼èˆªä»»åŠ¡
+////  @note       Ö´ĞĞ£º°´¼üÉ¨Ãè¡¢Ò£¿ØÆ÷Êı¾İ´¦Àí¡¢INSµ¼º½ÈÎÎñ
 ////-------------------------------------------------------------------------------------------------------------------
 static void run_8ms_tasks(void)
 {
-    g_key_scan_flag = 1;                                                  // ç½®ä½æŒ‰é”®æ‰«ææ ‡å¿—
+    g_key_scan_flag = 1;                                                  // ÖÃÎ»°´¼üÉ¨Ãè±êÖ¾
 
-    yaokong_set_control_enabled((track_follow_flag == 0u) ? 1u : 0u);     // è®¾ç½®é¥æ§æ˜¯å¦æ¥ç®¡
-    yaokong_data_deal();                                                  // å¤„ç†é¥æ§æ•°æ®
+    yaokong_set_control_enabled((track_follow_flag == 0u) ? 1u : 0u);     // ÉèÖÃÒ£¿ØÆ÷Ê¹ÄÜ×´Ì¬
+    yaokong_data_deal();                                                  // ´¦ÀíÒ£¿ØÆ÷Êı¾İ
 
     key_scanner();
-    INS_NavigationTask();                                                 // æ‰§è¡Œ INS å¯¼èˆªä»»åŠ¡
+
+    // °´¼ü¿ØÖÆÄ¿±êËÙ¶È
+//    if(key_get_state(KEY_1) == KEY_SHORT_PRESS)
+//    {
+//        key_clear_state(KEY_1);
+//        g_wheel_pid.cmd_speed_left_mps  -= 1.0f;
+//        g_wheel_pid.cmd_speed_right_mps -= 1.0f;
+//    }
+
+    INS_NavigationTask();                                                 // Ö´ĞĞ INS µ¼º½ÈÎÎñ
 }
 
-
+/**
+ * @brief  ·¢ËÍ×ø±êÎ»ÖÃ¸øÉÏÎ»»ú
+ */
 static void send_position_to_host(void)
 {
     printf("(%.2f,%.2f)\r\n", INS.cod_RealTime.x, INS.cod_RealTime.y);
 }
 
+/**
+ * @brief  ·¢ËÍÆ«º½½ÇÊı¾İ¸øÉÏÎ»»ú
+ */
 static void send_pos_to_host(void)
 {
     float yaw_gyro, yaw_mag_raw, yaw_mag_rel, yaw_ekf;
     Ins_get_yaw_layers(&yaw_gyro, &yaw_mag_raw, &yaw_mag_rel, &yaw_ekf);
 
-    // è½¬æˆè§’åº¦å’Œç™¾åˆ†åº¦å•ä½ï¼Œæ–¹ä¾¿ç›´æ¥æŸ¥çœ‹
+    // »¡¶È×ª½Ç¶È£¬·½±ã²é¿´
     yaw_gyro *= 57.29578f;
     yaw_mag_rel *= 57.29578f;
     yaw_ekf *= 57.29578f;
@@ -142,23 +186,15 @@ static void send_pos_to_host(void)
     yaw_ekf = -yaw_ekf;
 
     char send_buf[64];
-
-    // å½“å‰æ–¹å‘è§’ç»Ÿä¸€ä¸ºé¡ºæ—¶é’ˆä¸ºæ­£
     sprintf(send_buf, "imu_yaw:%.2f,%.2f,%.2f\r\n", yaw_gyro,yaw_mag_rel,yaw_ekf);
     wireless_uart_send_string(send_buf);
-
-//    sprintf(send_buf, "mag_yaw:%.2f\r\n", yaw_mag_rel);
-//    wireless_uart_send_string(send_buf);
-//
-//    sprintf(send_buf, "fin_yaw:%.2f\r\n", yaw_ekf);
-//    wireless_uart_send_string(send_buf);
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      å‘é€å§¿æ€å’Œä¸‰è½´ç£åŠ›è®¡æ•°æ®åˆ°ä¸Šä½æœº
+////  @brief      ·¢ËÍ×ËÌ¬Êı¾İµ½ÉÏÎ»»ú
 ////  @param      void
 ////  @return     void
-////  @note       è¾“å‡ºæ ¼å¼ä¸º imu_att:roll,pitch,yaw_gyro,yaw_mag_raw,yaw_mag_rel,yaw_ekf
+////  @note       Êä³ö¸ñÊ½£ºimu_att:ºá¹ö,¸©Ñö,ÍÓÂİÆ«º½,´ÅÔ­Ê¼Æ«º½,´ÅÏà¶ÔÆ«º½,EKFÈÚºÏÆ«º½
 ////-------------------------------------------------------------------------------------------------------------------
 static void send_attitude_to_host(void)
 {
@@ -183,12 +219,11 @@ static void send_attitude_to_host(void)
 
     (void)yaw_rad;
 
-    // å°†è½½ä½“å§¿æ€æ˜ å°„åˆ°è½¦ä½“åæ ‡ç³»
-    // è½¦ä½“ roll å–å½“å‰ pitch
-    // è½¦ä½“ pitch å–å½“å‰ -roll
-    body_roll_rad = pitch_rad;
-    body_pitch_rad = -roll_rad;
+    // ×ËÌ¬×ø±êÏµ×ª»»
+    body_roll_rad = -pitch_rad;
+    body_pitch_rad = roll_rad;
 
+    // »¡¶È×ª½Ç¶È
     body_roll_rad *= INS_RAD2DEG;
     body_pitch_rad *= INS_RAD2DEG;
     yaw_gyro *= INS_RAD2DEG;
@@ -196,19 +231,21 @@ static void send_attitude_to_host(void)
     yaw_mag_rel *= INS_RAD2DEG;
     yaw_ekf *= INS_RAD2DEG;
 
+    // ·½ÏòĞ£×¼
     yaw_gyro = -yaw_gyro;
     yaw_mag_raw = -yaw_mag_raw;
     yaw_mag_rel = -yaw_mag_rel;
     yaw_ekf = -yaw_ekf;
 
+    // ÁãµãĞ£×¼
     update_attitude_zero_offset(body_roll_rad, body_pitch_rad);
-
     if(s_attitude_zero_ready != 0u)
     {
         body_roll_rad -= s_roll_zero_offset_deg;
         body_pitch_rad -= s_pitch_zero_offset_deg;
     }
 
+    // ·¢ËÍ×ËÌ¬Êı¾İ
     sprintf(send_buf,
             "imu_att:%.3f,%.3f,%.3f,%.3f,%.3f,%.3f\r\n",
             body_roll_rad,
@@ -219,54 +256,75 @@ static void send_attitude_to_host(void)
             yaw_ekf);
     wireless_uart_send_string(send_buf);
 
+    // ·¢ËÍ´ÅÁ¦¼ÆÔ­Ê¼Êı¾İ
     sprintf(mag_buf, "imu_mag3:%.3f,%.3f,%.3f\r\n", mag_x, mag_y, mag_z);
     wireless_uart_send_string(mag_buf);
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      40ms å‘¨æœŸä»»åŠ¡å‡½æ•°
+////  @brief      40ms ÖÜÆÚÈÎÎñº¯Êı
 ////  @param      void
 ////  @return     void
-////  @note       æ‰§è¡Œæ˜¾ç¤ºå’Œä¸Šä½æœºé€šä¿¡
+////  @note       Ö´ĞĞ£ºĞÅÏ¢ÏÔÊ¾¡¢×ËÌ¬Êı¾İÉÏ´«
 ////-------------------------------------------------------------------------------------------------------------------
 static void run_40ms_tasks(void)
 {
-//    key_scanner();                                                        // æŒ‰é”®æ‰«æ
-    INS_Display();                                                        // INS ä¿¡æ¯æ˜¾ç¤º
-//    send_position_to_host();
-//    imu_mag_send_raw_data_to_pc();
-//    send_pos_to_host();
-    send_attitude_to_host();
-//    menu();
+    INS_Display();                                                        // INS ĞÅÏ¢ÏÔÊ¾
+    send_attitude_to_host();                                              // ·¢ËÍ×ËÌ¬Êı¾İµ½ÉÏÎ»»ú
 }
 
 ////-------------------------------------------------------------------------------------------------------------------
-////  @brief      ä¸­æ–­ä»»åŠ¡è½®è¯¢å‡½æ•°
+////  @brief      ÖĞ¶ÏÈÎÎñÂÖÑ¯£¨Ö÷Ñ­»·µ÷ÓÃ£©
 ////  @param      void
 ////  @return     void
-////  @note       åœ¨ä¸»å¾ªç¯ä¸­è°ƒç”¨ï¼Œæ ¹æ®è®¡æ•°å™¨æ‰§è¡Œå„ä»»åŠ¡
+////  @note       Ö÷Ñ­»·ÖĞµ÷ÓÃ£¬°´ÖÜÆÚÖ´ĞĞÈÎÎñ
+////  @note       Ê¹ÓÃÖĞ¶Ï¼ÆÊı£¬±ÜÃâÔÚISRÖĞÖ´ĞĞºÄÊ±Ñ­»·
 ////-------------------------------------------------------------------------------------------------------------------
 void InterruptTasks_Poll(void)
 {
-    while (s_pending_4ms)
+    boolean int_state;
+    uint32 pending_snapshot;
+    
+    // ¶ÁÈ¡²¢Ö´ĞĞ4msÈÎÎñ
+    int_state = disableInterrupts();
+    pending_snapshot = s_pending_4ms;
+    s_pending_4ms = 0;
+    restoreInterrupts(int_state);
+    
+    while (pending_snapshot > 0)
     {
-        s_pending_4ms--;
+        pending_snapshot--;
         run_4ms_tasks();
     }
 
-    while (s_pending_8ms)
+    // ¶ÁÈ¡²¢Ö´ĞĞ8msÈÎÎñ
+    int_state = disableInterrupts();
+    pending_snapshot = s_pending_8ms;
+    s_pending_8ms = 0;
+    restoreInterrupts(int_state);
+    
+    while (pending_snapshot > 0)
     {
-        s_pending_8ms--;
+        pending_snapshot--;
         run_8ms_tasks();
     }
 
-    while (s_pending_40ms)
+    // ¶ÁÈ¡²¢Ö´ĞĞ40msÈÎÎñ
+    int_state = disableInterrupts();
+    pending_snapshot = s_pending_40ms;
+    s_pending_40ms = 0;
+    restoreInterrupts(int_state);
+    
+    while (pending_snapshot > 0)
     {
-        s_pending_40ms--;
+        pending_snapshot--;
         run_40ms_tasks();
     }
 
+    // Çå¿ÕÎ´Ê¹ÓÃµÄ¼ÆÊıÆ÷
+    int_state = disableInterrupts();
     s_pending_1ms = 0;
     s_pending_2ms = 0;
     s_pending_16ms = 0;
+    restoreInterrupts(int_state);
 }

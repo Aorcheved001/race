@@ -41,6 +41,8 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 // **************************** 代码区域 ****************************
 
+int a = 0;
+
 
 int core0_main(void)
 {
@@ -48,19 +50,22 @@ int core0_main(void)
     debug_init();                   // 初始化默认调试串口
     // 此处编写用户代码 例如外设初始化代码等
     system_init_all();
-
+//    motor_init();                                                   /* 初始化电机 */
     // 此处编写用户代码 例如外设初始化代码等
     cpu_wait_event_ready();         // 等待所有核心初始化完毕
     while (TRUE)
     {
         InterruptTasks_Poll();
-       INS_Display();
+        // INS_Display();  // P3-2-3: 注释掉，避免与中断任务竞争共享资源
+        vofa_pid_adjust();
+        // 此处编写需要循环执行的代码
+        // 此处编写需要循环执行的代码
+//        motor_control(motor_LB, MOTOR_DIR_FORWARD, 20);
+//        motor_control(motor_RB, MOTOR_DIR_FORWARD, 20);
 
-        // 此处编写需要循环执行的代码
-        // 此处编写需要循环执行的代码
-        
     }
 }
+
 
 #pragma section all restore
 // **************************** 代码区域 ****************************

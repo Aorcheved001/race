@@ -1,37 +1,46 @@
 /*
- * init_all.cd
+ * init_all.c
+ *
+ *  系统初始化模块
+ *  集中初始化所有硬件和软件模块
  */
- //-------------------------------------------头锟侥硷拷锟斤拷------------------------------------------------------------
+
+//-------------------------------------------头文件包含------------------------------------------------------------
 #include "zf_common_headfile.h"
 
- //-------------------------------------------锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷------------------------------------------------------------
+//-------------------------------------------函数定义------------------------------------------------------------
 void system_init_all(void)
 {
+    /* IMU 初始化 */
+//    imu963ra_init();                                                /* 初始化IMU963RA */
+//    imu_bias_init(&imu_date);                                       /* 初始化IMU偏差 */
+//    imu_gyro_z_autocalib(&imu_date, 1000);                          /* 自动校准陀螺Z轴漂移 */
+//    imu_mag_bias_load(&imu_date);                                   /* 加载磁力计校准参数 */
 
-    imu963ra_init();                                                // 锟斤拷始锟斤拷IMU963RA
-    imu_bias_init(&imu_date);                                       // 锟斤拷始锟斤拷IMU偏锟斤拷
-    imu_gyro_z_autocalib(&imu_date, 1000);                           // 锟皆讹拷校准锟斤拷锟斤拷锟斤拷Z锟斤拷偏锟斤拷
-    imu_mag_bias_load(&imu_date);                                    // 锟斤拷锟截达拷锟斤拷锟狡标定锟斤拷锟斤拷
+    /* 外设初始化 */
+    ips200_init(IPS200_TYPE_SPI);                                   /* 初始化IPS200屏幕 */
+//    gnss_init(TAU1201);                                             /* 初始化GNSS */
+//    key_init(8);                                                    /* 初始化按键 */
+    encoder_init();                                                 /* 初始化编码器 */
+    encoder_layer_set_model(0.00036816f, -0.00036816f, 0.001f);    /* 设置编码器模型参数 */
 
-    ips200_init(IPS200_TYPE_SPI);                                   // 锟斤拷始锟斤拷IPS200
-    gnss_init(TAU1201);                                             // 锟斤拷始锟斤拷GNSS
-    key_init(8);                                                    // 锟斤拷始锟斤拷锟斤拷锟斤拷
-    encoder_init();                                               // 锟斤拷始锟斤拷锟斤拷锟斤拷锟斤拷
-    encoder_layer_set_model(-0.00002204f, -0.00002204f, 0.004f); // 锟斤拷锟矫憋拷锟斤拷锟斤拷模锟酵诧拷锟斤拷
+    /* 通信与驱动初始化 */
+    wireless_uart_init();                                           /* 初始化无线串口 */
+    vofa_init();                                                    /* 初始化VOFA+调试模块 */
+    motor_init();                                                   /* 初始化电机 */
+//    steering_init();                                                /* 初始化转向舵机 */
+//    yaokong_init(0.8f);                                             /* 初始化遥控器 */
 
-    wireless_uart_init();
-    motor_init();
-    steering_init();
-    yaokong_init(0.8f);
+    /* INS 系统初始化 */
+//    Ins_init();                                                     /* 初始化INS */
+    pit_ms_init(CCU60_CH0, 1);                                      /* 初始化1ms定时器 */
 
-    Ins_init();                                                     // 锟斤拷始锟斤拷INS
-    INS_init();                                                     // Ins状态锟斤拷锟斤拷始锟斤拷
+//    /* PID 控制初始化 */
+    wheel_pid_init();                                               /* 初始化车轮PID */
+//    wheel_pid_set_speed_target(4.0f, 0.0f);
+    wheel_pid_set_target_speed(4.0f);                               /* 设置目标速度为0 */
+    wheel_pid_enable(1, 1, 0, 0);                                   /* 使能输出、速度环，关闭位置环，使能角速度环 */
 
-    pit_ms_init(CCU60_CH0, 1);                                      // 锟斤拷始锟斤拷1ms锟斤拷时锟斤拷
-
-    wheel_pid_init();                                               // 锟斤拷始锟斤拷锟斤拷PID
-    wheel_pid_set_target_speed(0.0f);                               // 锟斤拷锟斤拷目锟斤拷锟劫讹拷为0
-    wheel_pid_enable(1);                                            // 使锟斤拷锟斤拷PID
-
-    track_init();                                                   // 锟斤拷始锟斤拷锟届迹
+    /* 跟踪追踪初始化 */
+//    track_init();                                                   /* 初始化循迹 */
 }
