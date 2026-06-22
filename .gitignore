@@ -1,0 +1,36 @@
+# Generated build outputs
+Debug/
+**/Debug/
+*.o
+*.d
+*.src
+*.elf
+*.hex
+*.map
+*.mdf
+
+# Runtime data and logs
+track_data/
+**/track_data/
+*.out.txt
+*.err.txt
+*.pid
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+.venv/
+
+# Temporary analysis artifacts
+_tmp_*
+analysis_*.png
+verify_*.png
+backup_after_22_restore_*/
+
+# Archives and IDE local state
+*.zip
+*.7z
+*.exe
+.vscode/
+RETK资料/
